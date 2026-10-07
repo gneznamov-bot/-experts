@@ -1,0 +1,2 @@
+username,title,subscribers,posts_total,posts_aged_21d,history_days,median_views,er,posts_per_week,trend,trend_ratio,trend_median_21_110,trend_median_111_200,trend_posts_21_110,trend_posts_111_200,forwarded_share,comments_share,avg_len,cyrillic_share,days_since_last_post,fetched_at,verdict,reject_reasons
+senatorov_head,Сенаторов.head(),2140,47,45,220,1620,0.757,0.93,стоит,0.939,1550.0,1650.0,16,22,0.064,unknown,1216,0.97,1.4,2026-10-07T17:58:50+00:00,passed,
