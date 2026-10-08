@@ -36,7 +36,7 @@ from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 import requests
 from bs4 import BeautifulSoup
 
-from common import RAW, UA as BROWSER_UA, is_fresh, log, now_utc
+from common import RAW, UA as BROWSER_UA, StopStage, is_fresh, log, now_utc
 
 HABR = "https://habr.com"
 MIN_PAUSE = 2.0
@@ -51,6 +51,11 @@ OWN_CHANNEL_RX = re.compile(r"(мо[йеё]\w*|сво[йеё]\w*|веду|под
                             r"telegram|tg\b|тг\b)", re.I)
 SERVICE = {"joinchat", "addlist", "share", "proxy", "socks", "addstickers", "c", "s",
            "iv", "boost", "telegram", "durov"}
+
+
+def ok_username(u):
+    ul = u.lower()
+    return ul not in SERVICE and not ul.endswith("bot")
 
 
 def strip_utm(url):
@@ -116,6 +121,7 @@ class HabrClient:
         self.robots = None
         self.pause = MIN_PAUSE
         self.requests = 0
+        self.failed_in_row = 0   # адресов подряд, которые не отдались
         CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
     def _sleep(self):
@@ -168,8 +174,16 @@ class HabrClient:
             log(f"robots.txt запрещает: {url}")
             return None
         r = self._fetch(url)
-        if r is None or r.status_code != 200:
-            log(f"HTTP {r.status_code if r is not None else 'нет ответа'} на {url}")
+        if r is None or r.status_code in (403, 429) or r.status_code >= 500:
+            self.failed_in_row += 1
+            log(f"HTTP {r.status_code if r is not None else 'нет ответа'} на {url} "
+                f"(подряд: {self.failed_in_row})")
+            if self.failed_in_row >= 3:
+                raise StopStage("Хабр: три адреса подряд не отдались")
+            return None
+        self.failed_in_row = 0
+        if r.status_code != 200:
+            log(f"HTTP {r.status_code} на {url}")
             return None
         path.write_text(r.text, encoding="utf-8")
         path.with_suffix(".url").write_text(url, encoding="utf-8")
@@ -240,7 +254,7 @@ def tg_from_contacts(contacts):
     for c in contacts or []:
         for field in ("url", "value"):
             found += TG_RX.findall(str(c.get(field, "")))
-    return [u for u in dict.fromkeys(found) if u.lower() not in SERVICE]
+    return [u for u in dict.fromkeys(found) if ok_username(u)]
 
 
 def article_links(client, art):
@@ -256,7 +270,7 @@ def article_links(client, art):
         for a in body.select("a[href]"):
             for u in TG_RX.findall(a["href"]):
                 ctx = (a.find_parent(["p", "li", "div"]) or a).get_text(" ", strip=True)
-                if OWN_CHANNEL_RX.search(ctx) and u.lower() not in SERVICE:
+                if OWN_CHANNEL_RX.search(ctx) and ok_username(u):
                     body_tg.append((u, ctx[:200]))
     # В странице два "author": schema.org (без контактов) и состояние
     # приложения — его узнаём по "author":{"id":
@@ -280,7 +294,7 @@ def profile_links(client, login):
         return []
     found = tg_from_contacts(json_after(html, "contacts", f'"alias":"{login}"') or [])
     about = json_after(html, "aboutHtml", f'"alias":"{login}"') or ""
-    found += [u for u in TG_RX.findall(about) if u.lower() not in SERVICE]
+    found += [u for u in TG_RX.findall(about) if ok_username(u)]
     return list(dict.fromkeys(found))
 
 
@@ -291,6 +305,19 @@ def discover(hubs, top=30, min_rating=5):
     found_at = now_utc().date().isoformat()
     rows, stats = [], {"articles": 0, "checked": 0, "authors_with_tg": 0}
     seen_authors = set()
+    try:
+        _discover_hubs(client, hubs, since, found_at, top, min_rating, rows, stats,
+                       seen_authors)
+    except StopStage as e:
+        log(f"ЭТАП A5 ОСТАНОВЛЕН: {e}. Найденное сохраняю, повторный запуск "
+            f"продолжит из кэша.")
+    log(f"Хабр: статей {stats['articles']}, проверено авторов {stats['checked']}, "
+        f"с Telegram {stats['authors_with_tg']}, запросов в сеть {client.requests}")
+    return rows
+
+
+def _discover_hubs(client, hubs, since, found_at, top, min_rating, rows, stats,
+                   seen_authors):
     for hub in hubs:
         arts = hub_articles(client, hub, since)
         stats["articles"] += len(arts)
@@ -321,6 +348,3 @@ def discover(hubs, top=30, min_rating=5):
                              "found_at": found_at,
                              "_hub": hub, "_rating": a["rating"], "_title": a["title"],
                              "_author": a["author"], "_where": where})
-    log(f"Хабр: статей {stats['articles']}, проверено авторов {stats['checked']}, "
-        f"с Telegram {stats['authors_with_tg']}, запросов в сеть {client.requests}")
-    return rows
