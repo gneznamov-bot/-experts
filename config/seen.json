@@ -1,1 +1,62 @@
-{}
+{
+  "analyst_academy": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "manual",
+    "verdict": "rejected: мёртвый"
+  },
+  "analytess": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "manual",
+    "verdict": "passed: 87"
+  },
+  "backendarchieve": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "manual",
+    "verdict": "rejected: файлопомойка"
+  },
+  "data_penguin": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "manual",
+    "verdict": "passed: 83"
+  },
+  "data_study": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "manual",
+    "verdict": "passed: 57"
+  },
+  "godevjob": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "manual",
+    "verdict": "rejected: витрина"
+  },
+  "itgardenn": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "manual",
+    "verdict": "passed: 67"
+  },
+  "sachkov_blog": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "manual",
+    "verdict": "passed: 83"
+  },
+  "senatorov_head": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "manual",
+    "verdict": "passed: 54"
+  },
+  "v_aqa": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "manual",
+    "verdict": "rejected: мёртвый; мелкий"
+  }
+}

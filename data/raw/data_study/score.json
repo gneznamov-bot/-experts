@@ -1,0 +1,38 @@
+{
+  "username": "data_study",
+  "score": 57,
+  "blocks": {
+    "audience": {
+      "points": 15,
+      "basis": "ER=0.2008"
+    },
+    "monetization": {
+      "points": 25,
+      "basis": "менторство/консультации: https://t.me/data_study/1394"
+    },
+    "free_top": {
+      "points": 5,
+      "basis": "продаёт для действующих; контент: вход 9 / рост 13 постов; продукт: вход 0 / рост 1"
+    },
+    "segment": {
+      "points": 15,
+      "basis": "прагматик"
+    },
+    "liveness": {
+      "points": 7,
+      "basis": "тренд стоит"
+    },
+    "contact": {
+      "points": 10,
+      "basis": "@daniildzheparov"
+    }
+  },
+  "penalties": [
+    {
+      "flag": "infobiz",
+      "points": -20
+    }
+  ],
+  "contact": "@daniildzheparov",
+  "needs_review": []
+}

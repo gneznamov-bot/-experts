@@ -1,0 +1,126 @@
+{
+  "username": "data_penguin",
+  "segment": "прагматик",
+  "segment_basis": "has_product+pragmatic",
+  "groups": {
+    "has_product": {
+      "count": 3,
+      "matches": [
+        {
+          "phrase": "менторств",
+          "quote": "По вопросам и менторству писать @it_pengwin",
+          "date": "2026-10-08T10:48:21+00:00",
+          "url": "https://t.me/data_penguin",
+          "source": "description"
+        },
+        {
+          "phrase": "консультаци",
+          "quote": "Карьерные консультации и собесы",
+          "date": "2026-08-31T06:45:07+00:00",
+          "url": "https://t.me/data_penguin/264",
+          "source": "post"
+        },
+        {
+          "phrase": "менторств",
+          "quote": "И спасибо, что читаете ♥️ Сейчас большая нагрузка на работе, в менторстве, ремонт..",
+          "date": "2026-03-23T10:54:35+00:00",
+          "url": "https://t.me/data_penguin/235",
+          "source": "post"
+        }
+      ]
+    },
+    "burned": {
+      "count": 0,
+      "matches": []
+    },
+    "pragmatic": {
+      "count": 21,
+      "matches": [
+        {
+          "phrase": "собес",
+          "quote": "База знаний для джунов, разбор собесов, задачи (jun/mid/sen) с решениями, полезные материалы, обзоры технологий и архитектур.",
+          "date": "2026-10-08T10:48:21+00:00",
+          "url": "https://t.me/data_penguin",
+          "source": "description"
+        },
+        {
+          "phrase": "собес",
+          "quote": "Соберете практический опыт, который можно обсуждать на собеседованиях и использовать в работе",
+          "date": "2026-10-03T09:30:42+00:00",
+          "url": "https://t.me/data_penguin/275",
+          "source": "post"
+        },
+        {
+          "phrase": "зарплат",
+          "quote": "Почему зарплаты в it перестали расти?",
+          "date": "2026-09-28T09:50:45+00:00",
+          "url": "https://t.me/data_penguin/274",
+          "source": "post"
+        },
+        {
+          "phrase": "собес",
+          "quote": "Этапы отбора: hr->тех скрининг->основной тех собес->собес с руководителем",
+          "date": "2026-09-25T12:08:41+00:00",
+          "url": "https://t.me/data_penguin/273",
+          "source": "post"
+        },
+        {
+          "phrase": "собес",
+          "quote": "Соберете практический опыт, который можно обсуждать на собеседованиях и использовать в работе",
+          "date": "2026-09-24T10:33:52+00:00",
+          "url": "https://t.me/data_penguin/272",
+          "source": "post"
+        },
+        {
+          "phrase": "собес",
+          "quote": "Обзор собеседования с ВТБ",
+          "date": "2026-09-18T09:46:42+00:00",
+          "url": "https://t.me/data_penguin/271",
+          "source": "post"
+        },
+        {
+          "phrase": "собес",
+          "quote": "В продолжение поста о токсичном собесе",
+          "date": "2026-09-04T07:27:06+00:00",
+          "url": "https://t.me/data_penguin/269",
+          "source": "post"
+        },
+        {
+          "phrase": "собес",
+          "quote": "Обзор токсичного собеседования с ИНГ Банк",
+          "date": "2026-09-03T07:16:57+00:00",
+          "url": "https://t.me/data_penguin/267",
+          "source": "post"
+        }
+      ]
+    },
+    "gold": {
+      "count": 0,
+      "matches": []
+    },
+    "burnout": {
+      "count": 0,
+      "matches": []
+    },
+    "missionary": {
+      "count": 0,
+      "matches": []
+    },
+    "limits": {
+      "count": 0,
+      "matches": []
+    },
+    "audience_care": {
+      "count": 0,
+      "matches": []
+    }
+  },
+  "red_flags": [],
+  "counters": {
+    "we": 15,
+    "i": 64,
+    "ads_90d": 0,
+    "posts_90d": 18
+  },
+  "comments_used": true
+}

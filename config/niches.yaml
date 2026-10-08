@@ -1,2 +1,47 @@
-# Ниши и поисковые запросы под них (этап A). Заполняется на этапе A.
-niches: {}
+# Ниши: термины для проверки «та ли ниша» (этап C) и запросы для поиска (этап A).
+#
+# Синтаксис терминов тот же, что в keywords.yaml:
+#   "аналит"  — с начала слова, окончание любое: аналитик, аналитика, ...
+#   "=sql"    — строго целое слово (нужно для коротких: =it, =go, =ии)
+# Регистр и ё/е не важны.
+#
+# Отсечка «не та ниша» (этап C): канал проходит, если доля своих постов
+# с терминами ниши ≥ min_post_share, либо термины есть в названии/описании
+# и доля постов ≥ min_post_share / 2. Иначе — «не та ниша».
+# Во фразе из нескольких слов окончание свободно только у последнего слова.
+
+it:
+  title: IT в целом
+  min_post_share: 0.25
+  terms: [=айти, =it, =ит, разработ, программ, код, =backend, бэкенд, бекенд, =frontend, фронтенд, =fullstack, =devops, =sre, =qa, тестиров, тестировщ, автотест, =aqa, =sdet, =java, =kotlin, =python, =golang, =go, =rust, =c++, =js, =javascript, =typescript, =php, =sql, postgres, =clickhouse, =mysql, =kafka, =spark, =airflow, =hadoop, =dbt, =etl, =dwh, =data, =дата, датасаент, =ml, =llm, нейросет, =ии, =ai, =gpt, аналит, продакт, =a/b, ab-тест, метрик, дашборд, =bi, =tableau, =superset, архитект, микросервис, =api, =docker, =kubernetes, =k8s, =linux, =git, джун, =junior, мидл, =middle, сеньор, =senior, тимлид, =teamlead, собес, собеседован, грейд, стартап]
+  roles: [системный аналитик, продуктовый аналитик, аналитик данных,
+          дата-инженер, Java-разработчик, Go-разработчик, QA-инженер]
+  tech: [SQL, Spark, Airflow, Kafka, Python, Go, Java]
+
+analytics:
+  title: Аналитика (системная, продуктовая, данных)
+  min_post_share: 0.25
+  terms: [аналит, =sql, =python, =pandas, =a/b, ab-тест, метрик, дашборд, =bi, =tableau, =superset, =datalens, =clickhouse, когорт, ретеншн, =retention, воронк, гипотез, продакт, требован, =bpmn, =uml, =api, интеграц, постановк, бизнес-анализ, =data, =дата]
+  roles: [системный аналитик, продуктовый аналитик, аналитик данных, бизнес-аналитик]
+  tech: [SQL, Python, A/B тесты, BPMN, ClickHouse]
+
+data_engineering:
+  title: Дата-инженерия
+  min_post_share: 0.25
+  terms: [дата-инженер, data engineer, =etl, =elt, =dwh, хранилищ, =data lake, =lakehouse, =spark, =airflow, =kafka, =hadoop, =dbt, =clickhouse, =greenplum, postgres, =sql, пайплайн, pipeline, витрин, =s3, =iceberg, =flink]
+  roles: [дата-инженер, data engineer, DWH-разработчик]
+  tech: [Spark, Airflow, Kafka, dbt, Greenplum]
+
+qa:
+  title: Тестирование и автоматизация
+  min_post_share: 0.25
+  terms: [=qa, =aqa, =sdet, тестиров, тестировщ, автотест, автоматизация тестирован, автоматизацию тестирован, автоматизации тестирован, =selenium, =playwright, =appium, =junit, =testng, =pytest, =allure, баг, тест-кейс, регресс, нагрузочн]
+  roles: [QA-инженер, автотестировщик, SDET]
+  tech: [Selenium, Playwright, Java, Kotlin, pytest]
+
+backend:
+  title: Бэкенд-разработка
+  min_post_share: 0.25
+  terms: [=backend, бэкенд, бекенд, разработ, =java, =kotlin, =golang, =go, =python, =php, =c#, =.net, =rust, микросервис, =api, =rest, =grpc, =kafka, postgres, =redis, =docker, =kubernetes, =k8s, =highload, хайлоад, архитект, =system design, код, рефактор, =spring]
+  roles: [бэкенд-разработчик, Java-разработчик, Go-разработчик, Python-разработчик]
+  tech: [Java, Go, Kafka, Kubernetes, System Design]

@@ -1,0 +1,35 @@
+{
+  "username": "sachkov_blog",
+  "score": 83,
+  "blocks": {
+    "audience": {
+      "points": 20,
+      "basis": "ER=0.6532"
+    },
+    "monetization": {
+      "points": 25,
+      "basis": "менторство/консультации: https://t.me/sachkov_blog/672"
+    },
+    "free_top": {
+      "points": 10,
+      "basis": "нужна ручная проверка; контент: вход 11 / рост 8 постов; продукт: вход 0 / рост 0"
+    },
+    "segment": {
+      "points": 15,
+      "basis": "прагматик"
+    },
+    "liveness": {
+      "points": 3,
+      "basis": "тренд падает"
+    },
+    "contact": {
+      "points": 10,
+      "basis": "@sachkova_mng"
+    }
+  },
+  "penalties": [],
+  "contact": "@sachkova_mng",
+  "needs_review": [
+    "свободный верх"
+  ]
+}

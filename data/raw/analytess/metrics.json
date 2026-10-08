@@ -15,11 +15,18 @@
   "trend_posts_21_110": 51,
   "trend_posts_111_200": 39,
   "forwarded_share": 0.0,
-  "comments_share": "unknown",
+  "comments_share": 1.0,
+  "comments_sample": 15,
+  "comments_median_cnt": 22,
   "avg_len": 2888,
   "cyrillic_share": 0.978,
   "days_since_last_post": 0.7,
+  "filedump_share": 0.0,
+  "niche": "it",
+  "niche_post_share": 0.84,
+  "niche_in_title_desc": true,
   "fetched_at": "2026-10-08T10:46:28+00:00",
-  "verdict": "rejected",
-  "reject_reasons": "витрина"
+  "needs_review": "витрина? слова новости при описании от первого лица",
+  "verdict": "passed",
+  "reject_reasons": ""
 }

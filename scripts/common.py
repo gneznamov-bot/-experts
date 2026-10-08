@@ -1,5 +1,6 @@
 """Общее для этапов: пути, вежливый HTTP, кэш, rejected.csv."""
 import csv
+import json
 import random
 import re
 import sys
@@ -112,3 +113,89 @@ def add_rejected(username, reasons, stage):
 
 def clear_rejected(username, stage):
     add_rejected(username, [], stage)
+
+
+# --- словари и поиск фраз (общие для этапов C и D) ---
+
+import yaml  # noqa: E402
+
+
+def load_yaml(name):
+    return yaml.safe_load((CONFIG / name).read_text(encoding="utf-8"))
+
+
+def norm(s):
+    """Для поиска: нижний регистр, ё -> е. Длина строки не меняется,
+    поэтому позиции совпадений годятся для вырезания цитаты из оригинала."""
+    # Посимвольно: у редких символов lower() меняет длину (İ -> i̇).
+    return "".join(c if len(c.lower()) != 1 else c.lower()
+                   for c in (s or "")).replace("ё", "е")
+
+
+def compile_terms(terms):
+    """'фраза' — с начала слова, окончание любое; '=фраза' — целое слово."""
+    parts = []
+    for t in terms:
+        whole = t.startswith("=")
+        t = norm(t[1:] if whole else t)
+        body = r"\s+".join(re.escape(w) for w in t.split())
+        parts.append(r"(?<!\w)" + body + (r"(?!\w)" if whole else ""))
+    return re.compile("|".join(parts)) if parts else None
+
+
+def find_all(rx, text):
+    return list(rx.finditer(norm(text))) if rx else []
+
+
+SENT_END_RX = re.compile(r"[.!?…]+(?=\s|$)|\n")
+
+
+def quote_around(text, start, end, limit=280):
+    """Дословный фрагмент: предложение (или строка) вокруг совпадения.
+    Возвращает подстроку оригинального текста, без правок."""
+    # Граница предложения — .!?… перед пробелом/концом или перевод строки.
+    # Точка внутри слова (.NET, t.me, 2.5) границей не считается.
+    bounds = [m.end() for m in SENT_END_RX.finditer(text)]
+    left = max([b for b in bounds if b <= start], default=0)
+    right = min([b for b in bounds if b >= end], default=len(text))
+    if right - left > limit:
+        left = max(left, start - limit // 2)
+        right = min(right, end + limit // 2)
+    return text[left:right].strip()
+
+
+# --- исключения: seen.json + выгрузка CRM ---
+
+SEEN_JSON = CONFIG / "seen.json"
+CRM_CSV = CONFIG / "crm_export.csv"
+USERNAME_RX = re.compile(r"(?:t\.me/|telegram\.me/|@)([A-Za-z][A-Za-z0-9_]{3,31})")
+
+
+def load_seen():
+    if not SEEN_JSON.exists():
+        return {}
+    return json.loads(SEEN_JSON.read_text(encoding="utf-8") or "{}")
+
+
+def save_seen(seen):
+    SEEN_JSON.write_text(json.dumps(seen, ensure_ascii=False, indent=2, sort_keys=True),
+                         encoding="utf-8")
+
+
+def load_crm():
+    """Все @каналы из выгрузки CRM: из любой колонки, где есть @ник или t.me/ник."""
+    out = set()
+    if not CRM_CSV.exists():
+        return out
+    with CRM_CSV.open(encoding="utf-8", newline="") as f:
+        for row in csv.reader(f):
+            for cell in row:
+                out |= {u.lower() for u in USERNAME_RX.findall(cell)}
+                if re.fullmatch(r"[A-Za-z][A-Za-z0-9_]{3,31}", cell.strip()) and \
+                        cell.strip().lower() != "channel":
+                    out.add(cell.strip().lower())
+    return out
+
+
+def exclusions():
+    return {u.lower() for u in load_seen()} | load_crm()

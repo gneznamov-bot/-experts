@@ -1,7 +1,7 @@
-username,title,subscribers,posts_total,posts_aged_21d,history_days,median_views,er,posts_per_week,trend,trend_ratio,trend_median_21_110,trend_median_111_200,trend_posts_21_110,trend_posts_111_200,forwarded_share,comments_share,avg_len,cyrillic_share,days_since_last_post,fetched_at,verdict,reject_reasons
-senatorov_head,Сенаторов.head(),2140,47,45,220,1620,0.757,0.93,стоит,0.939,1550.0,1650.0,16,22,0.064,unknown,1216,0.97,1.4,2026-10-07T17:58:50+00:00,passed,
-sachkov_blog,Кирилл Сачков | Development,5190,156,137,232,3390,0.6532,5.99,падает,0.823,2995.0,3640.0,72,46,0.038,unknown,735,0.952,0.2,2026-10-08T10:46:52+00:00,passed,
-data_study,Аналитика данных / Data Study,9460,111,98,211,1900.0,0.2008,3.34,стоит,0.904,1740,1925.0,37,54,0.009,unknown,930,0.945,0.8,2026-10-08T10:47:15+00:00,passed,
-itgardenn,IT GARDEN 🌴,12300,183,169,203,3110,0.2528,5.68,стоит,1.036,3170,3060,75,91,0.0,unknown,947,0.991,1.9,2026-10-08T10:47:31+00:00,passed,
-data_penguin,Айти-Пингвин | Дата инженер,2120,40,34,217,2310.0,1.0896,1.32,падает,0.665,1710,2570,13,17,0.025,unknown,1363,0.912,3.2,2026-10-08T10:48:21+00:00,passed,
-backendarchieve,Архив бэкендера,2240,120,105,207,825,0.3683,5.6,стоит,0.922,816.5,885.5,86,16,0.0,unknown,147,0.81,1.7,2026-10-08T10:48:55+00:00,passed,
+username,title,subscribers,posts_total,posts_aged_21d,history_days,median_views,er,posts_per_week,trend,trend_ratio,trend_median_21_110,trend_median_111_200,trend_posts_21_110,trend_posts_111_200,forwarded_share,comments_share,comments_sample,comments_median_cnt,avg_len,cyrillic_share,days_since_last_post,filedump_share,niche,niche_post_share,niche_in_title_desc,fetched_at,needs_review,verdict,reject_reasons
+senatorov_head,Сенаторов.head(),2140,47,45,220,1620,0.757,0.93,стоит,0.939,1550.0,1650.0,16,22,0.064,1.0,15,5,1216,0.97,1.4,0.0,it,0.698,True,2026-10-07T17:58:50+00:00,,passed,
+analytess,Аналитесса-разработчица👩🏻‍💻💅🏻,3610,109,98,218,2160.0,0.5983,3.89,стоит,0.852,1950,2290,51,39,0.0,1.0,15,22,2888,0.978,0.7,0.0,it,0.84,True,2026-10-08T10:46:28+00:00,витрина? слова новости при описании от первого лица,passed,
+sachkov_blog,Кирилл Сачков | Development,5190,156,137,232,3390,0.6532,5.99,падает,0.823,2995.0,3640.0,72,46,0.038,1.0,15,14,735,0.952,0.2,0.0,it,0.701,False,2026-10-08T10:46:52+00:00,,passed,
+data_study,Аналитика данных / Data Study,9460,111,98,211,1900.0,0.2008,3.34,стоит,0.904,1740,1925.0,37,54,0.009,0.0,15,0,930,0.945,0.8,0.0,it,0.657,True,2026-10-08T10:47:15+00:00,,passed,
+itgardenn,IT GARDEN 🌴,12300,183,169,203,3110,0.2528,5.68,стоит,1.036,3170,3060,75,91,0.0,1.0,15,1,947,0.991,1.9,0.0,it,0.788,True,2026-10-08T10:47:31+00:00,,passed,
+data_penguin,Айти-Пингвин | Дата инженер,2120,40,34,217,2310.0,1.0896,1.32,падает,0.665,1710,2570,13,17,0.025,1.0,15,17,1363,0.912,3.2,0.0,it,0.769,True,2026-10-08T10:48:21+00:00,,passed,

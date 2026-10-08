@@ -1,0 +1,40 @@
+{
+  "username": "itgardenn",
+  "score": 67,
+  "blocks": {
+    "audience": {
+      "points": 20,
+      "basis": "ER=0.2528"
+    },
+    "monetization": {
+      "points": 25,
+      "basis": "менторство/консультации: https://t.me/itgardenn"
+    },
+    "free_top": {
+      "points": 10,
+      "basis": "нужна ручная проверка; контент: вход 48 / рост 29 постов; продукт: вход 0 / рост 0"
+    },
+    "segment": {
+      "points": 15,
+      "basis": "прагматик"
+    },
+    "liveness": {
+      "points": 7,
+      "basis": "тренд стоит"
+    },
+    "contact": {
+      "points": 10,
+      "basis": "@alexandr_ponomaryov"
+    }
+  },
+  "penalties": [
+    {
+      "flag": "infobiz",
+      "points": -20
+    }
+  ],
+  "contact": "@alexandr_ponomaryov",
+  "needs_review": [
+    "свободный верх"
+  ]
+}

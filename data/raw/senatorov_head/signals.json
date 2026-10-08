@@ -1,0 +1,126 @@
+{
+  "username": "senatorov_head",
+  "segment": "не определён",
+  "segment_basis": null,
+  "groups": {
+    "has_product": {
+      "count": 0,
+      "matches": []
+    },
+    "burned": {
+      "count": 0,
+      "matches": []
+    },
+    "pragmatic": {
+      "count": 11,
+      "matches": [
+        {
+          "phrase": "карьер",
+          "quote": "Про карьеру в IT, Data Science и Продуктовую Аналитику",
+          "date": "2026-10-07T17:58:50+00:00",
+          "url": "https://t.me/senatorov_head",
+          "source": "description"
+        },
+        {
+          "phrase": "карьер",
+          "quote": "Сегодня я впервые за свои 5 лет карьеры официально работал в выходной.",
+          "date": "2026-09-06T17:56:25+00:00",
+          "url": "https://t.me/senatorov_head/926",
+          "source": "post"
+        },
+        {
+          "phrase": "повышени",
+          "quote": "Я в Тиньке рассматриваю заявки на повышения для джунов и миддлов.",
+          "date": "2026-08-20T14:26:03+00:00",
+          "url": "https://t.me/senatorov_head/923",
+          "source": "post"
+        },
+        {
+          "phrase": "найм",
+          "quote": "У меня июль выдался месяцом найма 😳",
+          "date": "2026-08-06T16:11:40+00:00",
+          "url": "https://t.me/senatorov_head/919",
+          "source": "post"
+        },
+        {
+          "phrase": "найм",
+          "quote": "🔘Холивары, про разные кейсы из мира найма (например, тот случай, когда девушке отказали, потому что в тг у нее на аватарке был мем с матами)",
+          "date": "2026-07-15T19:02:55+00:00",
+          "url": "https://t.me/senatorov_head/915",
+          "source": "post"
+        },
+        {
+          "phrase": "собес",
+          "quote": "За свои 5 лет в аналитике я много собесился и много собесил — выработалось понимание, что точно булщит и душниловка.",
+          "date": "2026-07-07T16:56:15+00:00",
+          "url": "https://t.me/senatorov_head/910",
+          "source": "post"
+        },
+        {
+          "phrase": "собес",
+          "quote": "▶️ Кайфовая статья про SQL собеседования на Stepic",
+          "date": "2026-07-06T07:01:28+00:00",
+          "url": "https://t.me/senatorov_head/909",
+          "source": "post"
+        },
+        {
+          "phrase": "собес",
+          "quote": "Про эти методы могут и на собесе спросить, и у других аналитиков они точно будут на слуху.",
+          "date": "2026-06-01T07:37:47+00:00",
+          "url": "https://t.me/senatorov_head/897",
+          "source": "post"
+        }
+      ]
+    },
+    "gold": {
+      "count": 0,
+      "matches": []
+    },
+    "burnout": {
+      "count": 3,
+      "matches": [
+        {
+          "phrase": "устал",
+          "quote": "Прошла рабочая неделя и…как будто я уже устал",
+          "date": "2026-05-18T07:10:33+00:00",
+          "url": "https://t.me/senatorov_head/891",
+          "source": "post"
+        },
+        {
+          "phrase": "выгорел",
+          "quote": "Нет, пока еще не выгорел.",
+          "date": "2026-03-19T17:19:21+00:00",
+          "url": "https://t.me/senatorov_head/853",
+          "source": "post"
+        },
+        {
+          "phrase": "сокращени",
+          "quote": "🔘Послушал всю историю происхождения бита и с удивлением узнал, что bit сокращение от binary digit.",
+          "date": "2026-03-01T16:17:56+00:00",
+          "url": "https://t.me/senatorov_head/845",
+          "source": "post"
+        }
+      ]
+    },
+    "missionary": {
+      "count": 0,
+      "matches": []
+    },
+    "limits": {
+      "count": 0,
+      "matches": []
+    },
+    "audience_care": {
+      "count": 0,
+      "matches": []
+    }
+  },
+  "red_flags": [],
+  "counters": {
+    "we": 74,
+    "i": 255,
+    "ads_90d": 0,
+    "posts_90d": 12
+  },
+  "comments_used": true
+}

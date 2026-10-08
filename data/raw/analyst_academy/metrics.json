@@ -15,11 +15,18 @@
   "trend_posts_21_110": 6,
   "trend_posts_111_200": 2,
   "forwarded_share": 0.0,
-  "comments_share": "unknown",
+  "comments_share": 1.0,
+  "comments_sample": 12,
+  "comments_median_cnt": 2.5,
   "avg_len": 1638,
   "cyrillic_share": 0.989,
   "days_since_last_post": 88.8,
+  "filedump_share": 0.0,
+  "niche": "it",
+  "niche_post_share": 0.778,
+  "niche_in_title_desc": true,
   "fetched_at": "2026-10-08T10:48:30+00:00",
+  "needs_review": "витрина? слова академия при описании от первого лица",
   "verdict": "rejected",
-  "reject_reasons": "мёртвый; витрина"
+  "reject_reasons": "мёртвый"
 }

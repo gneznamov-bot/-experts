@@ -1,0 +1,36 @@
+{
+  "username": "analytess",
+  "score": 87,
+  "blocks": {
+    "audience": {
+      "points": 20,
+      "basis": "ER=0.5983"
+    },
+    "monetization": {
+      "points": 25,
+      "basis": "менторство/консультации: https://t.me/analytess/948"
+    },
+    "free_top": {
+      "points": 10,
+      "basis": "нужна ручная проверка; контент: вход 15 / рост 40 постов; продукт: вход 0 / рост 0"
+    },
+    "segment": {
+      "points": 15,
+      "basis": "прагматик"
+    },
+    "liveness": {
+      "points": 7,
+      "basis": "тренд стоит"
+    },
+    "contact": {
+      "points": 10,
+      "basis": "@nechka266"
+    }
+  },
+  "penalties": [],
+  "contact": "@nechka266",
+  "needs_review": [
+    "свободный верх",
+    "витрина? слова новости при описании от первого лица"
+  ]
+}

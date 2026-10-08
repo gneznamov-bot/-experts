@@ -1,0 +1,33 @@
+{
+  "username": "senatorov_head",
+  "score": 54,
+  "blocks": {
+    "audience": {
+      "points": 20,
+      "basis": "ER=0.757"
+    },
+    "monetization": {
+      "points": 0,
+      "basis": "продаж не найдено"
+    },
+    "free_top": {
+      "points": 20,
+      "basis": "пишет для действующих, верх не занят; контент: вход 3 / рост 6 постов; продукт: нет"
+    },
+    "segment": {
+      "points": 0,
+      "basis": "не определён"
+    },
+    "liveness": {
+      "points": 4,
+      "basis": "тренд стоит; −3: 0.93 поста/нед"
+    },
+    "contact": {
+      "points": 10,
+      "basis": "@senatorous"
+    }
+  },
+  "penalties": [],
+  "contact": "@senatorous",
+  "needs_review": []
+}
