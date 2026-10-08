@@ -1,0 +1,23 @@
+username,reason,details,stage,date
+snitsa,unavailable,HTTP 302 на page_latest.html,B,2026-10-08
+sachkova_mng,unavailable,HTTP 302 на page_latest.html,B,2026-10-08
+daniildzheparov,unavailable,HTTP 302 на page_latest.html,B,2026-10-08
+halltape,unavailable,HTTP 302 на page_latest.html,B,2026-10-08
+shustde,unavailable,HTTP 302 на page_latest.html,B,2026-10-08
+nechka266,unavailable,HTTP 302 на page_latest.html,B,2026-10-08
+senatorous,unavailable,HTTP 302 на page_latest.html,B,2026-10-08
+sachkovgeek,мелкий,median_views=493,C,2026-10-08
+sachkovgeek,не та ниша,it: niche_post_share=0.235 < 0.25,C,2026-10-08
+analytess_live,мелкий,median_views=412,C,2026-10-08
+analytess_live,не та ниша,it: niche_post_share=0.065 < 0.25,C,2026-10-08
+productgardenn,мелкий,median_views=642.0,C,2026-10-08
+kat_v_prod,мелкий,median_views=237.5,C,2026-10-08
+analyst_books,мёртвый,последний пост 81.0 дн. назад,C,2026-10-08
+zarubezhom_jobs,витрина,в названии/описании: вакансии,C,2026-10-08
+remocate,витрина,в названии/описании: вакансии,C,2026-10-08
+hiring_by_lukina,витрина,в названии/описании: вакансии,C,2026-10-08
+hiring_by_lukina,не та ниша,it: niche_post_share=0.244 < 0.25,C,2026-10-08
+remote_relocate,не ru,cyrillic_share=0.362,C,2026-10-08
+remote_relocate,витрина,в названии/описании: вакансии,C,2026-10-08
+nodatanojobs,витрина,в названии/описании: вакансии,C,2026-10-08
+t_jrnl,не та ниша,it: niche_post_share=0.119 < 0.25,C,2026-10-08

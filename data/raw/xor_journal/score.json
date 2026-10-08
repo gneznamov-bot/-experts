@@ -1,0 +1,40 @@
+{
+  "username": "xor_journal",
+  "score": 50,
+  "blocks": {
+    "audience": {
+      "points": 5,
+      "basis": "ER=0.0891"
+    },
+    "monetization": {
+      "points": 15,
+      "basis": "разовые платные разборы"
+    },
+    "free_top": {
+      "points": 10,
+      "basis": "нужна ручная проверка; контент: вход 10 / рост 8 постов; продукт: вход 0 / рост 0"
+    },
+    "segment": {
+      "points": 15,
+      "basis": "прагматик"
+    },
+    "liveness": {
+      "points": 5,
+      "basis": "тренд unknown (unknown → 5, оценка)"
+    },
+    "contact": {
+      "points": 10,
+      "basis": "@todaycast"
+    }
+  },
+  "penalties": [
+    {
+      "flag": "we_not_i",
+      "points": -10
+    }
+  ],
+  "contact": "@todaycast",
+  "needs_review": [
+    "свободный верх"
+  ]
+}

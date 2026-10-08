@@ -1,0 +1,158 @@
+{
+  "username": "bashnya_education",
+  "fetched_at": "2026-10-08T11:23:04+00:00",
+  "sampled": [
+    {
+      "status": "open",
+      "comments_cnt": 1,
+      "comments": [
+        {
+          "id": 2748,
+          "date": "2026-10-05T08:05:10+00:00",
+          "text": "",
+          "from_owner": false
+        }
+      ],
+      "post_id": 1126,
+      "url": "https://t.me/bashnya_education/1126"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 0,
+      "comments": [],
+      "post_id": 1083,
+      "url": "https://t.me/bashnya_education/1083"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 2,
+      "comments": [
+        {
+          "id": 2691,
+          "date": "2026-09-21T13:48:35+00:00",
+          "text": "Курсы оффлайн?",
+          "from_owner": false
+        },
+        {
+          "id": 2692,
+          "date": "2026-09-21T14:03:44+00:00",
+          "text": "Да, курсы проходят оффлайн в МГТУ им Н.Э. Баумана",
+          "from_owner": false
+        }
+      ],
+      "post_id": 1057,
+      "url": "https://t.me/bashnya_education/1057"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 0,
+      "comments": [],
+      "post_id": 1043,
+      "url": "https://t.me/bashnya_education/1043"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 0,
+      "comments": [],
+      "post_id": 1027,
+      "url": "https://t.me/bashnya_education/1027"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 1,
+      "comments": [
+        {
+          "id": 2347,
+          "date": "2026-05-24T07:09:56+00:00",
+          "text": "Как зарегистрироваться",
+          "from_owner": false
+        }
+      ],
+      "post_id": 1011,
+      "url": "https://t.me/bashnya_education/1011"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 2,
+      "comments": [
+        {
+          "id": 2341,
+          "date": "2026-05-20T20:32:21+00:00",
+          "text": "",
+          "from_owner": false
+        },
+        {
+          "id": 2351,
+          "date": "2026-05-27T08:56:42+00:00",
+          "text": "А вы пробовали нажимать на ссылку #hardskills в посте? Лучше и не пробуйте.",
+          "from_owner": false
+        }
+      ],
+      "post_id": 1006,
+      "url": "https://t.me/bashnya_education/1006"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 0,
+      "comments": [],
+      "post_id": 991,
+      "url": "https://t.me/bashnya_education/991"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 0,
+      "comments": [],
+      "post_id": 975,
+      "url": "https://t.me/bashnya_education/975"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 0,
+      "comments": [],
+      "post_id": 959,
+      "url": "https://t.me/bashnya_education/959"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 0,
+      "comments": [],
+      "post_id": 941,
+      "url": "https://t.me/bashnya_education/941"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 0,
+      "comments": [],
+      "post_id": 936,
+      "url": "https://t.me/bashnya_education/936"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 0,
+      "comments": [],
+      "post_id": 931,
+      "url": "https://t.me/bashnya_education/931"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 1,
+      "comments": [
+        {
+          "id": 2223,
+          "date": "2026-04-01T17:25:28+00:00",
+          "text": "Привет)\nКогда ходила на курс лекций (предыдущий поток), кто-то работал в Озоне. Сейчас сама работаю в озоне и было бы круто пообщаться, возможно увидеться в офисе",
+          "from_owner": false
+        }
+      ],
+      "post_id": 921,
+      "url": "https://t.me/bashnya_education/921"
+    },
+    {
+      "status": "open",
+      "comments_cnt": 0,
+      "comments": [],
+      "post_id": 899,
+      "url": "https://t.me/bashnya_education/899"
+    }
+  ]
+}

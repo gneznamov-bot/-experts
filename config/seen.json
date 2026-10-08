@@ -5,17 +5,41 @@
     "source": "manual",
     "verdict": "rejected: мёртвый"
   },
+  "analyst_books": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "rejected: мёртвый"
+  },
   "analytess": {
     "date": "2026-10-08",
     "niche": "it",
     "source": "manual",
     "verdict": "passed: 87"
   },
+  "analytess_live": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "rejected: мелкий; не та ниша"
+  },
   "backendarchieve": {
     "date": "2026-10-08",
     "niche": "it",
     "source": "manual",
     "verdict": "rejected: файлопомойка"
+  },
+  "bashnya_education": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "passed: 60"
+  },
+  "daniildzheparov": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "unavailable"
   },
   "data_penguin": {
     "date": "2026-10-08",
@@ -35,11 +59,71 @@
     "source": "manual",
     "verdict": "rejected: витрина"
   },
+  "halltape": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "unavailable"
+  },
+  "halltape_data": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "passed: 77"
+  },
+  "hiring_by_lukina": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "rejected: витрина; не та ниша"
+  },
   "itgardenn": {
     "date": "2026-10-08",
     "niche": "it",
     "source": "manual",
     "verdict": "passed: 67"
+  },
+  "kat_v_prod": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "rejected: мелкий"
+  },
+  "nechka266": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "unavailable"
+  },
+  "nodatanojobs": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "rejected: витрина"
+  },
+  "productgardenn": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "rejected: мелкий"
+  },
+  "remocate": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "rejected: витрина"
+  },
+  "remote_relocate": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "rejected: не ru; витрина"
+  },
+  "roma_protiv_fomo": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "passed: 84"
   },
   "sachkov_blog": {
     "date": "2026-10-08",
@@ -47,16 +131,64 @@
     "source": "manual",
     "verdict": "passed: 83"
   },
+  "sachkova_mng": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "unavailable"
+  },
+  "sachkovgeek": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "rejected: мелкий; не та ниша"
+  },
+  "senatorous": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "unavailable"
+  },
   "senatorov_head": {
     "date": "2026-10-08",
     "niche": "it",
     "source": "manual",
     "verdict": "passed: 54"
   },
+  "shustde": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "unavailable"
+  },
+  "snitsa": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "unavailable"
+  },
+  "t_jrnl": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "rejected: не та ниша"
+  },
   "v_aqa": {
     "date": "2026-10-08",
     "niche": "it",
     "source": "manual",
     "verdict": "rejected: мёртвый; мелкий"
+  },
+  "xor_journal": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "passed: 50"
+  },
+  "zarubezhom_jobs": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A2:snowball",
+    "verdict": "rejected: витрина"
   }
 }

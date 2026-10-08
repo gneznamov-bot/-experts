@@ -1,0 +1,35 @@
+{
+  "username": "halltape_data",
+  "score": 77,
+  "blocks": {
+    "audience": {
+      "points": 20,
+      "basis": "ER=0.6269"
+    },
+    "monetization": {
+      "points": 15,
+      "basis": "что-то продаёт, но не менторство (оценка) — нужна ручная проверка"
+    },
+    "free_top": {
+      "points": 10,
+      "basis": "нужна ручная проверка; контент: вход 16 / рост 5 постов; продукт: вход 0 / рост 0"
+    },
+    "segment": {
+      "points": 15,
+      "basis": "прагматик"
+    },
+    "liveness": {
+      "points": 7,
+      "basis": "тренд стоит"
+    },
+    "contact": {
+      "points": 10,
+      "basis": "@k_shredinger"
+    }
+  },
+  "penalties": [],
+  "contact": "@k_shredinger",
+  "needs_review": [
+    "свободный верх"
+  ]
+}

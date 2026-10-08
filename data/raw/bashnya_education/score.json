@@ -1,0 +1,44 @@
+{
+  "username": "bashnya_education",
+  "score": 60,
+  "blocks": {
+    "audience": {
+      "points": 20,
+      "basis": "ER=0.4131"
+    },
+    "monetization": {
+      "points": 25,
+      "basis": "менторство/консультации: https://t.me/bashnya_education/1076"
+    },
+    "free_top": {
+      "points": 10,
+      "basis": "нужна ручная проверка; контент: вход 21 / рост 14 постов; продукт: вход 0 / рост 0"
+    },
+    "segment": {
+      "points": 15,
+      "basis": "прагматик"
+    },
+    "liveness": {
+      "points": 10,
+      "basis": "тренд растёт"
+    },
+    "contact": {
+      "points": 10,
+      "basis": "@bashnya_edu"
+    }
+  },
+  "penalties": [
+    {
+      "flag": "infobiz",
+      "points": -20
+    },
+    {
+      "flag": "we_not_i",
+      "points": -10
+    }
+  ],
+  "contact": "@bashnya_edu",
+  "needs_review": [
+    "свободный верх"
+  ]
+}

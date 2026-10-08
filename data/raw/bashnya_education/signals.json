@@ -1,0 +1,137 @@
+{
+  "username": "bashnya_education",
+  "segment": "прагматик",
+  "segment_basis": "has_product+pragmatic",
+  "groups": {
+    "has_product": {
+      "count": 3,
+      "matches": [
+        {
+          "phrase": "менторств",
+          "quote": "⚪️как работает менторство и чему можно научиться",
+          "date": "2026-09-17T11:10:01+00:00",
+          "url": "https://t.me/bashnya_education/1076",
+          "source": "post"
+        },
+        {
+          "phrase": "консультаци",
+          "quote": "Мы очень хотим собрать полную группу, а времени набрать заявки мало, поэтому для тех, кто займет последние места мы проведем бесплатную персональную карьерную консультацию с одним из менторов Башни 🙃",
+          "date": "2026-08-20T15:30:20+00:00",
+          "url": "https://t.me/bashnya_education/1043",
+          "source": "post"
+        },
+        {
+          "phrase": "консультаци",
+          "quote": "😝5 занятие - консультация по проектам",
+          "date": "2026-04-27T13:13:21+00:00",
+          "url": "https://t.me/bashnya_education/968",
+          "source": "post"
+        }
+      ]
+    },
+    "burned": {
+      "count": 0,
+      "matches": []
+    },
+    "pragmatic": {
+      "count": 26,
+      "matches": [
+        {
+          "phrase": "карьер",
+          "quote": "Поговорим о карьере в IT, стартапах и пути от обучения до собственного проекта 📈",
+          "date": "2026-10-03T13:08:44+00:00",
+          "url": "https://t.me/bashnya_education/1125",
+          "source": "post"
+        },
+        {
+          "phrase": "карьер",
+          "quote": "В октябре идём на экскурсию в офис компании, а еще Авито станет одним из партнеров нашего большого карьерного митапа 🔥",
+          "date": "2026-09-07T18:51:15+00:00",
+          "url": "https://t.me/bashnya_education/1056",
+          "source": "post"
+        },
+        {
+          "phrase": "карьер",
+          "quote": "Мы очень хотим собрать полную группу, а времени набрать заявки мало, поэтому для тех, кто займет последние места мы проведем бесплатную персональную карьерную консультацию с одним из менторов Башни 🙃",
+          "date": "2026-08-20T15:30:20+00:00",
+          "url": "https://t.me/bashnya_education/1043",
+          "source": "post"
+        },
+        {
+          "phrase": "карьер",
+          "quote": "Экскурсия пройдет уже очень скоро, скорее записывайтесь и проведите конец лета с пользой для навыков и карьеры 😎",
+          "date": "2026-08-18T11:55:50+00:00",
+          "url": "https://t.me/bashnya_education/1042",
+          "source": "post"
+        },
+        {
+          "phrase": "карьер",
+          "quote": "⚪️Найти научника и начать карьеру учёного",
+          "date": "2026-07-28T10:15:18+00:00",
+          "url": "https://t.me/bashnya_education/1032",
+          "source": "post"
+        },
+        {
+          "phrase": "карьер",
+          "quote": "⚪️Послушать выступление спикера и задать вопросы о стажировках, карьере и работе в компании 😍",
+          "date": "2026-07-20T15:18:54+00:00",
+          "url": "https://t.me/bashnya_education/1031",
+          "source": "post"
+        },
+        {
+          "phrase": "мидл",
+          "quote": "⚪️Рост от стажёра до мидла за год 📈",
+          "date": "2026-07-08T14:50:10+00:00",
+          "url": "https://t.me/bashnya_education/1030",
+          "source": "post"
+        },
+        {
+          "phrase": "карьер",
+          "quote": "⚪️Узнать карьерный путь сотрудников 😎",
+          "date": "2026-06-27T14:01:02+00:00",
+          "url": "https://t.me/bashnya_education/1029",
+          "source": "post"
+        }
+      ]
+    },
+    "gold": {
+      "count": 0,
+      "matches": []
+    },
+    "burnout": {
+      "count": 0,
+      "matches": []
+    },
+    "missionary": {
+      "count": 0,
+      "matches": []
+    },
+    "limits": {
+      "count": 0,
+      "matches": []
+    },
+    "audience_care": {
+      "count": 0,
+      "matches": []
+    }
+  },
+  "red_flags": [
+    {
+      "flag": "infobiz",
+      "quote": "ОСТАЛОСЬ 10 МЕСТ В AXENIX❗️",
+      "date": "2026-08-20T15:30:20+00:00",
+      "url": "https://t.me/bashnya_education/1043"
+    },
+    {
+      "flag": "we_not_i",
+      "details": "«мы/наш» 83 раз против «я/мой» 1"
+    }
+  ],
+  "counters": {
+    "we": 83,
+    "i": 1,
+    "ads_90d": 0,
+    "posts_90d": 30
+  },
+  "comments_used": true
+}

@@ -1,0 +1,35 @@
+{
+  "username": "roma_protiv_fomo",
+  "score": 84,
+  "blocks": {
+    "audience": {
+      "points": 20,
+      "basis": "ER=0.8802"
+    },
+    "monetization": {
+      "points": 25,
+      "basis": "менторство/консультации: https://t.me/roma_protiv_fomo/167"
+    },
+    "free_top": {
+      "points": 10,
+      "basis": "нужна ручная проверка; контент: вход 3 / рост 9 постов; продукт: вход 0 / рост 0"
+    },
+    "segment": {
+      "points": 15,
+      "basis": "прагматик"
+    },
+    "liveness": {
+      "points": 4,
+      "basis": "тренд стоит; −3: 0.47 поста/нед"
+    },
+    "contact": {
+      "points": 10,
+      "basis": "@simbaizdolgopi"
+    }
+  },
+  "penalties": [],
+  "contact": "@simbaizdolgopi",
+  "needs_review": [
+    "свободный верх"
+  ]
+}
