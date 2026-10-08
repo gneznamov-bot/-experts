@@ -1,23 +1,15 @@
 {
   "username": "anti_notes",
-  "segment": "обжёгшийся одиночка",
-  "segment_basis": "burned",
+  "segment": "не определён",
+  "segment_basis": null,
   "groups": {
     "has_product": {
       "count": 0,
       "matches": []
     },
     "burned": {
-      "count": 1,
-      "matches": [
-        {
-          "phrase": "больше не буду",
-          "quote": "После этого переезда я просто больше не буду спорить с этими людьми - не работает, окей, не просите потом отзыв после поездки оставить 🥹🤣",
-          "date": "2026-04-22T06:40:51+00:00",
-          "url": "https://t.me/anti_notes/81",
-          "source": "post"
-        }
-      ]
+      "count": 0,
+      "matches": []
     },
     "pragmatic": {
       "count": 1,

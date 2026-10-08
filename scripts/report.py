@@ -113,6 +113,15 @@ def name_guess(ch):
             return p
     if parts and re.fullmatch(r"[А-ЯЁ][а-яё]+", parts[0]) and len(parts) > 1:
         return parts[0]
+    # Имя из источника (Хабр отдаёт полное имя автора) — с пометкой
+    cand = ROOT / "data" / "candidates.csv"
+    if cand.exists():
+        with cand.open(encoding="utf-8", newline="") as f:
+            for r in csv.DictReader(f):
+                if r["username"].lower() == ch["username"].lower() and \
+                        re.fullmatch(r"[А-ЯЁA-Z][а-яёa-z]+\s+[А-ЯЁA-Z][а-яёa-z]+",
+                                     r["title_guess"].strip()):
+                    return f"{r['title_guess'].strip()} (по {r['source']})"
     return "unknown"
 
 

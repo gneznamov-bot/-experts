@@ -1,6 +1,6 @@
 {
   "username": "anti_notes",
-  "score": 48,
+  "score": 33,
   "blocks": {
     "audience": {
       "points": 20,
@@ -15,8 +15,8 @@
       "basis": "нужна ручная проверка; контент: вход 2 / рост 2 постов; продукт: нет"
     },
     "segment": {
-      "points": 15,
-      "basis": "обжёгшийся одиночка"
+      "points": 0,
+      "basis": "не определён"
     },
     "liveness": {
       "points": 3,
