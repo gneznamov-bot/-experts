@@ -116,7 +116,13 @@ def main():
         segs[s["segment"]] += 1
 
     # --- F ---
-    out = ROOT / "out" / f"batch-{now_utc().date().isoformat()}-{args.niche}"
+    # Своя папка на каждую пачку: вторая пачка за день с той же нишей не
+    # затирает первую (так однажды затёрся shortlist, 2026-10-08).
+    base = ROOT / "out" / f"batch-{now_utc().date().isoformat()}-{args.niche}"
+    out, n = base, 2
+    while out.exists():
+        out = base.with_name(f"{base.name}-{n}")
+        n += 1
     sys.argv = ["report.py", "--niche", args.niche, "--out", str(out),
                 "--size", str(args.size), *cands]
     report.main()
