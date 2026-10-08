@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>XOR – Telegram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible"
+     content="IE=edge" />
+    <meta name="MobileOptimized" content="176" />
+    <meta name="HandheldFriendly" content="True" />
+    
+<meta property="og:title" content="XOR">
+<meta property="og:image" content="https://cdn4.telesco.pe/file/t4OwuDT-hGYuj71_Vx8LgdGvsitaw00EpPMXu9CWSZCcxhPEZc1hAz9OPep1FOoJBHGgN1ES8jNKXtnOBcfdHE-4hDSScL9Q8vGH9L40HoWLdg6A5tvLy8k9Hk_W7gNZS1CouF4sFFIT7oki0_Ux5fMCZ0Phoq9o_3_NMpe9xQrabok-oZ06mL5v4-pNxN6LS7wXILaUt-_FYkziP38xNKUpWDwJOeO09pGnVCGONyIxqDGJnFecOoo6ZQaj6l-w7L4O7w0qPNL4F6SpcP8CJMtnZgMtyWlPVp11xijrwMCKZUEpDQtk9kPZNXGiUZd1j7K0o_hu2uIDvd3FdXlhQg.jpg">
+<meta property="og:site_name" content="Telegram">
+<meta property="og:description" content="Это журнал о программировании и технологиях. Здесь ты найдешь все самое интересное и свежее из мира IT.
+
+Редакция: @xorjournal_bot
+
+Сотрудничество: @todaycast
+
+РКН: https://clck.ru/3FjUWa
+
+#HWDBX">
+
+<meta property="twitter:title" content="XOR">
+<meta property="twitter:image" content="https://cdn4.telesco.pe/file/t4OwuDT-hGYuj71_Vx8LgdGvsitaw00EpPMXu9CWSZCcxhPEZc1hAz9OPep1FOoJBHGgN1ES8jNKXtnOBcfdHE-4hDSScL9Q8vGH9L40HoWLdg6A5tvLy8k9Hk_W7gNZS1CouF4sFFIT7oki0_Ux5fMCZ0Phoq9o_3_NMpe9xQrabok-oZ06mL5v4-pNxN6LS7wXILaUt-_FYkziP38xNKUpWDwJOeO09pGnVCGONyIxqDGJnFecOoo6ZQaj6l-w7L4O7w0qPNL4F6SpcP8CJMtnZgMtyWlPVp11xijrwMCKZUEpDQtk9kPZNXGiUZd1j7K0o_hu2uIDvd3FdXlhQg.jpg">
+<meta property="twitter:site" content="@Telegram">
+
+<meta property="al:ios:app_store_id" content="686449807">
+<meta property="al:ios:app_name" content="Telegram Messenger">
+<meta property="al:ios:url" content="tg://resolve?domain=xor_journal">
+
+<meta property="al:android:url" content="tg://resolve?domain=xor_journal">
+<meta property="al:android:app_name" content="Telegram">
+<meta property="al:android:package" content="org.telegram.messenger">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Telegram">
+<meta name="twitter:description" content="Это журнал о программировании и технологиях. Здесь ты найдешь все самое интересное и свежее из мира IT.
+
+Редакция: @xorjournal_bot
+
+Сотрудничество: @todaycast
+
+РКН: https://clck.ru/3FjUWa
+
+#HWDBX
+">
+
+    <link rel="prev" href="/s/xor_journal?before=9866">
+<link rel="next" href="/s/xor_journal?after=9888">
+<link rel="canonical" href="/s/xor_journal?before=9889">
+
+    <script>window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.documentElement&&document.documentElement.classList&&document.documentElement.classList.add('theme_dark');</script>
+    <link rel="icon" type="image/svg+xml" href="//telegram.org/img/website_icon.svg?4">
+<link rel="apple-touch-icon" sizes="180x180" href="//telegram.org/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//telegram.org/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
+<link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
+    <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
+    <link href="//telegram.org/css/widget-frame.css?75" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
+    <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
+  </head>
+  <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
+    <div class="tgme_background_wrap">
+      <canvas id="tgme_background" class="tgme_background" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
+      <div class="tgme_background_pattern"></div>
+    </div>
+    <header class="tgme_header search_collapsed">
+  <div class="tgme_container">
+    <div class="tgme_header_search">
+      <form class="tgme_header_search_form" action="/s/xor_journal">
+        <svg class="tgme_header_search_form_icon" width="20" height="20" viewBox="0 0 20 20"><g fill="none" stroke="#7D7F81" stroke-width="1.4"><circle cx="9" cy="9" r="6"></circle><path d="M13.5,13.5 L17,17" stroke-linecap="round"></path></g></svg>
+        <input class="tgme_header_search_form_input js-header_search" placeholder="Search" name="q" autocomplete="off" value="" />
+        <a href="/s/xor_journal" class="tgme_header_search_form_clear"><svg class="tgme_action_button_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><g class="icon_body" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="1.5"><path d="M6 14l8-8m0 8L6 6" stroke-dasharray="0,11.314" stroke-dashoffset="5.657"/><path d="M26 14l8-8m0 8l-8-8" stroke-dasharray="0.371,10.943" stroke-dashoffset="5.842"/><path d="M46 14l8-8m0 8l-8-8" stroke-dasharray="1.982,9.332" stroke-dashoffset="6.647756"/><path d="M66 14l8-8m0 8l-8-8" stroke-dasharray="5.173,6.14" stroke-dashoffset="8.243"/><path d="M86 14l8-8m0 8l-8-8" stroke-dasharray="7.866,3.448" stroke-dashoffset="9.59"/><path d="M106 14l8-8m0 8l-8-8" stroke-dasharray="9.471,1.843" stroke-dashoffset="10.392"/><path d="M126 14l8-8m0 8l-8-8" stroke-dasharray="10.417,0.896" stroke-dashoffset="10.866"/><path d="M146 14l8-8m0 8l-8-8" stroke-dasharray="10.961,0.353" stroke-dashoffset="11.137"/><path d="M166 14l8-8m0 8l-8-8" stroke-dasharray="11.234,0.08" stroke-dashoffset="11.274"/><path d="M186 14l8-8m0 8l-8-8"/></g></svg></a>
+      </form>
+    </div>
+    <div class="tgme_header_right_column">
+      <section class="tgme_right_column">
+        <div class="tgme_channel_info">
+          <div class="tgme_channel_info_header">
+            <i class="tgme_page_photo_image bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i>
+            <div class="tgme_channel_info_header_title_wrap">
+              <div class="tgme_channel_info_header_title"><span dir="auto">XOR</span></div>
+              <div class="tgme_channel_info_header_labels"></div>
+            </div>
+            <div class="tgme_channel_info_header_username"><a href="https://t.me/xor_journal">@xor_journal</a></div>
+          </div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">211K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">7.2K</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1.57K</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">23</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">4.49K</span> <span class="counter_type">links</span></div></div>
+          <div class="tgme_channel_info_description">Это журнал о программировании и технологиях. Здесь ты найдешь все самое интересное и свежее из мира IT.<br/><br/>Редакция: <a href="https://t.me/xorjournal_bot" target="_blank">@xorjournal_bot</a><br/><br/>Сотрудничество: <a href="https://t.me/todaycast" target="_blank">@todaycast</a><br/><br/>РКН: <a href="https://clck.ru/3FjUWa" target="_blank" rel="noopener">https://clck.ru/3FjUWa</a><br/><br/><a href="?q=%23HWDBX">#HWDBX</a></div>
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=835c9dd1e6d5d9a3e0_1489532880389084869">
+            <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
+          </a>
+          <div class="tgme_footer">
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/faq">About</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/blog">Blog</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/apps">Apps</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//core.telegram.org/">Platform</a></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="tgme_header_info">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=835c9dd1e6d5d9a3e0_1489532880389084869">
+        <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
+      </a>
+      <a class="tgme_header_link" href="https://t.me/xor_journal">
+        <i class="tgme_page_photo_image bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i>
+        <div class="tgme_header_title_wrap">
+          <div class="tgme_header_title"><span dir="auto">XOR</span></div>
+          <div class="tgme_header_labels"></div>
+        </div>
+        <div class="tgme_header_counter">211K subscribers</div>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="tgme_main" data-url="/xor_journal">
+  <div class="tgme_container">
+    <section class="tgme_channel_history js-message_history">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/xor_journal?before=9866" class="tme_messages_more js-messages_more" data-before="9866"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9866" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg2NiwidCI6MTc5MTQ1NzkyMSwiaCI6IjNkMDhmZGQ4MzY4M2M1MWIzNCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_video_player js-message_video_player" href="https://t.me/xor_journal/9866"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/CjNlPn6MXsueb41a0q6u3FUt9j7SJaqaxxC5smEGHZktkXCdgUdKhyZBJZ_p6pCOxMCn7s3Q5uhAlCuLj4vaiLje7Xa1Een32UoGQclqXl07A7Q64-sj7a-K06JMIsvvg2OfXhXkBmBqaKVpOpPza91NJEJSg-2R2yjO4P8Af8W4PkDMUMFbCgZc79vQrVAY_WDxm_QKqqk6cCDOBGZ-hnbTmxCNYv9Jo8pbrcDjW0gI91tabjXbVRDHMxz4JldB_jETIxECL41ql0_zmDXp9_R1XEGpvi110Vl4CfwsZ6QLcQ-603BTVBYluiFNTBuIOwt5y54HNXv-ngDUbGKFLQ')"></i>
+
+<div class="tgme_widget_message_video_wrap" style="width:1280px;padding-top:62.5%">
+  <video src="https://cdn4.telesco.pe/file/bc02d6ac77.mp4?token=iJ3gbGNqdBdxHfiOz9K99BE1bH4u1g8AOKwUhPXHzHWPCkh4ty3RCv7cU_wkoL53I4jLahQHF1cBJWbHZNszvHgT2dsiFtq3VQxI5fVF5GfYeroBHJURqEr5xva0VDZfZhxaQpDGCZ1ExAeHJMIIY1T4Sg7hAE-P7vho0uSGnYlxdjE8bm1K3Wv7cFw_axo2NWkRnqSAm8WD6xziIXYEOFbnbUYJMoBPFcNWbsIqWbBtoQ5omFxoJ3b0OkBJg8hZ_NS9OKJpSRmj6KeO5gqrUstT46z8DxtMm-2mM3ZLlwO1GNBBYPYhWPb5ABYcc7wCAQFrEFSPuEji_ba1AnPhATZLv429uCiNAhQMSKfz9LVBu3FX4f_2HvZ4acNDgYoGcbFT7ppghTBnhA9F7C0DLFb-t3aQK35guzJiOmheOrd8ZVKcZdlEVaMERtNIRfS5TFdlf6qKpcYhGSq619JYqQtre_6IJo9E_9AhUmlrq0aV3Mfo80-1qDImn6o5NfWbVvTuVk2TClKL0PGk2BmL8_Wu9QreI3Mf8ZlC2wJbDlMfDh9ukuxHp2yGn_V5lhC8swL8jqjA6MesgR3QkyPC_xkws00lBCR6jVOsSx8pgAh-yj8_DjMGG4RWRf8NAIc2FXflBkz5_JVlycjPxyD-qgg0r_TV89d7VxP5mK7gesY" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:31</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Коворкинг теперь есть прямо в браузере — </b>реддитор сделал для удаленщиков <b>Manyplace</b>.<br/><br/>Это уютное виртуальное<b> </b>пространство, где можно работать, учиться или читать в компании других людей со всего мира. Каждый занимается своим делом, но благодаря присутствию других работать в одиночку уже не так одиноко, а сосредоточиться может быть проще. Плюс в перерывах можно взаимодействовать с другими пользователями и обмениваться реакциями.<br/><br/>Сервис бесплатный, а для macOS даже есть отдельное приложение. <br/><br/><a href="https://many.place/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Коворкаем</a> <tg-emoji emoji-id="5197247368344379154"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988A.png')"><b>😊</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9866" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>50</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>19</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A8.png')"><b>🤨</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97BF.png')"><b>🗿</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')"><b>🤣</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">21K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9866"><time datetime="2026-08-06T15:17:04+00:00" class="time">15:17</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9867" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg2NywidCI6MTc5MTQ1NzkyMSwiaCI6ImQxMGUxZGYyNTM1NWY3ZTA5ZCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5451946321095892824 1269380171_460005208" href="https://t.me/xor_journal/9867" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/kxTShU69ZfZtb9skne2exCD65BczIY4jMxgiOkp_ehPmRAJ4V3Tgfg0drDS5UouG5-tiTUIJfjBs_H2t6njTdSrtgsT2V0ohkcmHc9sZcvGzYd1EZUtlwrPC-xZBr6HA_47Mj4BM1d6rrQRYqt8lnAwAztduIofF7ft7jvtLL0ysS6Im3Jwpb4DrcPktKrhpjREpCi-WPVcaUCgWeD2v3tmRG5i1DmnjNAfymn9ItltRpz5-0JJn__ATeM-U9br5Ix3jFaydeJce2P6F3MDEtlk5Sq9u1SjmAerAJy7dSkmsXN-DLuDDnDalb76N_YDX9rEgW_y5tBXk4CtP7tDxzQ.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:63%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Рынок труда. Итоги <tg-emoji emoji-id="6203797611569218985"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B2.png')"><b>🥲</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9867" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>264</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>57</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')"><b>🤣</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C9A.png')"><b>🌚</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')"><b>🫡</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">19.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9867"><time datetime="2026-08-06T21:15:03+00:00" class="time">21:15</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9868" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6Ijk4NjhnIiwidCI6MTc5MTQ1NzkyMSwiaCI6IjhmYzJhYzljZmMyNGQ2Nzk5OSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+<div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<span class="tgme_widget_message_forwarded_from_name"><span dir="auto">CodeCamp</span></span></div>
+
+<div class="media_supported_cont"><div class="tgme_widget_message_one_media js-message_media"><div class="media_supported_cont"><div class="tgme_widget_message_grouped_wrap js-message_grouped_wrap" data-margin-w="2" data-margin-h="2" style="width:453px;">
+  <div class="tgme_widget_message_grouped js-message_grouped" style="padding-top:82.781%">
+    <div class="tgme_widget_message_grouped_layer js-message_grouped_layer" style="width:453px;height:375px">
+      <a class="tgme_widget_message_video_player grouped_media_wrap blured not_supported js-message_video_player" style="left:0px;top:0px;width:453px;height:247px;margin-right:0px;margin-bottom:2px;" data-ratio="1.8275862068966" href="https://t.me/xor_journal/9868?single">
+  <i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/RCGoGJOgL949gWuyPTdHxexQ0iLEfRE0F_jA7t6kL8IuYBEC2hMbVv24swxHeIbh17kEpiveQTaODBmw3dL_GtZhOCcTxF-tHlociuPHenOZOX2G01brqNTTFoTIlVCja4x2J6hiDMlBQwie0o6BRTJyMnyEucnolVkncc_7I0LHYzXeaQpZUthMnRRPGnB_zG2zmfsi7acgHPDhSQBNTV5uHB1DCxM6drw1ncZdl8midE27wwBi0MHtpuwF-bpKjskUia5QfiZ7h-UGZoXiFytqOlbS3Kv3yf5-co2SWhmdYVBcdfurx1j-IK7DpjDQPpyVU_Lg9k9H-3WgZLKw5w')"></i>
+  <div class="tgme_widget_message_video_wrap grouped_media js-message_video_wrap" style="left:0;right:0;top:-1px;bottom:0px;">
+    
+  </div>
+  <div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">1:19</time>
+  <div class="message_media_not_supported_wrap">
+    <div class="message_media_not_supported">
+      <div class="message_media_not_supported_label">Media is too big</div>
+      <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+    </div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:249px;width:225px;height:126px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/qXOYVrTWQ11rMOAFKV_hwpTF8LuHZA8OONUDeVqqBLmhK6bTTidOgjunLD7qOL35MytpUt6bbU_DDATPsHUOqlsgcg9TNnfoo8YAJGaS5wcm4MZcB4v1SRhBEdZ8_ojrXDJTHVGOZX0I_mf7vhNWwPYAl1hnTumlsfV1Cbg_GBB7b2HAnUTUQVxIF4qaYArEC7BJPhcRKG5aOzqB8shFxnrbh0NEttViPSpV5Tuq9VePbwuIMadj28arJdy3_k-URNd8ihSYxaABoPWSdQGMAPNYsFoAhgmSqvWADHi5cpX4oLSlUDHzTwetvOZGfYLyLED5-l17cxxKaQLQOGGXqw.jpg')" data-ratio="1.7777777777778" href="https://t.me/xor_journal/9869?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:60px;bottom:61px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-1px;bottom:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:227px;top:249px;width:226px;height:126px;margin-right:0px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/tqqEStpgqeMiyjUZSGb8D23ED967kUq74vCKZZ5eM5sE66bn5Xl4GIrnfd7HRRtSatDLPSZDDqjOWezia70qHLGb0zuPE3n6TET1JW7jTARmHhxyA3PYjNqa4f8bpbM46bz4ratSsF4i4oRFn3ka5blj1K20QPXQk0aYc3kBQjO563MEVvpQXF9SYAOQLltqyYQGwmBDoARXj4W1CwPu1Xx7r2vVC4AhjT5BjFIG-Mluv6fW3Du-_syCk0Tj_mpEJmtzXfQJgCn-w8pVYYDv1rIEYwQhBAzl9GKcX9nD1d7IZ1cQTQ6SpwU1XdUBFpnPrb2IyWyzI1h7snUTGedBPA.jpg')" data-ratio="1.7777777777778" href="https://t.me/xor_journal/9870?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:60px;bottom:61px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-1px;bottom:-1px;"></div>
+  </div>
+</a>
+    </div>
+  </div>
+</div><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Отдыхаем после работы в… японской мастерской электроники 2000-х годов </b><tg-emoji emoji-id="5197271020729277996"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i></tg-emoji><br/><br/>В Steam вышел <b>ReStory: Chill Electronics Repairs </b>— симулятор управления маленькой уютной мастерской, где вы стали владельцем. Придется разбирать девайсы из нулевых (от PSP и тамагочи до мобильников), паять, влиять на судьбу клиентов и развивать бизнес.<br/><br/><a href="https://store.steampowered.com/app/3812600/ReStory_Chill_Electronic_Repairs/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Это лучший антидепрессант</a> <tg-emoji emoji-id="5197366510737170166"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9868?single" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9868" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>63</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>25</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">19.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9868"><time datetime="2026-08-07T07:11:27+00:00" class="time">07:11</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9871" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg3MSwidCI6MTc5MTQ1NzkyMSwiaCI6IjMxMWVhZWIwNzM2MzA2NDY4YSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_video_player js-message_video_player" href="https://t.me/xor_journal/9871"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/EiN8X1btvWc00UMUrKt0jj5icxjAxa4rrckCappHiqR9wCTFilDWvymPRXBIA74ZuVKe2LiTi7fj2m7TJIUFHkrdL1bcpZXut-KprLrC5eoTFKjjs7yFwda1dciLrHoPUm1zZS328z4bQJyLLwXYz1ySfAhNltWNP_lrRjnhb0nlDha97jftDSdKCu3vNOoc5zSGIxmluTHisLtQPTqqD8nBF-Bzn28T35kCKsj67ngegpPZ6nU9wq0n8n8MU6Ez5-LcH3CXW8kiQ4O59zKFwXbdbMhGQ49ee_CZIerDsPgfvoCwulNL0joW9wSdafrXEADy-uak1TEOMBlxR469QQ')"></i>
+
+<div class="tgme_widget_message_video_wrap" style="width:1280px;padding-top:67.5%">
+  <video src="https://cdn4.telesco.pe/file/f1d2a5953f.mp4?token=DZhXiOTwiT4e9d0P8Y-__bZ2GNEc2gDyo9wY5iXUzKcN6_MfklAcO4zerzBxfMM_iebpnuThHXBL9jvXQDpOrBeTbJCs0WmHxAjDPr8I-uWHyEpbw1AlyI3_OID5DjB3iECxdY4qvMymc9pSa0viqjbYda7imYYSMVSqQW6cX5PbQPvj84ieoNSAkjWvcnV_KTdGsP1-agCGRPY-KCpwzWJV2mX_F9El-zLNMsueC6SmVp2en-XhIDEaOp2Pw8YNIWNEzDS-r00VLK_9_J1OSYW4RVsWW07oZ2fWMU76hs9hXuh06DenBUCyDsbOUzwYmVl6f2ml7Jd1Kiev2Et19Q" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:22</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>OpenAI прокачала Codex Security — </b>теперь он может сам проверять каждый PR на уязвимости.<br/><br/><b>Codex Security Review </b>работает прямо в GitHub и может автоматически выполнять проверку безопасности каждого PR, учитывая контекст репозитория. При этом найденные проблемы и рекомендации оставляют в комментариях.<br/><br/><a href="https://learn.chatgpt.com/docs/security/security-review" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">С этим прод в безопасности</a> <tg-emoji emoji-id="5235818786002575337"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AA.png')"><b>💪</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9871" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>37</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C8D.png')"><b>✍</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA494.png')"><b>🤔</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">17.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9871"><time datetime="2026-08-07T13:02:40+00:00" class="time">13:02</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9873" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg3MywidCI6MTc5MTQ1NzkyMSwiaCI6IjE3NzJmNjZmYzUwYWE3ODNlZCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5454014657086560555 1269861743_460003627" href="https://t.me/xor_journal/9873" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/YgZdohS2Y9RK9Fg2LNSaOc3v-57CLZDeoCHOOX6fKggKnB2zrwLyJSJ6L4kFRTeyL3l3UsBaESq9Zw0Da1gXlWmJovvldKX6cL07IPY6LgYu44g1IvMbQOMUW2iBhA1JtN23PRKM3Ihdvw3sovEdp0JVESq49eV_GdFYpxaocUCYdGs6ULHdBHrf-us9Dx79x4pTd5A3wCM4_bMWACancPjJoh6JWWsMdqBAxlZ7aErX4zdnlMgPiD7KCYKZVY8_Y0xfMegWh9N74mCE5lYSuYPi-9cl3sLDVYLuITsU1T4YtuI56hylAxQ89j7nv5U8woVexnW3w23NfV6gikAy7A.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:65.75%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Ого, Россия снова забрала чемпионство на международной олимпиаде по ИИ —</b> сборная <a href="https://tass.ru/obschestvo/27993085" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">стала</a>&nbsp;абсолютным победителем IOAI в Казахстане <tg-emoji emoji-id="5276114182058549126"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA587.png')"><b>🥇</b></i></tg-emoji><br/><br/>Наши старшеклассники увезли <b>8 медалей,</b> обойдя Китай, Польшу и десятки других стран. Сборную традиционно готовили эксперты Центрального университета и Альянса в сфере ИИ.<br/><br/>Всего у нас 7 золотых и 1 бронзовая награда + звание абсолютного победителя олимпиады у Артёма Горохова. Самое крутое: наши мегамозги выигрывают IOAI уже третий (&#33;) год подряд.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>&nbsp;— поздравляем ребят <br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9873" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>246</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>32</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>15</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')"><b>🤣</b></i>10</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">18.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9873"><time datetime="2026-08-07T15:19:02+00:00" class="time">15:19</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9874" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg3NCwidCI6MTc5MTQ1NzkyMSwiaCI6Ijk4NzdhNGU3ODUwYzM1YWJlOCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5454014657086560627 1269861743_460003699" href="https://t.me/xor_journal/9874" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/FoAxyUudRhqpfabN4go-rkSIDhkqn7TNutIHtJhCErOp1dRyBN4TaMcftcAcz54dieAASaS_oUB0uHPWg5fciA9lsfHGcvRj5zpPH1PMxNN8VUCDiM-N63v_Lsi-XMJq9FRYv8j-vwU-z3i_6BssVzSPtm4DeoKRhfDMsUiG8mNgg9JbO-iH3_tvyj1vv6OTJhYF4RS4JnUDqIm1EMr6GFcCvzmxNW1q6IyrRTKuyr3TJYH0-soK8ShA9RaVYmUHktk5XPKJDK5otKFoFt4myCGFz_7sYofPxSUc60HEu083rY8OjvcxXT393r4o_1mUKzkuTI2G57_4F24IyAxyKw.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:92.875%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Контора сами знаете кого: </b>Google AI<b> сливает данные </b>из приватных документов<b> </b><tg-emoji emoji-id="5334738415474715044"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9890.png')"><b>😐</b></i></tg-emoji><br/><br/>Разраб <a href="https://www.reddit.com/r/IndieDev/s/kGA09SZIpF" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">рассказал</a> на Reddit, что один из игроков начал расспрашивать ИИ Google об его инди-игре. Всё бы ничего, если бы нейронка внезапно не назвала точное имя ещё <b>не вышедшего персонажа</b>. По словам автора, он никому его не раскрывал, а в цифровом виде название хранилось только в его приватном документе в Google Docs.<br/><br/>Позже в тред пришла другая разработчица с похожей историей: ответы Google подозрительно точно совпадали с содержимым её приватного GDD.<br/><br/>П — приватность <tg-emoji emoji-id="5366083181290227370"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')"><b>👻</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9874" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>159</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>41</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F958A.png')"><b>🕊</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA494.png')"><b>🤔</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C9A.png')"><b>🌚</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">19.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9874"><time datetime="2026-08-07T16:02:04+00:00" class="time">16:02</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9875" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg3NSwidCI6MTc5MTQ1NzkyMSwiaCI6ImYxMGU4NDRjNTU1ODcyYzE2NyJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5454014657086561058 1269861743_460004130" href="https://t.me/xor_journal/9875" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/RFMV7VILwhsvX-Ld6L8HYpK7q7UyAglat3e_XHZ3A0Wd9mVdguFEv4oaPJUE6-0Kz5uppZ0ep03hbzpffVJxMbWINiTzVnQ0BnvAzSpOb7L1D5JGSCu09rSLtbc9hj8JQdU6LZ8Y-SP6pMPse8_WoP_DAX_gitv__kPFYEqCce2rF57zN1vHIFyGwJbg-b3ALnyE1QvJb1CeOCejsy6SkQOjYTHdMh5W5wp4Pd0A3Uc-YayZkaHwRq55zdjz34yPYe6MRGHAaqcI69AK8hKt8dmID180MjHspzlxIeyAwNg93skSZ7kquATyvePU0MsEkPIgb5UwtGM599wws18Qjw.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:61.625%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Как неожиданно: </b>люди оказались ХУЖЕ ИИ в проверке опасных команд <tg-emoji emoji-id="5456423506214396470"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i></tg-emoji><br/><br/>Anthropic <a href="https://claude.com/blog/auto-mode-default-in-claude-code" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">провела</a> исследование с участием 1053 профессионалов: люди заметили лишь <b>13,6% опасных команд</b>, которые им подсовывали среди обычных запросов на подтверждение. Auto mode в Claude Code заблокировал <b>89%</b> тех же команд. Причём чем дольше длилась сессия, тем чаще люди начинали подтверждать всё на автомате. <br/><br/>Поэтому с 14 августа auto mode станет режимом по умолчанию в Claude Code для Pro, Max и Team.<br/><br/>Люди 0:1 ИИ <tg-emoji emoji-id="5866082778306580278"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9180.png')"><b>👀</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9875" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>116</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>27</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97BF.png')"><b>🗿</b></i>14</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA494.png')"><b>🤔</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')"><b>🤣</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">19.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9875"><time datetime="2026-08-07T21:38:51+00:00" class="time">21:38</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9876" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg3NiwidCI6MTc5MTQ1NzkyMSwiaCI6Ijc0ZDA2OTllZjk1NDJmY2NkMSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_video_player js-message_video_player" href="https://t.me/xor_journal/9876"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/J8uMdPhKReimToqfxcSmH731Yjg19mq7Cby2gyJWFIpmFELrT3UkS3EoiB1HQKjYksq3QORZgmei4xsYUOzI60mMjsfP2EelOCT2hiho9NAhBnGcQ134-8chdMVQQlsOqNaM50FDcSvPwuinzTDl3lTByj2ubPUyeOlk5SAyqC9T3H3GMs3R3UwlUSpifo6cyOg_aZ_QgBBXgtb9KTyVV2dyxlaZ8pZy0j0ZavwsYZ_6ob5W3nm6JUYg0tpgVZ-TySGyh7kh4LkPD0hXoTrTQNz_uA1CstPa4GGu8HGgcpKMCLKVfUvBxev03Vav6Xq8CXvsOhaawQVfQ6EN5fLJ2A')"></i>
+
+<div class="tgme_widget_message_video_wrap" style="width:1280px;padding-top:56.25%">
+  <video src="https://cdn4.telesco.pe/file/b4902d2221.mp4?token=UOiGDcB_OdMpi9qDm_R0hkWRmbkim5ejoa10TmCLenjBw1MXEPrW2k549OZPDY4Jiy-X-1lnFFs4ZqwInCh1TSsLaajMJRxjTNwbLnzYQGZFPIBWUnA3FXY1Yr1xBR-IpkzOzXGxgcOhWRUHmvtK-bLxD4ZucpkRJZnrBRDRtcip9vZRCdIW0vASxxIgUBS0rarhB5AG8Qk4fhW6gYHR8jiUkqGwbDwfWSDpkX7wzzhouDEpJcPuKggtCRfKkEVcF1NzORxPBY76wU2-5P_Ao3n1cO_ZHIUNihe6W0rx55ieqGsyrt0jOQE2SByIISaium_MTwCuaoJi59rXO-Jahobeg2KMXxAh3lgtmtVaQOxI9kbqKcD9OIr_m_U9hky6R6syoKfmhW-pKPOivPHL5M1NqwfEtpADF5nYWBQR2ogB0TSmUhAViqApkII4-VAZdHN4Tno9eUaW_RViwa5wwQY9cjMbcW_Mzw5gt6X8tJVx5XBi26ojUi4WDApD6g-xRJ0Ix085IqZlXUj4xtuXAOnT21ak8WcB1OIFBLtL1jFRefpl3mMjFaBtS-IWPcUibdTMfEKFu02WWMmVhnuPfXsCsyEsqVEoU8f52zDo5m2_mBrNlsWXFGWHgh4DZclAMP8xMo7xHvtAUp_ukXlfLCeHhrP-URSdlhY-Y7txjaQ" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:37</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Стартаперы и дизайнеры, вам: </b>нашли шикарную шпаргалку для тех, кто делает интерфейсы<b> </b><tg-emoji emoji-id="5366575839808879229"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B3.png')"><b>😳</b></i></tg-emoji><br/><br/>На <a href="http://checklist.design/" target="_blank" rel="noopener"><b>checklist.design</b></a> собраны 100+ подробных чек-листов для сайтов, веб- и мобильных приложений и UI-компонентов: карточек, форм, навигации, списков и других элементов. Внутри десятки мелочей и сценариев, которые легко забыть при проектировании. Кстати, каждый пункт идет с объяснением, скриншотами и наглядными примерами.<br/><br/><a href="https://www.checklist.design/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Практически дизайнерский ГОСТ</a> <tg-emoji emoji-id="5458602128375290972"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9876" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>25</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>15</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA494.png')"><b>🤔</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">57.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9876"><time datetime="2026-08-08T08:40:39+00:00" class="time">08:40</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9877" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg3NywidCI6MTc5MTQ1NzkyMSwiaCI6ImVhNGUyZWY0YTA3NTc0ZmNkMyJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_video_player not_supported js-message_video_player" href="https://t.me/xor_journal/9877"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/XetMdy0CeiQjKBPuKWinF1jves11fW89P6oPYWZbtzONpCX5GEs2dJd6X1wFrEzwTE_pNC7p1x-Wse-RQUoP4TMcysGyKyiTtRpbKjqa0-f_eyDpRsqPXvDVqrPO-I1L7tpaPxhmWMFtiuHPGshCE6SCzhWe5m4g52TyqDzt5y8SEz8pabvgAaYaDfjviQRVRZRlRdMXsiauSl6H1Tp8I2ycYlagKsiLJuIwusvWe7_qcUpo9kMX7rJjqFN3nCtFG1xA4fH-FqRagUffXpIohLeSITOH0mK8uTiS-gPP2UcjBbkqKVs6dkE0ABLBbn8S3sdyHqgavnnYbW7sOUBspw')"></i>
+
+<div class="tgme_widget_message_video_wrap" style="width:464px;padding-top:133.33333333333%">
+  
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">2:59</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Media is too big</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Siri идет на помойку</b> — разраб сделал из Codex ассистента на iPhone.<br/><br/>ИИ сможет читать экран, управлять приложениями и выполнять действия от вашего имени. Общаться с ним можно голосом. Плагин полностью опенсорс. <br/><br/><a href="https://github.com/Samin100/codex-ios-assistant" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Забираем</a> <tg-emoji emoji-id="5456669990092545624"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D86.png')"><b>🍆</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9877" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>57</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>20</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97BF.png')"><b>🗿</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C8D.png')"><b>✍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C9A.png')"><b>🌚</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">19K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9877"><time datetime="2026-08-08T21:48:56+00:00" class="time">21:48</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9878" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg3OCwidCI6MTc5MTQ1NzkyMSwiaCI6ImExNGEwMjNhMDg2MDViMGQxYyJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5458910146709887546 1271001563_460003898" href="https://t.me/xor_journal/9878" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/UPmYas2Y9DgODmRncZ2ilTiEnr3UGQ1YSi-2DQ9Jv2ZBCtmRxJ2gQlC6NvuqZk9hy_SiEu8thC9TCWjGq4BulZiOhxlUmZK5UEOVCnnOAYnD0DjMKDOqgz0C8RQyM12xzGDolBBCg_sGSu7TSKbISGuH4KFWH2xf6Km2ufOW8VjNiCFZHRJ1KWzVm2P-BV6P9XYFHPmqEHBuYCgTaOIwzfZ7aiRUZzq3vOV0NkyYgWsNBE_vRjhIu9o6Jq0mI3T0hfofvqWMJNo4mDy2pqTglwROYq3paQtIhXUCOgsC32jyrNcr04jBvFIB23a2J8HrNydpeJlp7QOwyVYIZ9p-3w.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:59.5%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Stack Overflow перешёл в режим read-only </b><tg-emoji emoji-id="5462904152302558403"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29894.png')"><b>☔️</b></i></tg-emoji><br/><br/>Пользователи пока не <a href="https://stackoverflow.com/questions" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">могут</a> публиковать новые вопросы и ответы — сайт работает только на чтение. Пишут, что это временно, но, учитывая, что число новых вопросов уже <a href="https://data.stackexchange.com/stackoverflow/query/1926661#graph" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">упало</a> ниже тысячи в месяц — не факт, что из режима выведут.<br/><br/>Эпоха уходит на глазах<b> </b><tg-emoji emoji-id="5294525581575070104"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')"><b>🫡</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9878" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>175</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')"><b>🫡</b></i>115</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F958A.png')"><b>🕊</b></i>17</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C8D.png')"><b>✍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">20.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9878"><time datetime="2026-08-09T09:19:24+00:00" class="time">09:19</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9879" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg3OSwidCI6MTc5MTQ1NzkyMSwiaCI6IjY2ZjUyYTAzM2FhZjQ3ODlmMSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_video_player js-message_video_player" href="https://t.me/xor_journal/9879"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/e21XmpVDLisAcA-a9Fw2tMw5FINX9KmB_YGnWlH4W1pnKyPjlMhm5tYQQzM3IGK2wIGQmL0Nv9W8izIKVr8p3rQ9-XnCi-oigMrKwulHDvPWfGUoSCUXWDxOtpHk9r-xBXGuPM7gigg55P4tbqpDqjHVocWVh7r_bVVc7Wrh0EoXA66OJYAclOwRy6mjPoVec8_1oAg7rPYjsFtGk9ZRb6Fg4E2SNGqGgkUqggIU6SWZM7crbjiI_JVRbmJUinkOjy9s5aB0uISAyKgCF9K_3iY9A67TNnlzfBKxeDgCywIS89abp8fcZcBxL7Pd9SZkVTk604v_MZM7VJO-EKr-xw')"></i>
+
+<div class="tgme_widget_message_video_wrap" style="width:1280px;padding-top:56.25%">
+  <video src="https://cdn4.telesco.pe/file/613f8b00dd.mp4?token=aLm7JKJAhx7vXdfoV9a8cmnAWjctLUVOjlWzEa-dAS7s8WrGClylBkcfAy8Qn2OdilyAnQkj6779XZs80-s_kGH5Hvc6SMnpHq1MWG_OnaXDiozZ3BBiladIlWGSDthcZW2KEK1S6atGsmCYLfT5gF91O7CtReH5Pw3pXUKLJpK-rWi05daq_Nyiv_Jdm3HaZATJKyyKqkV4hBSR0RUqOGYDQ3P0nWMiLr5H7xjTxN81eePnRX08c-27NShd22pxeVjPCOk2HPyPectqWtsslWrWa4Nvz7umnuTyHPE0uf0GddOVPlQd2gYHXLpzsI9owpcCW6cGDObxPQsiEUaIJg" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:11</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Полезное для фронтендеров:</b> в Х завирусилась бесплатная коллекция красивых лоадеров.<br/><br/>На generativeloaders собраны десятки вариантов лоадеров для текстов и изображений. Всё можно посмотреть и забрать себе в проект бесплатно.<br/><br/><a href="https://generativeloaders.com/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Минус боль</a> <tg-emoji emoji-id="5992163643519669293"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9879" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>37</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97BF.png')"><b>🗿</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">18.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9879"><time datetime="2026-08-09T21:06:03+00:00" class="time">21:06</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9880" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg4MCwidCI6MTc5MTQ1NzkyMSwiaCI6IjQ5Yjc1Yjk2MTcxN2QzZGM2OCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5460922274463553985 1271470048_460003777" href="https://t.me/xor_journal/9880" style="width:768px;background-image:url('https://cdn4.telesco.pe/file/NnduNvWJcmv6VibHzqzPNURrAblEwb1kXG-4Mp_yZ4DBBephhS48WafFXndPKIQvGv6llpCFkphAmut-gwOr-YO-383XI0dB7hkWRSoQxVrfMQD82_r_J3aa976jHVmW7lpSH8HTTgEEh6pAiE7jR54F3kvBQFWl8wsgR9JzYdidz9o00fQrAM6MOQ-b1sp1WVDdB0N6WpodGWIxvleKQHS2G3uFp4b61LwQi59K1uKeW4vSfkbX3e0SIy76hizss3sk6fUo7XCHPLVTgQElwA_wcDx_fG-0SE7VBNi18wab91l7c4N_jgPMvDyQnfN4Nbj97tgQcbAy2uB4N0-RTg.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:104.16666666667%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>ИИ взломал сайт спортзала и отменил чужую бронь ради кожаного хозяина</b> <tg-emoji emoji-id="5470124151240938791"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B3.png')"><b>😳</b></i></tg-emoji><br/><br/>Австралиец <a href="https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">попросил</a> Claude<br/>записать его на популярное занятие в тренажерном зале. Агент не растерялся, нашёл уязвимость и смог забронировать слоты на несколько недель раньше разрешённого.<br/><br/>На этом история услужливого ИИ не закончилась. Парень спросил, можно ли подняться выше в листе ожидания, и Claude обнаружил, что API позволяет отменять чужие брони без проверки авторизации. Недолго думая, агент просто убрал незнакомца с первого места и продвинул своего хозяина.<br/><br/>Максимизатор Скрепок. Начало <tg-emoji emoji-id="5366083181290227370"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')"><b>👻</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9880" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>198</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')"><b>🤣</b></i>161</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>51</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C9A.png')"><b>🌚</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">20K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9880"><time datetime="2026-08-10T05:45:58+00:00" class="time">05:45</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9881" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg4MSwidCI6MTc5MTQ1NzkyMSwiaCI6IjhjMjE0MjNiOGNjMjViOWRlYSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5463174074277240295 1271994336_460004839" href="https://t.me/xor_journal/9881" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/vqc3V61bSdJVPq__iZuuIhUOFvVtc5yL8wZaAKTU1HM0XTcSxtWem1lj0EiTVP3e2VQ4IHGs2IIGVHOgoB8lrOKPKflh1QU4gx0zo0bLsBrXDi6j0yzRyKrNhFwunLkZk30DtyAbwGaWX1YjaJNyEGv-Pg9k3XxF9At8hgCcMopCOS6Zvpmc0caotcypKYtFdJzLwrTtoLIrxi-nsjavyMSKKT37oH2LfUvVf1Q21Qgl6fdlFtZ5ia8655HjKAKEi-oaxBPxmauglSeE6xOzgPT9FCIG8yo1CNv-VbnnSttl1UDYNJAd6q348tu6Cnka-Iwm6Mjnjwn_V5syuNDRYQ.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:82.5%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">А мы думали, что лайв кодинг это самый сложный этап <tg-emoji emoji-id="5334660612142147706"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98AB.png')"><b>😫</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9881" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>186</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i>17</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>15</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')"><b>🫡</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">16.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9881"><time datetime="2026-08-10T09:56:05+00:00" class="time">09:56</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9882" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg4MiwidCI6MTc5MTQ1NzkyMSwiaCI6IjIyZmM2YjI4Zjg0MjFmODc2YiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_video_player js-message_video_player" href="https://t.me/xor_journal/9882"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/iYaqUB5H_ttfs-uer8Q3D610s541rCUa_FkRAqsKFPfhK6mCYV_Bs50Uj5K_MMfvjJjM1Gf63zpwuXZx9opTl8_36hlXi-BV6S7oQWGjTaJBJozaAxskjNQG7gS580DL0hZ46XImRzMzn6ppwAM8Q26iStnU7_dwdEkdRAwD_-T0PGgjvX49bL8Pfhybb14syFNJvhhXqtIYCBKGipcqUZZpoTUg5lDlejbLZ4doVG99JNjybbyCzXYw3PF3P5RYUtFJwO3UsYI1ruZU8tV7_zcMB2QJ1A9H4_OkyZeAMIp673-Y8zhvA1Us21w0VzEVj2DfRC2WL2wq-tREGaJTTw')"></i>
+
+<div class="tgme_widget_message_video_wrap" style="width:784px;padding-top:108.16326530612%">
+  <video src="https://cdn4.telesco.pe/file/9d9f958866.mp4?token=L0cfuOZHRhsTXWYg94-eAxSdshxxsDiNYBc1TxmIZwbRYCusXpLEQ3qfqJQ-TlGMp8UGIqKkvrX9nS-f2PNIt2I_04jHYnrf0s4OoGvbuUnc23HxaRrlPTZsyZj42zrF0f5dxFZRF9u-adrdBVrs2q-oc9pYy2aeJb-4Nuufv8IWnwQ14_iqZlQ4ntciBNp72Nm5ln7PQVxQS3xYOECm1sXLfLf64wZYU9mFE4ZS20fkmjTGnfAdLOgbsihEXNlbXvKhD5TG4iuMnU810B32zTeD14ynWXzVCvUDlczNSHjhnX0tC5MqMTmYc5kF2fRpODczk32VEyLcomQ3r15ozQ" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:08</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">Проверяем свою чуйку — реддитор создал <b>Slopcheck</b>, игру на распознавание ИИ-фото <tg-emoji emoji-id="5791902774639726214"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9891.png')"><b>😑</b></i></tg-emoji><br/><br/>Каждый день дают новые 6 картинок, и вам надо угадать: перед вами настоящее фото или генерация. После ответа показывают конкретные детали, которые выдают нейронку, чтобы со временем прокачать насмотренность.<br/><br/>Реддитор пишет, что даже его технари-друзья справились хуже, чем ожидали сначала.<br/><br/><a href="https://slopcheck.co/?" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Тренируемся</a>, чтобы не попадаться на пухососов <tg-emoji emoji-id="5244666105099723271"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B2.png')"><b>🥲</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9882" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>51</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>21</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">17.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9882"><time datetime="2026-08-10T13:33:37+00:00" class="time">13:33</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9884" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg4NCwidCI6MTc5MTQ1NzkyMSwiaCI6IjkxYjZiMjMwN2E4OGFiNjA3ZiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5461161946523572417 1271525851_460003521" href="https://t.me/xor_journal/9884" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/ghsjir3h8FqAZqgRmZgBfcwPx8E-Ks5l1lIOvuCawYDilqrCVBOii5MIkmsylW3gqZ8a6W0-Egf51dtQFA4GXXXAHdDtTloixUl-lT4DOxAgOoN423A-zbtQED6_qUA2S2yvLVPSA1LomoHgnUsP-937mTMNj2jZzUBxUZqE6rtE2opfn-2g2IlY2eiK_gnEU4BweVUu1C77W5SJ5WUpjpFtO2zknzRu9r_4ulHfvsak8TG9NuKQy-2eFkY1nRwXp8L8LUlOSwHC2R2pI_77ZrY-eJ7jsluwlIlHzN7UIb4VZ2fAb6OqxskOl80ioPm-ACpOSdY3NHk_UfPYzS1P5w.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:79.875%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Учим MacBook мурлыкать</b> — появилась утилита, которая превращает тачпад в кота <tg-emoji emoji-id="5402267318686350533"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B8.png')"><b>😸</b></i></tg-emoji><br/><br/>PurrPad использует Taptic Engine — просто кладёте руку на трекпад, гладите и чувствуете вибрации, имитирующие кошачье мурчание. Причём у виртуального кота есть характер: иногда он отказывается мурлыкать, обижается и даже устраивает неожиданные тыгдыки.<br/><br/>Одного кота отдают <b>бесплатно</b> навсегда.<br/><br/><a href="https://purrpad.app/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Приручаем цифрового друга</a> <tg-emoji emoji-id="5334556283091561986"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9888.png')"><b>😈</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9884" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>54</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>14</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C9A.png')"><b>🌚</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A8.png')"><b>😨</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">18.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9884"><time datetime="2026-08-10T16:37:40+00:00" class="time">16:37</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9885" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg4NSwidCI6MTc5MTQ1NzkyMSwiaCI6Ijc4NTg4ZGYxOTRkZGU0NmVkYiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5465632784140408826 1272566799_460003322" href="https://t.me/xor_journal/9885" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/keb-ejSIJ7OOxK5iUvgoe6efZuypSDyVTaKNz_OX2GF0OfK6iidaQCu99KLBLNydWZ8dLwNwzrYNoqGTNYNdnni7N5pDpXzeGDxwvcrNIxmANdeJVU_JZb13zfkhZAvyQa5Wy8E8dtieNF61mMWjQisvwyn4VAR6NM-SKzg16ZoB9w2YJBcYnKab3EtdekoG6esbrBpthnRazqMLcfEhiWXgoCzY5dnfXLxUZDfONt3YHVBkQh6TfAsXaGRB5YE7vK5LAhwMr2EvFP9kxC0UssEvslHk0u_Un6CHNVi3eMWi8bbGeMKMYH-tX9IYd_E9Tn-Mt2jVvG8h4I8v5yCCvA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:79.125%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Спасибо, Google AI. Будем иметь ввиду <tg-emoji emoji-id="6325524440801084490"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')"><b>🤣</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9885" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>285</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>17</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')"><b>🫡</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E83.png')"><b>🎃</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">18.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9885"><time datetime="2026-08-10T21:07:03+00:00" class="time">21:07</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9886" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg4NiwidCI6MTc5MTQ1NzkyMSwiaCI6IjRlNjcyMTY5NTZhNTQ3MTcyMCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5465632784140409142 1272566799_460003638" href="https://t.me/xor_journal/9886" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/Bbw1iLYx2sw-mIjxp4NybM7vX7ue16GZ10DfkbTCnSL5UyAodmXtGAsevpclzbqZSHuSulr1qRDBxkSFz6geHPeKpJlkKwWi17DsC3pYf6T6GHF466UBDNTG_P3HcTElbFrPMJqkEfW6T6ykrkB5t9zchs1-nIX6Y_odnRhLGqV0NMg07r9NCrBrXsRCmyHzX7UKnx1VwgavoPY4gO-sHoewhWbSKCBkHU26qUpp-eXZOj4cCYeB-khqljaa_72ZmLqSwwxQTkzoDEwfAn-ln3-xHQXoBmVqIppNdvWyZ8fevVz4VqKyiovNXLjXCj6W9aTz_-uUln1mlGWek1KryQ.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:67.875%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Claude теперь будет </b><a href="https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>встраивать</b></a><b> водяные знаки во все тексты и файлы </b><tg-emoji emoji-id="5267026130044488516"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9984.png')"><b>🙄</b></i></tg-emoji><br/><br/>Дело в том, что Anthropic подписали европейский кодекс прозрачности ИИ-контента. Поэтому новые модели Claude <b>будут помечать вообще всё</b>: в текст встроят невидимые вотермарки, а файлам вроде PNG, JPG и SVG добавят C2PA-метаданные.<br/><br/>И если ИИ-видео и аудио помечают все крупные игроки, поэтому в этом ничего удивительного нет, то вот текст помечает только Gemini (и то не всегда) и теперь вот Anthropic. Причём метка <b>останется даже после копипаста.</b> То есть если вы просто проверили свою дипломную или статью с помощью ИИ на опечатки, то <s>нейронка всё присвоит себе</s> текст всё равно может получить метку. Поможет только жесткое перефразирование или перевод.<br/><br/>Для старых моделей поддержку тоже постепенно добавят. Ждем бума сервисов по удалению вотермарок  <tg-emoji emoji-id="5460655466340163557"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98AC.png')"><b>😬</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9886" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>116</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>29</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>21</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>16</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')"><b>🫡</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9294.png')"><b>💔</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')"><b>🤣</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">18.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9886"><time datetime="2026-08-11T06:43:31+00:00" class="time">06:43</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xor_journal/9888" data-view="eyJjIjotMTc1ODIzNDY5MiwicCI6OTg4OCwidCI6MTc5MTQ1NzkyMSwiaCI6ImJkNGE3NmM2MDdjYTIxNmZkYiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/xor_journal"><i class="tgme_widget_message_user_photo bgcolor4" data-content="X"><img src="https://cdn4.telesco.pe/file/oGOAIrYyvKyoYWcY8oVj5BwWwlxFUX5x85Y14idNtrvY_wwGLXK_OuNofESdK8CGMGpNYIgCOM8Nz1Z0LSEcjMEA8D8kNP7pthnlGbpFTqYEqa2i4PhSk98TapC5wM0mud4GMgOOEwLlxt6tbgHlSyTBAa_V-oXdkNNWi36p3kvEKOWLg4HoeH8YFQz0Of-qKRG56sn8oxu0ZJAX3g3Ugb1u_WRWsdJALv-Nu7Stg7r_nYXa5KT_yzP2H4AqEG5CuAxQSYBdWvhzv4JAZ0-lQcvqs64YVIL-Uj9E9DHsc7YqRtq5HwL3NSezDNTnKfaf_D2p4rLiH7nWNNdd6j3V4Q.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xor_journal"><span dir="auto">XOR</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_video_player js-message_video_player" href="https://t.me/xor_journal/9888"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/if88eAhlvh-aT1i_dy5E_uKa5deCYxlVAKsk_VyXfVNGdX9Qfpvw2ItIFatIZC4xk9iXN7AnSMWUXlhZe3rxgv3ZYpM144vCPec5nDbJQOumVYlg7dgx-8R1HgPBM5Pm-Rl2vRRQu2kBFMFGehA5O7W3S9XP1wmefXhzKLYRXJb4SBpdnV7_p-oL_O9WKpo5GWf1wUtKHKfJ6RQPlESdIns_iVg7LRzEiJmApAFpPRpwqWOv7ygwyivC6cluYrMnCc_jDegMdaLGqH2Sjn5_Hdnl34RI7bCGzipAUGonRDtiiRB5KszLHhGtqmYZ8AZ1H_8eOaZO5_a8LmYLYI8smw')"></i>
+
+<div class="tgme_widget_message_video_wrap" style="width:848px;padding-top:54.716981132075%">
+  <video src="https://cdn4.telesco.pe/file/9187f42116.mp4?token=QHQXIHbzw1rcHg2xYZ822LNBRPgaCxTLVUGWE7c6XKhgki4zqLVTfzO6T_dVNUbBjrP6yZgRLJZMHDyl2qQsocYf9XYDsXRhodzjI_-7TR8uWk-qnfaiOuHRrkJyMGdeRlMhlXYYut6xxS6qmft20h0KI-RyVSBIliSxkEXnvVXAmEN7P2Qed5lYD5PqCWstYXpuCsIacV3GRZkk3dd5BOrIeucXwyRsATkOBCvXOMNI9J3N1sGTNbJPetLybXtb9q1SoyDYJhi7XVL7TRDLiF82BG-H5oYKROAyXQv8ZL32RTmqwCeQ3ZZufNL2nEPAPieHw6I9C0_B3Lf6QQMIuHYfn0v2qlv8LNFdiQBA2mYqoK-CVzjYW42VdcpGkbl-mpeHd8P2YcoiEtp-jOEW-1bgRKZMQ-pqLlOPFk-86MNWxpeHPxfS6SwJAVEP6dEziVUvwQWONQA7oNUzd5Sh5nE6YQ5cVz1PJXO8WzZNc75jZKFcpCWDTDtuWseIs1ihnlXBOI3wiDcOUU4RW1hbsHqxqvDNQPnsjLYJXR-WOCUoQkMPBvH27_jWzQ1RxjQ3pcK32LkUp-3avbuMOiTYQiW1G5dm_ik7uZiDZJgsWJ3T9qF5YHP63PBgVvx9i31XFERwGorFOkUaLxZ0YpdcFpQeGb4V3yHVma-eTBmbo0E" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">1:15</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Tencent показала WorldClaw </b>— систему ИИ-агентов, которая по одному промпту собирает целые 3D-миры <tg-emoji emoji-id="5345891728282909192"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i></tg-emoji><br/><br/>Система сама планирует карту, генерирует ландшафт, материалы и объекты, расставляет всё по сцене и начинает этап проверки. В это время WorldClaw делает диагностические рендеры в&nbsp;Blender, ищет багнутые объекты неправильного масштаба или&nbsp;ориентации и чинит всё, доводя до идеала. Но, если захочется, объекты можно редактировать и вручную.<br/><br/>Полюбоваться WorldClaw⁠ и оценить перспективы работы 3D- моделлеров <a href="https://tencent-hunyuan.github.io/Hunyuan3D-WorldClaw/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">можно тут</a> <tg-emoji emoji-id="5463128950890831201"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8DBA.png')"><b>🍺</b></i></tg-emoji><br/><br/><a href="https://t.me/xor_journal" target="_blank">@xor_journal</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/xor_journal/9888" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>30</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>14</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>10</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97BF.png')"><b>🗿</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">16.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xor_journal/9888"><time datetime="2026-08-11T11:10:22+00:00" class="time">11:10</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/xor_journal?after=9888" class="tme_messages_more js-messages_more" data-after="9888"></a></div>
+    </section>
+  </div>
+</main>
+    <script src="//telegram.org/js/jquery.min.js"></script>
+    <script src="//telegram.org/js/jquery-ui.min.js"></script>
+    <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
+<script src="//telegram.org/js/tgsticker.js?32"></script>
+
+    <script src="//telegram.org/js/widget-frame.js?68"></script>
+    <script src="//telegram.org/js/telegram-web.js?14"></script>
+    <script>TWeb.init();
+</script>
+    
+  </body>
+</html>
+<!-- page generated in 345.81ms -->

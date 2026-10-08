@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Я – Дата Инженер | Евгений Виндюков – Telegram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible"
+     content="IE=edge" />
+    <meta name="MobileOptimized" content="176" />
+    <meta name="HandheldFriendly" content="True" />
+    
+<meta property="og:title" content="Я – Дата Инженер | Евгений Виндюков">
+<meta property="og:image" content="https://cdn4.telesco.pe/file/eGYe2KpSYNl37PqTdZiPfw-Q1hxVrapZ9PmIVw1Var3HFO3ewVcKlbMqFz5yeWQzFR2l3JuyVRIcBqybMBIZkDNiL_Eo_JnkaiB05oobse7R2FDPVXor8JNKCnP5aNLlgkNBwUdv-sBjuJVyeTm0hSB9g1c2we42HijXN3Xg_V3glB_Si09ZmHlI406vBPVEDKyaEkNvXqd7Ubun9O5Vtps9lthWH6ZXMOY5l0wB1K7teGpo7EfQxnHph8CE_V5VN_jDSgG5AgyOa0NcqVmMKFqmkPW4vYUxQU9hzdQcmF6XqpXBbVl1Ij138amEo2YT-CmsnMBVN2wbRusroRpu1w.jpg">
+<meta property="og:site_name" content="Telegram">
+<meta property="og:description" content="💵 Как стать Data Engineer 
+🗄 Смотри Roadmap в закрепе&#33;
+_____________________________
+Автор @halltape
+Все вопросы по рекламе @k_shredinger">
+
+<meta property="twitter:title" content="Я – Дата Инженер | Евгений Виндюков">
+<meta property="twitter:image" content="https://cdn4.telesco.pe/file/eGYe2KpSYNl37PqTdZiPfw-Q1hxVrapZ9PmIVw1Var3HFO3ewVcKlbMqFz5yeWQzFR2l3JuyVRIcBqybMBIZkDNiL_Eo_JnkaiB05oobse7R2FDPVXor8JNKCnP5aNLlgkNBwUdv-sBjuJVyeTm0hSB9g1c2we42HijXN3Xg_V3glB_Si09ZmHlI406vBPVEDKyaEkNvXqd7Ubun9O5Vtps9lthWH6ZXMOY5l0wB1K7teGpo7EfQxnHph8CE_V5VN_jDSgG5AgyOa0NcqVmMKFqmkPW4vYUxQU9hzdQcmF6XqpXBbVl1Ij138amEo2YT-CmsnMBVN2wbRusroRpu1w.jpg">
+<meta property="twitter:site" content="@Telegram">
+
+<meta property="al:ios:app_store_id" content="686449807">
+<meta property="al:ios:app_name" content="Telegram Messenger">
+<meta property="al:ios:url" content="tg://resolve?domain=halltape_data">
+
+<meta property="al:android:url" content="tg://resolve?domain=halltape_data">
+<meta property="al:android:app_name" content="Telegram">
+<meta property="al:android:package" content="org.telegram.messenger">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Telegram">
+<meta name="twitter:description" content="💵 Как стать Data Engineer 
+🗄 Смотри Roadmap в закрепе&#33;
+_____________________________
+Автор @halltape
+Все вопросы по рекламе @k_shredinger
+">
+
+    <link rel="prev" href="/s/halltape_data?before=867">
+<link rel="next" href="/s/halltape_data?after=892">
+<link rel="canonical" href="/s/halltape_data?before=893">
+
+    <script>window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.documentElement&&document.documentElement.classList&&document.documentElement.classList.add('theme_dark');</script>
+    <link rel="icon" type="image/svg+xml" href="//telegram.org/img/website_icon.svg?4">
+<link rel="apple-touch-icon" sizes="180x180" href="//telegram.org/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//telegram.org/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
+<link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
+    <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
+    <link href="//telegram.org/css/widget-frame.css?75" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
+    <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
+  </head>
+  <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
+    <div class="tgme_background_wrap">
+      <canvas id="tgme_background" class="tgme_background" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
+      <div class="tgme_background_pattern"></div>
+    </div>
+    <header class="tgme_header search_collapsed">
+  <div class="tgme_container">
+    <div class="tgme_header_search">
+      <form class="tgme_header_search_form" action="/s/halltape_data">
+        <svg class="tgme_header_search_form_icon" width="20" height="20" viewBox="0 0 20 20"><g fill="none" stroke="#7D7F81" stroke-width="1.4"><circle cx="9" cy="9" r="6"></circle><path d="M13.5,13.5 L17,17" stroke-linecap="round"></path></g></svg>
+        <input class="tgme_header_search_form_input js-header_search" placeholder="Search" name="q" autocomplete="off" value="" />
+        <a href="/s/halltape_data" class="tgme_header_search_form_clear"><svg class="tgme_action_button_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><g class="icon_body" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="1.5"><path d="M6 14l8-8m0 8L6 6" stroke-dasharray="0,11.314" stroke-dashoffset="5.657"/><path d="M26 14l8-8m0 8l-8-8" stroke-dasharray="0.371,10.943" stroke-dashoffset="5.842"/><path d="M46 14l8-8m0 8l-8-8" stroke-dasharray="1.982,9.332" stroke-dashoffset="6.647756"/><path d="M66 14l8-8m0 8l-8-8" stroke-dasharray="5.173,6.14" stroke-dashoffset="8.243"/><path d="M86 14l8-8m0 8l-8-8" stroke-dasharray="7.866,3.448" stroke-dashoffset="9.59"/><path d="M106 14l8-8m0 8l-8-8" stroke-dasharray="9.471,1.843" stroke-dashoffset="10.392"/><path d="M126 14l8-8m0 8l-8-8" stroke-dasharray="10.417,0.896" stroke-dashoffset="10.866"/><path d="M146 14l8-8m0 8l-8-8" stroke-dasharray="10.961,0.353" stroke-dashoffset="11.137"/><path d="M166 14l8-8m0 8l-8-8" stroke-dasharray="11.234,0.08" stroke-dashoffset="11.274"/><path d="M186 14l8-8m0 8l-8-8"/></g></svg></a>
+      </form>
+    </div>
+    <div class="tgme_header_right_column">
+      <section class="tgme_right_column">
+        <div class="tgme_channel_info">
+          <div class="tgme_channel_info_header">
+            <i class="tgme_page_photo_image bgcolor3" data-content="ЯВ"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i>
+            <div class="tgme_channel_info_header_title_wrap">
+              <div class="tgme_channel_info_header_title"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></div>
+              <div class="tgme_channel_info_header_labels"></div>
+            </div>
+            <div class="tgme_channel_info_header_username"><a href="https://t.me/halltape_data">@halltape_data</a></div>
+          </div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">5.95K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">409</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">43</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">13</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">275</span> <span class="counter_type">links</span></div></div>
+          <div class="tgme_channel_info_description"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i> Как стать Data Engineer <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i> Смотри Roadmap в закрепе&#33;<br/>_____________________________<br/>Автор <a href="https://t.me/halltape" target="_blank">@halltape</a><br/>Все вопросы по рекламе <a href="https://t.me/k_shredinger" target="_blank">@k_shredinger</a></div>
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=835c9dd1e6d5d9a3e0_1489532880389084869">
+            <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
+          </a>
+          <div class="tgme_footer">
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/faq">About</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/blog">Blog</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/apps">Apps</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//core.telegram.org/">Platform</a></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="tgme_header_info">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=835c9dd1e6d5d9a3e0_1489532880389084869">
+        <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
+      </a>
+      <a class="tgme_header_link" href="https://t.me/halltape_data">
+        <i class="tgme_page_photo_image bgcolor3" data-content="ЯВ"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i>
+        <div class="tgme_header_title_wrap">
+          <div class="tgme_header_title"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></div>
+          <div class="tgme_header_labels"></div>
+        </div>
+        <div class="tgme_header_counter">5.95K subscribers</div>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="tgme_main" data-url="/halltape_data">
+  <div class="tgme_container">
+    <section class="tgme_channel_history js-message_history">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/halltape_data?before=867" class="tme_messages_more js-messages_more" data-before="867"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/867" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODY3LCJ0IjoxNzkxNDU3OTQ0LCJoIjoiOGE0ODFmMzY2MmZjN2Q2YmM5In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5366229403911788726 1249422646_460003510" href="https://t.me/halltape_data/867" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/AW65y5OqNz27rLkOaIG5uXIV78AfHnhPgzso9if4Rhj9iKJ_QJkFE6H4jwFbFHPYNNStVTiiVssbnghhAX8oEIZk4dVVahMMlG1wJtOv9j8qOzoxPVJxNwT6pLOmp-Wtqvlwi829QW_KHk2IBvmJjR5w2jsYhZQQ7mchxjmOGmcXLUz-FIR26XA9UnysyKNxQEbBxIIrXtr0xQNQ9Zvo-guGrjSvYM8HDDlAK9jDdxpbl-NDrQAYGFoCaa4tKYA8Vlr2Su_KeggzOFZ5Cmw9-kfvTj4_FMLqrPb8cvsvCAVJKsaZsdkJZH_8GEtNvdQ1MNvR8TXKfsd4RS7LEhUq4Q.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Типичные вопросы на собесе на Дата Инженера</b><br/><br/>Выпустил ролик про вопросы на собесах. Далеко не весь пулл, но постарался объяснить свои ответы.<br/>Вопросы брал из нашего Roadmap.<br/><br/>Внутри вопросы по SQL, Python, Spark и Airflow<br/><br/><tg-emoji emoji-id="5422837510499739688"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296B6.png')"><b>▶️</b></i></tg-emoji> <a href="https://youtu.be/VapX2i7wEqw" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>Смотреть на Youtube</b></a><br/><br/>Кстати, у нас открыта запись на следующий поток BootCamp <b>(Сентябрь 2026)</b><br/><a href="https://t.me/bootcampych_bot" target="_blank">@bootcampych_bot</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/halltape_data/867" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>25</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.67K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/halltape_data/867"><time datetime="2026-07-09T07:56:51+00:00" class="time">07:56</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/868" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6Ijg2OGciLCJ0IjoxNzkxNDU3OTQ0LCJoIjoiZGJjMmJkZmY2OTViZGYzMjEzIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_one_media js-message_media"><div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto">Подтверди скилл в<b> Yandex Cloud со скидкой 50% <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></b><br/><br/>Коллеги, у нас всего пара недель, чтобы закрыть вопрос с сертификацией на льготных условиях.<br/><br/>До 25 сентября включительно действует скидка полцены на два экзамена от Yandex Cloud. Для дата-инженеров — самое то, чтобы официально зафиксировать свой уровень и получить весомый плюс к резюме.<br/><br/>Что предлагают:<br/><br/><tg-emoji emoji-id="5341538211992739875"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i></tg-emoji> <b>Yandex Cloud Certified Data Engineer</b><br/>База для тех, кто уже плотно работает с облачной платформой. Экзамен покрывает всё основное: загрузка и приём данных, ETL/ELT-процессы, оркестрация, мониторинг и безопасность. Хороший способ систематизировать знания и подтвердить их на практике.<br/><br/><tg-emoji emoji-id="5341655808197302045"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i></tg-emoji><b> Yandex Cloud Certified Lakehouse Data Engineer</b><br/>Для тех, кто ушёл глубже и работает с архитектурой Lakehouse. Тут уже спрашивают про проектирование решений, трансформацию данных и построение пайплайнов в этой парадигме. Продвинутый уровень для серьёзных проектов.<br/><br/>Как проходит экзамен?<br/>Онлайн-тестирование с прокторингом — запись на камеру, контроль нарушений. Всё прозрачно и без вариантов &quot;списать&quot;.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> Успей <a href="https://yandex.cloud/ru/certification?utm_source=telegram&amp;amp;utm_medium=seed&amp;amp;utm_campaign=halltape_data&amp;amp;utm_content=data_certification" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">зарегистрироваться</a> до 25 сентября 2026:<br/><a href="https://yandex.cloud/ru/certification/data-engineer?utm_source=telegram&amp;amp;utm_medium=seed&amp;amp;utm_campaign=halltape_data&amp;amp;utm_content=data_certification" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Ссылка</a><br/><br/><a href="https://yandex.cloud/ru/certification/lakehouse-data-engineer?utm_source=telegram&amp;amp;utm_medium=seed&amp;amp;utm_campaign=halltape_data&amp;amp;utm_content=data_certification" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Ссылка</a><br/><br/>Потом цена вернётся к обычной, так что не тяните. Удачи на экзамене&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AA.png')"><b>💪</b></i></div><div class="tgme_widget_message_grouped_wrap js-message_grouped_wrap" data-margin-w="2" data-margin-h="2" style="width:453px;">
+  <div class="tgme_widget_message_grouped js-message_grouped" style="padding-top:49.669%">
+    <div class="tgme_widget_message_grouped_layer js-message_grouped_layer" style="width:453px;height:225px">
+      <a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:0px;width:225px;height:225px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/iGP-JRsJoMXtGjEHrOg11M26Zwu1JPeV6hg5HkojXoGKcIG6VIhRyAc7ciIhIiJE1EYew1jGNNL4vNVaEggrEiZrcmxH5N5WVMSzbr7OSDQte7bbv-Mz_ySa9xleE2eBEI3dNwKoSy1BOQ5WP8TPNsQQhfq8x63Qu04sqhzEXVjdFDMJ-7Un8D3eLpJSLZqpgKJa1aVJgt0cbECcvF6sNDautNy6RjboaKBJAjM089OFBbAJRsbX1THbyZeNvDg7O4RuTSPoN9f35IKGYI1c7LmqeCJ59oMKYw4TuusTyye9eBu2x2KmGrGmPEK9EEjkD47av8ng2cfTESUcEjZCjw.jpg')" data-ratio="1" href="https://t.me/halltape_data/868?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:114px;right:114px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:227px;top:0px;width:226px;height:225px;margin-right:0px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/EncdbSWhfU6U-YZZkRjrUDy9YGX6tXOwv5BKEiTSuDApD92jJz-QhutrPpFUhGx8k3zfCj1LOsPvbjZJMJvy6mxtjxOmOsNHG7fwsUg5NqXi-BYaDhYpbux0BfMkFYAO-lxQYkWmTo-Vcxt4xCh4c18zjOgyKkq56e-2D6tBV5Q0EgV7C5OwxjHxpobAqUDHAPUmSVMStfUEKZdRu5EmusptvjjoW0p3rMqJTyUVm6TQHNId9AheNPRXd0ytH2IQJ4-7IvBQpH9SZtICOHuhBM04iI_M8HMDAOmrlMdhohkEL-u8p4mNtzKI_W2UvIRi3Mcma6SCLWse7zP3Hc3G5Q.jpg')" data-ratio="1" href="https://t.me/halltape_data/869?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:114px;right:114px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-1px;bottom:0px;"></div>
+  </div>
+</a>
+    </div>
+  </div>
+</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/halltape_data/868?single" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/halltape_data/868" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>15</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.59K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/halltape_data/868"><time datetime="2026-07-10T09:05:15+00:00" class="time">09:05</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/870" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODcwLCJ0IjoxNzkxNDU3OTQ0LCJoIjoiMGIzMWZiNmEzMWMyNDQxZTg3In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<a class="tgme_widget_message_video_player blured js-message_video_player" href="https://t.me/halltape_data/870"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/rGmP-irlqZAvgnbjPaUV6WMG-x1N67a64WWHUcL50KljqNp-zBfS00b7uXdA0HcWWSf8fvD_l-s4tACeErNJYmDS8af7iMMVhFSDg6K41zwm24LxFephydTW03jMxrzL0j7GK6a5FQ5mGC2e1QW8aBTsd7goOMJ90x15dwJjTIb54iHM7Z5tqTA-s_F0zi8pGl8iQ3Vgb3xuE3YM-cvr3U6rHmjYRM9MsrZIGASP1R8dsjIH4-XFu6NfOjQhFCXtGx73VNJrIjXQKmRg4R2K2L60vY_68GitXdpLm70CRzvWVcqXr3CQixr5WT8eIdyJfIqJ_dzPi9fY-jA-VymG2Q')"></i>
+<video src="https://cdn4.telesco.pe/file/3e0d74680a.mp4?token=k0N7xV31-WNgdpBoFL3HbVfduxZ5DLgZi5tJDbm1WSiPKnQvzhnRVgpGkZilfMgF8EPQtkcaQ-JJwk6xGtckEbg9K67BhApYBNb_xf2t48jWbraxt_sF_1dUS18Rvj2zJjOj75BKeWEZaKk05cnrWAXwTWHOcWRRv_LQiO7npDTty9SGGEqcOVVKWNDaJYBZ-C3jDKbKXj1PIt9Jeiei32zcuCHIgtQT2Nyvxeia_a51uJ5_kzq4XYrt9kHKZoxCyh1DcVUvoerAKphztM0FvK9J5GpXjYlt07Y8PvGPbi2-X4ZbkM4Yom__2dbqoNm31WUFCcnbLoSUBVOq0LIP2w" class="tgme_widget_message_video blured js-message_video_blured" width="100%" height="100%" muted></video>
+<div class="tgme_widget_message_video_wrap" style="width:464px;padding-top:133.33333333333%">
+  <video src="https://cdn4.telesco.pe/file/3e0d74680a.mp4?token=k0N7xV31-WNgdpBoFL3HbVfduxZ5DLgZi5tJDbm1WSiPKnQvzhnRVgpGkZilfMgF8EPQtkcaQ-JJwk6xGtckEbg9K67BhApYBNb_xf2t48jWbraxt_sF_1dUS18Rvj2zJjOj75BKeWEZaKk05cnrWAXwTWHOcWRRv_LQiO7npDTty9SGGEqcOVVKWNDaJYBZ-C3jDKbKXj1PIt9Jeiei32zcuCHIgtQT2Nyvxeia_a51uJ5_kzq4XYrt9kHKZoxCyh1DcVUvoerAKphztM0FvK9J5GpXjYlt07Y8PvGPbi2-X4ZbkM4Yom__2dbqoNm31WUFCcnbLoSUBVOq0LIP2w" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:28</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Один из наших выпускников BootCamp<br/></b><a href="https://t.me/bootcampych_bot" target="_blank"><b>@bootcampych_bot</b></a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>46</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.97K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/halltape_data/870"><time datetime="2026-07-11T16:03:16+00:00" class="time">16:03</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/871" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODcxLCJ0IjoxNzkxNDU3OTQ0LCJoIjoiMmQyZDRiY2Y2OWJhMzJlZGQyIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap blured 5379844136707498227 1252592573_460005619" href="https://t.me/halltape_data/871" style="width:370px;background-image:url('https://cdn4.telesco.pe/file/TMXhME1qQlYkqILt7Nj4ijFwv44mioIaJJqlcM2YFaq_SsPCNBIiEvyxS_PsY0_K2dd-6T41s5jczXDfc_2whginHCAsqEeriiIflN4zoBJNzrkebQJ_P0E0TItCuEEki99LGiM47VKBosfmiD3h99SUdxi8opO00kXOBEHqM4mXRnVJClaLNydLdJlFbm6oef72JBP-6rGjD7i7NquSu6Z1FDv61t1sQdYfsE6vMs3u_MBqtm_lQsVp371xnGebi5lOmrhOg6VVw3xlhJ8jXsI72MhPKVnHB1OL-cG5ptZAGWlGAvuzPteJLpetuHgJFRVcF-AXk5oxdbVniaO-sA.jpg')">
+  <div class="tgme_widget_message_photo" style="width:61.666666666667%;padding-top:133.33333333333%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Базовый минимум для VS CODE</b><br/><br/>Если у тебя нет этих расширений, то нам не о чем с тобой разговаривать. Это так на Патриках мне сказали, однажды, когда я убирал улицу от мусора. Еще и пять тысяч кинули в лицо из гелика.. Это был самый неоднозначный день в моей жизни.<br/><br/>Ближе к делу. Есть VSCode. Программа, где программисты-<tg-spoiler>душнилы</tg-spoiler> пишут свой никому ненужный код. Либо вайбокодят и делают вид, что работают.<br/>Хочу поделиться самыми основными плагинами для этой програмы, которые помогают мне ПО СЕЙ ДЕНЬ БЫТЬ почти программистом.<br/><br/>Сразу скажу: я не собирал сюда 150 расширений, которые показывают погоду, настроение разработчика и фазу Луны во время деплоя. Только то, чем реально пользуюсь.<br/><br/><b>Black Formatter</b><br/>Чтобы код не выглядел как будто его писали во время высадки в Камбодже.<br/>Автоматически делает аккуратным. Пишете код ногами, сохраняете файл — Black его форматирует.<br/><br/>Можно включить форматирование при каждом сохранении:<br/><br/><pre>&quot;[python]&quot;: {<br/>  &quot;editor.defaultFormatter&quot;: &quot;ms-python.black-formatter&quot;,<br/>  &quot;editor.formatOnSave&quot;: true<br/>}</pre><br/><br/><br/><b>Flake8</b> <br/>Если Black молча исправляет форматирование, то Flake8 ходит за вами и говорит:<br/><br/>«Вообще-то здесь импорт не используется».<br/>«Вообще-то переменная не определена».<br/>«Вообще-то строка слишком длинная».<br/>«Вообще-то ваш код нарушает правила».<br/><br/>То есть Flake8 — это линтер. Он анализирует код и показывает потенциальные ошибки, подозрительные места и нарушения стиля.<br/>Открываете Python-файл — расширение автоматически запускает проверку.<br/><br/><b>DBCode</b><br/>Чтобы не переключаться постоянно на DBeaver или DataGrip<br/><br/>DBCode превращает VS Code практически в программу для баз данных.<br/>Можно подключиться к PostgreSQL, ClickHouse, MySQL, SQLite, MongoDB и ещё огромному количеству баз, открыть таблицы, посмотреть колонки, написать SQL-запрос и сразу увидеть результат.<br/><br/>По ощущениям — DBeaver встроили прямо в редактор. Очень удобно, когда одновременно пишете Python, SQL и смотрите данные.<br/><br/><b>Parquet-viewer</b><br/>Чтобы посмотреть файл формата Parquet. Если что, паркет нельзя открыть и посмотреть содержимое.<br/>Это вам не CSV или TXT. Там внутри из коробки будет нечеловекочитаемая ерунда.<br/><br/><b>Dracula Theme</b><br/>Это просто тёмная тема. Там есть розовый цвет, поэтому если вы мощный мужик — это для вас.<br/><br/><b>Codex</b><br/>Это coding agent от OpenAI, встроенный в VS Code.<br/><br/>Главное отличие от обычного ЧатаГПТ: ему не нужно вручную отправлять каждый файл по отдельности. Он может работать с репозиторием, находить нужные файлы, разбираться в связях между модулями, объяснять незнакомый код и вносить изменения.<br/><br/>Например, можно попросить:<br/><br/>- рассказать, как устроен новый репозиторий;<br/>- найти, откуда запускается конкретный процесс;<br/>- объяснить непонятный файл;<br/>- добавить проверку;<br/>- исправить ошибку;<br/>- написать тесты;<br/>- поменять логику сразу в нескольких связанных файлах;<br/>- проверить изменения.<br/><br/>Особенно полезно, когда открываете чужой проект, видите 300 папок и понимаете, что сегодня можно было просто не просыпаться.<br/>Но есть нюанс. Работает только, если вы не в РФ. А как быть не в РФ, но при этом в РФ — думаю все понимают.<br/><br/>Но кодекс правда у меня платный. Я плачу по 20 долларов в месяц на подписку GPT Plus. И я в восторге.<br/><br/><b>Если есть какие-то ваши находки, делитесь, че еще удобное можно использовать?</b></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>24</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>14</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">4.81K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/halltape_data/871"><time datetime="2026-07-13T13:45:13+00:00" class="time">13:45</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/872" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODcyLCJ0IjoxNzkxNDU3OTQ0LCJoIjoiMzM1ODg0MTUwMzdhMTJmNTY3In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap 5388705646376591187 1254655804_460005203" href="https://t.me/halltape_data/872" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/XeSvogl4cX5ZH6uO5T4_zOhRoy0zp4wqkJplV-_dUi3dkSBscA89fuXVU3WxBDXLF5AY5_NpfeykGP1MjOg7SEvwr3yRyaTWPL3TDhzToh9zxQYrZA35yigBbPhizrqVMQMuhciACxF4Eivwh_mDYOFHPxVQK3PqHG4cB6zzc4dl5-x5nF-K6pOo8wlzvssASQfXceTZWFzckcpc_4ppF-B8mlUhWZ25xYIVd0-CcZGFBp922NIWo3NrTB3ixlHzcXsEk0lC9fChXnApgqCekRU9Gyjx2bTz9YlQNutRITmSZUZuHMvyvUIQUWAWU0nIy0UFhtdHrBnJ8NQmuAyXrA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Типичные вопросы с собесов на Дата Инженера Часть 2</b><br/><br/><b>Hadoop | Spark | DWH</b><br/><br/><a href="https://youtu.be/BWSXh1Ussms" target="_blank" rel="noopener">https://youtu.be/BWSXh1Ussms</a><br/><a href="https://youtu.be/BWSXh1Ussms" target="_blank" rel="noopener">https://youtu.be/BWSXh1Ussms</a><br/><a href="https://youtu.be/BWSXh1Ussms" target="_blank" rel="noopener">https://youtu.be/BWSXh1Ussms</a><br/><br/>Кстати, мы уже набираем поток на BootCamp сентябрь<br/><a href="https://s.salebot.pro/07a7864a2e3fef8f290daad1f7f6daac_1?utm_source=telegram&amp;amp;utm_medium=post&amp;amp;utm_campaign=data_engineer&amp;amp;utm_content=interview_questions_part_2" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>Запись на поток</b></a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction tgme_reaction_paid"><i class="icon icon-telegram-stars"></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>22</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">4.31K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/halltape_data/872"><time datetime="2026-07-16T16:29:03+00:00" class="time">16:29</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/874" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODc0LCJ0IjoxNzkxNDU3OTQ0LCJoIjoiYzdhMzBiNmEzNGJkMWNkYjI5In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5409009223800134107 1259383099_460003803" href="https://t.me/halltape_data/874" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/FhNSBn6KMtBdNGmDSOxUbHmYABJZR7udRNfsZEA6zLMzfOp4wwV7jf0StAOwWl9FGfh6oA3KnH1Uvj0NHdP7SrHFAjT5sVnkV0qRQbO5Mp7eADClZApVS4pCM58FWlhy0ibR9Xo24moCv0z-LzZmp1YV0aoLPZjU0ROlimZ7PjookPcaiE__4JjyetlGIY9r_tekFvl94UBjtlzorgCX4DLIZ22Vmw09CkqHqC1ahyAyDgp9eTtI2Ij85JWuUSxpMNuNHx3WiUwORxGwJWzqt7iNDITrM0E2L4QRP3f9dhvcC2sGsQFr2rNi0nJzywBXZpbjCfef5styr8P5ltYUhg.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5422837510499739688"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296B6.png')"><b>▶️</b></i></tg-emoji> <b>Не становись Дата Инженером, пока не посмотришь это видео&#33;</b><br/><br/><a href="https://youtu.be/H2afgcadVHg" target="_blank" rel="noopener">https://youtu.be/H2afgcadVHg</a><br/><a href="https://youtu.be/H2afgcadVHg" target="_blank" rel="noopener">https://youtu.be/H2afgcadVHg</a><br/><a href="https://youtu.be/H2afgcadVHg" target="_blank" rel="noopener">https://youtu.be/H2afgcadVHg</a><br/><br/>Рассказываю, ЗАЧЕМ ТАК МНОГО ИНСТРУМЕНТОВ для этого Дата Инженера&#33; АСТАНАВИТЕСЬ&#33;<br/>По факту раскидывал вам примеры использования на завайбкоженом сервисе — ссылка в описании к видосу.<br/><br/><i>Кстати если будут вопросы или пожелания — пишите в лс. Или если есть вопросы и хочется видео на определенную тему, тоже пишите&#33;</i></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/halltape_data/874" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>13</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">4.25K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/halltape_data/874"><time datetime="2026-07-19T23:40:28+00:00" class="time">23:40</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/875" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODc1LCJ0IjoxNzkxNDU3OTQ0LCJoIjoiNWVmMjJjM2ExZTU3NjEzMTlkIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto"><b>Не знаешь AWS — не получишь оффер&#33;</b><br/><br/>Два дня назад в Тбилиси (Грузия) я пообщался с тимлидом DE из одной компании. Название не скажу. Это не банк. Сокращенная аббревиатура звучит как «Телевизор» на английском.<br/><br/><b>ИХ</b> стек и стек на рынке РФ — это параллельные вселенные. Буквально, вы разговариваете на разных языках. Из общего у нас только Airflow. Дальше идут Glue, Glue Catalog, Redshift, Athena, Lambda и еще ряд сервисов, о которых я <b>СЛЫШАЛ</b>, но <b>ДО СИХ ПОР НЕ ЗНАЮ&#33;</b> (это просто позор).<br/><br/>Конечно, под капотом это те же Spark, Greenplum и ClickHouse. Но знающие люди скажут, что я <b>ЦКАТИНА</b> такая и все неверно написал. Но кто, если не я, напишет вам понятным и доступным языком об этой душной теме?<br/><br/><b>Я спросил, как они нанимают.</b><br/>Вы должны знать либо AWS, либо Azure, либо аналоги. Дальше можно будет уже вкатиться в процессы. Приоритет отдают тем кандидатам, которые могут привнести свою допэкспертизу в команду. Например, вы копали в своей карьере то, как работает Spark или Airflow (ну, прямо сильно копали), и можете закрыть какие-то пробелы в команде — тогда, может быть, возьмут.<br/><br/>Тут релокация в Тбилиси и ОФИС. Ну, либо гибрид. Компания вас перевезет. Ищут на LinkedIn, HH. Нанимают и из РФ соответственно... короче, если вы говорите на языке команды. Но не все соглашаются, потому что все хотят <b>ВАЛЮТНУЮ УДАЛЕНКУ.</b><br/><br/>Хотя тут, возможно, играет большой фактор зарплаты. Например, а если вам предложат +1 млн долларов? Ладно... Короче, я думаю, насыпать денег — тоже может помочь завлечь.<br/><br/>Что еще? Я спросил, а где учить? Roadmap? Bootcamp?<br/>Мне сказали, только курсы AWS внутри. Причем с сертификатом или без — это на твое усмотрение. Какие-то компании просят сертификат. Какой-то доступный ресурс, чтобы более-менее понятно было объяснено, я не услышал. Ну, возможно, Amazon действительно хорошо и так преподносят. Но для меня пока это все еще на уровне, когда я только начинал учить DE.<br/><br/>Есть идея зайти и на этот стек и познакомить вас с ним. Но сейчас все выглядит как огромное кол-во инструментов, у которых есть тысячи аналогов, и на тему выбора которых могут спорить в ТРУШНЫХ чатах DE-шников.<br/><br/>Вообще, иногда смотришь на все эти инструменты и кажется, что это инопланетные технологии, о которых должны знать только избранные. А обычные люди пусть страдают сами&#33; Не гоже дело&#33; Мы страдали и ты страдай&#33;</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction tgme_reaction_paid"><i class="icon icon-telegram-stars"></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>38</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>18</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA494.png')"><b>🤔</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">4.17K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/halltape_data/875"><time datetime="2026-07-26T20:28:55+00:00" class="time">20:28</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/876" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODc2LCJ0IjoxNzkxNDU3OTQ0LCJoIjoiZmE3MGQ1YWIxZGNjZmFlOGQ2In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5429274039143832117 1264101369_460003893" href="https://t.me/halltape_data/876" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/GO0JYIDcKQe1bmcE_JmwobeJM0jjZM16xK9aXWsbdgjnUZaDw9_0CBOdS6Ug_PGmjCPRi1IJxJoMWge3m-okV-JvO-eEwRLu9g3I5rmHTAlAsqsrAdPoLd7U48KMyhxwB4KTWqgdID-nzIAfjNFAx1OB6-7ZzG3KXghEs5IyYNsstUCmmycJKK9K98fcIvKs9fknNXeW5uubyYm3pPwrp4vA_CHydoLNXM-_Im1cnuaJsf52JxX6d4ud5J5fwnv7ymDoZq3W3cy1tK67e5tKKroXWFr_yJLUTR8TdzWJw-08IsP1zNR06KHzMAHru4PB35vJQrHPrEXpCDy3ruGk-w.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Набор на BootCamp Сентябрь ОТКРЫТ&#33;</b><br/><br/><b>ВОСЬМОЙ ПОТОК</b> стартует уже <b>1 сентября&#33;</b><br/>Успей записаться через <a href="https://t.me/bootcampych_bot" target="_blank"><b>@bootcampych_bot</b></a> и жми <b>Хочу на BootCamp</b><br/><br/>Для тех, кто не знает, что такое BootCamp DE. Мы сделали супер интенсив за 2 месяца в DE.<br/>Это буквально копия вашей будущей работы.<br/><br/>Представьте, что вы приходите на новое место работы, и увольняющийся коллега передаёт вам дела. У него есть две недели, чтобы показать, что и как делать. Вы буквально впитываете всё как губка, потому что потом спрашивать будет не у кого.<br/><br/>Так вот именно эту идею мы и вложили в Bootcamp&#33;<br/>За короткое время вы погружаетесь в работу инженера данных, осваиваете современный стек и получаете навыки прохождения собеседований и составления резюме.<br/><br/>Мы реально вычеркнули большую часть бесполезной теории. Упор исключительно на практику.<br/>Чтобы вы пришли на работу и сказали: &quot;Мы это уже делали&quot;<br/><br/><tg-emoji emoji-id="5215313353706057331"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i></tg-emoji> Уже в это <b>воскресенье</b> <b>2 августа 14:00 МСК делаем СТРИМ</b>, где покажем, как сейчас выглядит BootCamp и что нового мы туда внесли&#33;<br/><br/>А пока можете посмотреть <tg-emoji emoji-id="5422837510499739688"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296B6.png')"><b>▶️</b></i></tg-emoji> <a href="https://www.youtube.com/watch?v=eW9uMMdrPBU" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>видео с прошлого потока</b></a><br/><br/>ссылка на СТРИМ - <a href="https://telemost.yandex.ru/live/afa760a8b2b349369d0290a40cb0c984" target="_blank" rel="noopener">https://telemost.yandex.ru/live/afa760a8b2b349369d0290a40cb0c984</a><br/><br/><b>Ближайший старт потока — 1 сентября</b><br/>Переходите в наш бот <a href="https://t.me/bootcampych_bot" target="_blank"><b>@bootcampych_bot</b></a> и жми <b>Хочу на BootCamp</b><br/><br/><b>Кол-во мест ограничено&#33;</b></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/halltape_data/876" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>15</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.99K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/halltape_data/876"><time datetime="2026-07-30T14:34:24+00:00" class="time">14:34</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/882" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODgyLCJ0IjoxNzkxNDU3OTQ0LCJoIjoiYjE0MTY4MTI1Mzc3ODZjNzFmIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto"><b>Антон Чигур отчитывает Джуна Дата Инженера&#33;</b><br/><br/><a href="https://youtube.com/shorts/t5zUcI0_EVk?is=B2v211CnYhwm68EO" target="_blank" rel="noopener">https://youtube.com/shorts/t5zUcI0_EVk?is=B2v211CnYhwm68EO</a><br/><br/>Кто не видел, срочно смотреть - этот шедевр потихоньку набирает свои просмотры уже&#33;</div><a class="tgme_widget_message_link_preview" href="https://youtube.com/shorts/t5zUcI0_EVk?is=B2v211CnYhwm68EO">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">YouTube</div>
+  <div class="link_preview_video_player js-message_video_player" style="width:56.25%;">
+  <i class="link_preview_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/od-f38KWoBqELRfzjInce1R5tpF_iC77zsReEDHjSySHkAzByjfKHCErU9Xv0Cg9hAUd1bSMuNQuvGq33uCOdydXCBvM0zHjayJeiOgqzsg-PPXfOPgn8aZfVTsj1seQoHNOuFA5YpUWYff85_TWwQXPEgRn1My5_G11AcjWoj9v4pt23FL12B2UhEVJx1CNgc_NLol2nHwTkC1eZ4dx1IUhnWOsX98GnZ1CRzWEdqT2DxQjOfR_r57utzgDkY71RFgv3ZpEQXRYMGINzMv9tG5J6-ogqyX5oYgvLPv4ud0Utcst9Md6r_oJagtGQ8EA2AkwCAc3s9kMwBZBAXM0Aw')"></i>
+  <div class="link_preview_video_wrap" style="padding-top:177.77777777778%">
+    <video class="link_preview_video js-message_video" src="https://cdn4.telesco.pe/file/592d72284e.mp4?token=U4QYgLc4VUxBjtpfyCHViYLbexC5MTD2eutL9AzaOD7C2KufLz9hhYbHzIKs5hgOZBor3uujDZSRkuPA7LXSgm74I0YEPCnEt-KkujCjtd625eFag1Pi8hbTFAsaVK1NF5hE2LvMPnJXr34Npzz6spSqoH0hEtFbZqzxsoBl3hed7K4qKHwi-9YsHHh_P2OQdhMXJ9HSUEKTXP8h9npWazwEY-E_JMWA5BfAfR4MPnAEZ-eSNonK9uY-VHBPq_X0fdz-ac7BCuY0dPZwFfvw-kFHxKz2vauO0N71BrkCIqieQ1VMO1xjim_C8vkFPdtqqi09z5usUDW_2XCCEzvvbw" width="100%" height="100%"></video>
+  </div>
+  <div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">2:30</time>
+</div>
+  <div class="link_preview_title" dir="auto">Антон Чигур отчитывает Джуна Дата Инженера</div>
+  <div class="link_preview_description" dir="auto">Антон Чигур пытается поймать Джуна Дата Инженера на использовании И...</div>
+</a>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>43</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/halltape_data/882"><time datetime="2026-08-02T19:37:54+00:00" class="time">19:37</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/883" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODgzLCJ0IjoxNzkxNDU3OTQ0LCJoIjoiNjlmYmUyNDFlODU1MjVlOGEwIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap 5447595497750206400 1268367166_460003264" href="https://t.me/halltape_data/883" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/scs9xM_LIyBJPksPf1uKeP17s0ouDpIlN-SxVJDQkAzcNVYKJ9KQTub2Y8ztLp_7fF6FCWa5yFeWURd9i634LBiazyOlZU9X1evUh1YVPp5rC9Z7KwScyCtqarrMxasMoeTg33bB-0Z2d82e4gjoZ6kOCpQC-kwNfXdgq3q0vHivVFCosPP4J6_HbkD3TQapg5-L9UyCqcbYC19-W7GxDwp8c5Vffka1J1o22lGcP9Nay_pJg4sra4xEpUTxZxBtcV8LUlUFHnhs91wlyZj_1pY8wlR1bTEkHRmwZ1-EXlMu-i6M2uHthe5ZddvA4kRJIo2QqejkzlLInCzxa3-02A.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:57.375%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Lakehouse для аналитиков и инженеров данных </b><br/><br/>Приглашаем изучить популярный подход построения хранилищ данных Data Lakehouse c разделенным Compute и Storage на основе Iceberg и Trino.&nbsp;<br/><br/><b>В программе курса:</b><br/>• Современная архитектура аналитических систем от DWH и Data Lake до Lakehouse с разделением Compute и Storage на базе Apache Iceberg и Trino<b>.&nbsp;</b><br/>• Iceberg: управление файлами, снимками, каталогами, схемами изменений и очисткой.&nbsp;<br/>• Практическое использование Iceberg Catalog, работа с кластером Trino (на Kubernetes), подключение данных на S3 и выполнение SQL/ Python-запросов<b>.</b><br/>• Работа с Iceberg+Trinо на больших масштабах: сложные запросы к датасету TPC-DS (2.8 млрд строк), интеграция с DBT, Apache Airflow, оценка производительность систем.&nbsp;<br/>• Построение пайплайнов, инструменты&nbsp; для корректной поддержки, обновления и масштабирования Lakehouse-инфраструктуры на уровне предприятия.&nbsp;<br/><br/><b>Кто мы:</b> R&amp;D-центр <a href="https://devhands.ru/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Devhands</a>, наш <a href="https://t.me/rybakalexey" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">канал</a>. <br/><br/><b>Автор курса</b> — Алексей Белозерский, CDO в inSales (Сбер 2B),<br/>ex: VK Tech, М.Видео, Эльдорадо<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9793.png')"><b>🗓</b></i> <b>Старт курса: 27 августа</b><br/><br/><a href="https://devhands.ru/lakehouse?utm_source=tg&amp;amp;utm_medium=cpc&amp;amp;utm_campaign=lakehouse&amp;amp;utm_content=posev&amp;amp;utm_term=@halltape_data" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>Изучить программу и записаться можно здесь</b></a><b>.</b><br/><br/>Ждём вас&#33;<br/><br/>Реклама. ИП Рыбак А.А. ИНН 771407709607 Erid: 2VtzquZf5с8</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA494.png')"><b>🤔</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.06K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/halltape_data/883"><time datetime="2026-08-05T08:00:46+00:00" class="time">08:00</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/884" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODg0LCJ0IjoxNzkxNDU3OTQ0LCJoIjoiZWZhZWIwZjQ3ZDI0NDgzYWVkIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_video_player js-message_video_player" href="https://t.me/halltape_data/884"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/Wx2nrskCzUiFIaRFry2EJlrPeqvRyo18p_YqUwJ8YtPNTycce0gopZcBRzUBPaLub-FozIx9DEMZdAymrMi7PGyLEvxf2pu3w0oh7ksBMj6BO9drXVNQztwPPSJHh7J5lQUEk7pEAj0lLBQ0gEqg8pRg5SLqoBDO6E_7rfFwe-b50vaz91wTe8u3hF2AOOx1NO5DdM7nOjgoRTIF1eQzPp0ZogY1boe1K8CE5_cwjw2LeZjsrH85Gv0qiHULClAUGcOqsAEiPa4aBKXshJYoA02b6saSKBUKQTapJBTpTUtXMuWtD9rwssxU3CF0sKKmCtNzPHVA_zGHmPNLvM85WA')"></i>
+
+<div class="tgme_widget_message_video_wrap" style="width:1920px;padding-top:56.25%">
+  <video src="https://cdn4.telesco.pe/file/e9640634d0.mp4?token=XB6kk3IKxw3zSXrsueC3Y_NBn3t19wOlNOvEA5aZ4mVW_RU49dzwxjZj8U7vpUWaeEDOlvNLdj_HZrTEFqTDdQX8EpjBU-bwwEO-od_6qHM2EozA6NIqkG-VYZFdirgiYW_p8Q08Nm-tH022Y3KHNASIDm5pEH9Poywz2qnQNsaOJd0dOrWRKOQUodkA_qAwLENZSIGSSZ2IvlPsWzUNQmsVXquZK0t8B-8Ws7_VyTAYpJxzp3-zuBM3DAH4rUr22d0LGiHweM3zGzxePVgbdYzAZfsgCSHq1yuVifI1q7wvue2Vb23TLF7jI6WmWwLs1LAf32bbPZXeLGHGTRc9uQ" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:05</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Топовые темки-связки для ДЕшника&#33;</b><br/><br/>Знаете, в альтернативной реальности существуют люди-темщики со своими криптой, P2P и арбитражем. Кто не в курсе — это граждане, которые мутят околонелегальные схемы заработка в интернете. Мутные типы, короче.<br/><br/>А при чём тут дата-инженеры?<br/><br/>Ну теперь это и они тоже.. Ладно шучу. Да ни при чём. Просто нужно было привлечь ваше внимание, пока вы бездумно листаете рилсы и шортсы, сидя на белом троне.<br/>В общем, я <s>сделал </s> завайбкодил сайт-приложение  для дата-инженеров, где можно собрать топовую схему собственного пайплайна.<br/>Мне надоело постоянно рисовать архитектуру в Miro вручную, когда можно просто выбрать нужные инструменты и собрать красивую анимированную схему со всеми связями.<br/><br/><tg-emoji emoji-id="5215330331711775720"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i></tg-emoji><b> </b><a href="https://databuilder.roadmappers.ru/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>https://databuilder.roadmappers.ru</b></a><br/><br/>Сейчас там уже есть Kafka, Spark, Airflow, S3, ClickHouse, Trino и другие инструменты.<br/>В планах добавить AWS, Google АБЛАКА, МИКРОСОФТ АЖУР, Snowflake, DataБРИКС и вообще всё, что нужно для создания практически любой data-схемы. Кстати уже можно делать выгрузку готовых картинок-схем.<br/><br/>Если не знаете, как работает какой-то инструмент, <b>можно дважды кликнуть</b> по нему и получить ссылку на соответствующий раздел нашего <b>Roadmap</b>. Там внутри на самом деле есть готовые схемки + также можно импортировать свою или эскпортировать текущую - я думаю разберетесь.<br/><br/><b>Короче, всё в одном месте для дорогих дата-инженеров&#33;</b><br/>Кстати, если вы ещё не смотрели мой видос про инструменты дата-инженера — обязательно гляньте:<br/><tg-emoji emoji-id="5422837510499739688"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296B6.png')"><b>▶️</b></i></tg-emoji> <a href="https://youtu.be/H2afgcadVHg" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>Смотреть на YouTube</b></a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/halltape_data/884" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>42</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA494.png')"><b>🤔</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.36K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/halltape_data/884"><time datetime="2026-08-06T19:31:11+00:00" class="time">19:31</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/885" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODg1LCJ0IjoxNzkxNDU3OTQ0LCJoIjoiNjA0ZWJmMjgyOWIwN2Y0ZDc5In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5456285303216740293 1270390419_460003269" href="https://t.me/halltape_data/885" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/V0lcpv98wX-oDZaYzGgGspIZwNgwLwT1ENV34J5XC8xaK9Q-zWZe7sJJcsgn5mv_JSO-fgl_wQihLKEBGEgrZOouosrEHJirLvHd51Q-xVIq0J4MgJH4aXGE4J-mnRnL245uAKyRb2S0fHvrUKt_1gjorSWQj_9Dbih2xVoq2kzMk9FucfNHX9Xe8C1PMDXwGet-xBx1KUO__Y_JkzOwfRCWebqjybTsVs7_D4sF3x4HoNw2ZuTgSgOSf-ML2Ne-2EBorCFb73HysX-PD4GY9Z6RXPC4aUXSTW9FgRNzSmYV0mID-_LH4yakLTrG_6QCUtTrgMe9Vl5qxcWuP726NA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Старт 8 потока BootCamp&#33;</b><br/><br/>Для тех, кто пропустил стрим, я сделал специально <b>отдельный ролик</b> про наш мощнейший BootCamp для Дата Инженера. <br/><br/>Кто не знает, что такое BootCamp DE. Мы сделали супер интенсив за 2 месяца в DE.<br/>Это буквально копия вашей будущей работы.<br/><br/><b>Смотрите на Youtube&#33;</b><br/><tg-emoji emoji-id="5422837510499739688"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296B6.png')"><b>▶️</b></i></tg-emoji> <a href="https://youtu.be/O4GD-zSkgcE" target="_blank" rel="noopener">https://youtu.be/O4GD-zSkgcE</a><br/><tg-emoji emoji-id="5422837510499739688"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296B6.png')"><b>▶️</b></i></tg-emoji> <a href="https://youtu.be/O4GD-zSkgcE" target="_blank" rel="noopener">https://youtu.be/O4GD-zSkgcE</a><br/><tg-emoji emoji-id="5422837510499739688"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296B6.png')"><b>▶️</b></i></tg-emoji> <a href="https://youtu.be/O4GD-zSkgcE" target="_blank" rel="noopener">https://youtu.be/O4GD-zSkgcE</a><br/><br/><b>Ближайший старт потока — 1 сентября</b><br/>Переходите в наш бот <a href="https://t.me/bootcampych_bot" target="_blank"><b>@bootcampych_bot</b></a> и жми <b>Хочу на BootCamp</b><br/><br/><b>Кол-во мест ограничено&#33;</b></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/halltape_data/885" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/halltape_data/885"><time datetime="2026-08-08T10:15:55+00:00" class="time">10:15</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/886" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODg2LCJ0IjoxNzkxNDU3OTQ0LCJoIjoiNGViMzJhYjNiNjFlMzQzNTE0In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap 5458518510117002092 1270910378_460004204" href="https://t.me/halltape_data/886" style="width:640px;background-image:url('https://cdn4.telesco.pe/file/A3XtsSr6d28NLj9GPgDRHTD1nmo1CA7Wj4b-20yw_EMSK-G8zP3suoMC4ER1FfYj6ZJy3PtjAKj5wTycpd2pYvxao-wjQRQ0uoPwVTsUvY_wysm-sWp2R6Qu2h2TE-u0kV6dOHKVeQp5aPnAIMVXyIpkHKVzdy2FLKiztc_02br90xkKYOLqDfc-eOrFAuizS-8jsLKS9iNtMm7vEYK6z1csXQRzW6doJixWqyjQp9PQdky8oBD7yaC1VnpMFVUAvbP0Op1EzkjC75y56qc6-9RybzoZMiJm2UW1Lmr10GTp7ji-Hkw633EDfty23iqPxoMNPgusVyeBRmT4Em-iUg.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Валютная удаленка СЮДА&#33;</b><br/><br/>Есть идея прочекать этот рынок и понять, какие есть трудности и боли, а самое главное требования на рынке для ДЕ. Например знаете ли вы, как оформить линкедин, а ИП в какой-то стране? Или может не знаете, что учить из облачных технологий. А английский нужен? А он у вас точно нормальный или на уровне, когда вы все еще путаете has и have? <br/><br/><b>Что я хочу?</b><br/>Пройдите плиз мой опрос. Я соберу ваши ответы и начну собирать инфу. Актуальную и объективную. <br/><br/><a href="https://forms.gle/KWcWJFwtiZbosugR7" target="_blank" rel="noopener">https://forms.gle/KWcWJFwtiZbosugR7</a><br/><br/>Потом сделаем с вами, кому интересно, общий созвон и поговорим на эту тему. Анонс сделаю в этом канале&#33;<br/><br/>Сразу скажу, идея в голове в том, чтобы стать условным HR у компаний, чтобы сразу поднатаскать под позицию и устроить. Именно под западный стек.</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>28</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>17</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>8</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.53K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/halltape_data/886"><time datetime="2026-08-09T14:44:29+00:00" class="time">14:44</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/887" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6Ijg4N2ciLCJ0IjoxNzkxNDU3OTQ0LCJoIjoiYWZmNWYzNGYxYjNiYWVkMDIwIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<div class="tgme_widget_message_grouped_wrap js-message_grouped_wrap" data-margin-w="2" data-margin-h="2" style="width:426px;">
+  <div class="tgme_widget_message_grouped js-message_grouped" style="padding-top:141.784%">
+    <div class="tgme_widget_message_grouped_layer js-message_grouped_layer" style="width:426px;height:604px">
+      <a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:0px;width:297px;height:604px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/Z088VitQMpM82gH28Ww1ugcVfTnxEbk1L54Cv7o4-m7F_Ntzwpe2hVe1akKjtCGbG7sS7BAwj8AB3e_zdihN8FY_YO7dKxwvufVJbeAMJypEYOGo-DcBV3XflbtUoUqB4E-X7z2OKefxZ54GSIzStYe2C2C7EPkP-jXNSCb5lBXPXe7-YPRRi1F7-uZ5Ym6lIxGpnupMalzxU9OiVCmxaxdNjol2obw--z_J_zm96asFCdi0ZmQIToG3qEtEAZ5zQmNhEGI4OaqZc5wEAJHnG9ffQ0o1FcJcTKNv9dSgtuDImzXfPxtCPPk_-LB00VqfR4Mrt4irPpgV1GVKtxrdSw.jpg')" data-ratio="0.63875" href="https://t.me/halltape_data/887?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:20px;right:20px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-45px;right:-44px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:299px;top:0px;width:127px;height:198px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/jWeYs1kw_u3cnlvCrdnlq89p-wwscF-4e2E39E0Bl08yXpfP6ScD8-_fxXEiHD9wxOWj6k6gfGjEbgmgQGZztp-xg5pUgb7iIBOE6l9HtRoRByYkE8thwCz5iafp5OMGB7A7kaCj97OBberTGmjMyoWXOCEHM0tpxIMmRPtmGM6l-tsTOSx8XQW5eAbj7PxhffoCve1LIo_Q6svlv6mNlunOJ06iVYMuZzYu_n8BwARmGmRWyD0EWthyE1PlXo6JYAeOsOTjNHKrR91IiDUPOZR7Uh0GHbzmMvv1vHsTqtziNQfU20lTltBQ6ggaQzQ3GqU3HUpmQqvNFRXAB60H2g.jpg')" data-ratio="0.63875" href="https://t.me/halltape_data/888?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:20px;right:20px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-1px;bottom:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:299px;top:200px;width:127px;height:204px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/rSSgCq2xGdscdTzSt2EUsYbEUlq-gfQsy8XTM2E2gVaY_WW8xpzTMlNGpPLrbN5zROgwBsEJ759K4HSh79-9XNLlyQW97tAVaXyvM0WaYyLOyVoWRpc1DiMUXx6Mlm5Wzj-3zVmq805_GPBYz1jLD89mTJMG4lcTo-D8HWPfHwmQTQp-8auddZQTu_LWLTucXAst9osLNkwZavl1IF1ILggaRXrNMpGNoqQeKVJ0dSSymIjxw_7KtiPDTMDZQ_tHBVErbgfixpUOo4gd4lE96pATS1bc4ZRmgqid2qq7fJTWqkaGorTDVsjpjrRLx7n_WULmr02gQs5WD90UP8FJig.jpg')" data-ratio="0.63875" href="https://t.me/halltape_data/889?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:20px;right:20px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-2px;right:-2px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:299px;top:406px;width:127px;height:198px;margin-right:0px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/JpW5DMMYpBPne2CeMaq6hEkY9O4udfQHk4GQZAD1i-RUnBdq6L0sWHs1ikuJeojWbt6zTdu25xS-Bg8oWTcyP3CvVMMRnIBG9j33sOHjQNMimHoDrePAsdCuvQV7VNx5mEtgo8g0srxP-V2hwGV77N71-0bfP64fl8_T_MC979aXjYHxzPg9hIfTb5V9pGUACMxomjAOrN4xZgX9LhBDFIp2doiZ2CsWQgnBYQyntWgmNm2MwPss15SPuLO-W_5AUTdQN1P42W9zellOGVrKYt1kmzcsY2prCLKF_EsJRQtP_7DDs1GJgf44egIPHrA66JCUPxhImUDEEaXfnHBXPw.jpg')" data-ratio="0.63875" href="https://t.me/halltape_data/890?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:20px;right:20px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-1px;bottom:0px;"></div>
+  </div>
+</a>
+    </div>
+  </div>
+</div><div class="tgme_widget_message_text js-message_text" dir="auto"><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Ты не достоин Валютной Удаленки&#33;</b><br/><br/>Короче это не так. Конечно, сложнее точно, но не ставьте на себе крест. Я потихоньку начинаю разбираться в этом вопросе. Мне на ютубе попался видос (да сто процентов и вам тоже) от <a href="https://www.youtube.com/watch?v=IdNkGSYOvqo" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>айти красавчика</b></a>, который на GO пишет.<br/><br/>Весь видос я не смотрел, потому что я скинул видос в ChatGPT и попросил вывести суммаризацию.<br/>Из ключевых моментов, которые мне откликнулись:<br/><br/>- Надо точно отрепетировать свою <b>само-презентацию</b> на английском вплоть до мелочей<br/>- Язык должен быть уровня <b>B1 - B2</b><br/>- Акцент не важен<br/>- Если есть вариант <b>субтитров</b> на созвонах, надо использовать их<br/>- Набрать <b>300-500 контактов</b> в Линкедин (желательно не индусов)<br/>- Не всегда есть <b>work life balance </b>(будьте готовы к любой ерунде)<br/>- Забудьте про свои <b>ДМС</b><br/>- Постоянно общаться на English <b>сильно утомляет</b><br/><br/><b>Что я сам думаю?</b><br/>Я проходил год назад собесы на английском языке, но правда в русскоязычные команды. Т.е. там, где люди умеют ПО РУССКИ говорить.<br/>В целом идея в том, чтобы застолбить свою самопрезентацию — это прям БАЗА точно. А кстати еще чуваки в видосе сказали, что если будете учить Английский с репетитором, не надо брать с уклоном в IT, так как мы с вами уже знаем айтишный английский. Нам нужно больше описательных и разговорных оборотов. Вот этого может как раз не хватать в работе.<br/><br/>А если вам тоже интересно двигаться в эту сторону, то пройдите опрос<br/><a href="https://forms.gle/KWcWJFwtiZbosugR7" target="_blank" rel="noopener">https://forms.gle/KWcWJFwtiZbosugR7</a><br/><br/>У нас много ребят, кто живет в разных странах и есть те, кто уже работает в таких компаниях. Поэтому предлагаю понять, какой у нас у всех уровень, потом созвонимся и обсудим: ЧТО НАМ С ЭТИМ ВСЕМ ДЕЛАТЬ&#33;<br/><br/>Ну английский это ладно. На самом деле меня больше всего интересует стек, а именно AWS, GCP, Azure, Databricks и дальше по списку. Это мне более непонятно пока. Но разве у нас есть преграды? Пффф.. хорошо, что чат гпт есть)) ахахах<br/><br/><i>P.S. В комменты закину TXT файлик с более подробным описанием</i></div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>24</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.73K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/halltape_data/887"><time datetime="2026-08-11T21:09:05+00:00" class="time">21:09</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/891" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODkxLCJ0IjoxNzkxNDU3OTQ0LCJoIjoiYTYzYzY3ZjkwZTFlOGU4OTJjIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5474264998390470882 1274576643_460003554" href="https://t.me/halltape_data/891" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/RFlzfInWlUFJVVvo1qedQqUG-j8QAONOkqVZHxZVjBRSIsT_oQWgi7d-9SS9GU6E0xOImIRUHcihRr-li4oob0XG8pk-esrW2ciyui1-dIKExzgg2ncyfmqa4pDCYY2QPZP1BYUEseTDYcaw5q29Bji7EKCeTUdFpoq3Tjty5iYkanrtI7Vh0XwWrbHGJn6Jxzsc1dD9P22WlIFyErWuO8X9KIqVB_t1H04EezTVQK-jD4B3A05odXtK7X3E-hj1YI_9SdMcqUO-6dbxCZUmwK7odONbHeB2nqLp2dUg2Ke57Nx3IhUX-CJQ8QrG4krW7Okd5BtwG797KSQfWUyTfw.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Легенда для Дата Инженера за 1 промпт&#33; Составляем Резюме</b><br/><br/>Буквально 1 промпт, который из любой твоей истории сделает готовую легенду для Дата Инженера. Это не кликбейт. Я реально на вайбкодил готовый сервис для сборки вашего рассказа на собесе и резюме. А также показал, как его составить, чтобы вас не скипали.<br/><br/><b>Смотрите на Youtube<br/></b><b><tg-emoji emoji-id="5422837510499739688"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296B6.png')"><b>▶️</b></i></tg-emoji></b><b> </b><a href="https://youtu.be/okvu18S7h2U" target="_blank" rel="noopener"><b>https://youtu.be/okvu18S7h2U</b></a><br/><br/><b>Кстати, мы уже набираем поток на BootCamp. Старт 1 сентбяря<br/></b><a href="https://t.me/bootcampych_bot" target="_blank"><b>@bootcampych_bot</b></a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/halltape_data/891" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>20</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>13</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">6.36K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/halltape_data/891"><time datetime="2026-08-14T13:09:37+00:00" class="time">13:09</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="halltape_data/892" data-view="eyJjIjotMTUyNTYzNDIzOSwicCI6ODkyLCJ0IjoxNzkxNDU3OTQ0LCJoIjoiNTYwZWQ1YzFmYThlOTQ0ODJkIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/halltape_data"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Я"><img src="https://cdn4.telesco.pe/file/vh4DMtE62vwZKucg1Tn8vItlwVwqfcvh0QgjOKimW9tr_LNpwzCl3Sj10Xc4oPHXh7aujAp76g-_1HDvoNMRhFepeqdAhHs5jOLd6Z1V4TJEjTblZ9eWs-YIj8soDOF0uAzncj_eJ8Hqpmec1Ij8MP-p3SovqM321uXnXhDQIV7RLmQpBVnn2VQZEAvhXH5tTsK-1Uhgr4BV4u6NXX2SbsfMW9O5jL3h2n9YyymAkpYro6d8o16oPJLDz2sRiQ3xp-pmGN2aOGsW3w13W8cMq21XYZQjNyRb-QNHp7CUrWEGP67v5E7LXcJFe3N8CugvTbNW1hyRSNONtdc4akTbRQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/halltape_data"><span dir="auto">Я – Дата Инженер | Евгений Виндюков</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto"><b>Самый быстрый вкат в IT, который я видел</b><br/><br/>Мой кореш из универа вкатился в DE быстрее, чем кто-либо другой.<br/>Чтобы вы понимали, он вообще не из IT. Ему было ровным счетом по-барабану на это ваше программирование, он просто работал инженером в компании и все. Ну там электричество, энергетика... сами понимаете, денег там нет. Хорошо... я знаю, что какой-то сын маминой подруги работает в энергетике, купил Ламбу Урус и сейчас в МОНАКО, но везде есть исключения.<br/><br/>Знаете, что его сильно отличало? Вы скажете: ПРЕДРАСПОЛОЖЕННОСТЬ И СУДЬБА ЦКАТИНА&#33;<br/>Вообще нет. Он не ссал.<br/><br/>Как это выглядело. Где-то в январе-феврале он открыл наш Roadmap и начал потихоньку проходить SQL и Python (кстати у него уже был заход год назад, но он благополучно бросал это скучное дело). Поэтому честнее сказать, он вернулся к основам и начал все повторять. Дальше он записался на наш мартовский поток BootCamp. <br/><br/>Т.е. он тупо шел по roadmap, как по списку и не бросал. В буткемпе он взял самый простой пайплайн (связку инструментов) и буквально повторил за примером, немного добавляя свои идеи. БОЛЬШЕ НИЧЕГО ДОПОЛНИТЕЛЬНОГО&#33; По Кликхаусу прошел наш огромный файлик сколько мог. По спарку аналогично занимался. Т.е. он не утопал в теории. Например в Clickhouse реально необходимо знать ТРИ движка базово - MergeTree, ReplacingMergeTree и ReplicatedMergeTree. Нет смысла сидеть и учить все движки подряд. Вас об этом на собесе не спросят.. потому что сами собеседующие об этом не знают.<br/><br/>По времени он занимался по 6–8 часов в неделю. На втором месяце BootCamp, ещё до лекции по резюме, он уже начал делать РЕЗЮМЕ. При этом за основу взял уже готовое резюме с HH, которое если что и вы можете найти и тупо списать. Так вот он взял и переделал уже хорошее релевантное резюме под себя. Я до сих пор не понимаю, почему люди не хотят делать АНАЛОГИЧНО?&#33; Люди уже сто пицот раз писали эти CV... да скатайте просто у лучших.<br/><br/>В итоге. Он послушал лекцию → немного поправил → сразу вышел на рынок. СРАЗУ&#33; На втором месяца BootCamp прям посередине потока. Пока остальные еще ждали мок собесы. Типа чувак вообще не парился и шел, как паровоз. <br/><br/>Естественно, первые три собеса он провалил. На каком-то даже его спалили с нейронкой, что он пользовался. Ну и ладно.. Где не получилось, идем дальше. Собеседующие забыли его в ту же секунду. Пошёл на следующее.<br/><br/>Примерно на 8–9 собеседовании получил оффер на 250 000 ₽ на руки на офис (это важно). Сейчас он уже работает и получает ЗП. Вы скажите, что ОФИС — это не тру. А ваше мнение кто-то спрашивает? :)<br/>У человека задача получить работу и зарплату. Через полгода год выйдет на рынок и сменит на другое место. Тут факт, что он не тупил и действовал.<br/><br/>Самое забавное, что я сам на него особо не ставил. Не думал, что именно он так быстро вкатится. А он взял и оказался одним из первых. Пока другие ребята, в том числе те, кто уже работал в IT или около IT, продолжают готовиться, сомневаться и ждать подходящего момента.<br/><br/><b>1 сентября стартует новый поток BootCamp</b> - <a href="https://t.me/bootcampych_bot" target="_blank">@bootcampych_bot</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>32</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.65K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/halltape_data/892"><time datetime="2026-08-19T00:31:07+00:00" class="time">00:31</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/halltape_data?after=892" class="tme_messages_more js-messages_more" data-after="892"></a></div>
+    </section>
+  </div>
+</main>
+    <script src="//telegram.org/js/jquery.min.js"></script>
+    <script src="//telegram.org/js/jquery-ui.min.js"></script>
+    <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
+<script src="//telegram.org/js/tgsticker.js?32"></script>
+
+    <script src="//telegram.org/js/widget-frame.js?68"></script>
+    <script src="//telegram.org/js/telegram-web.js?14"></script>
+    <script>TWeb.init();
+</script>
+    
+  </body>
+</html>
+<!-- page generated in 412.32ms -->
