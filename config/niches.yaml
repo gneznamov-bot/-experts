@@ -1,4 +1,6 @@
 # Ниши: термины для проверки «та ли ниша» (этап C) и запросы для поиска (этап A).
+# habr_hubs — слаги хабов Хабра; взяты из реальных ссылок на страницах хабов
+# (2026-10-08), не угаданы.
 #
 # Синтаксис терминов тот же, что в keywords.yaml:
 #   "аналит"  — с начала слова, окончание любое: аналитик, аналитика, ...
@@ -11,6 +13,7 @@
 # Во фразе из нескольких слов окончание свободно только у последнего слова.
 
 it:
+  habr_hubs: [sql, data_engineering, analysis_design, productpm, career, python, java, go]
   title: IT в целом
   min_post_share: 0.25
   terms: [=айти, =it, =ит, разработ, программ, код, =backend, бэкенд, бекенд, =frontend, фронтенд, =fullstack, =devops, =sre, =qa, тестиров, тестировщ, автотест, =aqa, =sdet, =java, =kotlin, =python, =golang, =go, =rust, =c++, =js, =javascript, =typescript, =php, =sql, postgres, =clickhouse, =mysql, =kafka, =spark, =airflow, =hadoop, =dbt, =etl, =dwh, =data, =дата, датасаент, =ml, =llm, нейросет, =ии, =ai, =gpt, аналит, продакт, =a/b, ab-тест, метрик, дашборд, =bi, =tableau, =superset, архитект, микросервис, =api, =docker, =kubernetes, =k8s, =linux, =git, джун, =junior, мидл, =middle, сеньор, =senior, тимлид, =teamlead, собес, собеседован, грейд, стартап]
@@ -19,6 +22,7 @@ it:
   tech: [SQL, Spark, Airflow, Kafka, Python, Go, Java]
 
 analytics:
+  habr_hubs: [sql, analysis_design, data_visualization, statistics, productpm]
   title: Аналитика (системная, продуктовая, данных)
   min_post_share: 0.25
   terms: [аналит, =sql, =python, =pandas, =a/b, ab-тест, метрик, дашборд, =bi, =tableau, =superset, =datalens, =clickhouse, когорт, ретеншн, =retention, воронк, гипотез, продакт, требован, =bpmn, =uml, =api, интеграц, постановк, бизнес-анализ, =data, =дата]
@@ -26,6 +30,7 @@ analytics:
   tech: [SQL, Python, A/B тесты, BPMN, ClickHouse]
 
 data_engineering:
+  habr_hubs: [data_engineering, dwh, bigdata, sql]
   title: Дата-инженерия
   min_post_share: 0.25
   terms: [дата-инженер, data engineer, =etl, =elt, =dwh, хранилищ, =data lake, =lakehouse, =spark, =airflow, =kafka, =hadoop, =dbt, =clickhouse, =greenplum, postgres, =sql, пайплайн, pipeline, витрин, =s3, =iceberg, =flink]
@@ -33,6 +38,7 @@ data_engineering:
   tech: [Spark, Airflow, Kafka, dbt, Greenplum]
 
 qa:
+  habr_hubs: []   # хаб тестирования ещё не проверен на живой странице
   title: Тестирование и автоматизация
   min_post_share: 0.25
   terms: [=qa, =aqa, =sdet, тестиров, тестировщ, автотест, автоматизация тестирован, автоматизацию тестирован, автоматизации тестирован, =selenium, =playwright, =appium, =junit, =testng, =pytest, =allure, баг, тест-кейс, регресс, нагрузочн]
@@ -40,6 +46,7 @@ qa:
   tech: [Selenium, Playwright, Java, Kotlin, pytest]
 
 backend:
+  habr_hubs: [java, go, python, net, hi]
   title: Бэкенд-разработка
   min_post_share: 0.25
   terms: [=backend, бэкенд, бекенд, разработ, =java, =kotlin, =golang, =go, =python, =php, =c#, =.net, =rust, микросервис, =api, =rest, =grpc, =kafka, postgres, =redis, =docker, =kubernetes, =k8s, =highload, хайлоад, архитект, =system design, код, рефактор, =spring]

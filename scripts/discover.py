@@ -2,14 +2,14 @@
 
 python scripts/discover.py snowball [<username> ...]   # A2, офлайн по data/raw
 python scripts/discover.py addlist <t.me/addlist/...> [...]   # A1, одна страница на папку
+python scripts/discover.py habr --niche it [--hubs sql ...] [--top 30]   # A5, Хабр
 
 Формат строки: username, title_guess, source, source_url, found_at.
 Уже виденные (config/seen.json, CRM) и уже записанные в candidates.csv не
 добавляются повторно.
 
-Пока реализованы только источники на t.me. A3–A7 (TGStat, поиск, Хабр,
-менторские платформы, конференции) требуют доступа к этим сайтам в
-сетевой политике окружения и проверки их robots.txt.
+Реализованы: A1 (папки), A2 (снежный ком), A5 (Хабр, scripts/habr.py).
+A3 (TGStat) — следующий; A4, A6, A7 — ещё нет.
 """
 import argparse
 import csv
@@ -62,7 +62,7 @@ def append_candidates(new):
         added.append(r)
     DATA.mkdir(exist_ok=True)
     with CANDIDATES_CSV.open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=FIELDS)
+        w = csv.DictWriter(f, fieldnames=FIELDS, extrasaction="ignore")
         w.writeheader()
         w.writerows(rows + added)
     return added
@@ -147,6 +147,23 @@ def addlist(urls):
     return added, manual
 
 
+def habr_source(niche, hubs=None, top=30, min_rating=5):
+    import habr
+    from common import load_yaml
+    hubs = hubs or load_yaml("niches.yaml")[niche].get("habr_hubs") or []
+    if not hubs:
+        log(f"Хабр: для ниши {niche} не заданы habr_hubs")
+        return []
+    rows = habr.discover(hubs, top=top, min_rating=min_rating)
+    # Подробности (статья, рейтинг, где нашлась ссылка) — для разбора
+    (RAW / "_habr").mkdir(parents=True, exist_ok=True)
+    (RAW / "_habr" / "found.json").write_text(
+        json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
+    added = append_candidates(rows)
+    log(f"Хабр: найдено ссылок {len(rows)}, новых кандидатов {len(added)}")
+    return added
+
+
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -154,10 +171,17 @@ def main():
     s.add_argument("usernames", nargs="*")
     a = sub.add_parser("addlist")
     a.add_argument("urls", nargs="+")
+    h = sub.add_parser("habr")
+    h.add_argument("--niche", default="it")
+    h.add_argument("--hubs", nargs="*")
+    h.add_argument("--top", type=int, default=30, help="авторов на хаб")
+    h.add_argument("--min-rating", type=int, default=5)
     args = ap.parse_args()
     try:
         if args.cmd == "snowball":
             added, _ = snowball(args.usernames or None)
+        elif args.cmd == "habr":
+            added = habr_source(args.niche, args.hubs, args.top, args.min_rating)
         else:
             added, _ = addlist(args.urls)
     except StopStage as e:
