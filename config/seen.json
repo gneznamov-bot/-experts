@@ -1,4 +1,10 @@
 {
+  "alextsay92": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
+  },
   "analyst_academy": {
     "date": "2026-10-08",
     "niche": "it",
@@ -23,6 +29,30 @@
     "source": "A2:snowball",
     "verdict": "rejected: мелкий; не та ниша"
   },
+  "anti_notes": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "passed: 48"
+  },
+  "antipov_d": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
+  },
+  "arthur_arslan": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
+  },
+  "atomlib": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
+  },
   "backendarchieve": {
     "date": "2026-10-08",
     "niche": "it",
@@ -35,10 +65,22 @@
     "source": "A2:snowball",
     "verdict": "passed: 60"
   },
+  "cyberbeznadezhen": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "rejected: мелкий"
+  },
   "daniildzheparov": {
     "date": "2026-10-08",
     "niche": "it",
     "source": "A2:snowball",
+    "verdict": "unavailable"
+  },
+  "darovska": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
     "verdict": "unavailable"
   },
   "data_penguin": {
@@ -52,6 +94,30 @@
     "niche": "it",
     "source": "manual",
     "verdict": "passed: 57"
+  },
+  "dnemchin": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
+  },
+  "e_g_orius": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "rejected: мелкий; не та ниша"
+  },
+  "exzvor": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
+  },
+  "fakng_eng": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
   },
   "godevjob": {
     "date": "2026-10-08",
@@ -77,6 +143,12 @@
     "source": "A2:snowball",
     "verdict": "rejected: витрина; не та ниша"
   },
+  "integramme": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "rejected: мелкий; витрина"
+  },
   "itgardenn": {
     "date": "2026-10-08",
     "niche": "it",
@@ -95,17 +167,53 @@
     "source": "A2:snowball",
     "verdict": "unavailable"
   },
+  "nedovyazhu": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "rejected: мелкий; не та ниша"
+  },
+  "nemirlev": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
+  },
   "nodatanojobs": {
     "date": "2026-10-08",
     "niche": "it",
     "source": "A2:snowball",
     "verdict": "rejected: витрина"
   },
+  "novostippr": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "rejected: мелкий; витрина"
+  },
+  "orioner72": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
+  },
+  "pirate_cat_flint": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
+  },
   "productgardenn": {
     "date": "2026-10-08",
     "niche": "it",
     "source": "A2:snowball",
     "verdict": "rejected: мелкий"
+  },
+  "qdmadept": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
   },
   "remocate": {
     "date": "2026-10-08",
@@ -173,11 +281,23 @@
     "source": "A2:snowball",
     "verdict": "rejected: витрина; не та ниша"
   },
+  "throlib": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
+  },
   "v_aqa": {
     "date": "2026-10-08",
     "niche": "it",
     "source": "manual",
     "verdict": "rejected: мёртвый; мелкий"
+  },
+  "vladimir_sva": {
+    "date": "2026-10-08",
+    "niche": "it",
+    "source": "A5:habr",
+    "verdict": "unavailable"
   },
   "xor_journal": {
     "date": "2026-10-08",

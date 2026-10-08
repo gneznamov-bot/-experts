@@ -1,0 +1,35 @@
+{
+  "username": "anti_notes",
+  "score": 48,
+  "blocks": {
+    "audience": {
+      "points": 20,
+      "basis": "ER=0.9231"
+    },
+    "monetization": {
+      "points": 0,
+      "basis": "продаж не найдено"
+    },
+    "free_top": {
+      "points": 10,
+      "basis": "нужна ручная проверка; контент: вход 2 / рост 2 постов; продукт: нет"
+    },
+    "segment": {
+      "points": 15,
+      "basis": "обжёгшийся одиночка"
+    },
+    "liveness": {
+      "points": 3,
+      "basis": "тренд падает"
+    },
+    "contact": {
+      "points": 0,
+      "basis": "контакта в описании нет"
+    }
+  },
+  "penalties": [],
+  "contact": null,
+  "needs_review": [
+    "свободный верх"
+  ]
+}
