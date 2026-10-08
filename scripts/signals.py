@@ -64,12 +64,13 @@ def match_group(rx, items, limit=QUOTES_PER_GROUP, ex_rx=None):
 def has_product(cfg, price_rx, items, ex_rx=None):
     strong = compile_terms(cfg["strong"])
     weak = compile_terms(cfg["weak"])
+    own = compile_terms(cfg["own_product"])
     found, seen = [], set()
     for kind, text, date, url in items:
         if kind == "comment" or url in seen:
             continue
         ms = find_all(strong, text)
-        if not ms and price_rx.search(text):
+        if not ms and price_rx.search(text) and find_all(own, text):
             ms = clean(find_all(weak, text), ex_rx, text)
         if not ms:
             continue
@@ -158,7 +159,11 @@ def process(username):
     cpath = base / "comments.json"
     comments = json.loads(cpath.read_text(encoding="utf-8")) if cpath.exists() else None
     kw = load_yaml("keywords.yaml")
-    items = list(sources(ch, comments))
+    # Посты с рекламной меткой — чужой текст: из сигналов исключаем
+    # (на @xor_journal «разбор резюме» нашёлся в рекламе сервиса).
+    ads_rx = compile_terms(kw["red_flags"]["ads"])
+    items = [x for x in sources(ch, comments)
+             if not (x[0] == "post" and find_all(ads_rx, x[1]))]
     no_comments = [x for x in items if x[0] != "comment"]
     price_rx = re.compile(kw["price_pattern"], re.I)
 

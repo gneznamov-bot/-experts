@@ -1,4 +1,4 @@
-# @roma_protiv_fomo — unknown
+# @roma_protiv_fomo — Рома Филев
 
 Канал: «Рома Филев против FOMO» · балл 84/100
 

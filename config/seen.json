@@ -171,7 +171,7 @@
     "date": "2026-10-08",
     "niche": "it",
     "source": "A2:snowball",
-    "verdict": "rejected: не та ниша"
+    "verdict": "rejected: витрина; не та ниша"
   },
   "v_aqa": {
     "date": "2026-10-08",
@@ -183,7 +183,7 @@
     "date": "2026-10-08",
     "niche": "it",
     "source": "A2:snowball",
-    "verdict": "passed: 50"
+    "verdict": "rejected: витрина"
   },
   "zarubezhom_jobs": {
     "date": "2026-10-08",

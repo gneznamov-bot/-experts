@@ -61,7 +61,8 @@ def main():
             names += [l.strip() for l in open(args.channels_file, encoding="utf-8") if l.strip()]
         names = [n.strip().rstrip("/").split("/")[-1].lstrip("@").lower() for n in names]
         cands = [n for n in dict.fromkeys(names) if n not in excl]
-        source_of = {n: "manual" for n in cands}
+        known = {r["username"].lower(): r["source"] for r in discover.load_candidates()}
+        source_of = {n: known.get(n, "manual") for n in cands}
         skipped = len(names) - len(cands)
         if skipped:
             log(f"исключено как уже виденные/CRM: {skipped}")

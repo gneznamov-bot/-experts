@@ -24,11 +24,11 @@
     },
     "contact": {
       "points": 10,
-      "basis": "@k_shredinger"
+      "basis": "@halltape"
     }
   },
   "penalties": [],
-  "contact": "@k_shredinger",
+  "contact": "@halltape",
   "needs_review": [
     "свободный верх"
   ]

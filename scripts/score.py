@@ -18,7 +18,12 @@ ONEOFF_TERMS = compile_terms(["разбор резюме", "разбор", "мо
                               "mock"])
 
 CONTACT_HINT = compile_terms(["пиш", "личк", "=dm", "=лс", "вопрос", "связ",
-                              "контакт", "сотруднич", "реклам", "обучен", "менторств"])
+                              "контакт", "сотруднич", "реклам", "обучен", "менторств",
+                              "автор"])
+# Строка «Автор @…» — лучший личный контакт; «по рекламе @…» — худший
+# (на @halltape_data был выбран рекламный менеджер вместо автора).
+CONTACT_BEST = compile_terms(["автор", "личк", "=dm", "=лс", "пишите мне", "лично"])
+CONTACT_WORST = compile_terms(["реклам", "сотруднич", "менеджер", "=mng"])
 MENTION_RX = re.compile(r"(?:@|t\.me/)([A-Za-z][A-Za-z0-9_]{3,31})")
 FORM_RX = re.compile(r"(forms\.gle|docs\.google|tally\.so|forms\.yandex|typeform|"
                      r"taplink|linktr\.ee)", re.I)
@@ -97,9 +102,12 @@ def block_contact(ch):
             if u.lower().endswith("bot"):
                 bots.append(u)
             elif find_all(CONTACT_HINT, line):
-                personal.append(u)
+                rank = 0 if find_all(CONTACT_BEST, line) else \
+                    2 if find_all(CONTACT_WORST, line) else 1
+                personal.append((rank, u))
     if personal:
-        return 10, f"@{personal[0]}", "@" + personal[0]
+        u = sorted(personal, key=lambda x: x[0])[0][1]
+        return 10, f"@{u}", "@" + u
     if bots or FORM_RX.search(desc):
         return 5, "только бот или форма", ("@" + bots[0]) if bots else "форма"
     return 0, "контакта в описании нет", None

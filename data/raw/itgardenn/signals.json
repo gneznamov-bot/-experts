@@ -4,7 +4,7 @@
   "segment_basis": "has_product+pragmatic",
   "groups": {
     "has_product": {
-      "count": 41,
+      "count": 40,
       "matches": [
         {
           "phrase": "менторств",

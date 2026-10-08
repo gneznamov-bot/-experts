@@ -99,10 +99,20 @@ def name_guess(ch):
     m = re.search(r"(?:меня зовут|^я)\s+([А-ЯЁ][а-яё]+(?:\s+[А-ЯЁ][а-яё]+)?)", desc, re.M | re.I)
     if m:
         return m.group(1)
-    # Название вида «Кирилл Сачков | Development» / «Дима | Перекат в AQA»
-    head = re.split(r"\s*\|\s*|\s+[—–-]\s+", ch.get("title") or "")[0].strip()
-    if re.fullmatch(r"[А-ЯЁ][а-яё]+(?:\s+[А-ЯЁ][а-яё]+)?", head):
-        return head
+    # Описание вида «Рома Филев: Applied AI Lead…»
+    m = re.match(r"\s*([А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+)\s*[:,—–-]", desc)
+    if m:
+        return m.group(1)
+    # Название вида «Кирилл Сачков | Development», «Я – Дата Инженер | Евгений
+    # Виндюков»: берём часть, похожую на «Имя Фамилия», сначала двухсловную.
+    parts = [p.strip() for p in re.split(r"\s*\|\s*|\s+[—–-]\s+", ch.get("title") or "")]
+    job = re.compile(r"инженер|аналитик|разработчик|дата|тестировщик|ментор|"
+                     r"продакт|архитектор|лид|блог|канал", re.I)
+    for p in parts:
+        if re.fullmatch(r"[А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+", p) and not job.search(p):
+            return p
+    if parts and re.fullmatch(r"[А-ЯЁ][а-яё]+", parts[0]) and len(parts) > 1:
+        return parts[0]
     return "unknown"
 
 
@@ -234,7 +244,7 @@ def main():
     ap.add_argument("--size", type=int, default=30)
     ap.add_argument("--dossiers", type=int, default=10)
     args = ap.parse_args()
-    out = Path(args.out) if args.out else \
+    out = Path(args.out).resolve() if args.out else \
         ROOT / "out" / f"batch-{now_utc().date().isoformat()}-{args.niche}"
     (out / "dossier").mkdir(parents=True, exist_ok=True)
 

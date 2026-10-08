@@ -4,7 +4,7 @@
   "segment_basis": "has_product+pragmatic",
   "groups": {
     "has_product": {
-      "count": 12,
+      "count": 11,
       "matches": [
         {
           "phrase": "записаться",
@@ -18,13 +18,6 @@
           "quote": "Дальше он записался на наш мартовский поток BootCamp.",
           "date": "2026-08-19T00:31:07+00:00",
           "url": "https://t.me/halltape_data/892",
-          "source": "post"
-        },
-        {
-          "phrase": "записаться",
-          "quote": "Изучить программу и записаться можно здесь.",
-          "date": "2026-08-05T08:00:46+00:00",
-          "url": "https://t.me/halltape_data/883",
           "source": "post"
         },
         {
@@ -60,6 +53,13 @@
           "quote": "Записаться и попасть на поток можно тут - @bootcampych_bot",
           "date": "2026-04-20T22:17:42+00:00",
           "url": "https://t.me/halltape_data/824",
+          "source": "post"
+        },
+        {
+          "phrase": "записаться",
+          "quote": "Записаться и попасть уже в чат можно тут - @bootcampych_bot",
+          "date": "2026-04-19T19:54:58+00:00",
+          "url": "https://t.me/halltape_data/823",
           "source": "post"
         }
       ]
@@ -160,7 +160,7 @@
   },
   "red_flags": [],
   "counters": {
-    "we": 156,
+    "we": 154,
     "i": 214,
     "ads_90d": 1,
     "posts_90d": 34
