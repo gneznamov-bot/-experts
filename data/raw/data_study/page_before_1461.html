@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Аналитика данных / Data Study – Telegram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible"
+     content="IE=edge" />
+    <meta name="MobileOptimized" content="176" />
+    <meta name="HandheldFriendly" content="True" />
+    
+<meta property="og:title" content="Аналитика данных / Data Study">
+<meta property="og:image" content="https://cdn4.telesco.pe/file/U1ft6SVAJcDV88VA93NgKUPTASDVjppWkAwNlrY43PpELZLVLSv925QrbL5Q3y9yiPK4esRwiUuSH_IPpzMhP8TsGVzY73_B-Qt3NN0v0UruDg2a22lWgP-OUSfw7EM42jAccwO1v2Tv_hU5tWwOzLSKKo9qWtBB7DB6vp8KOXpznlPcEv_wEP7yfF4R88oD24U2aDB6Un3zraXzPkgO0cwx2lV7Ec-vXKDo18mfW2uPPSMm08cooyBTp6Ac6zh3lSsB0TaLxFsMf_saZb85sPtlxFrFAY-JsRg13HKLeE9bgpNRvpgJiZfnRm6GSdmFmyGERVgeAVLTYCOyR21pJA.jpg">
+<meta property="og:site_name" content="Telegram">
+<meta property="og:description" content="Помогаю аналитикам расти в профессии и доходе
+
+Курс по продвинутому SQL и автоматизации потоков данных https://datastudy.ru/sql_advanced
+
+По всем вопросам: @daniildzheparov
+
+Канал в MAX https://max.ru/id591908196110_biz">
+
+<meta property="twitter:title" content="Аналитика данных / Data Study">
+<meta property="twitter:image" content="https://cdn4.telesco.pe/file/U1ft6SVAJcDV88VA93NgKUPTASDVjppWkAwNlrY43PpELZLVLSv925QrbL5Q3y9yiPK4esRwiUuSH_IPpzMhP8TsGVzY73_B-Qt3NN0v0UruDg2a22lWgP-OUSfw7EM42jAccwO1v2Tv_hU5tWwOzLSKKo9qWtBB7DB6vp8KOXpznlPcEv_wEP7yfF4R88oD24U2aDB6Un3zraXzPkgO0cwx2lV7Ec-vXKDo18mfW2uPPSMm08cooyBTp6Ac6zh3lSsB0TaLxFsMf_saZb85sPtlxFrFAY-JsRg13HKLeE9bgpNRvpgJiZfnRm6GSdmFmyGERVgeAVLTYCOyR21pJA.jpg">
+<meta property="twitter:site" content="@Telegram">
+
+<meta property="al:ios:app_store_id" content="686449807">
+<meta property="al:ios:app_name" content="Telegram Messenger">
+<meta property="al:ios:url" content="tg://resolve?domain=data_study">
+
+<meta property="al:android:url" content="tg://resolve?domain=data_study">
+<meta property="al:android:app_name" content="Telegram">
+<meta property="al:android:package" content="org.telegram.messenger">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Telegram">
+<meta name="twitter:description" content="Помогаю аналитикам расти в профессии и доходе
+
+Курс по продвинутому SQL и автоматизации потоков данных https://datastudy.ru/sql_advanced
+
+По всем вопросам: @daniildzheparov
+
+Канал в MAX https://max.ru/id591908196110_biz
+">
+
+    <link rel="prev" href="/s/data_study?before=1439">
+<link rel="next" href="/s/data_study?after=1460">
+<link rel="canonical" href="/s/data_study?before=1456">
+
+    <script>window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.documentElement&&document.documentElement.classList&&document.documentElement.classList.add('theme_dark');</script>
+    <link rel="icon" type="image/svg+xml" href="//telegram.org/img/website_icon.svg?4">
+<link rel="apple-touch-icon" sizes="180x180" href="//telegram.org/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//telegram.org/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
+<link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
+    <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
+    <link href="//telegram.org/css/widget-frame.css?75" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
+    <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
+  </head>
+  <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
+    <div class="tgme_background_wrap">
+      <canvas id="tgme_background" class="tgme_background" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
+      <div class="tgme_background_pattern"></div>
+    </div>
+    <header class="tgme_header search_collapsed">
+  <div class="tgme_container">
+    <div class="tgme_header_search">
+      <form class="tgme_header_search_form" action="/s/data_study">
+        <svg class="tgme_header_search_form_icon" width="20" height="20" viewBox="0 0 20 20"><g fill="none" stroke="#7D7F81" stroke-width="1.4"><circle cx="9" cy="9" r="6"></circle><path d="M13.5,13.5 L17,17" stroke-linecap="round"></path></g></svg>
+        <input class="tgme_header_search_form_input js-header_search" placeholder="Search" name="q" autocomplete="off" value="" />
+        <a href="/s/data_study" class="tgme_header_search_form_clear"><svg class="tgme_action_button_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><g class="icon_body" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="1.5"><path d="M6 14l8-8m0 8L6 6" stroke-dasharray="0,11.314" stroke-dashoffset="5.657"/><path d="M26 14l8-8m0 8l-8-8" stroke-dasharray="0.371,10.943" stroke-dashoffset="5.842"/><path d="M46 14l8-8m0 8l-8-8" stroke-dasharray="1.982,9.332" stroke-dashoffset="6.647756"/><path d="M66 14l8-8m0 8l-8-8" stroke-dasharray="5.173,6.14" stroke-dashoffset="8.243"/><path d="M86 14l8-8m0 8l-8-8" stroke-dasharray="7.866,3.448" stroke-dashoffset="9.59"/><path d="M106 14l8-8m0 8l-8-8" stroke-dasharray="9.471,1.843" stroke-dashoffset="10.392"/><path d="M126 14l8-8m0 8l-8-8" stroke-dasharray="10.417,0.896" stroke-dashoffset="10.866"/><path d="M146 14l8-8m0 8l-8-8" stroke-dasharray="10.961,0.353" stroke-dashoffset="11.137"/><path d="M166 14l8-8m0 8l-8-8" stroke-dasharray="11.234,0.08" stroke-dashoffset="11.274"/><path d="M186 14l8-8m0 8l-8-8"/></g></svg></a>
+      </form>
+    </div>
+    <div class="tgme_header_right_column">
+      <section class="tgme_right_column">
+        <div class="tgme_channel_info">
+          <div class="tgme_channel_info_header">
+            <i class="tgme_page_photo_image bgcolor1" data-content="АS"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i>
+            <div class="tgme_channel_info_header_title_wrap">
+              <div class="tgme_channel_info_header_title"><span dir="auto">Аналитика данных / Data Study</span></div>
+              <div class="tgme_channel_info_header_labels"></div>
+            </div>
+            <div class="tgme_channel_info_header_username"><a href="https://t.me/data_study">@data_study</a></div>
+          </div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">9.46K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">632</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">68</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">25</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">464</span> <span class="counter_type">links</span></div></div>
+          <div class="tgme_channel_info_description">Помогаю аналитикам расти в профессии и доходе<br/><br/>Курс по продвинутому SQL и автоматизации потоков данных <a href="https://datastudy.ru/sql_advanced" target="_blank" rel="noopener">https://datastudy.ru/sql_advanced</a><br/><br/>По всем вопросам: <a href="https://t.me/daniildzheparov" target="_blank">@daniildzheparov</a><br/><br/>Канал в MAX <a href="https://max.ru/id591908196110_biz" target="_blank" rel="noopener">https://max.ru/id591908196110_biz</a></div>
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=814d9a81bce9d89747_7156627894698345035">
+            <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
+          </a>
+          <div class="tgme_footer">
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/faq">About</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/blog">Blog</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/apps">Apps</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//core.telegram.org/">Platform</a></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="tgme_header_info">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=814d9a81bce9d89747_7156627894698345035">
+        <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
+      </a>
+      <a class="tgme_header_link" href="https://t.me/data_study">
+        <i class="tgme_page_photo_image bgcolor1" data-content="АS"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i>
+        <div class="tgme_header_title_wrap">
+          <div class="tgme_header_title"><span dir="auto">Аналитика данных / Data Study</span></div>
+          <div class="tgme_header_labels"></div>
+        </div>
+        <div class="tgme_header_counter">9.46K subscribers</div>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="tgme_main" data-url="/data_study">
+  <div class="tgme_container">
+    <section class="tgme_channel_history js-message_history">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/data_study?before=1439" class="tme_messages_more js-messages_more" data-before="1439"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1439" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQzOSwidCI6MTc5MTQ1NjQ0MSwiaCI6IjRjNzQwMzcxMDA0MDc1ZWI2YiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Автоматизация задач на работе<br/><br/>У нас на проекте есть множество аналитических задач, которые нужно выполнять по разным сценариям: ежедневно/еженедельно/ежемесячно, либо по запросу, но всегда идентично<br/><br/>И для каждой такой задачи раньше нужно было вовлекать аналитика, просить его сделать определенные манипуляции, которые мог сделать только он<br/><br/>А что если аналитик ушел в отпуск, взял дейофф, заболел, уволился? <br/><br/>Сейчас пришли к тому, что каждая такая задача решается запуском автоматических джоб (скриптов). Вся логика централизовано лежит в репозитории, нет шанса что-то потерять если аналитик недоступен. И все работает по заданному расписанию с нужной периодичностью. <br/><br/>НО остались задачи, которые нужно запускать по запросу (не по расписанию). И вот здесь опять же нужен аналитик, чтобы нажать кнопку и запустить джобу. Бизнес-пользователи это сделать не могут в техническом контуре, но можно теперь запросто просить других коллег это сделать. <br/><br/>Было: <br/>- вся логика известна аналитику в его скриптах, полная зависимость от его ресурса, скрипты запускаются вручную по запросу или когда аналитик сам помнит что их нужно прогнать <br/><br/>Стало: <br/>- вся логика зафиксирована в репозиториях компании, все автоматизировано запускается по расписанию или нажатием одной кнопки если попросить аналитика или другого коллегу с доступом<br/>- часть задач вообще доступна пользователям в привычной им системе с UI, где они сами по кнопке получают нужные отчеты<br/><br/>Но дальше хочу уйти еще больше в self-service для пользователей. Здесь будем исследовать в сторону внедрения ии-агентов для наших задач, а также динамическую генерацию отчетов не по прописанной логике, а в формате из запроса пользователя<br/><br/><b>А у вас как на работе? Передайте то, как чувствую себя ваши бизнес-пользователи, или вы сами)</b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i> - <i>есть что автоматизировать, что сейчас в ручном или полуручном режиме <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA791E2808DF09F92BB.png')"><b>🧑‍💻</b></i> - все что можно уже автоматизировано и удобно работает</i><br/><br/><a href="https://t.me/data_study/729" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Кто я</a> | <a href="https://t.me/data_study/1180" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Навигация</a> | <a href="https://datastudy.ru/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Обучение</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.39K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1439"><time datetime="2026-07-04T16:48:28+00:00" class="time">16:48</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1440" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ0MCwidCI6MTc5MTQ1NjQ0MSwiaCI6Ijg5OGRiNThkYTRmNjJjOTVhNiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5931567067091898080 1381050578_460000992" href="https://t.me/data_study/1440" style="width:708px;background-image:url('https://cdn4.telesco.pe/file/Fa9Q8DYNA7f5cOEedjLwpPaIDzh-9FsoSWeHL1b3LiwsOnwUQ8McrSaLzEc-Ax45dE-h3Je4_Y3aHcduo-LHyaoC9WpCdeO_XEfNw7DhbK5aDTJWJWHOnClN1vC_n9lMwrLYsICDro2j4JSmbLziDxz1JcnqHLDu2ITGZM0edHVDwkmZgJWK6gMgAYXeGAhOnD73nsyJH35nKCqrTOe6Vi1MovBVJthR69tzIXHu7oLckbYVeYVcz5e7bd3baQ-nQ8sbrweag2rw4jb35GnTt93AukGEaoHVm0Higy53d1oYv0Ob6Ntnd-pdJGetXeXPJzm88-iebvu3xJM7-uiC5g.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:112.99435028249%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Оффер в крупную ритейл компанию на 185 тысяч на руки&#33; <br/><br/>Такой новостью сегодня порадовал ученик. Порадуемся за Дмитрия&#33; <tg-emoji emoji-id="5208541126583136130"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i></tg-emoji><br/><br/>На старте обучения у Дмитрия был базовый SQL, сильный Excel и опыт junior аналитика. <br/><br/>Теперь благодаря уверенным хардам с SQL, Python, применением ETL инструментов, Git и BI получилось закрыть свою цель по ЗП на middle позиции <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49D.png')"><b>🤝</b></i><br/><br/><a href="?q=%23%D0%BA%D0%B5%D0%B9%D1%81">#кейс</a><br/><a href="?q=%23%D0%BE%D1%82%D0%B7%D1%8B%D0%B2_%D0%BA%D1%83%D1%80%D1%81">#отзыв_курс</a><br/><br/><a href="https://t.me/data_study/729" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Кто я</a> | <a href="https://t.me/data_study/1180" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Навигация</a> | <a href="https://datastudy.ru/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Обучение</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/data_study/1440" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>27</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.56K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1440"><time datetime="2026-07-05T14:19:51+00:00" class="time">14:19</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1441" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ0MSwidCI6MTc5MTQ1NjQ0MSwiaCI6ImU3Y2ZlYzE0ZDdhYTA3MTU2ZiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap 5940272583548800588 1383077489_460000844" href="https://t.me/data_study/1441" style="width:600px;background-image:url('https://cdn4.telesco.pe/file/KYNjwA9UUS2TyzDg-66m6LXEnAF8Q9JKKcQ6_KHsy7YtXG_fwL91HJE52ThKtk_hp22c18WjJdH3aH2JZlhQNxZJHRDiGA5j54rLLukVrfruGRbjiNRkV9idprJ3IupNvUDUmT5buReQsXuU6eI0ZjZCi9dTLrGXR8LJgASo2QqQLaKmSjKFzJJ1ltQbockl9AZzbdiqO2a3gIu6NAGFiKInIU6xO-UyWF5mtrmWwPccvHjl6IwodBDF_4BA7dpAFn6JaJt5tKTzGWLvGELcHPsytaf9SDIWsSTDzH9_lcS2imw8xMbGKk6qNXHsf-AA6dtxmAZO_2yoRyMQNPbnvQ.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:133.33333333333%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Я стал крестным&#33;</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>60</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>28</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.48K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1441"><time datetime="2026-07-07T19:23:13+00:00" class="time">19:23</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1442" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ0MiwidCI6MTc5MTQ1NjQ0MSwiaCI6IjczODAxNTkzMDgxZThmMzFmNyJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5956151567268384335 1386774603_460000847" href="https://t.me/data_study/1442" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/cF2QgG-1WCd8l2KZhn4gDRrgi7ZrNES3Sd2EY4YVm_lnb4iiR5FW2zkcizW-AWUMhRNdVKN2bqAoNv5ukZOvzEXVZnYc3tsmz93J8gTl8pdwj8bLNRq0MPevfY8colyLwquISLorXH2vIpB0LrWA87NwdnlVHtGvGHYZ1GYPenyfErR2bu9SswtlYVJ2u_azaDbtiHPGVi37bn-_P1Ihq87iPh6AuMbldGuybnB9mH0D3NiV0_ZTJDb4wXvYFHIfvIZjqke7xS8G1MJsbzwzmvHuMQd2Ry3yR9AEPhGnUq3a1z2qCbo0o9f9_T6iOj7xUy2MfxzF5OTx5ZMhedpKWA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:36%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://habr.com/ru/articles/939936/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Моя статья на Habr про построение потока данных с serverless технологиями в облаке </a><br/><br/>Собрал там информацию о реальном примере работы с excel/csv файлами, когда есть потребность загружать данные из них в базу данных для хранения и анализа. В статье расписал как использую<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Object Storage<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Managed Service PostgreSQL<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Cloud Functions <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Cloud Triggers<br/><br/>Довольно подробная инструкция, можно все максимально повторить по шагам<br/><br/>А полный цикл разработки и автоматизации потоков данных проходим на курсе <a href="https://datastudy.ru/sql_advanced" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>&quot;Продвинутый SQL и автоматизация витрин данных&quot;</b></a> - вся практика и навыки, которые требуют сейчас работодатели от аналитиков данных. <br/><br/><b><tg-emoji emoji-id="5462881955911584183"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i></tg-emoji></b><b>Ближайшая группа 27 июля</b>, пиши в ЛС или оставляй заявку через сайт</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/data_study/1442" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1442"><time datetime="2026-07-13T11:50:50+00:00" class="time">11:50</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1444" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ0NCwidCI6MTc5MTQ1NjQ0MSwiaCI6IjY2YzBkOTRhNDkxM2IyNTI2NiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5463277805867377382"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9283.png')"><b>💃</b></i></tg-emoji><b>От чего я кайфую на работе </b><br/><br/>Захотелось поделиться мыслями с вами почему я обожаю свою работу<br/><br/><tg-emoji emoji-id="5382322671679708881"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i></tg-emoji><b>Смесь задач аналитики и инженерии данных</b><br/>Обожаю разнообразие задач, особенно когда задача внутри себя содержит аналитику и инженерную часть. Например, когда нужно построить витрину данных, прогнать скрипт сборки локально, задеплоить все это в тестовое окружение, протестировать логику сборки и определения инкремента данных. После этого приступить к аналитике: расчет метрик, построение отчета, документация и общение с заказчиком. <b>Обширный список задач и применение разных инструментов - это то, что не дает повязнуть в рутинных задачах </b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><tg-emoji emoji-id="5381990043642502553"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i></tg-emoji><b>Открытое общение в компании на &quot;ты&quot;</b><br/>Очень круто, что в целом в IT общение на ты принято за норму и приветствуется в большинстве компаний, такое же общение выстраивается на мероприятиях/конференциях/митапах. С ужасом думаю, что где-то это работает не так, например на производствах, в гос. органах, даже в общении ассистента со стоматологом в частной клинике. Примеров вокруг меня много, слышу это от родителей, жены, друзей, что им приходится общаться в некой иерархии на работе, обращаться к руководителю по имени отчеству. В целом в этом ничего плохого нет, если выстроены нормальные человеческие взаимоотношения, но как правило руководители там чувствуют себя <i>&quot;<b>начальниками</b>&quot; и &quot;<b>боссами</b>&quot;</i>, а от этого и коммуникация идет не на равных. <br/><br/><b>В общем коммуникация в IT на равных с взаимоуважением к каждому сотруднику - огромная ценность, которую я также обожаю</b><br/><br/><tg-emoji emoji-id="5381879959335738545"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i></tg-emoji><b>Возможность удаленки</b><br/>Конечно же это оооочень жирный плюс. Писал уже об этом много раз, еще раз подствечу в чем он заключается<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i> я люблю долго спать (9 часов обычно, если не засиживаюсь ночью). вот эти мемы, что ты в 8:59 еще спишь, а в 9:00 сидишь уже работаешь - прямо в точку про меня)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i> нет чувства &quot;обязан ехать&quot;. вспоминаю школу, когда ты должен был вставать, в любую плохую погоду и темноту утром идти до школы. сейчас чувство свободы выбора само по себе прекрасно<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i> больше возможность путешествовать и нет привязанности к одному месту. даже если в путешествии все равно нужно работать, у тебя есть ноут и это и есть твой рабочий инструмент. опять же сравниваю с женой, что ей нужно обязательно для работы ездить в клинику, иначе ты работать не можешь. <br/><br/>ITшники, поддерживаете эти плюсы? Ставьте <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA791E2808DF09F92BB.png')"><b>🧑‍💻</b></i> если тоже любите за это свою работу (ну или хотели бы любить <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9885.png')"><b>😅</b></i>)</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/data_study/1444" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i>17</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">1.59K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1444"><time datetime="2026-07-14T11:12:38+00:00" class="time">11:12</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1445" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ0NSwidCI6MTc5MTQ1NjQ0MSwiaCI6IjM2YjVkZjg4NWJiMmRiN2U1YSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap blured 5961052352586387033 1387915656_460000857" href="https://t.me/data_study/1445" style="width:457px;background-image:url('https://cdn4.telesco.pe/file/twUEDTeRVX6QDEQyn4K4BJXD5Plj3OGFrvvGY2LNgxKLEfM6j1iu_KY3idkCC94ZJtvdR-6bE6UAUEJxjLfI1UdxDO9UURjxDlFjaPwXDdc35_Xbfs4Ot6WB_M8WJ5gRY5abaqXG0lYhQyXX7ety1kad8OGRST5BQgXmdospN4IvTGNyYPU2mpmt_0jEqw4vaksRZz4lmf8L7CwoF2AlSsaHX3dCiCi-VmXz4eYnGtT-_rWeK9T7i8j1LyVC5lgclegvRzSlqZNP-_julbhFzYai26ZEYJl3YgZyskY81IBvmCHq3cg2oI-_HcKtzQADI8O2xIttXABofZFmZ2oVrw.jpg')">
+  <div class="tgme_widget_message_photo" style="width:76.166666666667%;padding-top:133.33333333333%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Ломаем баррикады рынка труда&#33; <br/><br/>Еще одно трудоустройство, поздравим Максима&#33; <tg-emoji emoji-id="5208541126583136130"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i></tg-emoji><br/><br/>У Максима есть опыт с 2023 года в менеджменте и стратегическом консалтинге, на этих позициях он уже сталкивался частично с задачами визуализации данных и подготовки презентаций. <br/><br/>Как мы знаем для анализа данных нужны технические навыки, без SQL и Python никто рассматривать не будет, поэтому Максим принял решение пройти курс, а после него еще пойти на 5 занятий менторинга. <br/><br/>Созданные на курсе в рамках практики витрины данных использовали в процессе менторинга чтобы BI инструменты изучить. В общем отличное комбо получилось, результативное <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i><br/><br/><a href="?q=%23%D0%BA%D0%B5%D0%B9%D1%81">#кейс</a><br/><a href="?q=%23%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3">#менторинг</a><br/><a href="?q=%23%D0%BE%D1%82%D0%B7%D1%8B%D0%B2_%D0%BA%D1%83%D1%80%D1%81">#отзыв_курс</a><br/><br/><a href="https://t.me/data_study/729" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Кто я</a> | <a href="https://t.me/data_study/1180" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Навигация</a> | <a href="https://datastudy.ru/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Обучение</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/data_study/1445" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>14</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1445"><time datetime="2026-07-15T08:42:55+00:00" class="time">08:42</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1446" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ0NiwidCI6MTc5MTQ1NjQ0MSwiaCI6ImEwMjQyOTQwNGE2MTU0ODBmNyJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5967682716939521589 1389459408_460000821" href="https://t.me/data_study/1446" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/eNtZnsu_TyAE4PIAXGwV8iY6G2x1pgsWkbY0md6aTaMCj0J1yBNI99Aw4yisilQtuEIv6owrbV46H7g_cVjtXT74d89p7bMe-jgrXvLRcU_sJHPIS_7fsYkTdUzMkLvC8UaRCQB2S3WTRON6Yx-EkVKr7RkJxNV8TtwlnIi6xadNu0okuXl13BDW4XmO187WPRYeahz28xQ1IiGhEVnbYq45Ykt3oOXwXLVZbbGI9Ck9bsOLYJBwb0C2V0UffrZi4uwfWHzExeDXD4j3W4Erct2YnN3Dtp0Tf3dnM0FdDzgC6vJ0xcix8wr6dQbQR45ibI2TzhMFreSP0FFP9-qJmQ.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:29.125%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Запустил Data Study Club<br/><br/>Это группа, где ученики после курсов и менторинга могут находить поддержку и опыт внутри сообщества. Ближе к концу осени, зиме начну организовывать закрытые вебинары на разные технические и карьерные темы, пока лето хочется на свежем воздухе время проводить, да и сезон отпусков у всех <br/><br/>В сообществе <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BB.png')"><b>💻</b></i>Взаимная практическая поддержка (готовы помочь друг другу по рабочим вопросам)<br/> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F86.png')"><b>🏆</b></i>Открыто делимся опытом и достижениями<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i>Обмениваемся карьерными возможностями (рекомендации в компании и закрытые вакансии)<br/><br/><tg-emoji emoji-id="5462881955911584183"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i></tg-emoji> Доступ в сообщество только после обучения <a href="https://datastudy.ru/courses" target="_blank" rel="noopener">https://datastudy.ru/courses</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/data_study/1446" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">1.51K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1446"><time datetime="2026-07-17T09:47:46+00:00" class="time">09:47</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1447" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ0NywidCI6MTc5MTQ1NjQ0MSwiaCI6ImMyZGYxNzVhNTgwZjk0MmMxMSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<a class="tgme_widget_message_video_player blured js-message_video_player" href="https://t.me/data_study/1447"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/YMB1jMp5p_5LarsulP6VsO_UtDK7SW8zM8cDMrYlkjJlst_SEhPpvnoKaxQ19DmR9TFlc6Nad8SfPCeylkRfUroLAvPauffhgXNvvLCBIF6ohZye9CX9NbRI-ftwcluD1mMcYySm0aI1eefIGc-bt_PZmRHird9Aoxm9LEyaA87NH0l9TBsYiRVSSBvXWpECTw9ZfkzmL0fB7uLdLpahKGQw4tUUjCk6k4oSPygIJ2SL98bBFMFp2XxdEs9lBsVHKy8chRHFEzr-vQ8IxqxEbGKxRppQTeqJwKLHsvTtbejmS7C2JRw0tOWmfhgBvwOtpSpV2s5yFcXIuevYHqfg9Q')"></i>
+<video src="https://cdn4.telesco.pe/file/3fd6163bdc.mp4?token=sbUpPS1luIClwl3NBMSKFMe6Fs3sqkHVA48k9na51uzJDGRBXtV8x9hJAC2ZQjsAOdyxXMH5EJ_WYNHcDGrachCcAomLUSbxcRh8y97ne19QyIRvqKOalzB2WkQj2_O3ox7hWx3rh1w7i-c4noZxZwufrUD3qzZf-4qVbcrsm_bt96Hr4t5zMWdRlDiZOWYy3ZAruEuyyFie5fWGMwZCJgpqGUC2o7LsSXtSwfhb10-i-axPNSXFHZ4ISn2RUvYfBzgBh2aPZcy1IDHW2TLt9O71tazyEOijwvPErhDvLlVH64oiJmrKyfhRL2do20rbrsNIWNVt2R7iEfpI8g06YA" class="tgme_widget_message_video blured js-message_video_blured" width="100%" height="100%" muted></video>
+<div class="tgme_widget_message_video_wrap" style="width:720px;padding-top:133.33333333333%">
+  <video src="https://cdn4.telesco.pe/file/3fd6163bdc.mp4?token=sbUpPS1luIClwl3NBMSKFMe6Fs3sqkHVA48k9na51uzJDGRBXtV8x9hJAC2ZQjsAOdyxXMH5EJ_WYNHcDGrachCcAomLUSbxcRh8y97ne19QyIRvqKOalzB2WkQj2_O3ox7hWx3rh1w7i-c4noZxZwufrUD3qzZf-4qVbcrsm_bt96Hr4t5zMWdRlDiZOWYy3ZAruEuyyFie5fWGMwZCJgpqGUC2o7LsSXtSwfhb10-i-axPNSXFHZ4ISn2RUvYfBzgBh2aPZcy1IDHW2TLt9O71tazyEOijwvPErhDvLlVH64oiJmrKyfhRL2do20rbrsNIWNVt2R7iEfpI8g06YA" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:11</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">Желаю тебе умиротворения и наслаждения от вкусного ужина в эту пятницу как у панды <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90BC.png')"><b>🐼</b></i> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9889.png')"><b>😉</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>18</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">1.53K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1447"><time datetime="2026-07-17T14:54:22+00:00" class="time">14:54</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1448" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ0OCwidCI6MTc5MTQ1NjQ0MSwiaCI6ImM0MzRjZmEwMGZkMjQ2NDA1MiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap blured 5969852624611774114 1389964629_460000930" href="https://t.me/data_study/1448" style="width:532px;background-image:url('https://cdn4.telesco.pe/file/EXVz9tkbWxzaQnfATmh5Lf63W-GY1xqJrcywQ7seSJmsCAFFUtnRqd3BBpclU4YebCWJKAdke4XaIOBeYBwkAr_0vIezcbQ_uT0f6p011w8hy2zoASCX7JvN-IaYH3SoXyEmzZbdLukHQEAS1WBgNgn5rvDdP7yrWDdoaqOpwa8u6bJ2kwrO9rWbBYhbhd3-oUy3R6e06nJhwSycfUHtTrfEqn29B7329QSzMNGBgrMPGWodXXwkXhsEOAbMRzeX0jfuA7jQwbaEOfM-QbYuoijHqRNbBEUKsKQhyPyJoFLiLo7BJzAbxM29yOZHycyPjuS9bRIOneKhapEfOUig_A.jpg')">
+  <div class="tgme_widget_message_photo" style="width:88.666666666667%;padding-top:133.33333333333%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">3 года как муж этой красотки, самой лучшей и заботливой жены, близкого и родного мне человека, самого лучшего стоматолога-ортодонта <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A5.png')"><b>♥️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A5.png')"><b>♥️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A5.png')"><b>♥️</b></i><br/><br/>P.S. кому нужна красивая, здоровая улыбка, пишите, Полина полечит)</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>39</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>16</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">1.74K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1448"><time datetime="2026-07-18T18:04:11+00:00" class="time">18:04</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1449" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ0OSwidCI6MTc5MTQ1NjQ0MSwiaCI6IjA2NDVlNGFlOGViMDQ0YzRiZSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Из-за глупой ошибки в SQL компания чуть не потеряла 5 млн. и репутацию перед поставщиками</b><br/><br/>Наши действия при работе с данными напрямую влияют на конечные метрики в бизнес-отчетах. И любая ошибка аналитика может стать критичной <br/><br/><b>Из-за нехватки знаний и опыта</b> аналитики допускают максимально <b>глупые ошибки в конструкции CASE</b>, которые критически могут менять метрики. <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i> пишут неправильный порядок условий<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i> не пишут ELSE<br/><br/><b>ЗАПОМНИ ЗОЛОТОЕ ПРАВИЛО ПОРЯДКА CASE УСЛОВИЙ</b><br/><blockquote><b>Условия указываются от частного к общему</b>. CASE проверяет условия сверху вниз и останавливается на первом совпадении. Если сначала написать &quot;заказы в статусе confirmed&quot;, а после &quot;заказы в статусе confirmed и сделанные через app&quot;, то первое условие применится для всех строк, в том числе для тех заказов, которые попадают под второе более детальное условие</blockquote><br/><pre>— ТАК ПИСАТЬ НЕПРАВИЛЬНО, ПОРЯДОК КРИВОЙ<br/>SELECT <br/>order_id,<br/>CASE<br/>  WHEN status = &#39;confirmed&#39; THEN &#39;подтвержден&#39; — попадут все строки со статусом confirmed<br/>  WHEN status = &#39;confirmed&#39; AND interface = &#39;app&#39; THEN &#39;подтвержден через app&#39; — не попадут никакие строки, потому что все учтутся в первом условии<br/>END AS order_group<br/>FROM orders<br/><br/>— ПИШИ ТАК, ОТ ЧАСТНОГО К ОБЩЕМУ. ДОБАВЬ ELSE ЧТОБЫ НЕ БЫЛО NULL, КОТОРЫЕ МОЖЕШЬ ПОТЕРЯТЬ НА ОТЧЕТЕ <br/>SELECT <br/>order_id,<br/>CASE<br/>  WHEN status = &#39;confirmed&#39; AND interface = &#39;app&#39; THEN &#39;подтвержден через app&#39; — попадут строки, которые подходят под комплексное условие по полям status и interface<br/>  WHEN status = &#39;confirmed&#39; THEN &#39;подтвержден&#39; — попадут все оставшиеся строки, которые не попали в первое условие, но у которых выполняется условие по status <br/>  ELSE   &#39;не определена&#39; — если не выполняется ни одно из условий, значит все остальные строки попадут сюда<br/>END AS order_group<br/>FROM orders</pre><br/><br/><tg-emoji emoji-id="5339395689031942456"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> Соблюдай порядок условий от частного к общему <br/><tg-emoji emoji-id="5339395689031942456"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> Указывай ELSE чтобы не поймать еще других проблем с NULL значениями, если условия не выполнились<br/><br/><br/><tg-emoji emoji-id="5462881955911584183"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i></tg-emoji><b>Если хочешь творить с данными магию с помощью SQL и выполнять бизнес-задачи любой сложности</b>, приходи на курс <a href="https://datastudy.ru/sql_advanced" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>&quot;Продвинутый SQL и автоматизация витрин данных&quot;</b></a>. Там разбираем как писать сложные аналитические запросы, оптимизировать их, проверять данные на качество и автоматизировать ETL процессы.<br/><br/><a href="https://datastudy.ru/preregistration" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>Запись в группу 27 июля</b></a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/data_study/1449" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>17</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>8</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.73K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1449"><time datetime="2026-07-19T11:38:08+00:00" class="time">11:38</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1451" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ1MSwidCI6MTc5MTQ1NjQ0MSwiaCI6IjY3N2VmNWRjNjQ5OTRhMTVmYiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap 5974288256381685308 1390997380_460000828" href="https://t.me/data_study/1451" style="width:600px;background-image:url('https://cdn4.telesco.pe/file/erwvY685-LbfBrW0VsA9bGDrjza2SAHNYzA1zHKj2VMPrvvSXPbGHmkrLxwIhfT6d9wv54dLLyZiNetb16Llg_KGPpHjjnsSViy0lNhPPj7t0tbU7OH-WBLmulBkiamg2Z08rrnfyLjQU_sFRtswH_MW-ZVKMZqwGWKH3EO7vGOXDeY_UZq7YjdGXjox5Ha4l6cG5GCQJHe7nkkWrn1rxGYVduVSDduwd0WhVAVul4GPLX63c-GM7T67z779Qv8ZUeWKyCZB8vVakB2JPb86wKNM9q3PpVdcq_eA9-fwW39rqHT9LnuCKInndU_waXPFFEy29bQbmRBaUJzY555yrQ.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:133.33333333333%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Готовы к просмотру финала?) <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F86.png')"><b>🏆</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>19</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F86.png')"><b>🏆</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">1.74K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1451"><time datetime="2026-07-19T18:56:33+00:00" class="time">18:56</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1452" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ1MiwidCI6MTc5MTQ1NjQ0MSwiaCI6Ijg5NzBhNjk4NjkwYmFkYjc4YiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto">Бесплатные материалы на сайте <br/><br/>Добавил материалы по развитию hard-навыков, карьере в data на сайт. Там есть как посты, видео, вебинары, статьи. <br/><br/>В ленте канала многое теряется, хочется чтобы самый сок был у вас всегда под рукой <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9889.png')"><b>😉</b></i><br/><br/><tg-emoji emoji-id="5462881955911584183"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i></tg-emoji> <a href="https://datastudy.ru/materials" target="_blank" rel="noopener">https://datastudy.ru/materials</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/data_study/1452" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">1.61K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1452"><time datetime="2026-07-20T17:49:15+00:00" class="time">17:49</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1453" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ1MywidCI6MTc5MTQ1NjQ0MSwiaCI6ImI3MzI3ZGRhYWMwMzkyYzQxMSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/data_study/1453" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">1.55K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1453"><time datetime="2026-07-21T13:51:12+00:00" class="time">13:51</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1454" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6MTQ1NCwidCI6MTc5MTQ1NjQ0MSwiaCI6Ijc2Y2E2ZTRjOTMxNTAzZWI0MSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5983090083185238566 1393046715_460005926" href="https://t.me/data_study/1454" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/jY9I7bhgV2NZB4PdRa_ZBphwwnv0TJLKVQenDQ_QQ_FhL44HkWNEnrakYURyBbFc4tArhd5qa6RSiIVv8EYvs46_wJudjTHswMUePkBKrNcs55FzvWGIveaQkBFmwmKB21VZ2qnlEG1thNtlY4ErLVnFxJtmPTSGN5p3wCWrwxtS608V1qROywiwZGj9OpZ986q1C8srtfZ6Z79X2qbVCMFZeO2sZsL8gDfxyDRmJNAR0GgPzqcqDkSx4wr7ZuJYKIteJfrA0_H8p5gGjc575vVfu5_NrfMO6s6GtyRYJgTwv1Y5epAglHlZcA1rJvCq6exGiXOFmelMCyKKVHKXnw.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:70.875%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Зачем я спросил вас про заработок<br/><br/><tg-emoji emoji-id="5382322671679708881"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i></tg-emoji> оцените свой текущий уровень. всегда есть потенциал роста, почти половина получают меньше 150к в месяц (в Москве только съем нормальной квартиры 120к+ стоит, но даже для регионов этого мало). даже просто находясь в одном этом канале, ты уже имеешь окружение, к которому можно подтягиваться<br/><br/><tg-emoji emoji-id="5381990043642502553"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i></tg-emoji> мотивация что-то менять. мало увидеть, нужно менять свои мысли, действия чтобы вырасти. не бойтесь учить новое, пробовать новые сферы деятельности, переходите на другие профессии где больше платят<br/><br/><tg-emoji emoji-id="5381879959335738545"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i></tg-emoji>как бы больно не было вам это осознать, но многие в своей сфере могут работать уже больше 5 лет, но получать на <a href="https://newhr.org/data/research-analysts-2025#finance" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">уровне junior/middle аналитика</a>. а аналитики за 1-2 года доходят до такого уровня. несправедливо? такого быть не должно? им повезло, а тебе нет? <br/><br/><blockquote>А ЧТО ТЕБЕ МЕШАЕТ СДЕЛАТЬ ТАКЖЕ? </blockquote><br/><br/>Просто кто-то видит возможности и использует их, а кто-то видит причины неудачи раньше, чем попробует<br/><br/>Они тоже боятся, сомневаются, раздумывают, НО ДЕЙСТВУЮТ<br/><br/><blockquote>А те кто сейчас 200-250 получает - задайте себе вопрос &quot;что мне нужно развить в себе чтобы получать 400+?&quot;</blockquote><br/>Ответы то типичные будут:<br/>- проветрить мозги и понять что текущая ситуация это не предел<br/>- качать техничку/софты<br/>- действовать и договариваться (на повышение грейда, на перевод в смежную роль, на поиск новых проектов и т.д)<br/><br/>ВСЕ, ДЕЙСТВУЙТЕ, ВЕРЮ В ВАС&#33;<br/><br/><a href="https://t.me/data_study/729" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Кто я</a> | <a href="https://t.me/data_study/1180" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Навигация</a> | <a href="https://datastudy.ru/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Обучение</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/data_study/1454" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>13</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">1.69K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1454"><time datetime="2026-07-22T10:53:00+00:00" class="time">10:53</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="data_study/1455" data-view="eyJjIjotMTYzODg2MjU3NiwicCI6IjE0NTVnIiwidCI6MTc5MTQ1NjQ0MSwiaCI6IjA3ZTFlYzZiYmNmYzhmZWNkMyJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/data_study"><i class="tgme_widget_message_user_photo bgcolor1" data-content="А"><img src="https://cdn4.telesco.pe/file/EeKzsk_6SEvnO5NOhzdBfLn8goAu-valHL3n8KJaCaJLrkUel9QTwF2jxZQ0RNYjwb6T2O4id8LTbSzoUoYQtUA0wlGTNvgJcrIhFizNZ_nvAOom3ee-41XOmveJ2soSlbznK2r8gftNyMNhW6itwbybTsLCHIG8OLvLXykFfz_v-3ERei9cmDQxn72rHaQaMuNV9hJycm9mnbST-VG1fgz_rbrjU3h9me1ktlkp4b8SE5tIsOzT_oPtOYV9HLk5dMiJGaOZ5uguPJ3l7x7gI4n9ttdgk_AklGPjEz_1xoSHHUnC8BCpb4b_p7wcVgVlr93ns0CWneJ-OS-axBax4w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/data_study"><span dir="auto">Аналитика данных / Data Study</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_one_media js-message_media"><div class="media_supported_cont"><div class="tgme_widget_message_grouped_wrap js-message_grouped_wrap" data-margin-w="2" data-margin-h="2" style="width:453px;">
+  <div class="tgme_widget_message_grouped js-message_grouped" style="padding-top:108.389%">
+    <div class="tgme_widget_message_grouped_layer js-message_grouped_layer" style="width:453px;height:491px">
+      <a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:0px;width:453px;height:266px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/n1RDslknlT4rNDD_1W5ynmkL96Zl_uTIRskUDcDRxZMPNelf6jJgjWp_XA_QevKOQYE0-nkJSDQ-vFanIiyU13xEFzw9uMKC3bpSIHaSAXMhkyR_ZR3nPKuAQiuuCO1WCiD9VODHuXbTho58eQ9phjrrvDsKdaeWJkST4l3KQ0C9VXfew8TJ8JZYtXSvl2YJvzaBv0y6iXEbKYLrGAjRD9Lh0QA9ZbA-7BpLN1PpL_9QEo2UhOE0T9zY6QikO5L6T8unm8gSk-70wwx9BBGjxaGb9vKiackV7H_aRxcE-tR71RlAIxGc6FWeuddCkkmMtuN5p1b4Va615kPx5c26Tg.jpg')" data-ratio="2.6845637583893" href="https://t.me/data_study/1455?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:161px;bottom:162px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-131px;right:-131px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:268px;width:224px;height:132px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/vegtSgaQMqsFdgNzy3nANj6reCYfT_0ocBvY91x9WxN6HVqXJUiHfahWZ2puhflRwjsZhujjCHY98AbOCJmp8UnREgfPMzfTX0yikgXZSq6XP5gQe5AGIwDeFPge8OfFyf4E6oOeT5nbyzNovbsl9878mGTmVbTQpYff0AOCajrLlWfzy_JSC06cBZFdALuzCs5azdy8ONUxmk5D8uXre5vvZT6ce8Dvc7zvItgyDYEf3-8tko2xHe4emmbQAARPeCmNOrlwrZq3VBNVYC2CYb94_EMB1jvhxiAT88Qm3ZdUAZYKbvA2eTtAaoYJAjcEcjsHbdOvbAUGz8AJU9bWgA.jpg')" data-ratio="2.8776978417266" href="https://t.me/data_study/1456?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:167px;bottom:167px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-78px;right:-78px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:226px;top:268px;width:227px;height:132px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/qfeFSCz6nN73d4UI2iMW20dG034RpsLprJBctDltFL7uH_bYu5YiYAXdp5hHKOBqCiZy2_QngYGTkQN_arZm6FF_ecU2HZ-Lqq8qVxMA7lU5zAog8ZMMrK3ng2PTCYIU2DTzYfSmUtQV0kjD4mtHRNpSbG0OD1tbM-NYuE3v0oQynS8RO7s0Haxe_iPCV70THTaiwXhQzAyPyTjVe2mmw4aOw9oJRQ4yCnSGrVQEeA0SQ3C2Q1AG4kQHFUSO6lrPALKM6teq5EpWCusng6rBWvmsVPyQq43IsqFeycaFh2Q4ihnfJ9mYU_5mO8lhT7ID5uMlZXvCTpcBNpqKCwIPOQ.jpg')" data-ratio="2.9304029304029" href="https://t.me/data_study/1457?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:168px;bottom:169px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-80px;right:-80px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:402px;width:151px;height:89px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/aEBNbaTV2lNocI5F7lIJElqN5xsA7ZuBADDfXRqTSaa6vC0oOBH6APxMFKVVhEK6iFYxJL0L34xZZlAb9-M4QW7wkNpHtfxaP8pDK_JCl8KMKS_Jwm-mhzd_Ty-ltOLKWD8L-MiDhEAbyo5v61K1oAkSi1JoteqANSQzPl4jTgKu-8liuTb4VtYce8jdNj4pRFjN84tGLBIrAhTDD35bABgRqP-svF-hzpo5wnasqJZwVd0svFxtvhUGvBWmARZGXPFqO5T8VokwLdIkAnUZBYhi1QyC6i1kzm99KUZCHDq38G9UyaNAPezvXSa82d9vAgV2dAaT66uQMwhv8yzt2Q.jpg')" data-ratio="2.9962546816479" href="https://t.me/data_study/1458?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:170px;bottom:170px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-58px;right:-58px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:153px;top:402px;width:151px;height:89px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/OdC26eBfTvXuWceHtnTTuhL9C7MAAuxGxVdxVHE62cX7cPqxQs6cqHxyHQUOpDCwM8rpaygAUsBXyyy2mSG57YPw_5G-LIvJFAja51-Jss6W3wXHkrs8LDKvIjfkwqkFcGRGo5s_LgHhxkRyfeYnSCi4ZOFwbWhT3XbBgzm5c6KbDZBLFJivy8CwC3rMu7vXFvLRVnNKLeJsdjHjL9Uf9gb8aSn6rJDYXn2wkGQtCNxTf7UffzFBmmuwCV3q9qLXvWPvyZ6YRHbqpaigPgB8d12jJLTNBZP5CUb_C5V2e2LEr6R3_enbqFmOI4oOXbO-s8Yi6MSimPcPDWCsrOS_OA.jpg')" data-ratio="2.2038567493113" href="https://t.me/data_study/1459?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:143px;bottom:143px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-23px;right:-23px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:306px;top:402px;width:147px;height:89px;margin-right:0px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/Rn1zDjJgBfnluP3P2r_fg8rRO3Q3O1Srhlu5ik-5u9-xgAk3lCB5iNqHP5LH_FYl6HzoykrVoAljOSkiFHXplLHYxX_eP7wRczLzJIG26mXmULn_ct_loj5uOhYNw6piDjPjAhS819LUmd5H3RB4RMKGoOyvjFxDPB97j0LuJMJr_1wgzpfIIynwPDP1w7I55s8BB61leA6N3L2FhYxxLn98S6fzahOqKhr-7Ypd28hvZFEHaDPURli5O2Loqg1TT52zgP3-UgiqPLovVQebrKT2K1iIh4WXRIfEcKf8B9zRB3yJZyQNgIFukI-7g4Hb6me4qNkMHN4ZotoACET68A.jpg')" data-ratio="2.4096385542169" href="https://t.me/data_study/1460?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:152px;bottom:152px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-34px;right:-34px;"></div>
+  </div>
+</a>
+    </div>
+  </div>
+</div><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Как хранить исторические данные и отличать их от актуальных данных</b><br/><br/>В аналитике <b>всегда есть потребность работать с историческим объемом данных</b>, чтобы уметь отвечать на вопросы бизнеса на всем интервале времени, а не только знать ситуацию в текущий момент.<br/><br/>Есть разные варианты хранения и обновления исторических данных, которые описываются типами SCD.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948E.png')"><b>🔎</b></i> <b>SCD или Slowly Changing Dimensions</b> - медленно меняющиеся измерения, когда некоторые атрибуты в данных могут меняться со временем, тем самым возникает необходимость добавлять новую версию записи данных.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i> <b><i>SCD type 0</i></b><br/>Данные попадают в таблицу только один раз и становятся статичными, нет версионности и изменения данных. Подходит для хранения конкретных справочников, например названия и ISO коды стран<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i> <b><i>SCD type 1</i></b><br/>Данные перезаписываются новым значением, что также не позволяет хранить версионность. Механизм простой, вместо старых значений в ту же строку перезаписываются новые значения измененных атрибутов, это позволяет не &quot;раздувать&quot; объем таблицы, но не дает доступа к историчности данных. <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i> <b><i>SCD type 2</i></b><br/>Данный тип заключается в том, что в таблицу добавляется новая запись по измененным данным. Это реализовано с помощью специальных атрибутов, которые позволяют управлять версионностью. Обычно эти атрибуты выглядят так:<br/>- Дата Начала версии<br/>- Дата Конца версии<br/>- Актуальность записи<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i> <b><i>SCD type 3</i> </b><br/>Реализация выглядит таким образом, что в таблице добавляется атрибут со старым значением. <br/>- Историческое значение<br/>- Новое значение<br/>Есть большой недостаток, что невозможно добавлять много новых столбцов для хранения всех версий данных, поэтому история обычно ограничивается только предыдущей версией. <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i> <b><i>SCD type 4</i></b><br/>Для хранения исторических данных создается отдельная таблица, чтобы хранить предыдущие версии. Основная таблица будет отображать только актуальную запись по данным. Большой плюс, что можем обращаться всегда к таблице основной версии, но при этом нужно создавать и поддерживать отдельную таблицу с историческими данными.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i> <b><i>SCD type 5</i></b><br/>Это некий гибрид типов 1 и 4. Если таблица имеет много атрибутов, то ее могут разбить на более мелкие таблицы справочники, которые будут статичны. Но если в этом маленьком справочнике будет перезапись значений по типу 1, то также необходимо будет перезаписать данные в связанной с этим справочнике более большой таблице измерений с помощью перезаписи ключа<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i> <b><i>SCD type 6</i></b><br/>Гибрид типов 1,2,3. Здесь используется комбинация вышеперечисленных методов, где хранится полная историчность данных с доступом к актуальной версии и всем историческим значениям. Будут добавлены следующие столбцы для управления историчностью:<br/>- Дата Начала версии<br/>- Дата Конца версии<br/>- Актуальность записи<br/>- Историческое значение <br/>- Новое значение<br/><br/><i>Если пост полезен, ставь реакции и делись им с другими </i><i><tg-emoji emoji-id="5362079447136610876"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i></tg-emoji></i><br/><br/><b><i>Больше технических моментов про хранение и обработку данных в базе данных разбираем на курсе по Продвинутому SQL и ETL автоматизации</i></b><br/><br/><tg-emoji emoji-id="5462881955911584183"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡</b></i></tg-emoji>️<a href="https://datastudy.ru/preregistration" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Начни практическое обучение 27 июля</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/data_study/1455?single" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/data_study/1455" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>16</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.71K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/data_study/1455"><time datetime="2026-07-23T09:42:44+00:00" class="time">09:42</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/data_study?after=1460" class="tme_messages_more js-messages_more" data-after="1460"></a></div>
+    </section>
+  </div>
+</main>
+    <script src="//telegram.org/js/jquery.min.js"></script>
+    <script src="//telegram.org/js/jquery-ui.min.js"></script>
+    <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
+<script src="//telegram.org/js/tgsticker.js?32"></script>
+
+    <script src="//telegram.org/js/widget-frame.js?68"></script>
+    <script src="//telegram.org/js/telegram-web.js?14"></script>
+    <script>TWeb.init();
+</script>
+    
+  </body>
+</html>
+<!-- page generated in 145.21ms -->

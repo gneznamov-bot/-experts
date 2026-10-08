@@ -1,0 +1,1211 @@
+{
+  "username": "backendarchieve",
+  "status": "ok",
+  "title": "Архив бэкендера",
+  "description": "",
+  "subscribers": 2240,
+  "fetched_at": "2026-10-08T10:48:55+00:00",
+  "pages": 6,
+  "posts": [
+    {
+      "id": 666,
+      "date": "2026-10-06T17:04:10+00:00",
+      "text": "⭐️ ИИ-ассистенты на Python\n\nРазмер: 35 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 222,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/666"
+    },
+    {
+      "id": 665,
+      "date": "2026-10-06T14:03:08+00:00",
+      "text": "👩‍💻 Всем программистам посвящается!\n\nВот 14 авторских обучающих IT каналов по самым востребованным областям программирования:\n\nВыбирай своё направление:\n\n👩‍💻 Python — t.me/python_ready\n🤔 InfoSec & Хакинг — t.me/hacking_ready\n🖥 SQL & Базы Данных  — t.me/sql_ready\n👩‍💻 IT Новости — t.me/it_ready\n🤖 AI & ML — t.me/neuro_ready\n👩‍💻 Frontend — t.me/frontend_ready\n👩‍💻 C/C++ — https://t.me/cpp_ready\n👩‍💻 C# & Unity — t.me/csharp_ready\n👩‍💻 Linux — t.me/linux_ready\n👩‍💻 Java — t.me/java_ready\n📖 IT Книги —  t.me/books_ready\n📱 JavaScript — t.me/javascript_ready\n🖼️ DevOps — t.me/devops_ready\n🖥 Design —t.me/design_ready \n\n📌 Гайды, шпаргалки, задачи, ресурсы и фишки для каждого языка программирования!",
+      "views": 242,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/665"
+    },
+    {
+      "id": 664,
+      "date": "2026-10-04T17:08:39+00:00",
+      "text": "⭐️ PostgreSQL 17 архитектура и тюнинг SQL-запросов\n\nРазмер: 2.46 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 311,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/664"
+    },
+    {
+      "id": 663,
+      "date": "2026-10-01T15:03:52+00:00",
+      "text": "⭐️ Создание full-stack приложения на Next.js с Claude Code\n\nРазмер: 2.16 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 438,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/663"
+    },
+    {
+      "id": 662,
+      "date": "2026-10-01T11:09:07+00:00",
+      "text": "Совет на ближайшие годы — идите в Data Science и ML\n\nПока ИИ забирает работу у одних специалистов, другие строят на нём карьеру и зарабатывают всё больше. И вопрос уже не в том, изменит ли ИИ рынок, а в том, по какую сторону этих изменений окажетесь вы. DS/ML – один из самых прямых способов оказаться среди тех, кто на этом выигрывает\n\nА чтобы не тратить годы на хаотичное обучение – держите в подписках Data Portal. Там практикующие ML-инженеры понятным языком разбирают главное: новые модели, библиотеки, исследования, датасеты, гайды, курсы и практические кейсы.\n\nПодписывайтесь: @LLMScience",
+      "views": 398,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/662"
+    },
+    {
+      "id": 661,
+      "date": "2026-09-30T15:13:27+00:00",
+      "text": "⭐️ .Net Fullstack Development\n\nРазмер: 55.5 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 370,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/661"
+    },
+    {
+      "id": 660,
+      "date": "2026-09-30T13:00:09+00:00",
+      "text": "Вайбкодим «Полный путь разработки AI-агентов: от MCP до Agentic RAG»\n\nОбразовательная программа на Stepik по разработке современных AI-агентов. \n\nНачинаем с Model Context Protocol: создаём MCP-серверы, подключаем инструменты и внешние API, а затем переходим к разработке Agentic RAG-систем с памятью, рассуждением, поиском знаний и оценкой качества.\n\nЧто внутри:\n\n• Model Context Protocol и MCP-серверы\n• LangChain, LangGraph, LlamaIndex\n• API, инструменты, ресурсы и промпты\n• Классический RAG → Agentic RAG\n• ReAct, память и планирование\n• Графы знаний и свои инструменты\n• Трассировка и подготовка к production\n\nСкидка 20%, действует 48 часов\n\n↗️ Начать обучение на Stepik",
+      "views": 375,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/660"
+    },
+    {
+      "id": 659,
+      "date": "2026-09-29T17:27:44+00:00",
+      "text": "⭐️ Хардкорный Machine Learning\n\nРазмер: 1.6 ГБ\nГод: 2022\n\n🔗 Скачать",
+      "views": 423,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/659"
+    },
+    {
+      "id": 658,
+      "date": "2026-09-26T16:02:54+00:00",
+      "text": "⭐️ Лучшие задачи на Python\n\nРазмер: 5 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 543,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/658"
+    },
+    {
+      "id": 657,
+      "date": "2026-09-25T15:01:00+00:00",
+      "text": "⭐️ Работа с очередями в RabbitMQ и Apache Kafka\n\nРазмер: 1.33 ГБ\nГод: 2023\n\n🔗 Скачать",
+      "views": 540,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/657"
+    },
+    {
+      "id": 656,
+      "date": "2026-09-25T08:47:38+00:00",
+      "text": "Пачку офферов заказывали?\n\nО всех трудоустройствах через ИИ-ассистента Софи ребята узнают от пользователей. \n\nИ какой же кайф, когда они делятся своими историями. \n\nВот так в чате узнали сразу о трех новых офферах:\n\n• Кейс Сергея - 2 недели в Софи и 2 оффера.\n• Кейс Елены - 1 неделя в Софи и оффер спустя 10 лет перерыва в работе. Елене 52 года.\n• Кейс Юлии - 1 месяц в Софи, свитчер из финансового аналитика в разработчика SQL. И еще один оффер🎉\n\nИскренние поздравления ребятам и удачи им на новой работе! \n\nЗайти на 3 бесплатных дня в Софи можно уже сейчас.\n\nРегистрируйся здесь.",
+      "views": 486,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/656"
+    },
+    {
+      "id": 655,
+      "date": "2026-09-24T12:41:24+00:00",
+      "text": "⭐️ Java QA Automation\n\nРазмер: 8.57 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 443,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/655"
+    },
+    {
+      "id": 654,
+      "date": "2026-09-24T08:00:16+00:00",
+      "text": "Слили в телеграмм тонны инфы\n\n🔥 Всё, что нужно для прогресса — в одном месте:\n \n  |- - 🗂 Курсы & Git — 1526ГБ\n  |\n  |- - 🗂 Хакинг & ИБ — 573ГБ\n  |\n  |- - 🗂 Python — 428ГБ\n  |\n  |- - 🗂 Linux & Bash — 652ГБ\n  |\n  |- - 🗂 OSINT — 352ГБ\n  |\n  |- - 🗂 Работа IT — 356ГБ\n  |\n  |- - 🗂 Общее IT — 2575ГБ\n \n\n📌Гайды, шпаргалки, книги, задачи и ресурсы для каждого.",
+      "views": 495,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/654"
+    },
+    {
+      "id": 653,
+      "date": "2026-09-20T17:14:27+00:00",
+      "text": "⭐️ Создание и развёртывание мультивендорного коммерческого cайта на Next.js 2025\n\nРазмер: 59.3 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 592,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/653"
+    },
+    {
+      "id": 652,
+      "date": "2026-09-17T17:27:21+00:00",
+      "text": "⭐️ Golang и искусственный интеллект\n\nРазмер: 8.16 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 700,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/652"
+    },
+    {
+      "id": 651,
+      "date": "2026-09-16T16:07:45+00:00",
+      "text": "⭐️ Пакет курсов \"Data Scientist\"\n\nРазмер: 15 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 685,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/651"
+    },
+    {
+      "id": 650,
+      "date": "2026-09-14T17:27:36+00:00",
+      "text": "⭐️ Лучшие практики в Go\n\nРазмер: 1.85 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 655,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/650"
+    },
+    {
+      "id": 649,
+      "date": "2026-09-12T18:36:07+00:00",
+      "text": "⭐️ Алгоритмы на языке Go\n\nРазмер: 75 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 642,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/649"
+    },
+    {
+      "id": 648,
+      "date": "2026-09-12T16:16:57+00:00",
+      "text": "Вайбкодим «Полный путь разработки AI-агентов: от MCP до Agentic RAG»\n\nОбразовательная программа на Stepik по разработке современных AI-агентов. \n\nНачинаем с Model Context Protocol: создаём MCP-серверы, подключаем инструменты и внешние API, а затем переходим к разработке Agentic RAG-систем с памятью, рассуждением, поиском знаний и оценкой качества.\n\nЧто внутри:\n\n• Model Context Protocol и MCP-серверы\n• LangChain, LangGraph, LlamaIndex\n• API, инструменты, ресурсы и промпты\n• Классический RAG → Agentic RAG\n• ReAct, память и планирование\n• Графы знаний и свои инструменты\n• Трассировка и подготовка к production\n\nСкидка 20%, действует 48 часов\n\n↗️ Начать обучение на Stepik",
+      "views": 618,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/648"
+    },
+    {
+      "id": 647,
+      "date": "2026-09-12T11:38:05+00:00",
+      "text": "⭐️ Python для Начинающих\n\nРазмер: 1.15 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 591,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/647"
+    },
+    {
+      "id": 645,
+      "date": "2026-09-10T12:45:17+00:00",
+      "text": "⭐️ FastAPI начальный уровень\n\nРазмер: 90 МБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 619,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/645"
+    },
+    {
+      "id": 644,
+      "date": "2026-09-10T10:23:24+00:00",
+      "text": "Псс, хочешь перестать мониторить Telegram в поисках работы? 👀\n\nТы листаешь каналы, видишь вакансию, сохраняешь и откладываешь отклик «на потом».\n\nПотому что на каждую нужно потратить минут 20. В итоге из десятков сохранённых вакансий до отклика доходят единицы.\n\nСофи забирает эту рутину на себя.\n\nОна сама находит подходящие вакансии в 350+ Telegram-каналах, изучает их, пишет персональное сопроводительное и отправляет отклик.\n\nА еще она умеет откликаться на:\n\n▫️ hh ru\n▫️ карьерных сайтах компаний - Авито, Сбер, Т-Банк\n▫️ Geekjob\n▫️ youngjunior.ru\n\nТебе больше не нужно выбирать, где сегодня искать работу.\n\nСофи будет искать везде.\n\nДоступ откроется 22 сентября.\n\nПервые 3 дня - бесплатно.\n\nМест немного. Подпишись, чтобы не пропустить старт.",
+      "views": 556,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/644"
+    },
+    {
+      "id": 643,
+      "date": "2026-09-09T15:11:39+00:00",
+      "text": "⭐️ PHP-разработчик. Продвинутый уровень\n\nРазмер: 7.26 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 543,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/643"
+    },
+    {
+      "id": 642,
+      "date": "2026-09-09T11:06:12+00:00",
+      "text": "⭐️ Автоматизация тестирования брокеров сообщений\n\nРазмер: 2.04 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 544,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/642"
+    },
+    {
+      "id": 641,
+      "date": "2026-09-09T08:15:05+00:00",
+      "text": "Слили в телеграмм тонны инфы\n\n🔥 Всё, что нужно для прогресса — в одном месте:\n \n  |- - 🗂 Курсы & Git — 1526ГБ\n  |\n  |- - 🗂 Хакинг & ИБ — 573ГБ\n  |\n  |- - 🗂 Python — 428ГБ\n  |\n  |- - 🗂 Linux & Bash — 652ГБ\n  |\n  |- - 🗂 OSINT — 352ГБ\n  |\n  |- - 🗂 Работа IT — 356ГБ\n  |\n  |- - 🗂 Общее IT — 2575ГБ\n \n\n📌Гайды, шпаргалки, книги, задачи и ресурсы для каждого.",
+      "views": 581,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/641"
+    },
+    {
+      "id": 640,
+      "date": "2026-09-08T09:24:45+00:00",
+      "text": "⭐️ Python для парсинга: практика на реальных сайтах\n\nРазмер: 2.39 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 645,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/640"
+    },
+    {
+      "id": 639,
+      "date": "2026-09-03T15:08:01+00:00",
+      "text": "⭐️ Функции и декораторы в Python\n\nРазмер: 55 МБ\nГод: 2024\n\n🔗 Скачать",
+      "views": 826,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/639"
+    },
+    {
+      "id": 638,
+      "date": "2026-09-02T17:37:36+00:00",
+      "text": "⭐️ Добрый, добрый ИИ\n\nРазмер: 2 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 789,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/638"
+    },
+    {
+      "id": 637,
+      "date": "2026-09-01T17:10:30+00:00",
+      "text": "⭐️ Основы дебага: все об отладке кода в Ruby on Rails\n\nРазмер: 1.53 ГБ\nГод: 2024\n\n🔗 Скачать",
+      "views": 719,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/637"
+    },
+    {
+      "id": 636,
+      "date": "2026-08-28T17:42:17+00:00",
+      "text": "⭐️ Осознанный Python\n\nРазмер: 15 МБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 844,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/636"
+    },
+    {
+      "id": 635,
+      "date": "2026-08-27T18:25:13+00:00",
+      "text": "⭐️ Алгоритмы на языке Go\n\nРазмер: 75 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 819,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/635"
+    },
+    {
+      "id": 634,
+      "date": "2026-08-26T16:32:41+00:00",
+      "text": "⭐️ .Net Fullstack Development\n\nРазмер: 55.5 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 817,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/634"
+    },
+    {
+      "id": 633,
+      "date": "2026-08-25T17:20:23+00:00",
+      "text": "⭐️ Java QA Automation\n\nРазмер: 8.57 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 740,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/633"
+    },
+    {
+      "id": 632,
+      "date": "2026-08-24T19:34:34+00:00",
+      "text": "⭐️ Golang и искусственный интеллект\n\nРазмер: 8.16 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 826,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/632"
+    },
+    {
+      "id": 631,
+      "date": "2026-08-24T16:00:11+00:00",
+      "text": "🤨 БЛОКИРОВКИ — ВСЁ\n\nЛюбые ограничения теперь не проблема. Разработан VPN нового поколения — CisVPN\n\nСейчас разработчики БЕСПЛАТНО раздают подписку на 3 дня. \n\nВсе что тебе нужно:\n— Перейти в CisVPNBot 🖥\n— Нажать на кнопку «СТАРТ» 📍\n— Забрать подписку бесплатно на день, а затем продлить со скидкой \n\n🤨 Ты хочешь жить без блокировок?",
+      "views": 714,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/631"
+    },
+    {
+      "id": 630,
+      "date": "2026-08-21T13:03:35+00:00",
+      "text": "⭐️ Веб - сервера Nginx и Apache\n\nРазмер: 2 ГБ\nГод: 2021\n\n🔗 Скачать",
+      "views": 831,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/630"
+    },
+    {
+      "id": 627,
+      "date": "2026-08-18T17:42:47+00:00",
+      "text": "⭐️ Создание и развёртывание мультивендорного коммерческого cайта на Next.js 2025\n\nРазмер: 59.3 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 882,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/627"
+    },
+    {
+      "id": 626,
+      "date": "2026-08-14T17:46:37+00:00",
+      "text": "⭐️ Хардкорный Machine Learning\n\nРазмер: 1.6 ГБ\nГод: 2022\n\n🔗 Скачать",
+      "views": 1080,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/626"
+    },
+    {
+      "id": 625,
+      "date": "2026-08-12T18:21:56+00:00",
+      "text": "⭐️ Микросервисы, как в BigTech 2.0\n\nРазмер: 22.3 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 978,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/625"
+    },
+    {
+      "id": 624,
+      "date": "2026-08-12T09:15:27+00:00",
+      "text": "На Stepik запустили мощный курс по «Troubleshooting Docker и Kubernetes: поиск и устранение проблем»\n\nВ программе только важные аспекты:\n\n— troubleshooting Docker и образов\n— диагностика сетевых проблем\n— настройка readiness/liveness probes\n— отладка pod’ов, деплоев и ingress\n— анализ логов контейнеров и кластера\n— разбор ошибок CrashLoopBackOff, OOMKilled, ImagePullBackOff и других\n\nСобеседования на DevOps/SRE сейчас всё чаще строятся вокруг реальных инцидентов. Данный курс фокусируется именно на таких сценариях и помогает в подготовке к практическим вопросам\n\n48 часов доступен со скидкой 25%\n\n↗️ Пройти курс на Stepik",
+      "views": 883,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/624"
+    },
+    {
+      "id": 622,
+      "date": "2026-08-10T18:38:32+00:00",
+      "text": "⭐️ PostgreSQL 17 архитектура и тюнинг SQL-запросов\n\nРазмер: 2.46 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 889,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/622"
+    },
+    {
+      "id": 621,
+      "date": "2026-08-10T07:03:05+00:00",
+      "text": "Уже очевидно, что ВАЙБКОДИНГ — главный навык ближайших лет\n\nПосмотрите сами. ИИ уже забирает на себя работу целых команд: пишет код, закрывает задачи джунов и позволяет стартапам запускать продукты в 2–3 раза меньшим составом. То, на что раньше нужны были несколько разработчиков, сегодня всё чаще делает один человек с ИИ-агентами.\n\nИ это только начало. Те, кто освоит вайбкодинг сейчас, смогут быстрее запускать проекты, автоматизировать огромный объём работы, увереннее конкурировать на рынке и зарабатывать больше тех, кто продолжает делать всё вручную.\n\nНачать с нуля поможет канал Вайб-кодинг. Там ребята круглосуточно мониторят более 320 российских и зарубежных источников и публикуют только главное: релизы, инструменты, гайды, курсы и практические кейсы.\n\nПодписывайтесь, нас уже 50 тысяч: @vibecoding_tg",
+      "views": 815,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/621"
+    },
+    {
+      "id": 620,
+      "date": "2026-08-09T18:07:02+00:00",
+      "text": "⭐️ Работа с очередями в RabbitMQ и Apache Kafka\n\nРазмер: 1.33 ГБ\nГод: 2023\n\n🔗 Скачать",
+      "views": 809,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/620"
+    },
+    {
+      "id": 619,
+      "date": "2026-08-08T18:48:48+00:00",
+      "text": "⭐️ Нейросети для чайников\n\nРазмер: 20 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 849,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/619"
+    },
+    {
+      "id": 618,
+      "date": "2026-08-07T19:36:09+00:00",
+      "text": "⭐️ Создание и развёртывание мультивендорного коммерческого cайта на Next.js 2025\n\nРазмер: 59.3 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 825,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/618"
+    },
+    {
+      "id": 617,
+      "date": "2026-08-04T11:52:57+00:00",
+      "text": "⭐️ Лучшие задачи на Python\n\nРазмер: 5 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 942,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/617"
+    },
+    {
+      "id": 616,
+      "date": "2026-08-04T09:43:33+00:00",
+      "text": "АЙТИШНИКИ, ХВАТИТ сливать время на прилизанные новости и бесполезные курсы\n\nПроект «ИИнтеллигенция» стал главным каналом для тех, кто использует нейросети на уровне разработки, автоматизации и опенсорса, а не просто балуется в чатах. Здесь собирают только то, что реально экономит человеко-часы и работает в проде.\n\n🎓 Готовые ИИ-сервисы, промпты и ИИ-агенты для автоматизации рутины\n\n🖋 Разборы полезных ИИ-инструментов, локальных LLM и опенсорс-репозиториев\n\n🛠 Практические кейсы, гайды по деплою моделей и интеграции ИИ в пайплайны\n\n⚡️ Технические ИТ-новости без маркетинговой воды и душных отчетов\n\nОбучение и прокачка в реальном времени: работа с API (Claude, GPT), локалки (Ollama, vLLM), автоматизация кода, опенсорс-утилиты, AI-агенты и др.\n\nЦенишь время и работаешь с ИИ, подпишись: @clucai",
+      "views": 855,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/616"
+    },
+    {
+      "id": 615,
+      "date": "2026-07-30T16:16:01+00:00",
+      "text": "⭐️ Основы дебага: все об отладке кода в Ruby on Rails\n\nРазмер: 1.53 ГБ\nГод: 2024\n\n🔗 Скачать",
+      "views": 897,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/615"
+    },
+    {
+      "id": 614,
+      "date": "2026-07-28T13:23:48+00:00",
+      "text": "⭐️ FastAPI начальный уровень\n\nРазмер: 90 МБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 944,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/614"
+    },
+    {
+      "id": 613,
+      "date": "2026-07-28T08:53:51+00:00",
+      "text": "«Освоение модульного тестирования с использованием Pytest» курс на Stepik\n\nСегодня умение писать тесты ценится почти так же, как и умение писать сам код. Если pytest, fixtures, CI/CD и coverage всё ещё вызывают вопросы самое время это исправить\n\nПрограмма курса:\n\n• Pytest: от базовых тестов до CI/CD\n• fixtures, mocking, parametrization\n• Flask/API testing\n• Selenium и UI тестирование\n• Docker + Docker Compose\n• GitHub Actions\n• coverage и отчёты\n• debugging и refactoring тестов\n\nКурс построен вокруг практики: много примеров, готовых кейсов и разборов рабочих сценариев\n\n48 часов действует скидка 25%\n\n↗️ Пройти курс на Stepik",
+      "views": 787,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/613"
+    },
+    {
+      "id": 612,
+      "date": "2026-07-27T18:08:46+00:00",
+      "text": "⭐️ Python для парсинга: практика на реальных сайтах\n\nРазмер: 2.39 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 787,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/612"
+    },
+    {
+      "id": 611,
+      "date": "2026-07-27T14:37:00+00:00",
+      "text": "Самый прогерский канал, где за 10 минут ты научишься:\n\n/ Пр0бuв по фото и номеру в ТГ\n// Как взломать вебку подруги\n/// Мануал по OSINT разведке\n\nСсылка действительна \n23 ч. 59 мин. 👇\nhttps://t.me/+FHmUdAwf9m5mYjQy",
+      "views": 754,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/611"
+    },
+    {
+      "id": 610,
+      "date": "2026-07-26T15:36:25+00:00",
+      "text": "⭐️ Автоматизация тестирования брокеров сообщений\n\nРазмер: 2.04 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 789,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/610"
+    },
+    {
+      "id": 609,
+      "date": "2026-07-25T17:49:30+00:00",
+      "text": "⭐️ Пакет курсов \"Data Scientist\"\n\nРазмер: 15 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 849,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/609"
+    },
+    {
+      "id": 608,
+      "date": "2026-07-25T10:12:08+00:00",
+      "text": "⭐️ Функции и декораторы в Python\n\nРазмер: 55 МБ\nГод: 2024\n\n🔗 Скачать",
+      "views": 802,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/608"
+    },
+    {
+      "id": 607,
+      "date": "2026-07-22T08:34:21+00:00",
+      "text": "⭐️ Лучшие практики в Go\n\nРазмер: 1.85 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 917,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/607"
+    },
+    {
+      "id": 606,
+      "date": "2026-07-21T17:09:01+00:00",
+      "text": "⭐️ Python для Начинающих\n\nРазмер: 1.15 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 861,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/606"
+    },
+    {
+      "id": 605,
+      "date": "2026-07-21T15:09:59+00:00",
+      "text": "Если ты ИБшник, то тебе сюда👇🏻\n\nhttps://t.me/+iGb-7gmPZaI5YWMy",
+      "views": 786,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/605"
+    },
+    {
+      "id": 604,
+      "date": "2026-07-20T16:15:08+00:00",
+      "text": "⭐️ Java QA Automation\n\nРазмер: 8.57 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 806,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/604"
+    },
+    {
+      "id": 603,
+      "date": "2026-07-20T14:03:03+00:00",
+      "text": "🔥 Складчина ChatGPT / Midjourney – доступ к ИИ за 790 ₽\n\nС 2024 года собираем общие подписки, 100+ отзывов 5★.\n\n🤝 Складчина (общий доступ – экономия до 80%)\n\nChatGPT Plus – 790 ₽/мес\nGPT‑4, DALL·E, \nЛимиты делятся между участниками. Вы будете видеть генерации и чаты других участников.\n\nChatGPT Pro – 2 990 ₽/мес\nGPT‑5 Pro, Deep Research, Agent Mode, все функции Plus.\nЭкономия более чем в 6 раз против официального $200/мес.\n\nMidjourney PRO– 790 ₽/мес\n\n🚀 Почему выгодно быть с нами\n\n• Экономия – платите в разы меньше.\n• Аккаунты не перегружаем, работают стабильно, без блокировок.\n• Поддержка – помогаем с настройкой.\n\n👤 Личные аккаунты (полный доступ без соседей)\n\nChatGPT\nPlus – 2 390 ₽/мес\nPro x5 – 8 900 ₽/мес\nPro x20 – 18 800 ₽/мес\n(все возможности, лимиты только ваши)\n\nMidjourney\nBasic – 1 790 ₽/мес\nStandard – 2 990 ₽/мес\nPro – 5 990 ₽/мес\n\n\n📩 Как подключиться\n@skladchina_ai - наш канал. Помогаю и с другими нейросетями. \n\n@anna_btrn – для подписки напишите сюда",
+      "views": 698,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/603"
+    },
+    {
+      "id": 602,
+      "date": "2026-07-17T15:30:17+00:00",
+      "text": "⭐️ PHP-разработчик. Продвинутый уровень\n\nРазмер: 7.26 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 754,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/602"
+    },
+    {
+      "id": 601,
+      "date": "2026-07-16T14:13:28+00:00",
+      "text": "⭐️ Веб - сервера Nginx и Apache\n\nРазмер: 2 ГБ\nГод: 2021\n\n🔗 Скачать",
+      "views": 847,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/601"
+    },
+    {
+      "id": 600,
+      "date": "2026-07-15T17:18:01+00:00",
+      "text": "⭐️ Golang и искусственный интеллект\n\nРазмер: 8.16 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 870,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/600"
+    },
+    {
+      "id": 599,
+      "date": "2026-07-15T15:17:05+00:00",
+      "text": "🔥 Мастхев подборка для каждого айтишника\n\nДержите подборку авторских IT-каналов по всем направлениям: курсы, гайды, статьи, практики, примеры кода, шпаргалки и прохождение собесов.\n\n▪️ Python: @python\n▪️ Frontend: @frontend\n▪️ Java: @java\n▪️ ИБ & Хакинг: @hacking\n▪️ C/C++: @cplusplus\n▪️ C# & GameDev: @gamedev\n▪️ Data Science: @datascience\n▪️ DevOps: @devops\n▪️ Linux: @linux\n▪️ IT Курсы: @courses\n▪️ Вайбкодинг: @vibecoding\n▪️ Весь айти: @itnews\n\n⏱️ Успей подписаться пока не удалили!",
+      "views": 796,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/599"
+    },
+    {
+      "id": 598,
+      "date": "2026-07-15T08:42:18+00:00",
+      "text": "⭐️ 100 ошибок C++ и как их избежать\n\nРазмер: 80 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 748,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/598"
+    },
+    {
+      "id": 597,
+      "date": "2026-07-14T15:01:51+00:00",
+      "text": "⭐️ Осознанный Python\n\nРазмер: 15 МБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 721,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/597"
+    },
+    {
+      "id": 596,
+      "date": "2026-07-14T13:00:12+00:00",
+      "text": "Опа, тут бывший сеньор одного из IT-отделов Яндекса Игорь Никитин выкатил целый канал про Python — и это лучшее, что есть в рунете по теме.\n\nКачественные гайды. Советы от известных прогеров. Тематические мемасы. Короче, ничего лишнего.\n\nХватит душить питона, учись его кодить: https://telegram.me/+pgTJNAHghTszMGZi 🐍",
+      "views": 725,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/596"
+    },
+    {
+      "id": 595,
+      "date": "2026-07-14T10:21:19+00:00",
+      "text": "⭐️ Пакет курсов \"Data Scientist\"\n\nРазмер: 15 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 753,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/595"
+    },
+    {
+      "id": 594,
+      "date": "2026-07-14T07:03:07+00:00",
+      "text": "😎 НАХУЙ УЧЕБУ И РАБОТУ )) \n\nЯ нашел для тебя то, что обеспечит долгую, раскошную жизнь ...\n\n🧻 МЫСЛИ ТЕМЩИКА - ЭТО :\n\n——AI-ИНТ*М [700₽/1 фото]\n—— Заливаем трафик из 🎥&📺 [1 лид=135₽→1000 лидов=135к₽] \n—— Заработок на tg/инсте ⭐️ [50к₽ 2 недели]\n—— НЕЙРОСЕТИ [5к₽ за час]\n—— ХАЛЯВА [50$ щас] \n\nЧитай CХЕМЫ по 10 минут в день и покупай желанные подарки своим родным.",
+      "views": 663,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/594"
+    },
+    {
+      "id": 593,
+      "date": "2026-07-13T14:40:58+00:00",
+      "text": "⭐️ Функции и декораторы в Python\n\nРазмер: 55 МБ\nГод: 2024\n\n🔗 Скачать",
+      "views": 709,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/593"
+    },
+    {
+      "id": 592,
+      "date": "2026-07-13T08:45:04+00:00",
+      "text": "⭐️ Алгоритмы на языке Go\n\nРазмер: 75 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 721,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/592"
+    },
+    {
+      "id": 591,
+      "date": "2026-07-10T16:55:37+00:00",
+      "text": "⭐️ Создание full-stack приложения на Next.js с Claude Code\n\nРазмер: 2.16 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 822,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/591"
+    },
+    {
+      "id": 590,
+      "date": "2026-07-09T17:02:21+00:00",
+      "text": "⭐️ Добрый, добрый ИИ\n\nРазмер: 2 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 843,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/590"
+    },
+    {
+      "id": 589,
+      "date": "2026-07-08T17:10:25+00:00",
+      "text": "⭐️ Хардкорный Machine Learning\n\nРазмер: 1.6 ГБ\nГод: 2022\n\n🔗 Скачать",
+      "views": 894,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/589"
+    },
+    {
+      "id": 588,
+      "date": "2026-07-08T08:20:15+00:00",
+      "text": "⭐️ Микросервисы, как в BigTech 2.0\n\nРазмер: 22.3 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 872,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/588"
+    },
+    {
+      "id": 587,
+      "date": "2026-07-06T16:00:54+00:00",
+      "text": "⭐️ Создание и развёртывание мультивендорного коммерческого cайта на Next.js 2025\n\nРазмер: 59.3 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 817,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/587"
+    },
+    {
+      "id": 585,
+      "date": "2026-07-05T17:02:39+00:00",
+      "text": "⭐️ PostgreSQL 17 архитектура и тюнинг SQL-запросов\n\nРазмер: 2.46 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 821,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/585"
+    },
+    {
+      "id": 584,
+      "date": "2026-07-05T08:05:08+00:00",
+      "text": "⭐️ Нейросети для чайников\n\nРазмер: 20 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 826,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/584"
+    },
+    {
+      "id": 582,
+      "date": "2026-07-04T17:06:33+00:00",
+      "text": "⭐️ FastAPI начальный уровень\n\nРазмер: 90 МБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 781,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/582"
+    },
+    {
+      "id": 581,
+      "date": "2026-07-04T08:02:49+00:00",
+      "text": "⭐️ Работа с очередями в RabbitMQ и Apache Kafka\n\nРазмер: 1.33 ГБ\nГод: 2023\n\n🔗 Скачать",
+      "views": 785,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/581"
+    },
+    {
+      "id": 580,
+      "date": "2026-07-03T16:56:27+00:00",
+      "text": "⭐️ Лучшие практики в Go\n\nРазмер: 1.85 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 808,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/580"
+    },
+    {
+      "id": 579,
+      "date": "2026-07-03T11:03:55+00:00",
+      "text": "⭐️ PHP-разработчик. Продвинутый уровень\n\nРазмер: 7.26 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 763,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/579"
+    },
+    {
+      "id": 578,
+      "date": "2026-07-02T16:03:01+00:00",
+      "text": "⭐️ ИИ-ассистенты на Python\n\nРазмер: 35 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 816,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/578"
+    },
+    {
+      "id": 576,
+      "date": "2026-07-02T08:02:31+00:00",
+      "text": "⭐️ Пакет курсов \"Data Scientist\"\n\nРазмер: 15 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 901,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/576"
+    },
+    {
+      "id": 575,
+      "date": "2026-07-01T16:03:02+00:00",
+      "text": "⭐️ Python для Начинающих\n\nРазмер: 1.15 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 844,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/575"
+    },
+    {
+      "id": 573,
+      "date": "2026-07-01T09:06:21+00:00",
+      "text": "⭐️ .Net Fullstack Development\n\nРазмер: 55.5 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 817,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/573"
+    },
+    {
+      "id": 572,
+      "date": "2026-06-29T17:34:03+00:00",
+      "text": "⭐️ Функции и декораторы в Python\n\nРазмер: 55 МБ\nГод: 2024\n\n🔗 Скачать",
+      "views": 781,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/572"
+    },
+    {
+      "id": 571,
+      "date": "2026-06-29T08:01:27+00:00",
+      "text": "⭐️ Python для парсинга: практика на реальных сайтах\n\nРазмер: 2.39 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 794,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/571"
+    },
+    {
+      "id": 570,
+      "date": "2026-06-28T17:02:39+00:00",
+      "text": "⭐️ Лучшие задачи на Python\n\nРазмер: 5 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 836,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/570"
+    },
+    {
+      "id": 569,
+      "date": "2026-06-28T08:07:41+00:00",
+      "text": "⭐️ Программист на Python с нуля с помощью ChatGPT\n\nРазмер: 13.2 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 837,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/569"
+    },
+    {
+      "id": 568,
+      "date": "2026-06-27T17:02:48+00:00",
+      "text": "⭐️ Golang и искусственный интеллект\n\nРазмер: 8.16 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 833,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/568"
+    },
+    {
+      "id": 567,
+      "date": "2026-06-26T17:51:04+00:00",
+      "text": "⭐️ Основы дебага: все об отладке кода в Ruby on Rails\n\nРазмер: 1.53 ГБ\nГод: 2024\n\n🔗 Скачать",
+      "views": 743,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/567"
+    },
+    {
+      "id": 566,
+      "date": "2026-06-25T16:01:09+00:00",
+      "text": "⭐️ ML для финансового анализа\n\nРазмер: 16.8 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 908,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/566"
+    },
+    {
+      "id": 565,
+      "date": "2026-06-25T08:02:15+00:00",
+      "text": "⭐️ Создание full-stack приложения на Next.js с Claude Code\n\nРазмер: 2.16 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 834,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/565"
+    },
+    {
+      "id": 564,
+      "date": "2026-06-24T17:03:44+00:00",
+      "text": "⭐️ Микросервисы, как в BigTech 2.0\n\nРазмер: 22.3 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 881,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/564"
+    },
+    {
+      "id": 563,
+      "date": "2026-06-23T17:04:16+00:00",
+      "text": "⭐️ Добрый, добрый ИИ\n\nРазмер: 2 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 868,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/563"
+    },
+    {
+      "id": 562,
+      "date": "2026-06-23T13:43:02+00:00",
+      "text": "⭐️ Java QA Automation\n\nРазмер: 8.57 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 811,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/562"
+    },
+    {
+      "id": 560,
+      "date": "2026-06-22T17:10:22+00:00",
+      "text": "⭐️ Алгоритмы на языке Go\n\nРазмер: 75 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 823,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/560"
+    },
+    {
+      "id": 559,
+      "date": "2026-06-21T17:03:51+00:00",
+      "text": "⭐️ 100 ошибок C++ и как их избежать\n\nРазмер: 80 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 845,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/559"
+    },
+    {
+      "id": 558,
+      "date": "2026-06-21T08:02:20+00:00",
+      "text": "⭐️ PostgreSQL 17 архитектура и тюнинг SQL-запросов\n\nРазмер: 2.46 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 908,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/558"
+    },
+    {
+      "id": 557,
+      "date": "2026-06-20T17:21:50+00:00",
+      "text": "⭐️ FastAPI начальный уровень\n\nРазмер: 90 МБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 867,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/557"
+    },
+    {
+      "id": 556,
+      "date": "2026-06-20T08:02:26+00:00",
+      "text": "⭐️ .Net Fullstack Development\n\nРазмер: 55.5 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 840,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/556"
+    },
+    {
+      "id": 555,
+      "date": "2026-06-19T17:01:40+00:00",
+      "text": "⭐️ Лучшие практики в Go\n\nРазмер: 1.85 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 907,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/555"
+    },
+    {
+      "id": 554,
+      "date": "2026-06-19T08:03:12+00:00",
+      "text": "⭐️ PHP-разработчик. Продвинутый уровень\n\nРазмер: 7.26 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 878,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/554"
+    },
+    {
+      "id": 553,
+      "date": "2026-06-18T17:02:14+00:00",
+      "text": "⭐️ Пакет курсов \"Data Scientist\"\n\nРазмер: 15 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 975,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/553"
+    },
+    {
+      "id": 552,
+      "date": "2026-06-18T11:57:50+00:00",
+      "text": "⭐️ Функции и декораторы в Python\n\nРазмер: 55 МБ\nГод: 2024\n\n🔗 Скачать",
+      "views": 858,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/552"
+    },
+    {
+      "id": 550,
+      "date": "2026-06-17T17:21:39+00:00",
+      "text": "⭐️ Python для парсинга: практика на реальных сайтах\n\nРазмер: 2.39 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 845,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/550"
+    },
+    {
+      "id": 549,
+      "date": "2026-06-17T08:04:11+00:00",
+      "text": "⭐️ Осознанный Python\n\nРазмер: 15 МБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 813,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/549"
+    },
+    {
+      "id": 548,
+      "date": "2026-06-16T16:03:10+00:00",
+      "text": "⭐️ Машинное обучение для финансового анализа\n\nРазмер: 11.4 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 893,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/548"
+    },
+    {
+      "id": 546,
+      "date": "2026-06-16T08:03:36+00:00",
+      "text": "⭐️ Golang и искусственный интеллект\n\nРазмер: 8.16 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 860,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/546"
+    },
+    {
+      "id": 545,
+      "date": "2026-06-15T17:07:30+00:00",
+      "text": "⭐️ Основы дебага: все об отладке кода в Ruby on Rails\n\nРазмер: 1.53 ГБ\nГод: 2024\n\n🔗 Скачать",
+      "views": 755,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/545"
+    },
+    {
+      "id": 544,
+      "date": "2026-06-14T17:07:56+00:00",
+      "text": "⭐️ Автоматизация тестирования брокеров сообщений\n\nРазмер: 2.04 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 864,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/544"
+    },
+    {
+      "id": 543,
+      "date": "2026-06-14T08:02:34+00:00",
+      "text": "⭐️ Создание full-stack приложения на Next.js с Claude Code\n\nРазмер: 2.16 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 860,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/543"
+    },
+    {
+      "id": 542,
+      "date": "2026-06-13T17:08:40+00:00",
+      "text": "⭐️ Добрый, добрый ИИ\n\nРазмер: 2 ГБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 952,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/542"
+    },
+    {
+      "id": 541,
+      "date": "2026-06-13T08:05:16+00:00",
+      "text": "⭐️ Java QA Automation\n\nРазмер: 8.57 ГБ\nГод: 2025\n\n🔗 Скачать",
+      "views": 941,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/541"
+    },
+    {
+      "id": 540,
+      "date": "2026-06-12T17:12:54+00:00",
+      "text": "⭐️ Веб - сервера Nginx и Apache\n\nРазмер: 2 ГБ\nГод: 2021\n\n🔗 Скачать",
+      "views": 1020,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/540"
+    },
+    {
+      "id": 539,
+      "date": "2026-06-12T08:03:01+00:00",
+      "text": "⭐️ Алгоритмы на языке Go\n\nРазмер: 75 МБ\nГод: 2026\n\n🔗 Скачать",
+      "views": 1050,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/539"
+    },
+    {
+      "id": 538,
+      "date": "2026-06-11T17:13:26+00:00",
+      "text": "Базы данных на Python и ИИ\n\nРазмер: 200 МБ\nГод: 2026\n\nСкачать",
+      "views": 1070,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/538"
+    },
+    {
+      "id": 536,
+      "date": "2026-06-10T17:01:00+00:00",
+      "text": "Пишем робота сигналов \n\nРазмер: 7.96 ГБ\nГод: 2025\n\nСкачать",
+      "views": 1210,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/536"
+    },
+    {
+      "id": 532,
+      "date": "2026-03-15T08:07:42+00:00",
+      "text": "✅ Начало работы с MongoDB и NoSQL\n\nРазмер: 0.59 ГБ\nГод: 2021\n\n📂 Скачать",
+      "views": 2630,
+      "forwarded": false,
+      "forwarded_from": null,
+      "has_comments": null,
+      "url": "https://t.me/backendarchieve/532"
+    }
+  ]
+}

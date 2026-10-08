@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Архив бэкендера – Telegram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible"
+     content="IE=edge" />
+    <meta name="MobileOptimized" content="176" />
+    <meta name="HandheldFriendly" content="True" />
+    
+<meta property="og:title" content="Архив бэкендера">
+<meta property="og:image" content="https://cdn4.telesco.pe/file/A5T1PPhlzCuNx207Yyu__i7letM49eMRhD1CXuU45ClkqrR0niANyfgrlazg8f44t2GJHz98CeZIY-YEuYxLxRAIX8ZcIkdoqnYrXOKrnbryAojY0R5rnDrWIK9ftKxiVJmn-hkofyzM_Bb-NKt9lhQSLFSGwGsLpqb30xhlgYh8C0bZHBY9PBHLSNxKfV7nz_t_hdBOmhxBckz1Pp7ljQ134tCF3iTLRdUrkAFnaUrazRGW18msNsL1eBInpp1WCM9dKgphPQONeRzlyGvwhdJcYkYK5_OynyHwxBh99sdjrFYXHdZie1bf6Z-fRHWKx0mVS2fIIB77HwZQt_-LHQ.jpg">
+<meta property="og:site_name" content="Telegram">
+<meta property="og:description" content="">
+
+<meta property="twitter:title" content="Архив бэкендера">
+<meta property="twitter:image" content="https://cdn4.telesco.pe/file/A5T1PPhlzCuNx207Yyu__i7letM49eMRhD1CXuU45ClkqrR0niANyfgrlazg8f44t2GJHz98CeZIY-YEuYxLxRAIX8ZcIkdoqnYrXOKrnbryAojY0R5rnDrWIK9ftKxiVJmn-hkofyzM_Bb-NKt9lhQSLFSGwGsLpqb30xhlgYh8C0bZHBY9PBHLSNxKfV7nz_t_hdBOmhxBckz1Pp7ljQ134tCF3iTLRdUrkAFnaUrazRGW18msNsL1eBInpp1WCM9dKgphPQONeRzlyGvwhdJcYkYK5_OynyHwxBh99sdjrFYXHdZie1bf6Z-fRHWKx0mVS2fIIB77HwZQt_-LHQ.jpg">
+<meta property="twitter:site" content="@Telegram">
+
+<meta property="al:ios:app_store_id" content="686449807">
+<meta property="al:ios:app_name" content="Telegram Messenger">
+<meta property="al:ios:url" content="tg://resolve?domain=backendarchieve">
+
+<meta property="al:android:url" content="tg://resolve?domain=backendarchieve">
+<meta property="al:android:app_name" content="Telegram">
+<meta property="al:android:package" content="org.telegram.messenger">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Telegram">
+<meta name="twitter:description" content="
+">
+
+    <link rel="prev" href="/s/backendarchieve?before=558">
+<link rel="next" href="/s/backendarchieve?after=580">
+<link rel="canonical" href="/s/backendarchieve?before=581">
+
+    <script>window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.documentElement&&document.documentElement.classList&&document.documentElement.classList.add('theme_dark');</script>
+    <link rel="icon" type="image/svg+xml" href="//telegram.org/img/website_icon.svg?4">
+<link rel="apple-touch-icon" sizes="180x180" href="//telegram.org/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//telegram.org/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
+<link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
+    <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
+    <link href="//telegram.org/css/widget-frame.css?75" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
+    <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
+  </head>
+  <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
+    <div class="tgme_background_wrap">
+      <canvas id="tgme_background" class="tgme_background" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
+      <div class="tgme_background_pattern"></div>
+    </div>
+    <header class="tgme_header search_collapsed">
+  <div class="tgme_container">
+    <div class="tgme_header_search">
+      <form class="tgme_header_search_form" action="/s/backendarchieve">
+        <svg class="tgme_header_search_form_icon" width="20" height="20" viewBox="0 0 20 20"><g fill="none" stroke="#7D7F81" stroke-width="1.4"><circle cx="9" cy="9" r="6"></circle><path d="M13.5,13.5 L17,17" stroke-linecap="round"></path></g></svg>
+        <input class="tgme_header_search_form_input js-header_search" placeholder="Search" name="q" autocomplete="off" value="" />
+        <a href="/s/backendarchieve" class="tgme_header_search_form_clear"><svg class="tgme_action_button_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><g class="icon_body" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="1.5"><path d="M6 14l8-8m0 8L6 6" stroke-dasharray="0,11.314" stroke-dashoffset="5.657"/><path d="M26 14l8-8m0 8l-8-8" stroke-dasharray="0.371,10.943" stroke-dashoffset="5.842"/><path d="M46 14l8-8m0 8l-8-8" stroke-dasharray="1.982,9.332" stroke-dashoffset="6.647756"/><path d="M66 14l8-8m0 8l-8-8" stroke-dasharray="5.173,6.14" stroke-dashoffset="8.243"/><path d="M86 14l8-8m0 8l-8-8" stroke-dasharray="7.866,3.448" stroke-dashoffset="9.59"/><path d="M106 14l8-8m0 8l-8-8" stroke-dasharray="9.471,1.843" stroke-dashoffset="10.392"/><path d="M126 14l8-8m0 8l-8-8" stroke-dasharray="10.417,0.896" stroke-dashoffset="10.866"/><path d="M146 14l8-8m0 8l-8-8" stroke-dasharray="10.961,0.353" stroke-dashoffset="11.137"/><path d="M166 14l8-8m0 8l-8-8" stroke-dasharray="11.234,0.08" stroke-dashoffset="11.274"/><path d="M186 14l8-8m0 8l-8-8"/></g></svg></a>
+      </form>
+    </div>
+    <div class="tgme_header_right_column">
+      <section class="tgme_right_column">
+        <div class="tgme_channel_info">
+          <div class="tgme_channel_info_header">
+            <i class="tgme_page_photo_image bgcolor0" data-content="Аб"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i>
+            <div class="tgme_channel_info_header_title_wrap">
+              <div class="tgme_channel_info_header_title"><span dir="auto">Архив бэкендера</span></div>
+              <div class="tgme_channel_info_header_labels"></div>
+            </div>
+            <div class="tgme_channel_info_header_username"><a href="https://t.me/backendarchieve">@backendarchieve</a></div>
+          </div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">2.24K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">634</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">637</span> <span class="counter_type">links</span></div></div>
+          
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=814d9a81bce9d89747_7156627894698345035">
+            <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
+          </a>
+          <div class="tgme_footer">
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/faq">About</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/blog">Blog</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/apps">Apps</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//core.telegram.org/">Platform</a></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="tgme_header_info">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=814d9a81bce9d89747_7156627894698345035">
+        <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
+      </a>
+      <a class="tgme_header_link" href="https://t.me/backendarchieve">
+        <i class="tgme_page_photo_image bgcolor0" data-content="Аб"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i>
+        <div class="tgme_header_title_wrap">
+          <div class="tgme_header_title"><span dir="auto">Архив бэкендера</span></div>
+          <div class="tgme_header_labels"></div>
+        </div>
+        <div class="tgme_header_counter">2.24K subscribers</div>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="tgme_main" data-url="/backendarchieve">
+  <div class="tgme_container">
+    <section class="tgme_channel_history js-message_history">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/backendarchieve?before=558" class="tme_messages_more js-messages_more" data-before="558"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/558" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTU4LCJ0IjoxNzkxNDU2NTQ4LCJoIjoiNjFlZmFiZWUwY2ExNGY4MzQ4In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5312057410904069994 1236809746_460003178" href="https://t.me/backendarchieve/558" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/XARMy06MvDK2EO4eWDpddELwC9qNfJI7_cVIYTqfDlhhqrjaO3arV-xLuXKjAFOKcdwxggNuVRx6hEYlGEm9fRNvA7TemXGVQwQfW9mA7CEqrFJWHVI06eQJ4hXe4zyE458njZYtdnAW-FIsSKosyW0WelYbWOso0LeFSXxd4rpMCVX3uvottnJCGUBOTMepG7lvpld9z4zpw-pHzAqrxa0v_uFSLNRxYS2y6uydfJUZ69HH5FzNI-Div9Dd2_JET7Af5zpw3if5hpEKksFVE1foejGxj6RvsHPJLzof02jtYBUh6DshHJbRUKR1OxhzoITd74xoJWZ_23vSqiSNEg.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.75%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>PostgreSQL 17 архитектура и тюнинг SQL-запросов</b><br/><br/>Размер: 2.46 ГБ<br/>Год: 2025<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/ap9R/wC9bQ5ejJ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/558" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">908</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/558"><time datetime="2026-06-21T08:02:20+00:00" class="time">08:02</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/559" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTU5LCJ0IjoxNzkxNDU2NTQ4LCJoIjoiZmIxNWFmOTExZDIxMDM4NTJjIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5317014400164108670 1237963885_460003710" href="https://t.me/backendarchieve/559" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/txmLpUD5i-6hGw4NfcUnPD4SIIkObYuMGmsytFfevNHKL1ZeoyGKA5ntHlszGymtCBuImGxnTUt9r_ha_llhPryeADabzE4eraI1_WprhG065zPDC8pBIdr068pZVGRuFi6dYzk_-CIEzzAo2yi5lXzvXo6CFjWAuSCYXqGggxZDpMzluFYQFRKe-tQlMJm0vaQGhiqGdEn2FcrAuaMtPF60Fo4e4eZDRo4pet2iv93LV0LPG6045nAf6xqiOE6gNbfCqkYp-H6Q1REiepymAk3FKhRYto_0uU0bx58Q_swtgSOZRiIxxSGTA0Ck6bbI0tE1ViC6_vEsC9RKdS8Ckg.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.625%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>100 ошибок C++ и как их избежать</b><br/><br/>Размер: 80 МБ<br/>Год: 2026<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/Y5jV/h2rjynWWb" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/559" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">845</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/559"><time datetime="2026-06-21T17:03:51+00:00" class="time">17:03</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/560" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTYwLCJ0IjoxNzkxNDU2NTQ4LCJoIjoiNTk3MzdhZDc2MjBmY2ViMWUwIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5285421260684860910 1230608034_460004846" href="https://t.me/backendarchieve/560" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/uW_FxhedyfJoBLAiRdputZ4bBj5buX0CW7MNcy7BDYnLlUczbwJhjswwcdz1rSCUG8tjRf71UtD_ErtriDUtDg1VOJzH-OJlfWSMOE40fGbz1LpbFwN9JeAfdIps1D_m-lRA5Wudesi_vx4eGbekksq0gdDe3BdxpwiVZI3v5GnkdGL1sij9wIKaJVR-ZhgHVuQPJZlXdHgSStAzJ4zbijgzYMegBqW7REX0J6KL7iVFQ_H1xIpwFOQYgeXJ8hfe8knhE1ctaYsxhx2yVq0nlDhapGVMUA1Piku1gPycl_BM6ZIZKQ4DSjtHeYlj8-fx-j1RJAxU3dP2QlU1uFUbkQ.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.875%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Алгоритмы на языке Go</b><br/><br/>Размер: 75 МБ<br/>Год: 2026<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/RNRn/vbxwx9Red" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/560" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F86.png')"><b>🏆</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">823</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/560"><time datetime="2026-06-22T17:10:22+00:00" class="time">17:10</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/562" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTYyLCJ0IjoxNzkxNDU2NTQ4LCJoIjoiYjhmODczM2NkYmI2M2NhNmU3In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5287254992676921476 1231034983_460005508" href="https://t.me/backendarchieve/562" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/G0DcBJRXVkhV3pqa-ueNQso5Kq9HdWXIaL79tfp9KlnXDWKbGqX3k9-4aVby0jDeQk3pQIuarZyp5nhkL-5VO2Tiz7QKk1KPHer5NzWtxYEv0DNgWCb4CvX12tP1m7dB5uLNk16y-9CP5F38UGIWXgKX36rX9dRohH9GtalQ1Gdgbd4ggKApi_hpvWYELfUusz12nEybZycDvmMF7M5Pic6m8QhHi_VC4jed-97LgaQOXR0juHTksvhtRlvMeG48Svz5LDa77V7BWWY4_V4iKM-vwD2XSNxLIvuVBXTizDR4iujhviERHrs-Sc3zBUhDa3fyEDzvnE7fAckEuu8CEw.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Java QA Automation</b><br/><br/>Размер: 8.57 ГБ<br/>Год: 2025<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/hkyK/Zw4695aS3" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/562" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">811</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/562"><time datetime="2026-06-23T13:43:02+00:00" class="time">13:43</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/563" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTYzLCJ0IjoxNzkxNDU2NTQ4LCJoIjoiM2Y5Mzk5OTZmMDMyNGVlNDI3In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5289506792490605961 1231559271_460004745" href="https://t.me/backendarchieve/563" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/Rf3upV7SKP_7rQbtHrOsZbbrdSA0pxA_l-9ON3FIVMXgWK9lu3oeY3RjAvOaNfxfV8fhJHuwDxNEKNTPJ4b-p67PKlaFnIkbnnsESuW0QhSUCj-EKhJeQIPgTY4Y8fpUQy_vZTusSDt2BUzIbGRcGC3uAAfa0ey-BAY560je0FXTpDLxzJk8yIpLJqXKNXT_hnYhDEvuNBKduaYxpiIxFbU3wMvR7xWFNwzSi3o2jcdS3ENNwG602HHFeQ6YMpt7TVF8vRv8Bix7BH7QYb6TKOGtHZ4OFQkf8krjKlMN3gR3L_88CDUXl96yyWEX3PSedaHq9hNyxbQqUAj07lQ-dA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.875%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Добрый, добрый ИИ</b><br/><br/>Размер: 2 ГБ<br/>Год: 2026<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/gJLY/ZXBUwk1j9" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/563" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">868</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/563"><time datetime="2026-06-23T17:04:16+00:00" class="time">17:04</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/564" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTY0LCJ0IjoxNzkxNDU2NTQ4LCJoIjoiODlkZWZiMzVmODIwZjhjYWExIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5323479842068045030 1239469238_460004582" href="https://t.me/backendarchieve/564" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/hnlmGRG5BlZLXtWYEhG10X-hHTw_lQyl8FZsCiK8lvwxXJqb-RvrCMmBs9lY0UZEGqYW-cDYubaBIGOC2Im1riozKFVXuzwK0uvgUatrq-o8nh1tVH4HckO9WiHlNo-2VWb5vvGEb2zoOW6p3ysLA8PE1wkmZOKyczkTqqB5fVC7Zydk7xNZZfSXHgQLpgsnRXpDMntOb9u4nr7bnPvLa3pXDak2EsnGuG0-b8Y_8AFArrR8QNb-1d53yxMQiStgItAcj2OyR8uB6Xl7uNOx9TTZt-U9eQ16msLFu-4LnQ37PZhxLZ8H8PM3d5D3bLeLtRe2j5ei0XI0BpsnoXPQuA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Микросервисы, как в BigTech 2.0</b><br/><br/>Размер: 22.3 ГБ<br/>Год: 2025<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/NdAa/2f9GwJhVp" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/564" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">881</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/564"><time datetime="2026-06-24T17:03:44+00:00" class="time">17:03</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/565" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTY1LCJ0IjoxNzkxNDU2NTQ4LCJoIjoiZTZjNWM5MWQyYWVmOGJiMzYwIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5291740733830272735 1232079401_460003039" href="https://t.me/backendarchieve/565" style="width:798px;background-image:url('https://cdn4.telesco.pe/file/sqtOJAvT-HpCV8Q4W2ZyYW8tQnd4NBs6ukGTXX2qMltaqdlwAwjulTMQ0HWxb37il9BJncmhtDdGPbj1_JE4rUEPo3LumSEYysnF6K954ecckbhoM6ZSqkP59EsyjlgPfSoDvEljc2CexteB5GAqHQx0C9Fm2iVFmVSfNjPUciJMD_xHJtKJ3QyAEdGod-wzP6O-wUbSa63xL8jbBPWXFvCwkQH6UtxEdvRRQ2XblRPufPFzvRvGILcWe53KE6PQwknYBPl19Vv35Tc9SNwXjMQEOjMtLudMm_JFLWZw3GpWMaUznXi1RAU7YX6-oz0jo20UySsD7d80N7cbbmJSbQ.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100.25062656642%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Создание full-stack приложения на Next.js с Claude Code</b><br/><br/>Размер: 2.16 ГБ<br/>Год: 2025<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/htHe/DTXDFLkeg" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/565" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">834</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/565"><time datetime="2026-06-25T08:02:15+00:00" class="time">08:02</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/566" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTY2LCJ0IjoxNzkxNDU2NTQ4LCJoIjoiOTY4YTZhMzRkYzEyMjVkOGUxIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5325731641881729482 1239993526_460003786" href="https://t.me/backendarchieve/566" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/PDmOGdlA8foEehAJ-dxyS7CPxGsCKkpcRGXb3Cz6zN2mYyZaCR35vzhz3AbqdLRJeZzS6L4yA49scaCOsocTX0L6QbDmCW7aZdXOhhPwtEeASMJqcSdQNMwumuFpuPG6Q3CFcUUffNUYWAFuZZRvSS4eZxXKKkAzY0BUyFXQXxL-P3ki-WSF438pKz-uQAV2SvtslznW5s5rzgx2upCf3a_g5bA-Z6mCZ15y6LHqk0cn7k_GiLx31M56HONHgmG-83TI9tRicgymxmVPLGX-OBZBmwbF9OXuYoZBGOJJ6LvmP6VtSe7ZS04x3RzQxtD68UOCJUoKMgmFhSZ-7R93og.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.875%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>ML для финансового анализа</b><br/><br/>Размер: 16.8 ГБ<br/>Год: 2026<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/8RQu/Dw5EgLYDX" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/566" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">908</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/566"><time datetime="2026-06-25T16:01:09+00:00" class="time">16:01</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/567" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTY3LCJ0IjoxNzkxNDU2NTQ4LCJoIjoiMzRhNGE1Mzc5NGJjYTVkYTVmIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5293992533643958416 1232603689_460003472" href="https://t.me/backendarchieve/567" style="width:799px;background-image:url('https://cdn4.telesco.pe/file/qu_Rl5CY-A5_PXXGfn9TrwNJifAUjf6Ud2Qe_ijhrrC_xGYs1M8w87TwgNb3kC3Uw88wLQoYOYy8AbIJt_qA-6pznxC2woKPgDxDaQzt00T6Puy004Fhwd-2TDYbVlX5jN7_vFRJmFs3KJFgVFbyWL3C9lM-zsV7I-_04zEtoIwBVeJQ0ky1abnhHZeMuEmEq-3TDx7bMhCtWHEydTAX_jCplLLZ8iKCEMRylik_4DjqBIKGy8j1Yimf4n-XwMCXXoSnDovmfS_6IG6bQJk1yrlw4YZzRA_02GSUhC-2zyGdHNOplQgP4FVmTtYpvoAGDiaK1t2_hyS9MRYktamPsA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100.12515644556%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Основы дебага: все об отладке кода в Ruby on Rails</b><br/><br/>Размер: 1.53 ГБ<br/>Год: 2024<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/89No/D5wCr5Gjf" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/567" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">743</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/567"><time datetime="2026-06-26T17:51:04+00:00" class="time">17:51</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/568" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTY4LCJ0IjoxNzkxNDU2NTQ4LCJoIjoiMmUzOWRhMzNmNWQyMzhmNjIxIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5296618760116576166 1233215155_460005286" href="https://t.me/backendarchieve/568" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/Ww6jmvObsPxFKMP381RqKCLsoymwQU8PX5j4aZOxTZEj_DraWFBm-PfIZVMyadtwY2kHJ7oNBoCZMgLCYHXKS7tG0OWEq2wrNmAJgNc9hucKGyYP1CMiZxCWd1el6HQfbJqT9I44NkfvqYAVmLW836T4JsJED2_ZbohuclTXE0EhS60gM4hySFnApSNVTjQqi2keXl-zUmPnOZq1yQAISmklm7dLJTzxPIVC_X5Ml27JD1mPt2S2lFo0hagqDdSZB2_vn5ia1DUB0poZYeAM167cbe0qmM3T7GLF2BDxVSJNZbxIE1K1MFQx3AsQcfmDcLsmuXtrm6xomr41sypbEQ.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.25%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Golang и искусственный интеллект</b><br/><br/>Размер: 8.16 ГБ<br/>Год: 2026<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/o9zw/qmKKFtNkx" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/568" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">833</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/568"><time datetime="2026-06-27T17:02:48+00:00" class="time">17:02</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/569" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTY5LCJ0IjoxNzkxNDU2NTQ4LCJoIjoiNjg2NmUyY2VkMWVmYThhNTZmIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5334928339388537608 1242134799_460004104" href="https://t.me/backendarchieve/569" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/LMSingO_u0S9TZo7VktrOeouw5TFp21Kq-fPKCR6ad-OLCdRSIsikuWf5FPghZBk1kkHEY6VCJPK4aBmo4RI0JRDFv9x4Kqe6U5nqsI9VZoBeusyqh8FuBfk1QAVjBk1MDnziAU1nmlFFte3iFWnLNvjSWv8y6Lxe4hmTlaFECURKOKQ-LA-pkqgCpJG5V25jRjRFJm8jlolPIRnUFf9El7hMGRzwYTMsDK4HiMHRFfRJQSNSk1ah9pnMETAAo4N7EClICONOXue_kB_x8iB6L7PSy7zc9HBw7hlzQ4dm6cQ6w17B_3WxKHITpqBnjTml2j82Z7B3Prl2UjLRFETOA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.875%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Программист на Python с нуля с помощью ChatGPT</b><br/><br/>Размер: 13.2 ГБ<br/>Год: 2026<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/dxtC/smN9r6UXu" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/569" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">837</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/569"><time datetime="2026-06-28T08:07:41+00:00" class="time">08:07</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/570" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTcwLCJ0IjoxNzkxNDU2NTQ4LCJoIjoiOWZiNTkzYjU4NWFkNTIyMDRkIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5334928339388538221 1242134799_460004717" href="https://t.me/backendarchieve/570" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/VuOyR6-F7WWas4ZLtXvuTTkC1pIEl2b7c1CZL_2SkgQ45H4WoPrA0xHNAnxRRgur4W3hkdjqckkivvhGCmg7y8hXdx-cWGKPUrkVYFJGtijbbwGec-cXQFzYCiw7wC5PoXiO-ZYQxR4x9KYtHPC2YTVwXD3Q8ihuAbKloydpMs5J3kpR6xrVoBkEhKhlXQxxrAp-GTYByX6Up_iUWyU_5kyjnlOVj5FWIOy3lnSbzmssFGCRygdPRoezNdmep2mWgWRVgh481Iy42mUAkX5tMTLXeBwTGf4NJGt4kGmhQhSkjvH7X8t5h1ROAU0Rb6-2SBO1Kr0UUKguKrR0SMe8Qg.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.625%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Лучшие задачи на Python</b><br/><br/>Размер: 5 МБ<br/>Год: 2026<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/Du1Y/oEMVWFEsd" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/570" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">836</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/570"><time datetime="2026-06-28T17:02:39+00:00" class="time">17:02</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/571" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTcxLCJ0IjoxNzkxNDU2NTQ4LCJoIjoiMWZkNDNkODBhNGVmZmI5MjU5In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5303319652127678310 1234775328_460005222" href="https://t.me/backendarchieve/571" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/Z0koOleYPpxmCxQhJlxnC5Ep53d8E5rC-CW6PGN2ayP7dBLTdp07THILyTzJGVMKZYMKjq8XYhSJ_Q_3ZOBcGQvUCMYMypUykPvHYEC-noZucykW9COl_QuPkp8SBALvbE9JeGcGboZMN5wfw8gg2e4rYg90PJVuKa9yQMzKeIvaI0Dp-DUHnZC-TVzfQWlkW_krYaiI8CJT0ybkDbPmLLO3Zoa5ofr0jDhHjg2HOwEYJ9lsSwxwaavuZSBqNyb1Ha0ZNF5Q5HNnNSnLZSqxQtfMdzHg9QcOvrDx0RS8995EN-FliIXZzMG9UvvMSOkLI9C9Tu7ZqrV2lRkT5FPBUA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.625%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Python для парсинга: практика на реальных сайтах</b><br/><br/>Размер: 2.39 ГБ<br/>Год: 2025<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/89Xt/Ld8M4tD7z" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/571" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">794</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/571"><time datetime="2026-06-29T08:01:27+00:00" class="time">08:01</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/572" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTcyLCJ0IjoxNzkxNDU2NTQ4LCJoIjoiMTQ2ZjA2ZDRhNTZjNjQ1MTRjIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5305381232134790668 1235255327_460004876" href="https://t.me/backendarchieve/572" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/i552NflVPKN5OQA2u9myDp6P59vtgcj0No1-XKI0Q9dNcZb7M5_7x4GW7Orr2YlC6IVfoqw1af-FVyxsG2nA5cqOSyzKPaTZ-XfCiDIvRdhxd3CzYCmqTB-pQZcM1xqW5iOnWljxlzfHK7A8K1C9alrsWrYDWzW4G1gzkRs4yjLl5V9wv444sqbCEPV_ZjRFRa7HA1I7rcmmLZqKsdjz3lPJMph625tGI1W47KUYOtmvZ3fvhq68i55rDcXbG-nSV8Lu6L-Op9rp3mbELdLOJERfQI9c0mutQ55MCJEWBVcNOh4jK55n35p3AgGRg4o13ieBjRNKyLRUTbjjwygBGA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Функции и декораторы в Python</b><br/><br/>Размер: 55 МБ<br/>Год: 2024<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/Xcgt/kdUF48D5e" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/572" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">781</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/572"><time datetime="2026-06-29T17:34:03+00:00" class="time">17:34</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/573" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTczLCJ0IjoxNzkxNDU2NTQ4LCJoIjoiNDUxODdiNGQxYjI5NTY4ZGQ3In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5309805611090384643 1236285458_460003075" href="https://t.me/backendarchieve/573" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/D0WViobnL4_EUGko1PJyr8ZHNg_EBgZjx5e3KpNoENXAUPN7fxrtyz_VX1K0i5E9wpHYF7ydhkXl2f5LTDB9nEe_FhCJqvPuoFobJXxqUS2m6GX2HfBEs1L9epQnPF9zhY0VViOrxBKPTQ0n1zWwwDuClx9ekoDKSKB9B-vZC1QOM2K7UNeBkkLpGWba3oE-pJ1Dxk4nvG5p8lwSlYW92f9F12X8IqEMq4LL4FXMPSbh8qhTJYpcrDGcVgiN76kOq8yPDEfLwj__GLaVfFkwKGKkN6xIZKoUlc09gQ46oZYD4dQhWKrLra1UXvy4CtX0corLIqw5UQ685D9IwkhZ8w.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.875%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>.Net Fullstack Development</b><br/><br/>Размер: 55.5 ГБ<br/>Год: 2025<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/GsvC/tgsNZYvtW" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/573" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">817</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/573"><time datetime="2026-07-01T09:06:21+00:00" class="time">09:06</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/575" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTc1LCJ0IjoxNzkxNDU2NTQ4LCJoIjoiZDhiODRkNmVkYzY3MDFiY2U2In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5344050841335308201 1244258797_460005289" href="https://t.me/backendarchieve/575" style="width:799px;background-image:url('https://cdn4.telesco.pe/file/ec1wMcsE75wtbwDJG1Ax4xAMFZ8-sFdoTNX-9S2ghQ8jm-ObXxtPVAQ-nQMlEmbklsrcmy6wQuJy_yHJFnLorU-_qKXq_Izq7kTiQnpnKEjohkBbQ7eEGlm7x1BH1HAPIPnm1cp4JqdZEibFNsmXMI4JbAivHrwBe_jHdF6DKSdyeDx5cslEOHpu6Tjj6w0FqeCqEKtSRnyowms_JbEe22hGjidnlLu7EO3hoamqiYWbSxrm8dKqs8Wvap3h6GzljiDgSl8RgNduDqEIQumu_x5GRXpQ_t2gfFMSMbhTdoEAvmwSHyiAYiEl50k5NBRTlIikuPiJiTmAW1TFPpI-RQ.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100.12515644556%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Python для Начинающих</b><br/><br/>Размер: 1.15 ГБ<br/>Год: 2026<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/udDS/9GLFfQs6R" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/575" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">844</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/575"><time datetime="2026-07-01T16:03:02+00:00" class="time">16:03</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/576" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTc2LCJ0IjoxNzkxNDU2NTQ4LCJoIjoiNDgxNzhhY2QxNzMxMzAyNTg4In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5305381232134791082 1235255327_460005290" href="https://t.me/backendarchieve/576" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/AUg3ayF4oUpqvHFS6fvoMhDsdd2YLvqbnZ_bLPZEweS3anNHJymIbzmqQ1_m7VSCfIfm-K8j6eqQAKtvKDWdwRnKJ1f72xeWEiKlbcwfO6kqX947EC91ugVndUyLmvzvaXsIZvHqBWEpFtQuEZGNP4Q1T3hPRaJNuDvx7ivV_Dh14BLZythToBN6B3EVE4WtCyDkj2CLZbK6qIAFIMmtAoAHqQaCY0AXxpJEzjsGpj14fZDvAIKwrk0elazdhjB5GuicR9qoRQzWf7VXp166ZV374loBivyJm0PwHfWD22Mnh-bD2L0iAXRyNLcY7u3fS8uN0Wmlq2FLRAyKDW8bNA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.875%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Пакет курсов &quot;Data Scientist&quot;</b><br/><br/>Размер: 15 ГБ<br/>Год: 2025<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/795m/pVjBtvTmi" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/576" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">901</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/576"><time datetime="2026-07-02T08:02:31+00:00" class="time">08:02</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/578" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTc4LCJ0IjoxNzkxNDU2NTQ4LCJoIjoiYjE4OWNhMzEwZTMzNWY1YTBjIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5348383033112862444 1245267464_460005100" href="https://t.me/backendarchieve/578" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/aA7hmXks4SWrF9noRlZzuJWTw5sCBSYBjTTGsJgGhXN0SXt7sBJKgOJlwc8_bUFSADu_3eiv8-tzJywprUtKbt8mrjM33Y1Rj_IWl0WnUliX8G90PKAVGhBWg18-pBQScaFB5i6UygzaY5oSAFBnhxNxfBNS5S9REEvn1ircfdOdXOT57Pivi-Lq-LrwNMSnDQnx0Txg2DVzmBtBzMPJ6BL5xhC8VIz-2zTPLuPri_phcrua320kbhbNHHmhw6FfW5iVP9T6rdH7k9e1CN9OXndx6eTuIRK-ZLp5bZrkG6rLcZz50dCnZxM5n-1gNWOemwtF0Id6jW_5mBwS_kvFtg.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.375%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>ИИ-ассистенты на Python</b><br/><br/>Размер: 35 МБ<br/>Год: 2026<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/JbRZ/4oceBR8Mq" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/578" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">816</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/578"><time datetime="2026-07-02T16:03:01+00:00" class="time">16:03</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/579" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTc5LCJ0IjoxNzkxNDU2NTQ4LCJoIjoiNmY5MmQ1MjMzMjBmNGIwNGY2In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5307633031948473929 1235779615_460002889" href="https://t.me/backendarchieve/579" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/WLZ1eON4FQ5L3uGuHrHViLAUvsep77bli3rrk7GvyUCwolTbtqooIpeDIcQhUbNSOAWhtiryR74JR4__DBg_CyDZg3rMxtiCVlDXzzlKGef8R7ho-vVKKtWOqXVgUixzwxqqjOzkq9puarG67niCc3s7PbhmG9QZL1ys-O5r7H0CKmWJSbkUQ2a38vMv5dnhhNf6a7IzzhS0numtXhDPk1uDumqF3BXnGbm9pkm4aML6ZJz9YlgY25QvD0hqxZ_i7U3euZfWp2EoyqE5lRMWmP5qDX176uOo54Yp9iCey_Nc27HChsaObRwu4OiAZb8zsstTjLgzd4vJ-v6UI4hv6A.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.75%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>PHP-разработчик. Продвинутый уровень</b><br/><br/>Размер: 7.26 ГБ<br/>Год: 2026<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/LPXG/6DPGjcdbj" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/579" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">763</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/579"><time datetime="2026-07-03T11:03:55+00:00" class="time">11:03</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="backendarchieve/580" data-view="eyJjIjotMjM2NTQ2MTMyOSwicCI6NTgwLCJ0IjoxNzkxNDU2NTQ4LCJoIjoiMTRhNzg1MWYxZmMxMTBkNzViIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/backendarchieve"><i class="tgme_widget_message_user_photo bgcolor0" data-content="А"><img src="https://cdn4.telesco.pe/file/vjoLpQf6HiY7jFHgJ_8aNEgFDy1rXfbY66Kf2RjTA9TJEyD4sJxZA67gzhUP1tG_pSuZUuLMr11FB013oskFJD0bUDNU7fUQjU-QqLo86OjZGLLmwTG_y6ZkDSo-hEyfAyvTKwH3OTiBVRCISPKvZefyb2CLrDOH36bojSxdGWrX3TYeZ7RbYwXwZponwZhP-gIsL4udz9tjr4vvxYdERmw5ajRK9GjDQZp9UzQqmWpn6EbEzmUjZPrvlmvpYGgLfzw9kw_vBLGTXQ-acJI-Wo34kRpFUbVLIS7whFk0PQvbhXbGIKeXtTmRjgoLHVElKMgBWbQlLtDME3riU0X1qA.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/backendarchieve"><span dir="auto">Архив бэкендера</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5350363691641150357 1245728622_460004245" href="https://t.me/backendarchieve/580" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/M3VewPXLK8D2uH_Bm8iz_zVjA9Py-4YEdGZXmXM_sa3PVAeLQTbGVVxUesPGbthyQqTIcXOAC3Jn6I-fJygUB3hgQF0SghjQaOhQELas7-BHL7Q5E-A8_GtT70KD22wP5mmg1XPFRiriLzmisIwbTJxJxAi2BKWmZj-8t8eh6KYJoruHelysHEQUM_z5NOh91D1z9WaCE8_7j0rC0MjzUQ0u_9HSxLXduspqJGTVFdnpXoES3-sj-ldmLuwL4VsSiBa7zj9IEzfp_wEV1fFlNfe6dhjYcROcsJU5MqDTfhurQbt_c7I7GzvzloQkZQC_cYA3TsPZS3zDlwM4Lny74g.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99.25%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5276111746812112286"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <b>Лучшие практики в Go<br/></b><br/>Размер: 1.85 ГБ<br/>Год: 2026<br/><br/><tg-emoji emoji-id="5278305362703835500"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i></tg-emoji> <a href="https://cloud.mail.ru/public/yxL1/CK3VLPCVR" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Скачать</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/backendarchieve/580" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">808</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/backendarchieve/580"><time datetime="2026-07-03T16:56:27+00:00" class="time">16:56</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/backendarchieve?after=580" class="tme_messages_more js-messages_more" data-after="580"></a></div>
+    </section>
+  </div>
+</main>
+    <script src="//telegram.org/js/jquery.min.js"></script>
+    <script src="//telegram.org/js/jquery-ui.min.js"></script>
+    <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
+<script src="//telegram.org/js/tgsticker.js?32"></script>
+
+    <script src="//telegram.org/js/widget-frame.js?68"></script>
+    <script src="//telegram.org/js/telegram-web.js?14"></script>
+    <script>TWeb.init();
+</script>
+    
+  </body>
+</html>
+<!-- page generated in 500.27ms -->

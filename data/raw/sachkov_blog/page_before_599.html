@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Кирилл Сачков | Development – Telegram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible"
+     content="IE=edge" />
+    <meta name="MobileOptimized" content="176" />
+    <meta name="HandheldFriendly" content="True" />
+    
+<meta property="og:title" content="Кирилл Сачков | Development">
+<meta property="og:image" content="https://cdn4.telesco.pe/file/KkbeGB2Zf5xq46j9Otf3ZzDAWsqD5JUeqMoRA7_wmlJbjZOfxaOoR0nI4RS8bn7eI89a8f7Bzz7kKOh660IWSGdfY1gV5XqLAgswDYNXjuN9YVgxJ7wPUOLuIIMpzR9xqKNZtGyau7yDnezimXaWQrXipsq3d3Hk3P-8QbU6RpOSTHozgyxa5T8QRJ_kqC1RQzsK0VbS53S33jsOS08fbrhxEErO1k3h0X8amGU5C1VYwbYehYwhoh_rGljXykPVQtg355Q9z8pRavoZ_DPZL7Ag_Cmx0NfUPv9eUieLmA6ID53gAS9CF8ErNFOVOYEjCnK2x7WDCWYKuahgFqm3nQ.jpg">
+<meta property="og:site_name" content="Telegram">
+<meta property="og:description" content="По всем вопросам - t.me/sachkova_mng
+
+Лайф канал - https://t.me/sachkovgeek">
+
+<meta property="twitter:title" content="Кирилл Сачков | Development">
+<meta property="twitter:image" content="https://cdn4.telesco.pe/file/KkbeGB2Zf5xq46j9Otf3ZzDAWsqD5JUeqMoRA7_wmlJbjZOfxaOoR0nI4RS8bn7eI89a8f7Bzz7kKOh660IWSGdfY1gV5XqLAgswDYNXjuN9YVgxJ7wPUOLuIIMpzR9xqKNZtGyau7yDnezimXaWQrXipsq3d3Hk3P-8QbU6RpOSTHozgyxa5T8QRJ_kqC1RQzsK0VbS53S33jsOS08fbrhxEErO1k3h0X8amGU5C1VYwbYehYwhoh_rGljXykPVQtg355Q9z8pRavoZ_DPZL7Ag_Cmx0NfUPv9eUieLmA6ID53gAS9CF8ErNFOVOYEjCnK2x7WDCWYKuahgFqm3nQ.jpg">
+<meta property="twitter:site" content="@Telegram">
+
+<meta property="al:ios:app_store_id" content="686449807">
+<meta property="al:ios:app_name" content="Telegram Messenger">
+<meta property="al:ios:url" content="tg://resolve?domain=sachkov_blog">
+
+<meta property="al:android:url" content="tg://resolve?domain=sachkov_blog">
+<meta property="al:android:app_name" content="Telegram">
+<meta property="al:android:package" content="org.telegram.messenger">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Telegram">
+<meta name="twitter:description" content="По всем вопросам - t.me/sachkova_mng
+
+Лайф канал - https://t.me/sachkovgeek
+">
+
+    <link rel="prev" href="/s/sachkov_blog?before=577">
+<link rel="next" href="/s/sachkov_blog?after=598">
+<link rel="canonical" href="/s/sachkov_blog?before=597">
+
+    <script>window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.documentElement&&document.documentElement.classList&&document.documentElement.classList.add('theme_dark');</script>
+    <link rel="icon" type="image/svg+xml" href="//telegram.org/img/website_icon.svg?4">
+<link rel="apple-touch-icon" sizes="180x180" href="//telegram.org/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//telegram.org/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
+<link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
+    <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
+    <link href="//telegram.org/css/widget-frame.css?75" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
+    <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
+  </head>
+  <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
+    <div class="tgme_background_wrap">
+      <canvas id="tgme_background" class="tgme_background" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
+      <div class="tgme_background_pattern"></div>
+    </div>
+    <header class="tgme_header search_collapsed">
+  <div class="tgme_container">
+    <div class="tgme_header_search">
+      <form class="tgme_header_search_form" action="/s/sachkov_blog">
+        <svg class="tgme_header_search_form_icon" width="20" height="20" viewBox="0 0 20 20"><g fill="none" stroke="#7D7F81" stroke-width="1.4"><circle cx="9" cy="9" r="6"></circle><path d="M13.5,13.5 L17,17" stroke-linecap="round"></path></g></svg>
+        <input class="tgme_header_search_form_input js-header_search" placeholder="Search" name="q" autocomplete="off" value="" />
+        <a href="/s/sachkov_blog" class="tgme_header_search_form_clear"><svg class="tgme_action_button_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><g class="icon_body" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="1.5"><path d="M6 14l8-8m0 8L6 6" stroke-dasharray="0,11.314" stroke-dashoffset="5.657"/><path d="M26 14l8-8m0 8l-8-8" stroke-dasharray="0.371,10.943" stroke-dashoffset="5.842"/><path d="M46 14l8-8m0 8l-8-8" stroke-dasharray="1.982,9.332" stroke-dashoffset="6.647756"/><path d="M66 14l8-8m0 8l-8-8" stroke-dasharray="5.173,6.14" stroke-dashoffset="8.243"/><path d="M86 14l8-8m0 8l-8-8" stroke-dasharray="7.866,3.448" stroke-dashoffset="9.59"/><path d="M106 14l8-8m0 8l-8-8" stroke-dasharray="9.471,1.843" stroke-dashoffset="10.392"/><path d="M126 14l8-8m0 8l-8-8" stroke-dasharray="10.417,0.896" stroke-dashoffset="10.866"/><path d="M146 14l8-8m0 8l-8-8" stroke-dasharray="10.961,0.353" stroke-dashoffset="11.137"/><path d="M166 14l8-8m0 8l-8-8" stroke-dasharray="11.234,0.08" stroke-dashoffset="11.274"/><path d="M186 14l8-8m0 8l-8-8"/></g></svg></a>
+      </form>
+    </div>
+    <div class="tgme_header_right_column">
+      <section class="tgme_right_column">
+        <div class="tgme_channel_info">
+          <div class="tgme_channel_info_header">
+            <i class="tgme_page_photo_image bgcolor0" data-content="КD"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i>
+            <div class="tgme_channel_info_header_title_wrap">
+              <div class="tgme_channel_info_header_title"><span dir="auto">Кирилл Сачков | Development</span></div>
+              <div class="tgme_channel_info_header_labels"></div>
+            </div>
+            <div class="tgme_channel_info_header_username"><a href="https://t.me/sachkov_blog">@sachkov_blog</a></div>
+          </div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">5.19K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">260</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">6</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">7</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">221</span> <span class="counter_type">links</span></div></div>
+          <div class="tgme_channel_info_description">По всем вопросам - <a href="http://t.me/sachkova_mng" target="_blank" rel="noopener">t.me/sachkova_mng</a><br/><br/>Лайф канал - <a href="https://t.me/sachkovgeek" target="_blank" rel="noopener">https://t.me/sachkovgeek</a></div>
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=814d9a81bce9d89747_7156627894698345035">
+            <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
+          </a>
+          <div class="tgme_footer">
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/faq">About</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/blog">Blog</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/apps">Apps</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//core.telegram.org/">Platform</a></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="tgme_header_info">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=814d9a81bce9d89747_7156627894698345035">
+        <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
+      </a>
+      <a class="tgme_header_link" href="https://t.me/sachkov_blog">
+        <i class="tgme_page_photo_image bgcolor0" data-content="КD"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i>
+        <div class="tgme_header_title_wrap">
+          <div class="tgme_header_title"><span dir="auto">Кирилл Сачков | Development</span></div>
+          <div class="tgme_header_labels"></div>
+        </div>
+        <div class="tgme_header_counter">5.19K subscribers</div>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="tgme_main" data-url="/sachkov_blog">
+  <div class="tgme_container">
+    <section class="tgme_channel_history js-message_history">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/sachkov_blog?before=577" class="tme_messages_more js-messages_more" data-before="577"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/577" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTc3LCJ0IjoxNzkxNDU2NDI1LCJoIjoiOTA4NWYxZmQzYzE5OWY1ODZlIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap blured 5359766534693264942 1247917892_460004910" href="https://t.me/sachkov_blog/577" style="width:592px;background-image:url('https://cdn4.telesco.pe/file/u1DbsZADr55_HajQpTPO7t3J-TFgF5HhpJ0nTM7f3BlVL6qNXaIFKP8OGLR2DDyNg9AvDOlQ8TX4ifAEqm-ap860bwOTkYFabfK8vMe0Fbf3LOOtPhkwjowjHT3bN7kzgsuJmRN6IG91rdZHPAWs_fdm8PIOfZFzqPr_HqBHb11fOSq43wfz7UQYWPSf0-EaqQjJyEJG6GltKt6lGuzf8hADGxjCACl5DiSv8AwXW_gDubs7JvtP8Pg3h6-hTsp0Cq48nmloDpoeeyycbJ33_yKVkg0vHqHI-IFIEH6cyMROI1UFuxXiEGmujEMPFiTx48_UNpzrZufC5ssIrtrdHg.jpg')">
+  <div class="tgme_widget_message_photo" style="width:98.666666666667%;padding-top:133.33333333333%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Уже некоторое время я создаю модуль по аутентификации и авторизации и скоро буду подходить к концу, где-то 70% создано. Там и практика и тесты и сложные темы по типу oauth, oidc, keycloak, authentik, в целом всё это на микросервисной архитектуре. Думаю можно продавать это отдельным интенсивом, только тут ещё и практика + тесты. Это вам надо?<br/><br/>Также могу сказать, что в планах дозаписать и довести курс до идеала в ближайший месяц-два, чтобы уже приступить к развитию нового направления по AI инженерингу (архитектура, систем дизайн, мультиагентные системы для продакшена и все супер востребованные темы, которые будут нужны каждому независимо от вашего стэка, если вы хотите дальше развиваться в it)<br/><br/>Короче работаем, скоро ещё <tg-spoiler>переезд намечается</tg-spoiler>, так что очень много дел, надеюсь всё успею.</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>24</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.76K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/577"><time datetime="2026-07-06T14:56:54+00:00" class="time">14:56</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/578" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTc4LCJ0IjoxNzkxNDU2NDI1LCJoIjoiMGFjNTJiMzFhNWFiZDVlOTNjIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Вышел </b><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>TypeScript 7.0</b></a> <tg-emoji emoji-id="5424972470023104089"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i></tg-emoji><br/><br/>Кстати, TypeScript это разработка Microsoft. Поэтому аргументы, что C# не стоит изучать, потому что он тесно связан с Microsoft, спокойно можно применить и к TypeScript (думайте)<br/><br/>Я считаю, что TypeScript сейчас нужно знать почти всем, кто идёт в web разработку. Почти весь серьёзный frontend сейчас на нём. Плюс сейчас очень популярны именно <b>fullstack разработчики</b> + TypeScript хорошо ложится на работу с агентами и позволяет быстро делать почти любой софт: личные сервисы, быстрые mvp, боты, обертки над агентами, полноценные веб сервисы.<br/><br/>В TypeScript 7.0 компилятор портировали на Go, что ускорило билд примерно в 8-12 раз.<br/><br/>В статье приводят пример с VS Code: раньше после открытия файла первое подсвечивание ошибки появлялось примерно через 17.5 секунд, а с TypeScript 7 меньше чем за 1.3 секунды.<br/><br/>Конечно можно не любить Microsoft, спорить про риски и доступность сервисов в рф. Но говорить, что C# не стоит учить просто потому что это Microsoft, довольно странно.<br/><br/>TypeScript тоже Microsoft. И при этом это один из самых полезных языков для современного разработчика.<br/><br/>Именно поэтому у меня на <a href="https://sachkov-learn.net/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>курсе</b></a> мы пишем backend на C#, а frontend на TypeScript.<br/><br/>Вообще неважно, какой язык программирования вы знаете. Сегодня важно стать разработчиком, который умеет создавать софт, решающий задачи бизнеса. Уже сейчас на позициях Software Engineer и подобные вообще не роляет какой у вас стэк, решает ваш инжереный опыт <tg-emoji emoji-id="5463054218459884779"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8CA1.png')"><b>🌡</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/sachkov_blog/578" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>14</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B3.png')"><b>🐳</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.94K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/578"><time datetime="2026-07-09T08:54:39+00:00" class="time">08:54</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/579" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTc5LCJ0IjoxNzkxNDU2NDI1LCJoIjoiZWJjZmRhOTNlNTAyZDgwMDYyIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Codex для меня сейчас выглядит сильнее Claude. Как минимум потому, что у Codex больше лимитов, то есть по цене/качеству Codex побеждает. + Они идут ногу в ногу, сегодня собираются релизить <a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Codex 5.6 Sol</a>, буду тестить, говорят, что на уровне Fable, только быстрее и дешевле (ещё один плюс кодексу).<br/><br/>Ещё заметил, что и запускается и работает Codex быстрее. А ещё у меня откуда-то 3 сброса лимитов, халява, в клоде такого не было.<br/><br/>Кто интересуется и хочет выбрать агента, то выбирайте кодекс сейчас, на рынке решения лучше нет. На жадничах закину сюда <a href="https://platipomiru.com/?code=KX6I1GO2" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">рефку плати по миру</a>, там открыл карту и оплачиваю ей всё, ещё не подводила.</div><a class="tgme_widget_message_link_preview" href="https://openai.com/index/previewing-gpt-5-6-sol">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">OpenAI</div>
+  <i class="link_preview_image" style="background-image:url('https://cdn4.telesco.pe/file/DpeDyctfQbE6ZPflpvkNIwT9bq2L-lu_DZACYJrJV86wfT_qkU8G1bgEjhRRQ3e6ZskzHenAlrOrnHAVxr_TPXmMjHM1GQTC02W4ROb_BPvPZRa7BMgg85NfwqQ7JNEfF9jkfiA_ojez8Q03uT4kurbVL8gappP_R4DxQfh7gQEtU_VCOEts9-lUOklBR0dl5ECJLeWEsOC58KTMSKOMT2yXUHJmcSXv-Ih5Ao3TJ0SwblkHGN-Yvk2Bx9aZ4PBJPBrClI-7CvgJLBBAxlpnRv2S1JLOYOLQbv1ODVA2xGiECcKGdGgtrvpQHlVgAZPJPT28S51VN8lk-tWv6Zp-6Q.jpg');padding-top:56.25%"></i>
+  <div class="link_preview_title" dir="auto">Previewing GPT-5.6 Sol: a next-generation model</div>
+  <div class="link_preview_description" dir="auto">OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack.</div>
+</a>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>16</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">4.01K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/579"><time datetime="2026-07-09T14:22:58+00:00" class="time">14:22</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/580" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTgwLCJ0IjoxNzkxNDU2NDI1LCJoIjoiNTBlMDE5MmVkMzk1MTMxMGRhIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap 5368804992719984792 1250022322_460003480" href="https://t.me/sachkov_blog/580" style="width:522px;background-image:url('https://cdn4.telesco.pe/file/gGv1juIm9FhriV5CdasRrvDPFLz9CZkoPvp827nkMhoy4FQ7ouE8D5k1Xl9G9YYIOYQcRGsStcYy7vkuWBgdHv8Jie4yt3C5EGQZZHjVedGJ3zEMs8iopYYdMcAEsJgtvNRSP76eFzNHsJ5U3_fkBqkRB4UXSNIIVbBlVaNCmNO4Z7N2TFZMpC5IBa6Dgfq7xfrNfrHJCoPrwdoAsW3ZQ2pD9k4bHFFUxwFfdbg7Z5AK79rwotL1z2myXThNtRDDn7RArr3FCumX-d-BN2iGG5nCo9UTYSnpvnr48PMQKr6By4Q8f90ZaHXH_8QOlwwHJf9L1b4qM_PAf09HukYUVg.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:58.620689655172%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Ну всё теперь я точно сделаю свой успешный b2b cock ai startup</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction tgme_reaction_paid"><i class="icon icon-telegram-stars"></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>20</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B3.png')"><b>🐳</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.95K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/580"><time datetime="2026-07-09T17:44:19+00:00" class="time">17:44</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/581" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTgxLCJ0IjoxNzkxNDU2NDI1LCJoIjoiMzBjNzk5YWRjNmIyYjY1NGU5In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto">Небольшой интерактив. Кто предложит топ идеи для проектов, которые я буду реализовывать на курсе по ai инженерингу, тому зафиксирую скидку в 50%. <br/><br/>Одно условие - обычный агент или чатбот не должен заменить ваш проект. Сложность любая. <br/><br/>Мало ли у кого есть интересные идеи, но нет времени или навыков для реализации  <tg-emoji emoji-id="5244485660638715235"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E298BA.png')"><b>☺️</b></i></tg-emoji><br/><br/>Идеи в комментарии <tg-emoji emoji-id="5404633377514997588"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AC.png')"><b>💬</b></i></tg-emoji><br/><br/>Необязательно на .NET, можно и раст и гоу и тайпскрипт</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/sachkov_blog/581" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i>8</span><span class="tgme_reaction"><tg-emoji emoji-id="5368635272332352173"></tg-emoji>6</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.54K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/581"><time datetime="2026-07-10T18:06:07+00:00" class="time">18:06</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/582" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTgyLCJ0IjoxNzkxNDU2NDI1LCJoIjoiZGQwNmZjYTg1Y2YwZDc5ZGM2In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<a class="tgme_widget_message_video_player blured js-message_video_player" href="https://t.me/sachkov_blog/582"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/MljEU8LT0tVwalm-9h9ujlVr_gOZcyMm-TeMmh-i0gHWOZUAUUs72wplm3lAgCRlM6ll-22r1POiW6Rf0oTgBLgKPYTN4w3-wMmHK0ZAbv1IB2rYUQ1qp2utqVhw3gABvOjrlIKQgKteicn5dd9W4Y69T--YYqNgGXpPCgk8C6ZRKLcbYt-ilaT-sX7gnoG0rcz0Yvvf0jxpQb2plpPj473lOoS6xTtlxRCmFe28_1HGNHuAUuyttYAtG7KL7Klvc8CgxdT9rWmfB_R5N-oVDcMiC7mWFbQoqFkwHyoJ_v2UacwTrROzS-yJxf3F-UKfknU5nsE5MdXHlFacLFkEDw')"></i>
+<video src="https://cdn4.telesco.pe/file/7951ea38b5.mov?token=DkHSwez6X3wAoZVybMaIMrEs9LT9A5xe_oFk_500wDIFNNpEDmErZlm5O2ITe75n6guKni5f0Pg9LNo6PKejeM6TMeCyBe_dLTlRWH0p0fxGHoHWl0wScKbPGHlrqn0Q_NLTODunhDX1xQJ8yDL4J_WfFcKQHsDVsGnU6ZP5bUT7xeoMe_U-mQYKGxSD7BSBWUv1hIjks7AWwwZ6MxO9qPVNZ-3Tx5Nu8-UW_LV39jjYxzZAYcoK4VS18zrJocm8BE-t7sa1yEMNO7yzVh1O3DGInPnfDA61FgcPWuwk3Cu3LZANxgoP8IrH7s3BY8M1rDRY5CVF5CdEj03Ox2nIoQ" class="tgme_widget_message_video blured js-message_video_blured" width="100%" height="100%" muted></video>
+<div class="tgme_widget_message_video_wrap" style="width:1080px;padding-top:133.33333333333%">
+  <video src="https://cdn4.telesco.pe/file/7951ea38b5.mov?token=DkHSwez6X3wAoZVybMaIMrEs9LT9A5xe_oFk_500wDIFNNpEDmErZlm5O2ITe75n6guKni5f0Pg9LNo6PKejeM6TMeCyBe_dLTlRWH0p0fxGHoHWl0wScKbPGHlrqn0Q_NLTODunhDX1xQJ8yDL4J_WfFcKQHsDVsGnU6ZP5bUT7xeoMe_U-mQYKGxSD7BSBWUv1hIjks7AWwwZ6MxO9qPVNZ-3Tx5Nu8-UW_LV39jjYxzZAYcoK4VS18zrJocm8BE-t7sa1yEMNO7yzVh1O3DGInPnfDA61FgcPWuwk3Cu3LZANxgoP8IrH7s3BY8M1rDRY5CVF5CdEj03Ox2nIoQ" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:09</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">Codex официально победил Claude</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>23</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B3.png')"><b>🐳</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.11K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/582"><time datetime="2026-07-13T16:36:34+00:00" class="time">16:36</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/583" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTgzLCJ0IjoxNzkxNDU2NDI1LCJoIjoiNjBmODQyYmRmZDI3OTNlMDA3In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap 5384424238292343235 1253658961_460003779" href="https://t.me/sachkov_blog/583" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/Ao8r7wcdllYg1-gEg0xmGm3vlDzF_3_4FTzRRBEuB1EOXggs7oMbBGwWQAhh2YI38qVTPL6j_QA2XDpwFZwt-JMnk59nFyMrkARBWJt3d0Ah847WYSjfCsFPmrcL3COGHn-F5YzVjZF0Fobp3PyEjTfTz7kxpAdvuYnIJQbr4AoQo905KUTAZGQQbgE2POdeuX7r0UYh_v9yYtcmQs-T98tzzwxGEFlXtZb52qCK_rp2fmujXfZ6VIh80Z1IbAyOOwruO14A1w5UxBGaVjnqbpGcUkd2ksAhI3SoNHmzL3wM6tiySPd7EmLDRGb4UbWgnpoqEatO89O9nWxRKxRNBA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:62.625%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Впечатления от Codex App + 5.6 sol очень крутые. Лимитов море, очень удобный ui, очень долга автономная работа 20+ часов, супер умный агент, computer use и другие плюшки. OpenAi прям балуют, полностью перешёл на gpt, клод уже не тот (хотя всё ещё лучше справляется с текстами и визуалом кажется)<br/><br/>Удивляюсь тому, как много людей всё ещё не используют даже половины возможностей агентов в работе, своих проектах и в обычной жизни. Это сегодня удивительный инструмент, которым нужно уметь пользоваться<br/><br/>На любой работе, тем более связанной с IT, станет необходимостью уметь пользоваться агентами, писать с помощью них код, доводить фичи до продакшена, проводить тестирования, строить архитектуру, проверять безопасность, добиваться реально качественного кода и безопасно влимать фичи в прод, не роняя при этом прод + все остальные задачи, которые долго перечислять. <br/><br/>Для этого всего нужна сильная инженерная база, без неё никуда. Я не устану говорить, что вам обязательно нужен навык программирования, чтобы безопасно использовать нейронки в проектах. Нельзя пользоваться инструментом, как будто это чёрный ящик. Но тенденции такие, что конкретный язык программирования уже не так важен, знаете вы go, c#, java или python - найму скоро будет всё равно<br/><br/>Скорее принимайте реальность и настраивайте агентов, делйте свои проекты, изучайте как безопасно и эффективно их внедрять в разрботку и использовать их в повседневной жизни, сегодня этот тренд виден везде - в найме, в стартапах, пет проектах, ирл и обучении</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>20</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.93K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/583"><time datetime="2026-07-15T10:02:01+00:00" class="time">10:02</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/584" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTg0LCJ0IjoxNzkxNDU2NDI1LCJoIjoiM2I0YjcxYjc1MmMzYzljZjJiIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap 5388999400664800099 1254724199_460004195" href="https://t.me/sachkov_blog/584" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/aKq8MWwaGSWVhGxE5k2QqdZmXtVR4nqWs9ATRY_Plo59M2hvSv8Rd7TwZnYoetVi0W_7lViQGk3CtLNxekCRsbJDxRwOjfRDEZ3pxY7gCR_Gu-idSNiWDk-v9cDQzlitpuO4ycBEO7TA8oLzTDcSVr6VnPQr3uKWTxQrDKWcBwqTL8Uhl-wqb9rYt4uEAW6RVT95lFOAP5GsLla_uHuOBXAeGiChv_4kYvcGgN0gPTGdhOqCT2ezlRz9RbVLO1Rzc64SdsLzB04uXnds4YdzhynSCCEGAGyJIaOZbMpzKfHDlehZlIjm_E6xXlbz6MqH0wi6hzQjh7bLQ78gwdTQlw.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:56.375%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Тестирую новый визуал, пока очень нравится, сделал свой движок для генерации визуала для уроков/видео, буду его дорабатывать + оболочку для него делаю полноценную, чтобы как отдельным софтом можно было пользоваться.<br/><br/>Скоро новый видос на канал, расскажу об актуалочке</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>18</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.85K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/584"><time datetime="2026-07-16T17:24:00+00:00" class="time">17:24</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/585" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTg1LCJ0IjoxNzkxNDU2NDI1LCJoIjoiY2YxZWYyODI1ZThiMWIxMTRmIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap 5388999400664800240 1254724199_460004336" href="https://t.me/sachkov_blog/585" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/QDlIKCohvTEoUBaVa48Ykx3AvJQqlCo3tqiHAA9QLR8dGd41A425N9QpXm_90kT14PC-Q0WU-3hxkBHt4jWXnlmWi397qbjdi6ejXzIt-LG5v-2LXL8H-LapB05oZHm_JOfH6Qf1Z5cwu0Oa5DuHd_QADDECJ09DlprgtzkAQz2zLbJCAgXEJPuPoMqkUYO2aJyxUjuOfPQDXECXb8ta1cttiVI3120b55G_uoMsdvakrOVtaBw0dFcI3sUZTUtfiMWbhk9wzAmLLFmbmj59s6np8XPXNeGyBi_nAqgE12tBKXbXggYpjqD2kHEwGLzK7gC1R-elgIPpms-URADprQ.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:61.5%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Какой же удобный стал Codex app, столько полезных фич завезли. Особенно радует встроенный бразуер и возможность давать правки по дизайну прямо в окно браузера</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>6</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/585"><time datetime="2026-07-16T18:59:25+00:00" class="time">18:59</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/586" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTg2LCJ0IjoxNzkxNDU2NDI1LCJoIjoiZTk0NjE2MmYyNTFhNjViMjU3In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5391255744553884656 1255249545_460004336" href="https://t.me/sachkov_blog/586" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/gJcZg9hT4RjV1HPfpKBemCzycOsGeMzbYQTxmdN2KpXEfacnG4hhXGmp_XIztGAUTzUZsZA7nAjQbQjf12XaFTm04jPK7P6xQ47IPwnoiNb3CEvYVS2xRzUmcPjjfu5W5PBdPmCUw5IJJryPwhxMexk9Pg6em3Rai9b0Y3a0UdIWlgeaNBT5bzxydFnlSVrOTQZ2u3J4cn80JKpaQKnrrSBVOVqt8DfFy8TU5Bejgd4EfEpVLM7r0m6rDTmfVDcg-Te3FYZhEIaMViFfGxoQCs69KFjSmCYto3nqQbwV-mSFHws6929KssM7UEN3PaGMd9DcmXx9hJV5zd31liOG3Q.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5334681713316479679"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i></tg-emoji>  <b>На </b><a href="https://www.youtube.com/@SachkovDev/videos" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>канале</b></a><b> вышло новое видео</b><br/><br/>Обязательно к просмотру, супер актуальное видео, все разрабы должны быть в курсе происходящего, я не шучу</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/sachkov_blog/586" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>13</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>13</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B3.png')"><b>🐳</b></i>6</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/586"><time datetime="2026-07-17T14:25:59+00:00" class="time">14:25</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/587" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTg3LCJ0IjoxNzkxNDU2NDI1LCJoIjoiNmQwMTZkOWZmZmQ2NDAyMjBiIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Все те, кто отрицает кодинг с агентами и внедрение их в работу, вы вообще видели последние it конференции?<br/><br/><b>90% докладов</b> про то, как они внедряют иишку в рабочие процессы и как они с агентами пишут код.<br/><br/>Как будто уже неинтересно сотый раз обсуждать тонкости какого-то ЯП или клинкода и все разговоры сейчас перешли на другой уровень абстракции, что не может меня не радовать<br/><br/>Все кто отрицают текущие тенденции и практики, будут жалеть об этом</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i>19</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B3.png')"><b>🐳</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.99K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/587"><time datetime="2026-07-18T07:41:22+00:00" class="time">07:41</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/588" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTg4LCJ0IjoxNzkxNDU2NDI1LCJoIjoiZjc1MTE3ZTVhYjc2ZTFlYmRmIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Да, ниже именно тот контент который я называю полезным, когда говорю об этом в видосах</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.93K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/588"><time datetime="2026-07-18T08:24:41+00:00" class="time">08:24</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap roundvideo_media no_bubble user-color-4 js-widget_message" data-post="sachkov_blog/589" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTg5LCJ0IjoxNzkxNDU2NDI1LCJoIjoiYzI5ZGZjNTkyZDhiMWI2ODU4In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<div class="tgme_widget_message_roundvideo_player js-message_roundvideo_player">
+  <div class="tgme_widget_message_roundvideo_wrap">
+    <i class="tgme_widget_message_roundvideo_thumb" style="background-image:url('https://cdn4.telesco.pe/file/AjzO-YV4NFN9-mTDbhdnRoUJJ3wk92AOF7wvlxeeUmLhWo1i3Fl9dC2asq416w74q5BbAxAQb0J7dLxYl80W2r955MuLRQFAdhQbbg-qw3VlNur7qT81wF3zn4RRYtOxsOEtGLyxk6jhmPL8xSMEr97vxZvk10LRBiEIR8RtezV4b5JTyRE4oJk7UiiuQ3wVGHvCzkQ-ig37WbmQ1pjT_bL7V4KH4IxUl5vdyqVyYzUNPWdHslrTAOkgvQbzUfk05MKe1clv1yrJ1ZCUc_kL_BqcrajK8hBt2cO2pr7G0MKwdBSoNTFRZS-q_7riHu2PZ0Eo6usGEzBQKQwfTCwM1Q')"></i>
+    <video class="tgme_widget_message_roundvideo js-message_roundvideo" src="https://cdn4.telesco.pe/file/e3f6a7020f.mp4?token=WRFF4nIc-VayatrXh2kzBXvZsZ1ZQYrkgRePmPdr80brkrp9ayzLOOkcyPj1aAk_a8hz0fqvayPV1xm0VJAXg6HKLWUJiw9FmXYAlQL5vHlYCVokiLbY7Lnx8ZEBFhLqyUlEaQTr9N2FntTdCvvX-h2ebhSMknfKADkfsl3f6OTpTVlEzaVPSpugaOiGSl_BJuufYhOtws70TYiVJ1Hiz-Dw9Oa0-HuMDN8eoYCQxH73cJu2Ro0I7gSoLpx1ZSJedN0vvDWbRuVN8qSphosX43-beNxSh0MHhq8k_zkmsb8Ew0ezZ0G63Cw1Fe4_K7LoGZaV-SPyvE4wAll_HPYk_A" width="100%" height="100%" preload muted autoplay loop playsinline></video>
+    <div class="tgme_widget_message_roundvideo_muted"></div>
+    <div class="tgme_widget_message_roundvideo_border"></div>
+  </div>
+  <div class="message_media_not_supported_wrap js-message_roundvideo_not_supported">
+    <div class="message_media_not_supported">
+      <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+      <a href="https://t.me/sachkov_blog/589" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+    </div>
+  </div>
+  <svg class="tgme_widget_message_roundvideo_progress_wrap" viewPort="0 0 256 256">
+    <circle class="tgme_widget_message_roundvideo_progress js-message_roundvideo_progress" r="126.5" cx="50%" cy="50%" fill="transparent" stroke-dasharray="794.82294135822" stroke-dashoffset="0" data-rd="3"></circle>
+  </svg>
+  <div class="tgme_widget_message_roundvideo_play js-message_roundvideo_play"></div>
+  <time class="tgme_widget_message_roundvideo_duration js-message_roundvideo_duration">0:09</time>
+</div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.13K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/589"><time datetime="2026-07-18T08:24:41+00:00" class="time">08:24</time></a></span>
+  </div>
+</div><div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>26</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>4</span></div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sachkov_blog/590" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTkwLCJ0IjoxNzkxNDU2NDI1LCJoIjoiYzEwODJlZWFjNDNjOWE1ZWYyIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+<div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/sachkovgeek/222"><span dir="auto">Кирилл Сачков</span></a></div>
+
+<a class="tgme_widget_message_photo_wrap 5395682425611951072 1256280212_460004320" href="https://t.me/sachkov_blog/590" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/Yg3fjX2ajDjzLd45tCa41bKYg7WIVFFch5nmg0rLsFzy5IfY25ZS2jKatHQ-69h_gW_K50SzEJzVUMpKHgX_7fX-OHW4q-8lS1dxbEyJ-gX54Rk3lklEdlZe4K4-tx31Fn0tICNiuxnkJJbeKIfh4PwDBWqkG0suRvcSFlwPDNOZ76Y2BWH4RRPdSEeVTd8qkdN-6bvL8tqg9sKik6EZ7kh9zyC6iRUfIUamgfC-JRGI0mT7G4U6oRlwtaddP9466aci76-t8nU4l8gHqrYZbSf_7IzxCQTeJgJM_rDcAkbBlgIQBTkn0SjWs_CJC5OKSQtLuwhcKnbPanutExLtuA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:37.5%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Комментарии на ютубе, как отдельный вид искусства</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/590"><time datetime="2026-07-18T12:10:31+00:00" class="time">12:10</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/591" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTkxLCJ0IjoxNzkxNDU2NDI1LCJoIjoiZjRmZDNiZjU3MWIwZjZiODRjIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Моя позиция не в том, что не нужно уметь писать качественный код, как раз таки я не раз писал о том, что навык программирования очень важен и вам нужно пройти весь цикл обучения разработке.<br/><br/>Вам нужно понять как писать хороший код, как строить масштабируемые решения, как решать бизнес задачи в первую очередь, как программисту.<br/><br/>Для этого и есть мой курс по .NET Fullstack, где огромное количество ИМЕННО РУЧНОЙ практики, где вам надо без иишек писать хороший код, которые проверяется. Где я в уроках ВЕСЬ КОД пишу руками, всё объясняю на примерах. Сами можете увидеть это на моем <a href="https://sachkov-learn.net/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>курсе</b></a> для .Net веб разработчиков.<br/><br/>Там я как раз таки потратил не один десяток часов на то, чтобы рассказать вам как ВРУЧНУЮ без ИИ ПУЗЫРЯ И СКАМ АГЕНТОВ писать код, которые востребован, исползовать стэк, который востребован, решать задачи в подобных галерах и в хороших компаниях.<br/><br/>Поэтому прежде чем меня упрекать в чём-то, посмотрите чем я занимался и до сих пор занимаюсь последние 2 года. Давайте сравним мой код и ваш, я готов к дискуссии.<br/><br/>Просто на данный момент мне интересно двигаться дальше, а не ризбирать код. Я вижу точки роста, потому что обучил уже всему, что касается НАПИСАНИЮ РУКАМИ кода</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.41K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/591"><time datetime="2026-07-18T12:17:58+00:00" class="time">12:17</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/593" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTkzLCJ0IjoxNzkxNDU2NDI1LCJoIjoiZDE3OGQzZDIzYWMxOWVkMDBhIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap 5411250453699303375 1259904926_460003279" href="https://t.me/sachkov_blog/593" style="width:743px;background-image:url('https://cdn4.telesco.pe/file/WFoDFKAVoRPBKzftVP7ypc7IOJ2U-T9C6JBP81ptWC2x-gGWfwWirYLpVkYgBIXSP_THi1yld6tSglW5RNcOg1eQdXNeQbahfEj5qXIk2KCqfxapMkTuocesPZKLoIkTSgdS0S5ae8kUJelp-UoXronkm6tCkL_7K93qVcs0WhRYvlvfyqQaRkQJwmnhhOzXlMlLBgxbVqCpAqAQD8pJvltE_Ow37aZI6Zy3eEqe51XqjxtF-BXvgmcLpsDMyKL5GlOfU9GaTLFv9YQZznGqH8y-mX1l-K2VLw9ZQoE_rPQF3clRVI9Br65rxnzJI3vJZs6wTWyD4LhH3V3OqARVaQ.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:107.67160161507%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Дядюшка Боб (тот самый, Clean Code) <a href="https://x.com/unclebobmartin/status/2080257779395154409" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">не читает код своих агентов вообще</a>. Видимо он посмотрел моё видео и сделал выводы.<br/><br/>Вместо этого он использует тесты и метрики, чтобы код работал как нужно<br/><br/><blockquote>Я вообще не читаю код, который пишут мои агенты. Только так я могу пользоваться их продуктивностью.<br/><br/>Вместо чтения кода я окружаю агентов жёсткими ограничениями: юнит-тесты, gherkin-тесты, QA-процедуры, метрики качества, мутационное тестирование, покрытие тестами.</blockquote><br/><br/>Советую всем следить за трендами и обращать внимание, как сегодня работают с агентами, чтобы в один день случайно не обнаружить, что вы уже никому не нужны, потому что не умеете пользоваться эффективными инструментами</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><tg-emoji emoji-id="5368635272332352173"></tg-emoji>19</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.54K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/593"><time datetime="2026-07-24T11:04:36+00:00" class="time">11:04</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/594" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6NTk0LCJ0IjoxNzkxNDU2NDI1LCJoIjoiZWFmMzdkZjIwNDhkMmRhMDI0In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap 5411250453699303596 1259904926_460003500" href="https://t.me/sachkov_blog/594" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/iBsZ2-uFtpTpuqaVwzq79_k4Z1kX0qr_aIV7DURJMYl_17WddJQMo7Ck75O7ujtHf0EMGMQ3yG9c1gvlV-T6m6QklIy3KfohypYlHa7PtR0GL72Wq3hr9HqfBbkgDQHibUNqfehOONAu7tbXha94FocKnDtb39aCfP5wHESJ6Klcs-jGaXp8ARwOj0COp_O0UvdsqHRvcbjoX7N8m-pzRWGh9NEzxMdOZpIooivNozi1UG48GDnWhUYyj4D8e5b5xew80AbkXMhpVLb4cbV1uki6YLWRXocAbmA9S-NV8KqXRBN5HpozlELfb7-khkVJ0rYaSEBTaqgyxoI_5O5_bg.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:99%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Скоро новое видео, попробую новый форматик, буду как настоящий инфоцыган на планшете жестко пояснять за архитектуру</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><tg-emoji emoji-id="5368635272332352173"></tg-emoji>21</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.17K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/594"><time datetime="2026-07-24T13:37:29+00:00" class="time">13:37</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="sachkov_blog/596" data-view="eyJjIjotMTkyNTY3Nzc3NSwicCI6IjU5NmciLCJ0IjoxNzkxNDU2NDI1LCJoIjoiZjI2OGFjOTczNGI4YTFlZWZkIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/sachkov_blog"><i class="tgme_widget_message_user_photo bgcolor0" data-content="К"><img src="https://cdn4.telesco.pe/file/I1VqgYyTOSByt8hLNqubMxNogreSxxdO-sO0YlQl3a66S_HxuXhINydgskgdU4vZUr0i6RwpFdizKIvZIMeP_cjUhyt7nZFAZwPQWgYZN3DzoyRW0ZkBTuj18rkx7BoTeZR5ZPmt8yg8tq3Iytos2K1KqvGa4VLdtd_Ple4cbOeXOWSOUW2hbPkq0DLDDYkJs45eaoEl0Vb3TtQ7xvenYpIQqd-SBGAP8Km8e1FhSs2wXPmbNr7iC7SzWQJ7ocY6RPyCTPAwlQnqWSpboG7B1JpRiFjieYJJjqYYn5B_rzhihbgtsIlwvtGuDg_rbGI_MjeeaYKPP0jL3zUhPiGqAQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sachkov_blog"><span dir="auto">Кирилл Сачков | Development</span></a></div>
+
+
+<div class="tgme_widget_message_grouped_wrap js-message_grouped_wrap" data-margin-w="2" data-margin-h="2" style="width:453px;">
+  <div class="tgme_widget_message_grouped js-message_grouped" style="padding-top:76.38%">
+    <div class="tgme_widget_message_grouped_layer js-message_grouped_layer" style="width:453px;height:346px">
+      <a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:0px;width:453px;height:204px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/I4RzVDNj3-hvm-KwAxFKLOjTaC8QJPIBCn8oRmSdm3js715sEq6y_DGhvYkgyps6Y5a9BBv-W0CQd6Yu4CdjZfuKayZkWk2m27KSFIxHl4sx6vJIBEOwgloC0Uut0QgBEiLRTUFE7EkUXbvTXya3gmGWZS6PDQx9XzJH7QCZiMcGGWS9iZNKB10psPtMU_BsZfDKtiApHZryjYhhHmfEjG8V3H1d7VbW9VC2p-SoznyIujQsv8fvDv2L3XMWMnm7ywTRaRtXQUlVjEtSTuksmo460wpgoK3xMD_oVpaUHvtnopANIUF3M3_T1al71ah_oym5OvCY6jVctTcQvXFHfQ.jpg')" data-ratio="2.2099447513812" href="https://t.me/sachkov_blog/596?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:71px;bottom:71px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-1px;bottom:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:206px;width:225px;height:140px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/D2UWIodpaJf7miUgL_mFWuDE5FrBziEuEwQY3cUMlPFFD4ypWhbhYqjTNz2XUCFx6tUOVhwxFIwiqDHLX_IuPpKCNfjc3nTMbywebTUM-T9497nRdF0bUXgZG0fhvUZsXK89qNnh6jxRaaEG2HrE89ALeKO-z-jaImugRiAyXB8G1eubWjD8q6YMT3AA_QpOkfjlaqOftLGVgk8Aofmpvz6aPp--oe7F3ziCLWWB0nB42FYgW8uLu5eZ5h3mRrUJba2R_fkxlCgD98SJxI1nGlGKd_YTKrCn7YWMTxplkRw5kwxaqIo-NvnLBNgToLq_NqdqIFnwz9L1IDivS42y1A.jpg')" data-ratio="1.6096579476861" href="https://t.me/sachkov_blog/597?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:32px;bottom:33px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-1px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:227px;top:206px;width:226px;height:140px;margin-right:0px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/EWYulkgbRpBIh-NSjjt5MlVrSF_SbTfWBF5YlVtDYQOwQh49nZqZxjrncsaKMTFP4cM8hAt7z7lc_t8wml22232BZkk0yZPqtwn8eUKDOXOjqFlY4MAR0paUkYfks8ZDmyrdpsHYQQZBmGGMJ5rpb9qi-oxS8VlHscfW438mwz_P42zSwhgsDiwu6FwC1lrqldreHDMYnwvPEaVjRvfe_-Y9O8jAFyZdK9JpzKqOcow-c7f8Eqc15J28RUpkSzyQo_bkYse3mQMsIA1QU55tbT0N_KGN6Z32XJM7PTuS7fv7Go-U8qEBSz1z6ZJMCq9Pue1bSZSn0kuOnmo90BYA4g.jpg')" data-ratio="1.0471204188482" href="https://t.me/sachkov_blog/598?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:45px;right:45px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-38px;bottom:-38px;"></div>
+  </div>
+</a>
+    </div>
+  </div>
+</div><div class="tgme_widget_message_text js-message_text" dir="auto"><div class="tgme_widget_message_text js-message_text" dir="auto">Неужели у меня получилось подружить иишку с excalidraw, могу теперь контролированно рисовать сложные схемы для уроков и видео (всё ещё есть мелкие недочёты, но это исправляется). Главное что иишка всё рисует грамотно и понимает как не допускать визуальных багов<br/><br/>Следующе видео будет архитектурым, а вот потом на практике покажу, как делаю конкретную фичу для своих проектов</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction tgme_reaction_paid"><i class="icon icon-telegram-stars"></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>23</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.89K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sachkov_blog/596"><time datetime="2026-07-24T19:30:13+00:00" class="time">19:30</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/sachkov_blog?after=598" class="tme_messages_more js-messages_more" data-after="598"></a></div>
+    </section>
+  </div>
+</main>
+    <script src="//telegram.org/js/jquery.min.js"></script>
+    <script src="//telegram.org/js/jquery-ui.min.js"></script>
+    <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
+<script src="//telegram.org/js/tgsticker.js?32"></script>
+
+    <script src="//telegram.org/js/widget-frame.js?68"></script>
+    <script src="//telegram.org/js/telegram-web.js?14"></script>
+    <script>TWeb.init();
+</script>
+    
+  </body>
+</html>
+<!-- page generated in 336.89ms -->
