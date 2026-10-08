@@ -3,6 +3,7 @@
 python scripts/discover.py snowball [<username> ...]   # A2, офлайн по data/raw
 python scripts/discover.py addlist <t.me/addlist/...> [...]   # A1, одна страница на папку
 python scripts/discover.py habr --niche it [--hubs sql ...] [--top 30]   # A5, Хабр
+python scripts/discover.py profiles [--source A5:habr]   # канал из описания личного аккаунта
 
 Формат строки: username, title_guess, source, source_url, found_at.
 Уже виденные (config/seen.json, CRM) и уже записанные в candidates.csv не
@@ -164,6 +165,57 @@ def habr_source(niche, hubs=None, top=30, min_rating=5):
     return added
 
 
+def profiles(source=None):
+    """Кандидаты, оказавшиеся личными аккаунтами (этап B: unavailable), —
+    открываем их публичную страницу t.me/<ник> и берём каналы из описания.
+    Это то, что человек сам опубликовал в профиле (правило 7).
+
+    Разметка проверена 2026-10-08 на t.me/antipov_d: имя .tgme_page_title,
+    описание .tgme_page_description, кнопка «Send Message» = личный аккаунт.
+    """
+    client = PoliteClient()
+    found_at = now_utc().date().isoformat()
+    rows = [r for r in load_candidates() if not source or r["source"] == source]
+    new, checked, with_link = [], 0, 0
+    for r in rows:
+        u = r["username"]
+        cj = RAW / u / "channel.json"
+        if not cj.exists() or json.loads(cj.read_text(encoding="utf-8")).get("status") != "unavailable":
+            continue
+        path = RAW / u / "profile.html"
+        if path.exists():
+            html = path.read_text(encoding="utf-8")
+        else:
+            resp = client.get(f"https://t.me/{u}")
+            if resp.status_code != 200:
+                continue
+            html = resp.text
+            path.write_text(html, encoding="utf-8")
+        checked += 1
+        soup = BeautifulSoup(html, "lxml")
+        title = soup.select_one(".tgme_page_title")
+        desc = soup.select_one(".tgme_page_description")
+        if not desc:
+            continue
+        text = desc.get_text(" ", strip=True)
+        names = set(MENTION_RX.findall(text)) | set(LINK_RX.findall(text))
+        for a in desc.select("a[href]"):
+            names |= set(LINK_RX.findall(a["href"]))
+        names = [n for n in names if not bad_username(n, u)]
+        if names:
+            with_link += 1
+        for n in names:
+            new.append({"username": n.lower(),
+                        "title_guess": title.get_text(" ", strip=True) if title else "",
+                        "source": f"{r['source']}+profile", "source_url": f"https://t.me/{u}",
+                        "found_at": found_at})
+            log(f"@{u}: в описании профиля @{n} — «{text[:120]}»")
+    added = append_candidates(new)
+    log(f"профили: проверено {checked}, со ссылкой в описании {with_link}, "
+        f"новых кандидатов {len(added)}")
+    return added
+
+
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -171,6 +223,8 @@ def main():
     s.add_argument("usernames", nargs="*")
     a = sub.add_parser("addlist")
     a.add_argument("urls", nargs="+")
+    pr = sub.add_parser("profiles")
+    pr.add_argument("--source")
     h = sub.add_parser("habr")
     h.add_argument("--niche", default="it")
     h.add_argument("--hubs", nargs="*")
@@ -180,6 +234,8 @@ def main():
     try:
         if args.cmd == "snowball":
             added, _ = snowball(args.usernames or None)
+        elif args.cmd == "profiles":
+            added = profiles(args.source)
         elif args.cmd == "habr":
             added = habr_source(args.niche, args.hubs, args.top, args.min_rating)
         else:
