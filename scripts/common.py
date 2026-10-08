@@ -188,11 +188,12 @@ def load_crm():
     if not CRM_CSV.exists():
         return out
     with CRM_CSV.open(encoding="utf-8", newline="") as f:
-        for row in csv.reader(f):
+        for i, row in enumerate(csv.reader(f)):
+            if i == 0:   # заголовок таблицы
+                continue
             for cell in row:
                 out |= {u.lower() for u in USERNAME_RX.findall(cell)}
-                if re.fullmatch(r"[A-Za-z][A-Za-z0-9_]{3,31}", cell.strip()) and \
-                        cell.strip().lower() != "channel":
+                if re.fullmatch(r"[A-Za-z][A-Za-z0-9_]{3,31}", cell.strip()):
                     out.add(cell.strip().lower())
     return out
 
