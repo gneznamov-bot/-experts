@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>БАШНЯ – Telegram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible"
+     content="IE=edge" />
+    <meta name="MobileOptimized" content="176" />
+    <meta name="HandheldFriendly" content="True" />
+    
+<meta property="og:title" content="БАШНЯ">
+<meta property="og:image" content="https://cdn4.telesco.pe/file/gvNViFq3FoaDfpjTXIJbDxLQWSl8R8pIC2hU6QCu49tITBbyG6ijdDjJIE093OxNnqBISkVF9KqgDBsJ3M_mSbpHEmb6PycXJLMbHpvMw4nuhZ6OKrfgVXVB229hzzjqGujLf-vSF6M1JNxnC6GMwPYmd-5VMCsANdfPNvq0K5vJjoLEI5UBrJWw6nP6BVzNsArshCf_Ukyqc6nVGcqSlHsLiRQu6EaY8H3nRCMHH8V4Ug49f5-pcgqsGbmTUOPOodQt4K30fqcCQebIn5Nov4j6F7shTTGQ_3xZzjk7qhUWffqwrOvZyPgomv158lelvQq19BjsnAtpgnMRnXzPEQ.jpg">
+<meta property="og:site_name" content="Telegram">
+<meta property="og:description" content="Создаем культуру развития
+
+Миниапп - t.me/bashnyatech_bot/bashnyaapp
+
+Ютуб - clck.ru/3CxnqH
+
+Тик ток - www.tiktok.com/@bashnya_education
+
+Инста - www.instagram.com/bashnya_education
+
+По вопросам - @bashnya_edu">
+
+<meta property="twitter:title" content="БАШНЯ">
+<meta property="twitter:image" content="https://cdn4.telesco.pe/file/gvNViFq3FoaDfpjTXIJbDxLQWSl8R8pIC2hU6QCu49tITBbyG6ijdDjJIE093OxNnqBISkVF9KqgDBsJ3M_mSbpHEmb6PycXJLMbHpvMw4nuhZ6OKrfgVXVB229hzzjqGujLf-vSF6M1JNxnC6GMwPYmd-5VMCsANdfPNvq0K5vJjoLEI5UBrJWw6nP6BVzNsArshCf_Ukyqc6nVGcqSlHsLiRQu6EaY8H3nRCMHH8V4Ug49f5-pcgqsGbmTUOPOodQt4K30fqcCQebIn5Nov4j6F7shTTGQ_3xZzjk7qhUWffqwrOvZyPgomv158lelvQq19BjsnAtpgnMRnXzPEQ.jpg">
+<meta property="twitter:site" content="@Telegram">
+
+<meta property="al:ios:app_store_id" content="686449807">
+<meta property="al:ios:app_name" content="Telegram Messenger">
+<meta property="al:ios:url" content="tg://resolve?domain=bashnya_education">
+
+<meta property="al:android:url" content="tg://resolve?domain=bashnya_education">
+<meta property="al:android:app_name" content="Telegram">
+<meta property="al:android:package" content="org.telegram.messenger">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Telegram">
+<meta name="twitter:description" content="Создаем культуру развития
+
+Миниапп - t.me/bashnyatech_bot/bashnyaapp
+
+Ютуб - clck.ru/3CxnqH
+
+Тик ток - www.tiktok.com/@bashnya_education
+
+Инста - www.instagram.com/bashnya_education
+
+По вопросам - @bashnya_edu
+">
+
+    <link rel="prev" href="/s/bashnya_education?before=1106">
+<link rel="canonical" href="/s/bashnya_education?before=1129">
+
+    <script>window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.documentElement&&document.documentElement.classList&&document.documentElement.classList.add('theme_dark');</script>
+    <link rel="icon" type="image/svg+xml" href="//telegram.org/img/website_icon.svg?4">
+<link rel="apple-touch-icon" sizes="180x180" href="//telegram.org/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//telegram.org/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
+<link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
+    <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
+    <link href="//telegram.org/css/widget-frame.css?75" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
+    <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
+  </head>
+  <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
+    <div class="tgme_background_wrap">
+      <canvas id="tgme_background" class="tgme_background" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
+      <div class="tgme_background_pattern"></div>
+    </div>
+    <header class="tgme_header search_collapsed">
+  <div class="tgme_container">
+    <div class="tgme_header_search">
+      <form class="tgme_header_search_form" action="/s/bashnya_education">
+        <svg class="tgme_header_search_form_icon" width="20" height="20" viewBox="0 0 20 20"><g fill="none" stroke="#7D7F81" stroke-width="1.4"><circle cx="9" cy="9" r="6"></circle><path d="M13.5,13.5 L17,17" stroke-linecap="round"></path></g></svg>
+        <input class="tgme_header_search_form_input js-header_search" placeholder="Search" name="q" autocomplete="off" value="" />
+        <a href="/s/bashnya_education" class="tgme_header_search_form_clear"><svg class="tgme_action_button_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><g class="icon_body" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="1.5"><path d="M6 14l8-8m0 8L6 6" stroke-dasharray="0,11.314" stroke-dashoffset="5.657"/><path d="M26 14l8-8m0 8l-8-8" stroke-dasharray="0.371,10.943" stroke-dashoffset="5.842"/><path d="M46 14l8-8m0 8l-8-8" stroke-dasharray="1.982,9.332" stroke-dashoffset="6.647756"/><path d="M66 14l8-8m0 8l-8-8" stroke-dasharray="5.173,6.14" stroke-dashoffset="8.243"/><path d="M86 14l8-8m0 8l-8-8" stroke-dasharray="7.866,3.448" stroke-dashoffset="9.59"/><path d="M106 14l8-8m0 8l-8-8" stroke-dasharray="9.471,1.843" stroke-dashoffset="10.392"/><path d="M126 14l8-8m0 8l-8-8" stroke-dasharray="10.417,0.896" stroke-dashoffset="10.866"/><path d="M146 14l8-8m0 8l-8-8" stroke-dasharray="10.961,0.353" stroke-dashoffset="11.137"/><path d="M166 14l8-8m0 8l-8-8" stroke-dasharray="11.234,0.08" stroke-dashoffset="11.274"/><path d="M186 14l8-8m0 8l-8-8"/></g></svg></a>
+      </form>
+    </div>
+    <div class="tgme_header_right_column">
+      <section class="tgme_right_column">
+        <div class="tgme_channel_info">
+          <div class="tgme_channel_info_header">
+            <i class="tgme_page_photo_image bgcolor6" data-content="Б"><img src="https://cdn4.telesco.pe/file/v1HFWOUALtb1-B_zgrLayYwhVQMbNPlWhdGoIDZa1n896upUQQKVsn8xPXe3oD6vIUdpoStQKDBPomtvpFcveDM94MyD0mSdpEkjJQ70IwC8SfMrIU6rC8xCKH3bf7Cylv73RKFbgs-CRb38pp28FijcsuIW4scea27C8bHtoBiwRI2EaJaYLouy-y9IJc-zTkCOYE4WHY2iMC2kQOfBGqxShXmBKTzTd-oRVbBncvOm4k7Qe3Q-w-8_rhPLmKLho86kBYaREdTatCtSv5z4eG8MsrP0gHz7FPj6qyNDnUEPo6dyETBMBBrmeYODUbwPo9IPicnEy3y9Tz5xgezong.jpg"></i>
+            <div class="tgme_channel_info_header_title_wrap">
+              <div class="tgme_channel_info_header_title"><span dir="auto">БАШНЯ</span></div>
+              <div class="tgme_channel_info_header_labels"></div>
+            </div>
+            <div class="tgme_channel_info_header_username"><a href="https://t.me/bashnya_education">@bashnya_education</a></div>
+          </div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">2.59K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">868</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">3</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">498</span> <span class="counter_type">links</span></div></div>
+          <div class="tgme_channel_info_description">Создаем культуру развития<br/><br/>Миниапп - <a href="http://t.me/bashnyatech_bot/bashnyaapp" target="_blank" rel="noopener">t.me/bashnyatech_bot/bashnyaapp</a><br/><br/>Ютуб - <a href="http://clck.ru/3CxnqH" target="_blank" rel="noopener">clck.ru/3CxnqH</a><br/><br/>Тик ток - <a href="http://www.tiktok.com/@bashnya_education" target="_blank" rel="noopener">www.tiktok.com/@bashnya_education</a><br/><br/>Инста - <a href="http://www.instagram.com/bashnya_education" target="_blank" rel="noopener">www.instagram.com/bashnya_education</a><br/><br/>По вопросам - <a href="https://t.me/bashnya_edu" target="_blank">@bashnya_edu</a></div>
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=835c9dd1e6d5d9a3e0_1489532880389084869">
+            <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
+          </a>
+          <div class="tgme_footer">
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/faq">About</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/blog">Blog</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/apps">Apps</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//core.telegram.org/">Platform</a></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="tgme_header_info">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=835c9dd1e6d5d9a3e0_1489532880389084869">
+        <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
+      </a>
+      <a class="tgme_header_link" href="https://t.me/bashnya_education">
+        <i class="tgme_page_photo_image bgcolor6" data-content="Б"><img src="https://cdn4.telesco.pe/file/v1HFWOUALtb1-B_zgrLayYwhVQMbNPlWhdGoIDZa1n896upUQQKVsn8xPXe3oD6vIUdpoStQKDBPomtvpFcveDM94MyD0mSdpEkjJQ70IwC8SfMrIU6rC8xCKH3bf7Cylv73RKFbgs-CRb38pp28FijcsuIW4scea27C8bHtoBiwRI2EaJaYLouy-y9IJc-zTkCOYE4WHY2iMC2kQOfBGqxShXmBKTzTd-oRVbBncvOm4k7Qe3Q-w-8_rhPLmKLho86kBYaREdTatCtSv5z4eG8MsrP0gHz7FPj6qyNDnUEPo6dyETBMBBrmeYODUbwPo9IPicnEy3y9Tz5xgezong.jpg"></i>
+        <div class="tgme_header_title_wrap">
+          <div class="tgme_header_title"><span dir="auto">БАШНЯ</span></div>
+          <div class="tgme_header_labels"></div>
+        </div>
+        <div class="tgme_header_counter">2.59K subscribers</div>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="tgme_main" data-url="/bashnya_education">
+  <div class="tgme_container">
+    <section class="tgme_channel_history js-message_history">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/bashnya_education?before=1106" class="tme_messages_more js-messages_more" data-before="1106"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bashnya_education/1106" data-view="eyJjIjotMTgyMTAwMzEyNywicCI6IjExMDZnIiwidCI6MTc5MTQ1ODM0NywiaCI6ImJkNjBkNGQ4YzlhZTFhOWU0MSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/bashnya_education"><i class="tgme_widget_message_user_photo bgcolor6" data-content="Б"><img src="https://cdn4.telesco.pe/file/v1HFWOUALtb1-B_zgrLayYwhVQMbNPlWhdGoIDZa1n896upUQQKVsn8xPXe3oD6vIUdpoStQKDBPomtvpFcveDM94MyD0mSdpEkjJQ70IwC8SfMrIU6rC8xCKH3bf7Cylv73RKFbgs-CRb38pp28FijcsuIW4scea27C8bHtoBiwRI2EaJaYLouy-y9IJc-zTkCOYE4WHY2iMC2kQOfBGqxShXmBKTzTd-oRVbBncvOm4k7Qe3Q-w-8_rhPLmKLho86kBYaREdTatCtSv5z4eG8MsrP0gHz7FPj6qyNDnUEPo6dyETBMBBrmeYODUbwPo9IPicnEy3y9Tz5xgezong.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bashnya_education"><span dir="auto">БАШНЯ</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_one_media js-message_media"><div class="media_supported_cont"><div class="tgme_widget_message_grouped_wrap js-message_grouped_wrap" data-margin-w="2" data-margin-h="2" style="width:453px;">
+  <div class="tgme_widget_message_grouped js-message_grouped" style="padding-top:116.556%">
+    <div class="tgme_widget_message_grouped_layer js-message_grouped_layer" style="width:453px;height:528px">
+      <a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:0px;width:225px;height:225px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/LMS3N07X1XpTDYzq7GmQ3lpcFqty4r3T0bJ2AHIyEVgOVn4bjvXjVB7cfinffTWXJ3jYYAPhKlhITtmC1mDZiGDr_FCBZTFesTXN8ghvmRpzQ6jwMoBl9neD4qzuQlD33U0-EhxUtRGXucfEYXJhphIpJ1JCI3L0DTWi0JQhPA8bGkmBQPQrUFQmBm4kDUNNb53JyuqjBG9ZdUm_oUD71vdWtW7Sefge59zgYb6W_vL4zhZQSOv9tkZ8EPGZLVvGVUfDaxuY1etE7ySv3CJNp5bYQ1oL8EJgjfv9Tiw9aTu4EjV8A5CTuol01UdJlHvKcaHMVbSqzrwYtxXlvIU_FQ.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1106?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:37px;bottom:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:227px;top:0px;width:226px;height:225px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/hTpKerTcvZu8bQCd3VwNqWI4N5gWc53a-mCP35vyRaCAoDRa-H6EmpZZ1i3ATJt28bJ_K-wX9dOn7zXasHJ0M7ZKxg7NoqG8zIM_qf1RWMwuF93sI6HZgqKN0WkwSf3-wUrg5Bqb48Mb34P5obIuYmUL7ziiqYJYFCqhE71hY1Re7AGpk25A0o9D05JSJe5ChIB7XqOHEkHLg3dLpFvu1f_c6XeLXMFCVC91qU0TwCYCr2AszGynlC1CzV84-jtg_TNMW3tkY44EboVKT_qb7ic7XZ9mn1bOU2PRqrKHXMaRQmaX_hrQaVBne_Meipt0sYzdPvndej2u_gbSYTgRCQ.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1107?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:37px;bottom:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-1px;bottom:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:227px;width:149px;height:149px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/cLIlQAW5OAKOgnol2PXgX3unrP9wLDaUbcBuqlOXwzRjFKg2kf5N29YYqdPJIuuvp-zP92TFwRULw9gkG3Y7j5UKO4eyl-Mympd4eeBg5HRVipCoLfWjxjAyx86GxcEQvTtTnhAGTU_lxK32VFc6y5VPYSOwNUXm4cFHKL8m98_v1WL0sGctljDGObrP_9tRo0pOmDms4VmU-c5SVaPV2ljY14DUPr-qeH8X2m-Nk1UURuTSPN6-QC3oD0I-znr6Q4P2wLwHUHq_cEsY2LY-SrqZPMN0pJW_VkNe6Nt90CQjYUKrkj68IytNoDZ95Fw7z9R_Vgh3QKNZV8yUMQ7fxA.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1108?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:37px;bottom:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:151px;top:227px;width:149px;height:149px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/tCku2KnqECANFoHSYrxlmoz6VIpLJzkR_mf1p5Kh2oD6XKLQXsjAuoCzkh20E6Ry1-8lxi6qH9vzdLQOopsE2cqvPte95dybXulZcV1PavbFUm_ReFLEGYTZYKGPbuGwoshKcvv3XyLtQ2afLI8p8kDCnmMSQ15_Tu4UCkq6KoIBjE7kP6YbN56vDMWY0-sAlXqj8uJrYvC8yoFb1cgOfRQx54JhYybyTfPhURnKQPcn9ayFbFIU1WN3OmyUOUknfPqPTKLGgfA2tOyIklV-MqnBUpli1gfaM8yv7DsOxeIxNCfv0qqi2rzVjj1Cs0TZqOg4PbE927HEhAfuoZUBkw.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1109?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:37px;bottom:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:302px;top:227px;width:151px;height:149px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/gNlIcaFYti2bhs80V5Ys6-V_e8W8WGI6RZEx_AIUd8qAdtE5Vtm6muv3lskW5fWh7-4XE8wZIzNaJYyddMYH3cWwiXwXM2DwsRkMLj8VAWMPalCDeVnfGsR36pkezW_ATHq_hBtrDUiaVb-58Aj4Wyh4lEGVhT6bdXDI9KEbrZZ5RM6UxDisADcL4LkraX7yJ58bXz0q1iS6qLskQU7WDdM3OIPyn1wqIGP8zvdMkLntwNlFg4TZog5fRqY67TftU4SbNrcDo38T_xjLJMhpe4Ms_KB31ehzk4kDcdsxUsT_DivZj_WvxF3JzewwwQ_Wygxts-HuI4JmLIjYRLbDfw.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1110?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:37px;bottom:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-1px;bottom:-1px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:378px;width:150px;height:150px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/O0sNTaYHRk0LPpe0ZKPhb-RX1CnbQ1o-iTnEfyCifudwm0wHNDEkQg53zC1F70l9b6QwF72hnnhtxi29ROun8uf7MFQ4R6oZzv-HKQuR4VO5u3N4GfPE6SQKt4S9Ou-qYb6ynZj1_41i2FRTVSvTtpMekM7nUHqqb36tgMaOdi1MQXbARcL--OW4WeLa-b4jTsVAoMwKyVgrd1PfUAQ3jO5ORKx0V5jZtagFY7r-Zap07fwm9hu7xhw003JFcJinkjV2NdbSZaG4FubJ5qNk5ZyPENua4BsRFci4LzI8Li30wM2naLZ-TVYdN8mXs3LuDtgNEq4AaIyFDJlTkdyssA.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1111?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:37px;bottom:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:152px;top:378px;width:150px;height:150px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/cL4twnnXBWg0w3Nk2aN6sY_YDpmYN69N4bJuVoAbGMH9-GTly6iSTN39a9k3BdvGWblw_QYVuxP59s-i2DGr-juxIfEiFFWN8fw4wYbx6LOh6vu4nCpd9N4Ra_Cajy56k8T2gTS9TlIedx-J31-m-blX46AXgemUeruo4iiYnQI-ZjHUySvqhbwqRKlFFoKzZwVqD_HfqXr32w5pc3AtTJnVKdmOpBuC78pYs8NFUWTyGBTLFdKj4K2qmXzSZT3L3cbNITQrahzn8h6luRdgynIMN8D61K0TMMSdyZloYAP7ClVYZwzyoZJoR1ugHsVibKVRurj7N0I99b5KRWHmBQ.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1112?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:37px;bottom:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:304px;top:378px;width:149px;height:150px;margin-right:0px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/GH2PuaYAQSAl23Jj9Q8X_oxGVHk4Q0zS0lQ3ga69iTBHWRbWdtWPiqKt2IIMNO5Rc1Cqr6CEVaygB7MpYAjxJr0nn1bP0OYbupkrgfpcgq7dEmm0mw0ynfFZl2c9neso7yT1YPDJcZ7xATkSGglVnlxSjY3rLDTi3VTaEm9vsOl_wVr1w9GPc1bjFQK2UgXjhH0VuMCR0zAIN2cSTw7-GsSY5Y7DfFfNSeugIpehrWW2JFGin4xE4tsdCpd5JoTicsu0hNsmftVyOI4kqPOuFeJ9SNyaRMeEtZD7L4D9LSZjUOEVbfiXfMvZWLpXk7hPllOuGM93ZDCSD203u5UqfQ.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1113?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:37px;bottom:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-1px;right:0px;"></div>
+  </div>
+</a>
+    </div>
+  </div>
+</div><div class="tgme_widget_message_text js-message_text" dir="auto">ИСТОРИЯ ВЫПУСКНИЦЫ БАШНИ: КАК НАЧАЛСЯ ЕЁ ПУТЬ В IT<tg-emoji emoji-id="5411312433912383634"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></tg-emoji><br/><br/><a href="https://t.me/liricazzz" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Марта</a> пришла на курсы, чтобы углубить знания в IT, а в итоге сменила направление обучения и поступила на «Программную инженерию»<tg-emoji emoji-id="5190782909987981583"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i></tg-emoji><br/><br/>Она прошла два курса БАШНИ — по системной аналитике на Python и backend-разработке на Go. Рассказываем, как обучение повлияло на её путь в IT и что она получила в итоге<tg-emoji emoji-id="5413738978765472923"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i></tg-emoji><br/><br/>Листай карточки, знакомься с историей Марты и выбирай своё направление — регистрация на курсы уже открыта<tg-emoji emoji-id="5440792930518336793"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988E.png')"><b>😎</b></i></tg-emoji><br/><br/>МГТУ:<br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-18__utm_source--tg__utm_medium--messenger__utm_campaign--course18_20260910__utm_content--post-bashnya_education-4__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️</a><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-18__utm_source--tg__utm_medium--messenger__utm_campaign--course18_20260910__utm_content--post-bashnya_education-10__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Frontend на React в МГТУ</a><br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-16__utm_source--tg__utm_medium--messenger__utm_campaign--course16_20260910__utm_content--post-bashnya_education-4__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️</a><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-16__utm_source--tg__utm_medium--messenger__utm_campaign--course16_20260910__utm_content--post-bashnya_education-10__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Backend на Go в МГТУ</a><br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-19__utm_source--tg__utm_medium--messenger__utm_campaign--course19_20260910__utm_content--post-bashnya_education-10__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Биология старения</a><br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-17__utm_source--tg__utm_medium--messenger__utm_campaign--course17_20260910__utm_content--post-bashnya_education-10__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️Управление проектами</a><br/><br/>МТУСИ:<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-20__utm_source--tg__utm_medium--messenger__utm_campaign--course20_20260923__utm_content--post-bashnya_education-3__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️Backend на Go в МТУСИ</a><br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-21__utm_source--tg__utm_medium--messenger__utm_campaign--course21_20260923__utm_content--post-bashnya_education-3__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️Frontend на React в МТУСИ</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/bashnya_education/1106?single" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/bashnya_education/1106" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><tg-emoji emoji-id="5451793243706526777"></tg-emoji>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">1.38K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bashnya_education/1106"><time datetime="2026-09-26T17:43:20+00:00" class="time">17:43</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bashnya_education/1114" data-view="eyJjIjotMTgyMTAwMzEyNywicCI6IjExMTRnIiwidCI6MTc5MTQ1ODM0NywiaCI6IjJhYTViMzBjNWYxYThmNzg2ZiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/bashnya_education"><i class="tgme_widget_message_user_photo bgcolor6" data-content="Б"><img src="https://cdn4.telesco.pe/file/v1HFWOUALtb1-B_zgrLayYwhVQMbNPlWhdGoIDZa1n896upUQQKVsn8xPXe3oD6vIUdpoStQKDBPomtvpFcveDM94MyD0mSdpEkjJQ70IwC8SfMrIU6rC8xCKH3bf7Cylv73RKFbgs-CRb38pp28FijcsuIW4scea27C8bHtoBiwRI2EaJaYLouy-y9IJc-zTkCOYE4WHY2iMC2kQOfBGqxShXmBKTzTd-oRVbBncvOm4k7Qe3Q-w-8_rhPLmKLho86kBYaREdTatCtSv5z4eG8MsrP0gHz7FPj6qyNDnUEPo6dyETBMBBrmeYODUbwPo9IPicnEy3y9Tz5xgezong.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bashnya_education"><span dir="auto">БАШНЯ</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_one_media js-message_media"><div class="media_supported_cont"><div class="tgme_widget_message_grouped_wrap js-message_grouped_wrap" data-margin-w="2" data-margin-h="2" style="width:453px;">
+  <div class="tgme_widget_message_grouped js-message_grouped" style="padding-top:83.223%">
+    <div class="tgme_widget_message_grouped_layer js-message_grouped_layer" style="width:453px;height:377px">
+      <a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:0px;width:225px;height:225px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/S3kwPEdZdWyX_UoS_wcsvQC4iqF1BbQ3CpuZx3yyov2Y3Ul9vLFOttsq9V9wzzNfF9-CdgM65LwNtDDnqqrxg89h5XkBmEU1Ss-xI5xiV5hvJt06ymBMvJXvdECdVXkwowGLoJv8WIEaozmQW1nt8qRvsj8dLjYlBv_rNPcxpo608yVl7L4TLdtBTBfzMNzOkZzK00D17NIamhbcfsQrn9Q_Et9WMsn7LfTjfLt1GaV_heLYv_opDYjD_RIbn_ZLGv0_j9rQgbPmcToE0W09mpCEmw7DRyg7UgVbuOhTrBW1UUn4TWKpiwJtySTzoIE0gu80sPAoQSvzdRp5fEG0QQ.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1114?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:38px;right:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:227px;top:0px;width:226px;height:225px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/M4F-j9yMUH0KWupxjknn_IlAR1jXcD9el6IB7Q1XXeDD5seqB2tclROtTaNVbe43NZmnasJeB-aKHYLbDOdV-ApnIsGYtgVohIg4Yb_qsbo7kiSOEpYsBNef7r27dCI4p6bGcpSn30c4fzUO-0nevoVva89dvMTz2A8OQaadnpnRNwvAMr7jVfse28RnrwZZhJoQKu3FQNay9y3fEzG1ZCAUiYaXOEjxq_LUU4ArKGA11Tc3NsVWinXZ4aMBAZEOxg4roAeajlefhf4UUUvevzebRoNdK1Cnbt4velX8uv-Sr_mh78jf79MOXZ-gZnkB-4hKeNSNou1tYJKYa8RFCA.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1115?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:38px;right:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-1px;bottom:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:227px;width:150px;height:150px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/Gh4t_tyEapxumaxWQY6YlCp0L7MYWPv_TNekyvhUmT7nqVLphYhszbzkekWG3DOIY5k3DjElwQ9HvnUJnzmPpb10AYAAdP1GkQJIR0nUW7HmA349m6lsIpVqRvfNu7BkrB2ViWIEeo0XVFBJoOuoOAu9FSUPSvrcOPtAk_1mibBv_SVh1E9BhKOuKeA6s_z-p8t5s_8P0pgijS1iaznssOd9qOFoCzBG6JQehu8Kt4w4-QZOqXTuVgtqK1-HTOllqc7YVt9hq2Z1solRUzdXUBwU2wznECn5i2-628z5uMLOevRNVvP-MnfeadR0Ky_epG-Nb5i6EfxACrMZ3v97pA.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1116?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:38px;right:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:152px;top:227px;width:150px;height:150px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/X6eo4KVbOwTksbz8GlfWN1NVWZwGX4qPUh-smCEJtZovQutu3vN9f3JQRPoQiDGOfWKkxDCP7eHId9EfU0BHtj-Dqt17ziWmmKw8IVsFfsY-B8IDn3BwVZWZpZNBERAq9l-cYgVXNpE9cIMUgfIzHzJI21zfW_I2dcKAeIl0BceGNvSUTMHyCfeT9d_ljA2DaRFylvNUp6H8qqEw-Fn-5YTC0fdLq1xmHSkQJsJhoxdLibqUctdr9aLF4FZWc78-TSpHb2GfusQIeWv4c_FDGJ-l4smHXT4y5CT2edMdF71FOrtyyKy-9BMnQteDHhorBuKGY0uN6Q_TTK8XzskF5g.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1117?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:38px;right:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:304px;top:227px;width:149px;height:150px;margin-right:0px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/b-x9Q3Rd-NjQifpJ2MNxezU9GLKpPUUKsu-D3E30TYp9uwaqs1pYMe9LfRAhr3GSrXixgieQBXQlfjS7tk6pds-1DFBggr_6pI8j6pK9d1Q0C-yleKvnaC0izTim4eNyH2VpoPNHeazMQ6u2wri4xIHX-TLm-BIV2jIoazqsRZqCvksXX3BilNUyXdFp4hovxKoAZMJqD0C_a0h5nobVjXw4AaaHyFbCLSgV8T0POdPwCackk9LnaVByz09w5SFKds-FmvZVNUlicr22t7-M-sTQktQynsr0gchhvasfK2fDZQ4uye9HNgviTdAXAb7jLMEZbQy70bnGLON0-8Gzcw.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1118?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:38px;right:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-1px;right:0px;"></div>
+  </div>
+</a>
+    </div>
+  </div>
+</div><div class="tgme_widget_message_text js-message_text" dir="auto">HARD SKILLS<tg-emoji emoji-id="5411312433912383634"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></tg-emoji><br/><br/>Сегодня разбираем реальный кейс: как поиск проблемы в Network оказался полезнее двух дней оптимизации компонентов<tg-emoji emoji-id="5440461260258835713"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9388.png')"><b>📈</b></i></tg-emoji><br/><br/>А регистрация на курс по React от <a href="https://t.me/delo_education" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">ДЕЛО</a> уже открыта&#33;<br/><br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-18__utm_source--tg__utm_medium--messenger__utm_campaign--course18_20260910__utm_content--post-bashnya_education-4__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️</a><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-18__utm_source--tg__utm_medium--messenger__utm_campaign--course18_20260910__utm_content--post-bashnya_education-11__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Frontend на React в МГТУ</a><br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-21__utm_source--tg__utm_medium--messenger__utm_campaign--course21_20260923__utm_content--post-bashnya_education-4__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️Frontend на React в МТУСИ</a><br/><br/>Автор поста: <a href="https://t.me/payzen" target="_blank">@payzen</a>, преподаватель курса по Frontend <br/><br/><a href="?q=%23hardskills">#hardskills</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/bashnya_education/1114?single" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/bashnya_education/1114" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><tg-emoji emoji-id="5458501402802292584"></tg-emoji>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">878</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bashnya_education/1114"><time datetime="2026-09-28T18:40:01+00:00" class="time">18:40</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bashnya_education/1119" data-view="eyJjIjotMTgyMTAwMzEyNywicCI6IjExMTlnIiwidCI6MTc5MTQ1ODM0NywiaCI6ImVmYzQ4M2UwMjM0MDc2ZWZjYiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/bashnya_education"><i class="tgme_widget_message_user_photo bgcolor6" data-content="Б"><img src="https://cdn4.telesco.pe/file/v1HFWOUALtb1-B_zgrLayYwhVQMbNPlWhdGoIDZa1n896upUQQKVsn8xPXe3oD6vIUdpoStQKDBPomtvpFcveDM94MyD0mSdpEkjJQ70IwC8SfMrIU6rC8xCKH3bf7Cylv73RKFbgs-CRb38pp28FijcsuIW4scea27C8bHtoBiwRI2EaJaYLouy-y9IJc-zTkCOYE4WHY2iMC2kQOfBGqxShXmBKTzTd-oRVbBncvOm4k7Qe3Q-w-8_rhPLmKLho86kBYaREdTatCtSv5z4eG8MsrP0gHz7FPj6qyNDnUEPo6dyETBMBBrmeYODUbwPo9IPicnEy3y9Tz5xgezong.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bashnya_education"><span dir="auto">БАШНЯ</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_one_media js-message_media"><div class="media_supported_cont"><div class="tgme_widget_message_grouped_wrap js-message_grouped_wrap" data-margin-w="2" data-margin-h="2" style="width:453px;">
+  <div class="tgme_widget_message_grouped js-message_grouped" style="padding-top:83.223%">
+    <div class="tgme_widget_message_grouped_layer js-message_grouped_layer" style="width:453px;height:377px">
+      <a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:0px;width:225px;height:225px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/SndzsXt4huNfdd9Cb89jUIfmFeen5K4Oxn2QWKpVBS0i-UPODKuncP2M3nE6S9epsCll1UOZz9qpbSovQPiei1DPT1vJpY8qo7cOD2fvMbXDqPQVQSXsODLxQOE0zDbaMNJcUmaWLsa8mVZnyOyILqqPqs6Yv1aWD5ZbhLgCuc09npLLJOWhKQiB2QU5smZMFL3uTn-ki9rQcWIlSPNwLIOMnEQZ1MtRb4yD_6t8gelLyT1YwLrEGBw0pslfFvpo-2LQ-89q3UDKP6CuEfskxwTGER1jriNQoHFCgIM6RX0TnH20cGpaHrYI-8A0WkMcNjfmqGEIFD_ZqWqrZQi84g.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1119?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:38px;right:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:227px;top:0px;width:226px;height:225px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/HXhvdliFZ7Vi5JUFYf5I2rLCCnXw9Dxhu8Ylgle8ZJIJCx-NoQOYpr31XqFahxetyApKCrf5GBE5X1bSvgshuWBfAH3UjDmXhcejhhZZFBvmMasBmvEZXSSlqGVxvEPYqrfjg-Lns87kEKrveyKATaH_aUzStWK9OikxW0Uylc_0jfhqZPgTylbtRq_LDVPqu-NaKxnMnloXsGxrNaLX2wwpvSJMPVISqZWGeIA_EgNpUL7Zzjt6f9s9M0vdmHkSnFTi3RVOwXd6IkrBTFMzZhUbaRBNLadrbNR-ugiZViH5PQ1MdZFabKT477IkA_Dm-vbDTPGqUFn7Z5q9Ppe9MQ.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1120?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:38px;right:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-1px;bottom:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:227px;width:150px;height:150px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/nlTkCLHDZg3ddHXMTt9cOEqmm92Tv537dSVfxiP9lnOSc9TwS9Ff5-PxZDE6FZVpub2M2_JOtSimuH-MLFASbtOm2xT-QScxPicEwCwYYDYmqf1QZr76iDsTtNzvZ9hJvOJNN-jDuV7g0FGLBKAy3-vQ_lTcsePiqrzonfwvM41X5CVyPBg_A-yMDhFreoV0nUXWgoRlyczVUWWHPDjEzZHrxkRbHPTEPPraptVPTmr7zcyIhDwHK3RRRSyXd7ib3h7Y3L8Yy-nFuTf2IRZEf9WsUPQi3dhXTlm-r8OGE8ET9xShZ6bzQsfuLVNWHyRiTaAkwPMZkU2uZnWAv9GuPA.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1121?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:38px;right:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:152px;top:227px;width:150px;height:150px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/eoJjaTdSuIvrjqjt8V8SvFwEzkC8ODvpDScC8Z8b5j__U8PWmw0oMtQKR9jcMgcBpb3znR68u_BfP0DAcpR2PWjotbpD_5amxgxO38ZAaVXjt7a04bpIY4pdFUPs2BZb2Y68EhoL6Lvcy3oI4TrbYeLH2AckWBj4j-alVJ6Y6WncgOAlXdvFT6Hx6p6LnipRKLK_oSN9l8HeXCePAsGFgN1_EhftDg4V3UfwjJtza2H4epVvOXKqWEzm9ORfpaO8KyjFfjyPkCa64ya1_kYDyYdY2dXMheiui4F9OhIw0yMwKy1oOoF7i9-kthJlMEkdCODd-L6dlgq6I7KqAR7qqw.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1122?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:38px;right:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:304px;top:227px;width:149px;height:150px;margin-right:0px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/FDry-5IPPHwI28v8FSof_bFl4WEIY7NxugzJBVmk3GDL-z3_WRqNpnBG4bDhQVQPrxJwwCTUqV9-gm64gNWAWGeCdi8uSV3WWc1UiC-j0ei7b6CWDKnCnI0KL1VMrsCqSZ3wtz5wM7zlYv5Laek6Q92lNoWfLtt4pqg6Nn5yZywMA7xPavAjr9m7hPBrlAfNyboFsnUEaVt-vkYMHk-xaYFJnk7PxX1gG1bJqus_LB-T9y-1hZ69OtlUAQz31Plj48Z45H3YFQ5pEhU9ZvfoT0a9_cRBH4DUz1Wb7KsQ_O52nXMFcl3kP8ndeqajv4T5jmp5OM2g9Mx2GjrwEK64oQ.jpg')" data-ratio="1" href="https://t.me/bashnya_education/1123?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:38px;right:38px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-1px;right:0px;"></div>
+  </div>
+</a>
+    </div>
+  </div>
+</div><div class="tgme_widget_message_text js-message_text" dir="auto">КТО СТАНЕТ ЛУЧШЕЙ КОМАНДОЙ<tg-emoji emoji-id="5415668243715095155"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D93.png')"><b>❓</b></i></tg-emoji><br/><br/>В этом сезоне команды из МГТУ, ВШЭ и МТУСИ будут не только создавать проекты с <a href="https://t.me/delo_education" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">ДЕЛО</a>, но и соревноваться между собой<tg-emoji emoji-id="5413489015963811415"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i></tg-emoji><br/><br/>Общий лидерборд, этапы проекта и финальная защита перед экспертами — следить за гонкой можно будет весь курс<tg-emoji emoji-id="5413738978765472923"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i></tg-emoji><br/><br/>МГТУ:<br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-18__utm_source--tg__utm_medium--messenger__utm_campaign--course18_20260910__utm_content--post-bashnya_education-4__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️</a><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-18__utm_source--tg__utm_medium--messenger__utm_campaign--course18_20260910__utm_content--post-bashnya_education-12__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Frontend на React в МГТУ</a><br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-16__utm_source--tg__utm_medium--messenger__utm_campaign--course16_20260910__utm_content--post-bashnya_education-4__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️</a><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-16__utm_source--tg__utm_medium--messenger__utm_campaign--course16_20260910__utm_content--post-bashnya_education-12__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Backend на Go в МГТУ</a><br/><br/>МТУСИ:<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-20__utm_source--tg__utm_medium--messenger__utm_campaign--course20_20260923__utm_content--post-bashnya_education-4__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️Backend на Go в МТУСИ</a><br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-21__utm_source--tg__utm_medium--messenger__utm_campaign--course21_20260923__utm_content--post-bashnya_education-4__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️Frontend на React в МТУСИ</a><br/><br/>ВШЭ:<br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji>️<a href="https://forms.yandex.ru/u/6a94008295add5b1c867bb82/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Frontend на React и Backend на Go во ВШЭ</a><br/><br/>Собирай команду, регистрируйся и покажи, на что вы способны <tg-emoji emoji-id="5451793243706526777"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49F.png')"><b>🤟</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/bashnya_education/1119?single" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/bashnya_education/1119" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction tgme_reaction_paid"><i class="icon icon-telegram-stars"></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>6</span><span class="tgme_reaction"><tg-emoji emoji-id="5451793243706526777"></tg-emoji>2</span><span class="tgme_reaction"><tg-emoji emoji-id="5458501402802292584"></tg-emoji>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">862</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bashnya_education/1119"><time datetime="2026-09-29T14:50:03+00:00" class="time">14:50</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bashnya_education/1124" data-view="eyJjIjotMTgyMTAwMzEyNywicCI6MTEyNCwidCI6MTc5MTQ1ODM0NywiaCI6ImExNjA4NDhhMDQwNDYwZmY4OCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/bashnya_education"><i class="tgme_widget_message_user_photo bgcolor6" data-content="Б"><img src="https://cdn4.telesco.pe/file/v1HFWOUALtb1-B_zgrLayYwhVQMbNPlWhdGoIDZa1n896upUQQKVsn8xPXe3oD6vIUdpoStQKDBPomtvpFcveDM94MyD0mSdpEkjJQ70IwC8SfMrIU6rC8xCKH3bf7Cylv73RKFbgs-CRb38pp28FijcsuIW4scea27C8bHtoBiwRI2EaJaYLouy-y9IJc-zTkCOYE4WHY2iMC2kQOfBGqxShXmBKTzTd-oRVbBncvOm4k7Qe3Q-w-8_rhPLmKLho86kBYaREdTatCtSv5z4eG8MsrP0gHz7FPj6qyNDnUEPo6dyETBMBBrmeYODUbwPo9IPicnEy3y9Tz5xgezong.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bashnya_education"><span dir="auto">БАШНЯ</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5330028881215431153 1240994055_460005873" href="https://t.me/bashnya_education/1124" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/cuBMJRPDM1tcKwzr87C36LgJMKTVInkUFuBnMNohA4nh9-r2sK7w2ktd3Y2zfc9uoTrA0hxMfhQhiP94xrmWlF4WsXwX8cpwPj7rPqzFRHuXuHo9B4QtYBrd43DSPCYKRZJCn2g0m1LrVrDhBR-kaRugHbAqHznDzJhiXhSegRROMATyhdrRUwB4oHC-NHkXf1QrcRh7v7Zq2xQb5R93COXnqiSk5c1g0uEAJx6ObhVOoSSyU-v3sZI_TZs2DtC78kaZay7Wbur94d9eOQuEJF_lsiS4zXhhYMaX_KXC-DhcDqTlCtrSoYo-IRL_KbZXLILTknr_9j05YN5ZVs4uAA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">ВОЗМОЖНОСТЬ ДЛЯ ТЕХ КТО СТРОИТ СВОЙ ПРОЕКТ<tg-emoji emoji-id="5411312433912383634"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></tg-emoji><br/><br/>Наши друзья из <a href="https://t.me/MIPTbusinessclub" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Бизнес-клуба МФТИ</a> собирают <a href="https://t.me/MIPTbusinessclub/206" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Builders’ Club</a> — закрытое сообщество для тех, кто уже делает свой проект или стремиться начать <tg-emoji emoji-id="5411327775535564603"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i></tg-emoji><br/><br/>Вместо общих разговоров про стартапы внутри будут:<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪️</b></i></tg-emoji>разборы реальных проблем проекта с действующими предпринимателями<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪️</b></i></tg-emoji>демо-вечера, где можно показать продукт предпринимателям и инвесторам и получить фидбэк<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪️</b></i></tg-emoji>помощь с поиском кофаундера или CEO среди участников сообщества и закрытого клуба<br/><br/><tg-emoji emoji-id="5413738978765472923"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i></tg-emoji> В первый набор войдет 30 человек, 5 мест выделены для сильных технарей не из МФТИ, <a href="https://forms.gle/Wa2T9e6kEmjSff9K7" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>заявку оставляйте здесь</b></a> <tg-emoji emoji-id="5416076360097501099"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AC86.png')"><b>⬆️</b></i></tg-emoji><br/><br/>p.s. накидайте реакций если хотите, чтобы мы проводили больше бизнес меро - особенно в коллабе с БК МФТИ <tg-emoji emoji-id="5440792930518336793"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988E.png')"><b>😎</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/bashnya_education/1124" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>15</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8DBE.png')"><b>🍾</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49D.png')"><b>🤝</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D93.png')"><b>🍓</b></i>1</span><span class="tgme_reaction"><tg-emoji emoji-id="5451793243706526777"></tg-emoji>1</span><span class="tgme_reaction"><tg-emoji emoji-id="5458501402802292584"></tg-emoji>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">701</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bashnya_education/1124"><time datetime="2026-10-02T15:09:09+00:00" class="time">15:09</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bashnya_education/1125" data-view="eyJjIjotMTgyMTAwMzEyNywicCI6MTEyNSwidCI6MTc5MTQ1ODM0NywiaCI6ImQ1YjA2NzAzOWIxY2NjOGM2YSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/bashnya_education"><i class="tgme_widget_message_user_photo bgcolor6" data-content="Б"><img src="https://cdn4.telesco.pe/file/v1HFWOUALtb1-B_zgrLayYwhVQMbNPlWhdGoIDZa1n896upUQQKVsn8xPXe3oD6vIUdpoStQKDBPomtvpFcveDM94MyD0mSdpEkjJQ70IwC8SfMrIU6rC8xCKH3bf7Cylv73RKFbgs-CRb38pp28FijcsuIW4scea27C8bHtoBiwRI2EaJaYLouy-y9IJc-zTkCOYE4WHY2iMC2kQOfBGqxShXmBKTzTd-oRVbBncvOm4k7Qe3Q-w-8_rhPLmKLho86kBYaREdTatCtSv5z4eG8MsrP0gHz7FPj6qyNDnUEPo6dyETBMBBrmeYODUbwPo9IPicnEy3y9Tz5xgezong.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bashnya_education"><span dir="auto">БАШНЯ</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_video_player blured js-message_video_player" href="https://t.me/bashnya_education/1125"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/Cj0dtn9ei6MVTM5NyxEn9vjIoLBBhyTiBrKEJIg04TRvK4BBhc-Uj9VNx1PEMUZmwAb2WWDXOMz19tCkJtKWPngas_Iqc4w3J1tBn-BaXclasRI-n_uQqjgo00ECUuW1v7lDv0FOG00cccTXBA4qBih6TEMoHWLmFhsARvoKRttoq9XKWtSC3IHBj7_uDJogDdX274mAPr6f4y_1r4ipA4k9s_vpb0DwTPqbJO6BAfJIO9bW9uFTD9PYupCuw7uMh5bqGCgBXM0E6wGcN6gPklXmp4FXIjGljXlL242cqeu_EMgbf_95_r6uYlKs0pdJKB33EoPLWAS2fnrbc2Ixzg')"></i>
+<video src="https://cdn4.telesco.pe/file/657843be95.mp4?token=njgw3IXHd-p7Az9L_BNqlvjqw1BeQAKLCqfh_0QWy6rGjdncu3ns_sO11xZVPPaWJNcS4Ijontje4bhzQ8TqIAEnn5E9NRdn6dG4vfIw5RLcIQ3zeuFSUnZtdxqUgOmAREhOZrhY-Yccx3Dn5U_QfmKVh8u9fwc_pShmku26QFbA59ntZVnUDSHsT78EMoqCO0lD7ufxFBGWcsYAou4Nnn217fP3tCAcfHX-TfOa_2oVV3lqy4kKpgzPHMONP5bvtwlBkrF1CEJy-bdXBMVdmoKlcCuo3NtxJcS1rvYjLBUAYs2e18OcgwnwKMykk7yBiixhT1QQ8bMI2eWx5EeRAnRKEYenNksfnwa4h7tsDqln73v5ZsfXcB1MjUUtB4VcWEjFOCxYZZzuXFNidrpKcikzH-9Eemi9sECLlin3WcujKaHKKvDlhCuZTb5vnxCf-X7l6n_xr56nR3FmyL7hX_iIi4nzig_hviun8rnXAm8ZtVsJGKmxCGyhlPMNY6E6PZphZPtXfzaVZtyTjddRcCPPUxXrSeS3XorJu6u2z8lHerHydJ5f7Q2v0SHcMmgrQUDmxNnHoYs7xtEUZFO2KPqvZesq8nD7wmEw2cP8z_BUGkHIG1Lj4oZX7BbCBPD-v0lcfTmxEY2ElqAoPwGE3kHNfw0xGUGP4Tatz_HPAaU" class="tgme_widget_message_video blured js-message_video_blured" width="100%" height="100%" muted></video>
+<div class="tgme_widget_message_video_wrap" style="width:720px;padding-top:133.33333333333%">
+  <video src="https://cdn4.telesco.pe/file/657843be95.mp4?token=njgw3IXHd-p7Az9L_BNqlvjqw1BeQAKLCqfh_0QWy6rGjdncu3ns_sO11xZVPPaWJNcS4Ijontje4bhzQ8TqIAEnn5E9NRdn6dG4vfIw5RLcIQ3zeuFSUnZtdxqUgOmAREhOZrhY-Yccx3Dn5U_QfmKVh8u9fwc_pShmku26QFbA59ntZVnUDSHsT78EMoqCO0lD7ufxFBGWcsYAou4Nnn217fP3tCAcfHX-TfOa_2oVV3lqy4kKpgzPHMONP5bvtwlBkrF1CEJy-bdXBMVdmoKlcCuo3NtxJcS1rvYjLBUAYs2e18OcgwnwKMykk7yBiixhT1QQ8bMI2eWx5EeRAnRKEYenNksfnwa4h7tsDqln73v5ZsfXcB1MjUUtB4VcWEjFOCxYZZzuXFNidrpKcikzH-9Eemi9sECLlin3WcujKaHKKvDlhCuZTb5vnxCf-X7l6n_xr56nR3FmyL7hX_iIi4nzig_hviun8rnXAm8ZtVsJGKmxCGyhlPMNY6E6PZphZPtXfzaVZtyTjddRcCPPUxXrSeS3XorJu6u2z8lHerHydJ5f7Q2v0SHcMmgrQUDmxNnHoYs7xtEUZFO2KPqvZesq8nD7wmEw2cP8z_BUGkHIG1Lj4oZX7BbCBPD-v0lcfTmxEY2ElqAoPwGE3kHNfw0xGUGP4Tatz_HPAaU" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:32</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">АНОНС ПОДКАСТА<tg-emoji emoji-id="5411312433912383634"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></tg-emoji><br/><br/>Скоро на нашем <a href="https://youtube.com/@bashnya_education?si=kocA9mZEI73WJp9P" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">YouTube-канале</a> выйдет новый выпуск с Климом <tg-emoji emoji-id="5411327775535564603"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i></tg-emoji><br/><br/>Клим:<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A4.png')"><b>😤</b></i></tg-emoji>стартапер, вместе с командой развивает Slaash<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A4.png')"><b>😤</b></i></tg-emoji>ex-VK, RuTube, Yandex<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A4.png')"><b>😤</b></i></tg-emoji>BMSTU alumni<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A4.png')"><b>😤</b></i></tg-emoji>учится в магистратуре AI Talent ИТМО<br/><br/>Поговорим о карьере в IT, стартапах и пути от обучения до собственного проекта <tg-emoji emoji-id="5440461260258835713"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9388.png')"><b>📈</b></i></tg-emoji><br/><br/>Когда-то Клим был участником нашего первого курса по GO и потом сам был преподавателем нескольких потоков курсов по Backend (<a href="https://t.me/ambstash" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">подписывайтесь на его канал</a>)<tg-emoji emoji-id="5415745231003878271"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji><br/><br/>А вы можете зарегистрироваться на курсы этого семестра уже сейчас <tg-emoji emoji-id="5413738978765472923"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i></tg-emoji><br/><br/>МГТУ:<br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-18__utm_source--tg__utm_medium--messenger__utm_campaign--course18_20260910__utm_content--post-bashnya_education-4__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️</a><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-18__utm_source--tg__utm_medium--messenger__utm_campaign--course18_20260910__utm_content--post-bashnya_education-13__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Frontend на React в МГТУ</a><br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-16__utm_source--tg__utm_medium--messenger__utm_campaign--course16_20260910__utm_content--post-bashnya_education-4__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️</a><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-16__utm_source--tg__utm_medium--messenger__utm_campaign--course16_20260910__utm_content--post-bashnya_education-13__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Backend на Go в МГТУ</a><br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-19__utm_source--tg__utm_medium--messenger__utm_campaign--course19_20260910__utm_content--post-bashnya_education-13__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Биология старения</a><br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-17__utm_source--tg__utm_medium--messenger__utm_campaign--course17_20260910__utm_content--post-bashnya_education-10__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️</a><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-17__utm_source--tg__utm_medium--messenger__utm_campaign--course17_20260910__utm_content--post-bashnya_education-13__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Управление проектами</a><br/><br/>МТУСИ:<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-20__utm_source--tg__utm_medium--messenger__utm_campaign--course20_20260923__utm_content--post-bashnya_education-4__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️</a><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-20__utm_source--tg__utm_medium--messenger__utm_campaign--course20_20260923__utm_content--post-bashnya_education-5__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Backend на Go в МТУСИ</a><br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-21__utm_source--tg__utm_medium--messenger__utm_campaign--course21_20260923__utm_content--post-bashnya_education-4__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️</a><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-21__utm_source--tg__utm_medium--messenger__utm_campaign--course21_20260923__utm_content--post-bashnya_education-5__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Frontend на React в МТУСИ</a><br/><br/>ВШЭ:<br/><tg-emoji emoji-id="5190679985391704295"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪</b></i></tg-emoji><a href="https://forms.yandex.ru/u/6a94008295add5b1c867bb82/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">️Frontend на React и Backend на Go во ВШЭ</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/bashnya_education/1125" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>15</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">753</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/bashnya_education/1125"><time datetime="2026-10-03T13:08:44+00:00" class="time">13:08</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bashnya_education/1126" data-view="eyJjIjotMTgyMTAwMzEyNywicCI6MTEyNiwidCI6MTc5MTQ1ODM0NywiaCI6IjYyNjVhYjQ4OWMxOGMyYTQ4MiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/bashnya_education"><i class="tgme_widget_message_user_photo bgcolor6" data-content="Б"><img src="https://cdn4.telesco.pe/file/v1HFWOUALtb1-B_zgrLayYwhVQMbNPlWhdGoIDZa1n896upUQQKVsn8xPXe3oD6vIUdpoStQKDBPomtvpFcveDM94MyD0mSdpEkjJQ70IwC8SfMrIU6rC8xCKH3bf7Cylv73RKFbgs-CRb38pp28FijcsuIW4scea27C8bHtoBiwRI2EaJaYLouy-y9IJc-zTkCOYE4WHY2iMC2kQOfBGqxShXmBKTzTd-oRVbBncvOm4k7Qe3Q-w-8_rhPLmKLho86kBYaREdTatCtSv5z4eG8MsrP0gHz7FPj6qyNDnUEPo6dyETBMBBrmeYODUbwPo9IPicnEy3y9Tz5xgezong.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bashnya_education"><span dir="auto">БАШНЯ</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5339212861324076902 1243132367_460007270" href="https://t.me/bashnya_education/1126" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/OBtPr-i03t4ABf_UU1ZwEa3G6Uf62lCAMqtMyRAXpEDihZSRT1QGDEt5Zhd2W2FfdmH4K6NXdenF36f9ek4VhfUu57F_vO6ccOHs0DJBTjz1G9PcBUec00uGKAoizFNWVTH376RPu0KBzmtbfD_9Oj7AtPOt5pin3KfrIYStgXCJwbV7YDU9zZQYfDe9Chat2HSWhwfJxiQVcUITxnTO6uf1-DnrbjZg2AlFF-JR1CB0rs8aFDgR8cf2iBmwLaQbAlqt3dPswcC0XfPhS3njaXRSLQrovfxCdfxOAyk0Sj-I4YHMPBEAQLRIrk-uUi3zWk8wbmJjy7gt5ukHQCH4XA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>РАССКАЗЫВАЕМ ПРО НАБОР ДРУЗЕЙ</b><tg-emoji emoji-id="5411312433912383634"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></tg-emoji><br/><br/>Недавно познакомились с ребятами из <a href="https://t.me/iscrainfo" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>ISCRA</b></a> <tg-emoji emoji-id="5296257643101335002"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji> <br/><br/>В этом семестре они делают мощный фокус на развитии своих активистов, а в планах у нас — общие мероприятия и проекты. В том числе пересечение в рамках наших курсов <tg-emoji emoji-id="5440792930518336793"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988E.png')"><b>😎</b></i></tg-emoji><br/><br/>Сейчас ребята открыли набор в команду. Если вам интересна кибербезопасность, ИБ и хочется развиваться в этой сфере — здесь сможете попробовать себя в науке, организации мероприятий, IT, медиа и коммуникациях с партнерами <tg-emoji emoji-id="5413738978765472923"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i></tg-emoji><br/><br/><a href="https://forms.yandex.ru/u/6ab2d9b46d2d733f7e85bf70" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Оставить заявку можно здесь</a><br/><a href="https://forms.yandex.ru/u/6ab2d9b46d2d733f7e85bf70" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Оставить заявку можно здесь</a><br/><a href="https://forms.yandex.ru/u/6ab2d9b46d2d733f7e85bf70" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Оставить заявку можно здесь</a><br/><br/>С удовольствием делимся набором ребят <tg-emoji emoji-id="5411327775535564603"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/bashnya_education/1126" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>10</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D93.png')"><b>🍓</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><tg-emoji emoji-id="5451793243706526777"></tg-emoji>1</span><span class="tgme_reaction"><tg-emoji emoji-id="5458501402802292584"></tg-emoji>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">718</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bashnya_education/1126"><time datetime="2026-10-04T16:18:10+00:00" class="time">16:18</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bashnya_education/1127" data-view="eyJjIjotMTgyMTAwMzEyNywicCI6MTEyNywidCI6MTc5MTQ1ODM0NywiaCI6ImMyMzgwNTU5YTdiN2Y4ZTU3MCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/bashnya_education"><i class="tgme_widget_message_user_photo bgcolor6" data-content="Б"><img src="https://cdn4.telesco.pe/file/v1HFWOUALtb1-B_zgrLayYwhVQMbNPlWhdGoIDZa1n896upUQQKVsn8xPXe3oD6vIUdpoStQKDBPomtvpFcveDM94MyD0mSdpEkjJQ70IwC8SfMrIU6rC8xCKH3bf7Cylv73RKFbgs-CRb38pp28FijcsuIW4scea27C8bHtoBiwRI2EaJaYLouy-y9IJc-zTkCOYE4WHY2iMC2kQOfBGqxShXmBKTzTd-oRVbBncvOm4k7Qe3Q-w-8_rhPLmKLho86kBYaREdTatCtSv5z4eG8MsrP0gHz7FPj6qyNDnUEPo6dyETBMBBrmeYODUbwPo9IPicnEy3y9Tz5xgezong.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bashnya_education"><span dir="auto">БАШНЯ</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5341364566924928009 1243633350_460006409" href="https://t.me/bashnya_education/1127" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/TkaE3XbrsX2wq5u5Hitq8h1EG1eNeRx3hh2efku-0K-xAP1EGzADY5lqueYXBj1_SVhbq6CKSJ0srLs0ymr-0ZPpwr35-J0qzmM8Nuic4h2uWAmnDqjR1dJL_fbT0hXBebEqnni71vTvkMhBSMOBKR2PBbGCYQVTMmVys07Gx8PD5Hpg0FtB0xiPh4S5b2ogpvXq4eLbkP6gN7fCAyjXtDcJni5pfa8ciOXMcofqnIjRgiMCv4DlvF1NZ_bxjcs3LRVruNXfbfEccrnYFpx4HGCs_t0w8TQ7UMYCrOyDRo_74npO68hep4PPu8H4sKR9wJl84J9PpEfGvs7gmX-tWw.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:96.375%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">УЖЕ ЗАВТРА СТАРТУЮТ КУРСЫ<tg-emoji emoji-id="5411312433912383634"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></tg-emoji><br/><br/>Мы на низком старте — 6 октября начинаются <a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-18__utm_source--tg__utm_medium--messenger__utm_campaign--course18_20260910__utm_content--post-bashnya_education-14__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Frontend на React</a> и <a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-16__utm_source--tg__utm_medium--messenger__utm_campaign--course16_20260910__utm_content--post-bashnya_education-14__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Backend на Go</a>, 7 октября — <a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-17__utm_source--tg__utm_medium--messenger__utm_campaign--course17_20260910__utm_content--post-bashnya_education-14__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Управление проектами</a>, 17 октября — <a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-19__utm_source--tg__utm_medium--messenger__utm_campaign--course19_20260910__utm_content--post-bashnya_education-14__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Биология старения</a>.<br/><br/><tg-emoji emoji-id="5413738978765472923"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i></tg-emoji> И пользуясь случаем — поздравляем с Днём учителя всех учителей, преподавателей и вообще всех, кто разделяет с нами ценность делиться своими знаниями <tg-emoji emoji-id="5427127139151397446"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49D.png')"><b>🤝</b></i></tg-emoji><br/><br/>Перед стартом обязательно загляните в раскрывашку — там собрали всё самое важное перед первым занятием <tg-emoji emoji-id="5418126511196635691"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AC86.png')"><b>⬆️</b></i></tg-emoji><br/><br/><blockquote expandable><b>особенно внимательно просим прочитать информацию студентов не из МГТУ:</b> для прохода в университет есть несколько важных моментов<br/><br/><b>Для всех курсов</b><br/><br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪️</b></i></tg-emoji>если вы не из МГТУ, для прохода нужен <b>оригинал паспорта РФ</b><br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪️</b></i></tg-emoji>если вас нет в списках на проход — напишите или позвоните в аккаунт БАШНИ <a href="https://t.me/bashnya_edu" target="_blank">@bashnya_edu</a><br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪️</b></i></tg-emoji>списки на проход формируются заранее. если вы зарегистрировались <b>после 8 утра понедельника текущей недели</b>, попасть на занятие на этой неделе уже не получится<br/><br/><b>Backend на Go и Frontend на React</b><br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪️</b></i></tg-emoji>возьмите с собой <b>собственный ноутбук</b> — он понадобится для работы на занятиях<br/><br/><b>управление проектами и биология старения</b><br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪️</b></i></tg-emoji>ничего специального брать с собой не нужно</blockquote><br/><br/>Если остались вопросы — задавайте их в чатах курсов. ссылки на чаты доступны после регистрации в нашем мини-аппе <tg-emoji emoji-id="5440792930518336793"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988E.png')"><b>😎</b></i></tg-emoji><br/><br/><b>до встречи на первом занятии</b> <tg-emoji emoji-id="5451793243706526777"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49F.png')"><b>🤟</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/bashnya_education/1127" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>1</span><span class="tgme_reaction"><tg-emoji emoji-id="5451793243706526777"></tg-emoji>1</span><span class="tgme_reaction"><tg-emoji emoji-id="5458501402802292584"></tg-emoji>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">650</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bashnya_education/1127"><time datetime="2026-10-05T17:19:02+00:00" class="time">17:19</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bashnya_education/1128" data-view="eyJjIjotMTgyMTAwMzEyNywicCI6MTEyOCwidCI6MTc5MTQ1ODM0NywiaCI6IjEzNDU4NmJkNmMxNzQwNDQyYSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/bashnya_education"><i class="tgme_widget_message_user_photo bgcolor6" data-content="Б"><img src="https://cdn4.telesco.pe/file/v1HFWOUALtb1-B_zgrLayYwhVQMbNPlWhdGoIDZa1n896upUQQKVsn8xPXe3oD6vIUdpoStQKDBPomtvpFcveDM94MyD0mSdpEkjJQ70IwC8SfMrIU6rC8xCKH3bf7Cylv73RKFbgs-CRb38pp28FijcsuIW4scea27C8bHtoBiwRI2EaJaYLouy-y9IJc-zTkCOYE4WHY2iMC2kQOfBGqxShXmBKTzTd-oRVbBncvOm4k7Qe3Q-w-8_rhPLmKLho86kBYaREdTatCtSv5z4eG8MsrP0gHz7FPj6qyNDnUEPo6dyETBMBBrmeYODUbwPo9IPicnEy3y9Tz5xgezong.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bashnya_education"><span dir="auto">БАШНЯ</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5343616366738613357 1244157638_460006509" href="https://t.me/bashnya_education/1128" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/X-xY17uM-HMY3ZMsVpZhMY3gJ6Vj1h8EQOcH8ovG3gKDNCuyeGClz4ApvzzXVM-Sq3NSXU3ScOEIhK72S4f16nqp2pr_851miCQ4IYqVT9Tc245i5jDx80guQ2NMb-2PEWrHg9WCbLRCH4eRitu6ipBYNPcUCfxYSdlbWZYj4HFTFDX1G1KQySqkaFH44iu5YteLSGMDAVmRmUqrkRfXO3wqhxQ9RpYuvYan9aOJmEkydsmJKt5pZKhjwfE2RN-tJqOI101am1GaFtIZ4tzkwsfMcqYQ-bREaWYZC9O6l7SjEKgTZC4YsJKK2NZHHR7AXy2pRV7N98sxEYcLJMCsSA.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">ПЕРВАЯ ЛЕКЦИЯ КУРСА УПРАВЛЕНИЕ ПРОЕКТАМИ<tg-emoji emoji-id="5411312433912383634"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></tg-emoji><br/><br/>Главная идея курса — посмотреть на управление с разных сторон <tg-emoji emoji-id="5440792930518336793"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988E.png')"><b>😎</b></i></tg-emoji><br/><br/>На протяжении курса шесть управленцев/предпринимателей поделятся своим опытом работы с командами, проектами и продуктами <tg-emoji emoji-id="5440461260258835713"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9388.png')"><b>📈</b></i></tg-emoji><br/><br/>Каждый спикер ответит примерно на одни и те же вопросы — чтобы вы увидели разные подходы, сравнили их между собой и сформировали собственную насмотренность <tg-emoji emoji-id="5411327775535564603"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i></tg-emoji><br/><br/>Первую лекцию проведет Максим Жданов, на вводной лекции разберём:<br/><br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪️</b></i></tg-emoji>с чего начать развиваться в управлении<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪️</b></i></tg-emoji>как работать с командой, задачами и результатом<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪️</b></i></tg-emoji>как организовать работу над проектом<br/><tg-emoji emoji-id="5190913893605610867"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAA.png')"><b>⚪️</b></i></tg-emoji>какие подходы к управлению работают на практике<br/><br/><a href="https://t.me/bashnyatech_bot/bashnyaapp?startapp=link_courses-17__utm_source--tg__utm_medium--messenger__utm_campaign--course17_20260910__utm_content--post-bashnya_education-15__utm_term--own" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Зарегаться можно по ссылке</a><tg-emoji emoji-id="5413738978765472923"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i></tg-emoji><br/><br/>Увидимся на занятии&#33;</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/bashnya_education/1128" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>10</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><tg-emoji emoji-id="5458501402802292584"></tg-emoji>2</span><span class="tgme_reaction"><tg-emoji emoji-id="5451793243706526777"></tg-emoji>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9888.png')"><b>😈</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">499</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bashnya_education/1128"><time datetime="2026-10-06T17:51:58+00:00" class="time">17:51</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div>
+    </section>
+  </div>
+</main>
+    <script src="//telegram.org/js/jquery.min.js"></script>
+    <script src="//telegram.org/js/jquery-ui.min.js"></script>
+    <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
+<script src="//telegram.org/js/tgsticker.js?32"></script>
+
+    <script src="//telegram.org/js/widget-frame.js?68"></script>
+    <script src="//telegram.org/js/telegram-web.js?14"></script>
+    <script>TWeb.init();
+</script>
+    
+  </body>
+</html>
+<!-- page generated in 210.41ms -->
